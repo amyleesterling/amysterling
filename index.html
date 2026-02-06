@@ -113,6 +113,63 @@
             border-color: #E1306C;
         }
 
+        .featured {
+            margin-bottom: 40px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .featured-image-link {
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-image-link:hover .featured-image {
+            transform: scale(1.05);
+        }
+
+        .featured-content {
+            padding: 20px 25px;
+        }
+
+        .featured-content h2 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        .featured-content p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .featured-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .featured-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.5);
+        }
+
         @media (max-width: 600px) {
             .container {
                 padding: 30px 20px;
@@ -129,6 +186,14 @@
             .link-text {
                 font-size: 1em;
             }
+
+            .featured {
+                margin-bottom: 30px;
+            }
+
+            .featured-content h2 {
+                font-size: 1.1em;
+            }
         }
     </style>
 </head>
@@ -137,6 +202,17 @@
         <div class="profile">
             <h1>Amy Sterling</h1>
             <p>Connect with me on social media</p>
+        </div>
+
+        <div class="featured">
+            <a href="renders.html" class="featured-image-link">
+                <img src="images/image2.svg" alt="Connectomics visualization" class="featured-image">
+            </a>
+            <div class="featured-content">
+                <h2>Renders & Media Gallery</h2>
+                <p>Explore my scientific visualizations and neural network renders</p>
+                <a href="renders.html" class="featured-button">View Renders and Media</a>
+            </div>
         </div>
 
         <div class="links">
