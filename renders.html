@@ -82,7 +82,7 @@
             width: 100%;
             height: 300px;
             object-fit: cover;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -94,6 +94,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            cursor: pointer;
         }
 
         .gallery-caption {
@@ -127,6 +128,46 @@
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
+        /* Lightbox modal */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            box-shadow: 0 0 50px rgba(102, 126, 234, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 40px;
+            font-size: 40px;
+            color: #fff;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            color: #667eea;
+        }
     </style>
 </head>
 <body>
@@ -138,8 +179,8 @@
     <div class="gallery">
         <div class="gallery-card">
             <div class="gallery-image">
-                <!-- Nature Methods cover image -->
-                <img src="images/image1.svg" alt="Nature Methods cover">
+                <!-- Nature Methods 2025 cover -->
+                <img src="images/nature_methods_2025.png" alt="Nature Methods 2025">
             </div>
             <div class="gallery-caption">
                 <p class="caption-placeholder">Caption to be added</p>
@@ -148,18 +189,8 @@
 
         <div class="gallery-card">
             <div class="gallery-image">
-                <!-- Connectomics visualization with rainbow colored neural network -->
-                <img src="images/image2.svg" alt="Connectomics visualization">
-            </div>
-            <div class="gallery-caption">
-                <p class="caption-placeholder">Caption to be added</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <div class="gallery-image">
-                <!-- Blue neuron on white background -->
-                <img src="images/image3.svg" alt="Blue neuron">
+                <!-- CODEX Workshop 2025 title slide -->
+                <img src="images/codex-workshop-2025-title-slide.jpg" alt="CODEX Workshop 2025">
             </div>
             <div class="gallery-caption">
                 <p class="caption-placeholder">Caption to be added</p>
@@ -178,8 +209,8 @@
 
         <div class="gallery-card">
             <div class="gallery-image">
-                <!-- CA3 pyramidal neurons side angle -->
-                <img src="images/ca3 pyramidals progress side angle0017.png" alt="CA3 pyramidal neurons side angle">
+                <!-- Pyramidal neuron -->
+                <img src="images/Pyramidal 2.png" alt="Pyramidal neuron">
             </div>
             <div class="gallery-caption">
                 <p class="caption-placeholder">Caption to be added</p>
@@ -188,8 +219,8 @@
 
         <div class="gallery-card">
             <div class="gallery-image">
-                <!-- CA3 sea of mossy fibers -->
-                <img src="images/ca3 sea of mossy fibers 2.png" alt="CA3 sea of mossy fibers">
+                <!-- CA3 pyramidals and mossy fibers -->
+                <img src="images/ca3_pyr_mossy_fibers.png" alt="CA3 pyramidals and mossy fibers">
             </div>
             <div class="gallery-caption">
                 <p class="caption-placeholder">Caption to be added</p>
@@ -198,13 +229,77 @@
 
         <div class="gallery-card">
             <div class="gallery-image">
-                <!-- Additional render -->
-                <img src="images/image (199).png" alt="Neural render">
+                <!-- Single pyramidal neuron -->
+                <img src="images/pyramidal_single.png" alt="Single pyramidal neuron">
+            </div>
+            <div class="gallery-caption">
+                <p class="caption-placeholder">Caption to be added</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="gallery-image">
+                <!-- Eyewire calcium imaging poster -->
+                <img src="images/eyewire-2-calcium-e2-poster-stlerling.png" alt="Eyewire calcium imaging poster">
+            </div>
+            <div class="gallery-caption">
+                <p class="caption-placeholder">Caption to be added</p>
+            </div>
+        </div>
+
+        <div class="gallery-card">
+            <div class="gallery-image">
+                <!-- Mossy fiber neuron -->
+                <img src="images/mossy mcmosserson solo0469.png" alt="Mossy fiber neuron">
             </div>
             <div class="gallery-caption">
                 <p class="caption-placeholder">Caption to be added</p>
             </div>
         </div>
     </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img src="" alt="" class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script>
+        // Get elements
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const galleryImages = document.querySelectorAll('.gallery-image img');
+
+        // Add click event to all gallery images
+        galleryImages.forEach(img => {
+            img.addEventListener('click', function() {
+                lightbox.classList.add('active');
+                lightboxImg.src = this.src;
+                lightboxImg.alt = this.alt;
+            });
+        });
+
+        // Close lightbox when clicking on background or close button
+        lightbox.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+        });
+
+        lightboxClose.addEventListener('click', function() {
+            lightbox.classList.remove('active');
+        });
+
+        // Prevent closing when clicking on the image itself
+        lightboxImg.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuron Particle Simulation - Amy Sterling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f0f1e 100%);
+            min-height: 100vh;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            z-index: 10;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            padding: 10px 20px;
+            background: rgba(102, 126, 234, 0.1);
+            border: 2px solid #667eea;
+            border-radius: 12px;
+            color: #667eea;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        .back-link:hover {
+            background: rgba(102, 126, 234, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        h1 {
+            font-size: 2em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        #canvas {
+            display: block;
+            cursor: crosshair;
+        }
+
+        .info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        <h1>Neuron Particle Simulation</h1>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <div class="info">
+        Move your mouse to interact with the particles
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const mouse = {
+            x: null,
+            y: null,
+            radius: 150
+        };
+
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            init();
+        });
+
+        class Particle {
+            constructor(x, y) {
+                this.x = x;
+                this.y = y;
+                this.baseX = x;
+                this.baseY = y;
+                this.density = (Math.random() * 50) + 10;
+                this.size = 2;
+                this.vx = 0;
+                this.vy = 0;
+            }
+
+            draw() {
+                ctx.fillStyle = 'rgba(102, 126, 234, 0.8)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fill();
+            }
+
+            update() {
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                let forceDirectionX = dx / distance;
+                let forceDirectionY = dy / distance;
+                let maxDistance = mouse.radius;
+                let force = (maxDistance - distance) / maxDistance;
+                let directionX = forceDirectionX * force * this.density * 2.5;
+                let directionY = forceDirectionY * force * this.density * 2.5;
+
+                if (distance < mouse.radius) {
+                    // Add turbulence
+                    let turbulence = (Math.random() - 0.5) * 3;
+                    this.vx = -directionX + turbulence;
+                    this.vy = -directionY + turbulence;
+                    this.x += this.vx;
+                    this.y += this.vy;
+                } else {
+                    // Return to base position with velocity damping
+                    this.vx *= 0.95;
+                    this.vy *= 0.95;
+                    
+                    if (this.x !== this.baseX) {
+                        let dx = this.x - this.baseX;
+                        this.x -= dx / 8;
+                    }
+                    if (this.y !== this.baseY) {
+                        let dy = this.y - this.baseY;
+                        this.y -= dy / 8;
+                    }
+                }
+            }
+        }
+
+        let particleArray = [];
+        let imageLoaded = false;
+
+        function createNeuronFromImage() {
+            const img = new Image();
+            img.src = 'images/Pyramidal 2.png';
+            
+            img.onload = function() {
+                // Create temporary canvas to read image data
+                const tempCanvas = document.createElement('canvas');
+                const tempCtx = tempCanvas.getContext('2d');
+                
+                // Scale image to fit nicely on screen
+                const maxWidth = Math.min(canvas.width * 0.9, 1200);
+                const maxHeight = Math.min(canvas.height * 0.9, 1200);
+                const scale = Math.min(maxWidth / img.width, maxHeight / img.height);
+                
+                tempCanvas.width = img.width;
+                tempCanvas.height = img.height;
+                tempCtx.drawImage(img, 0, 0);
+                
+                const imageData = tempCtx.getImageData(0, 0, tempCanvas.width, tempCanvas.height);
+                const pixels = imageData.data;
+                
+                // Calculate offset to center the image
+                const scaledWidth = img.width * scale;
+                const scaledHeight = img.height * scale;
+                const offsetX = (canvas.width - scaledWidth) / 2;
+                const offsetY = (canvas.height - scaledHeight) / 2;
+                
+                // Sample pixels to create particles
+                const spacing = 4; // Sample every 4th pixel
+                
+                for (let y = 0; y < tempCanvas.height; y += spacing) {
+                    for (let x = 0; x < tempCanvas.width; x += spacing) {
+                        const index = (y * tempCanvas.width + x) * 4;
+                        const red = pixels[index];
+                        const green = pixels[index + 1];
+                        const blue = pixels[index + 2];
+                        const alpha = pixels[index + 3];
+                        
+                        // Only create particle if pixel is not transparent and has some color
+                        if (alpha > 30 && (red > 20 || green > 20 || blue > 20)) {
+                            const particleX = offsetX + (x * scale);
+                            const particleY = offsetY + (y * scale);
+                            particleArray.push(new Particle(particleX, particleY));
+                        }
+                    }
+                }
+                
+                imageLoaded = true;
+                console.log('Particles created:', particleArray.length);
+            };
+            
+            img.onerror = function() {
+                console.error('Failed to load image');
+                // Fallback to simple shape
+                createFallbackNeuron();
+                imageLoaded = true;
+            };
+        }
+        
+        function createFallbackNeuron() {
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const spacing = 8;
+
+            // Simple neuron shape as fallback
+            for (let angle = 0; angle < Math.PI * 2; angle += 0.15) {
+                for (let r = 0; r < 50; r += spacing) {
+                    const x = centerX + Math.cos(angle) * r;
+                    const y = centerY + Math.sin(angle) * r;
+                    particleArray.push(new Particle(x, y));
+                }
+            }
+            
+            // Dendrites
+            for (let i = 0; i < 5; i++) {
+                const angle = (Math.PI * 2 / 5) * i - Math.PI / 2;
+                for (let j = 0; j < 100; j += spacing) {
+                    const x = centerX + Math.cos(angle) * (50 + j);
+                    const y = centerY + Math.sin(angle) * (50 + j);
+                    particleArray.push(new Particle(x, y));
+                }
+            }
+        }
+
+        function init() {
+            particleArray = [];
+            imageLoaded = false;
+            createNeuronFromImage();
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            if (!imageLoaded) {
+                // Show loading message
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.5)';
+                ctx.font = '20px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('Loading...', canvas.width / 2, canvas.height / 2);
+                requestAnimationFrame(animate);
+                return;
+            }
+            
+            for (let i = 0; i < particleArray.length; i++) {
+                particleArray[i].draw();
+                particleArray[i].update();
+            }
+            
+            // Draw connections between nearby particles (optimized - check fewer pairs)
+            const step = 2; // Only check every 2nd particle for connections to improve performance
+            for (let i = 0; i < particleArray.length; i += step) {
+                for (let j = i + step; j < Math.min(i + 50, particleArray.length); j += step) {
+                    const dx = particleArray[i].x - particleArray[j].x;
+                    const dy = particleArray[i].y - particleArray[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    
+                    if (distance < 15) {
+                        ctx.strokeStyle = 'rgba(102, 126, 234, 0.2)';
+                        ctx.lineWidth = 0.5;
+                        ctx.beginPath();
+                        ctx.moveTo(particleArray[i].x, particleArray[i].y);
+                        ctx.lineTo(particleArray[j].x, particleArray[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+            
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+    </script>
+</body>
+</html>
