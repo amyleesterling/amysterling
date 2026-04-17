@@ -1,0 +1,49 @@
+name: Monthly Comedy Digest
+
+on:
+  schedule:
+    # 1st of every month, 13:00 UTC (≈ 9am Boston EDT, 8am EST).
+    - cron: "0 13 1 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper, build site, send digest
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          SITE_URL: "https://amyleesterling.github.io/amysterling/comedy/"
+        run: python -m scripts.comedy_scraper.run --out comedy
+
+      - name: Commit regenerated site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comedy/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "comedy: monthly refresh $(date -u +'%Y-%m')"
+            git push
+          fi

@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-04-17T15:45:52.119914",
+  "month": "April",
+  "year": 2026,
+  "comedians": [
+    {
+      "name": "Nate Bargatze",
+      "shows": [
+        {
+          "comedian": "Nate Bargatze",
+          "venue": "The Wilbur",
+          "venue_city": "Boston",
+          "date": "2026-04-23T10:45:52.119914",
+          "url": "https://thewilbur.com",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Mike Birbiglia",
+      "shows": [
+        {
+          "comedian": "Mike Birbiglia",
+          "venue": "Chevalier Theatre",
+          "venue_city": "Medford",
+          "date": "2026-04-29T11:45:52.119914",
+          "url": "https://chevaliertheatre.com",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Tig Notaro",
+      "shows": [
+        {
+          "comedian": "Tig Notaro",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-05-06T11:15:52.119914",
+          "url": "https://laughboston.com",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Jim Gaffigan",
+      "shows": [
+        {
+          "comedian": "Jim Gaffigan",
+          "venue": "Orpheum Theatre",
+          "venue_city": "Boston",
+          "date": "2026-05-10T11:45:52.119914",
+          "url": "https://crossroadspresents.com",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Maria Bamford",
+      "shows": [
+        {
+          "comedian": "Maria Bamford",
+          "venue": "The Comedy Studio",
+          "venue_city": "Somerville",
+          "date": "2026-05-13T11:45:52.119914",
+          "url": "https://thecomedystudio.com",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Bill Burr",
+      "shows": [
+        {
+          "comedian": "Bill Burr",
+          "venue": "Orpheum Theatre",
+          "venue_city": "Boston",
+          "date": "2026-05-17T11:45:52.119914",
+          "url": "https://crossroadspresents.com",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    }
+  ]
+}

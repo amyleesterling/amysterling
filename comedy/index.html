@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>APRIL in Boston — Comedy Calendar</title>
+<meta name="description" content="Stand-up comedians announced for the Boston area this month, with video clips.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#08080c;
+  --surface:#101017;
+  --surface-2:#16161f;
+  --border:rgba(255,255,255,0.07);
+  --text:#f5f2ea;
+  --muted:#9a97a4;
+  --accent:#ffb347;
+  --accent-2:#b27cff;
+  --radius:14px;
+  --shadow:0 8px 30px rgba(0,0,0,0.35);
+}
+
+* { box-sizing:border-box; }
+
+html, body {
+  margin:0; padding:0;
+  background:var(--bg); color:var(--text);
+  font-family:'Inter', system-ui, -apple-system, sans-serif;
+  font-size:16px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+body::before {
+  content:""; position:fixed; inset:-20%;
+  background:
+    radial-gradient(600px 400px at 15% 10%, rgba(255,179,71,0.15), transparent 60%),
+    radial-gradient(500px 500px at 85% 30%, rgba(178,124,255,0.12), transparent 60%),
+    radial-gradient(800px 500px at 50% 110%, rgba(255,140,90,0.08), transparent 70%);
+  z-index:-1; pointer-events:none;
+  animation:drift 28s ease-in-out infinite alternate;
+}
+
+@keyframes drift {
+  0%   { transform:translate(0,0) scale(1); }
+  100% { transform:translate(-3%, 2%) scale(1.05); }
+}
+
+.wrap { max-width:1180px; margin:0 auto; padding:64px 28px 96px; }
+
+header.hero {
+  display:flex; flex-direction:column; gap:20px;
+  padding:40px 0 56px;
+  border-bottom:1px solid var(--border);
+}
+
+.eyebrow {
+  font-family:'Inter', sans-serif;
+  text-transform:uppercase; letter-spacing:0.22em;
+  font-size:12px; color:var(--muted);
+}
+
+h1.month {
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:700;
+  font-size:clamp(72px, 14vw, 180px);
+  line-height:0.9; margin:0;
+  letter-spacing:-0.02em;
+  background:linear-gradient(135deg, #fff 0%, var(--accent) 55%, var(--accent-2) 100%);
+  -webkit-background-clip:text; background-clip:text;
+  color:transparent;
+  animation:fade-up 900ms cubic-bezier(.2,.7,.1,1) both;
+}
+
+.month-sub {
+  font-family:'Fraunces', serif; font-style:italic; font-weight:500;
+  font-size:clamp(18px, 2.5vw, 24px);
+  color:var(--muted); margin-top:-6px;
+  animation:fade-up 900ms 120ms cubic-bezier(.2,.7,.1,1) both;
+}
+
+.stats {
+  display:flex; flex-wrap:wrap; gap:28px; margin-top:8px;
+  animation:fade-up 900ms 220ms cubic-bezier(.2,.7,.1,1) both;
+}
+.stat b {
+  display:block; font-family:'Fraunces', serif;
+  font-size:34px; font-weight:700; line-height:1;
+  color:var(--text);
+}
+.stat span { font-size:13px; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase; }
+
+.venues {
+  display:flex; flex-wrap:wrap; gap:8px; margin-top:24px;
+  animation:fade-up 900ms 320ms cubic-bezier(.2,.7,.1,1) both;
+}
+.pill {
+  border:1px solid var(--border); border-radius:999px;
+  padding:6px 12px; font-size:12px; color:var(--muted);
+  background:rgba(255,255,255,0.015);
+}
+
+.grid {
+  display:grid; gap:22px;
+  grid-template-columns:repeat(auto-fill, minmax(320px, 1fr));
+  margin-top:56px;
+}
+
+.card {
+  background:linear-gradient(180deg, var(--surface), var(--surface-2));
+  border:1px solid var(--border); border-radius:var(--radius);
+  padding:22px 22px 20px;
+  box-shadow:var(--shadow);
+  position:relative; overflow:hidden;
+  transition:transform 340ms cubic-bezier(.2,.7,.1,1), border-color 340ms ease;
+  animation:fade-up 700ms cubic-bezier(.2,.7,.1,1) both;
+  animation-delay:calc(var(--i,0) * 40ms + 200ms);
+}
+
+.card::before {
+  content:""; position:absolute; inset:-1px; z-index:0;
+  background:linear-gradient(135deg,
+    hsla(var(--hue,30), 90%, 65%, 0.22),
+    transparent 40%);
+  opacity:0; transition:opacity 380ms ease;
+  pointer-events:none;
+}
+.card:hover { transform:translateY(-3px); border-color:rgba(255,255,255,0.14); }
+.card:hover::before { opacity:1; }
+.card > * { position:relative; z-index:1; }
+
+.card-head {
+  display:flex; align-items:baseline; justify-content:space-between; gap:12px;
+  margin-bottom:14px;
+}
+
+.name {
+  margin:0; font-family:'Fraunces', serif; font-weight:700;
+  font-size:24px; letter-spacing:-0.01em; line-height:1.15;
+}
+
+.badge {
+  font-size:11px; letter-spacing:0.1em; text-transform:uppercase;
+  color:var(--muted); border:1px solid var(--border);
+  border-radius:999px; padding:4px 10px; white-space:nowrap;
+  background:rgba(255,255,255,0.02);
+}
+
+ul.shows {
+  list-style:none; padding:0; margin:0 0 16px;
+  display:flex; flex-direction:column; gap:4px;
+}
+.shows a {
+  display:grid; grid-template-columns:92px 1fr auto;
+  grid-template-areas:"date venue city" "date time city";
+  column-gap:12px; row-gap:2px;
+  padding:10px 12px; border-radius:10px;
+  color:var(--text); text-decoration:none;
+  background:rgba(255,255,255,0.02);
+  transition:background 200ms ease;
+  font-size:14px;
+}
+.shows a:hover { background:rgba(255,179,71,0.08); }
+.show-date { grid-area:date; font-variant-numeric:tabular-nums; color:var(--accent); font-weight:600; }
+.show-time { grid-area:time; font-size:12px; color:var(--muted); font-variant-numeric:tabular-nums; }
+.show-venue { grid-area:venue; font-weight:500; }
+.show-city { grid-area:city; color:var(--muted); font-size:12px; align-self:start; }
+
+.clips {
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:6px;
+  margin-top:auto;
+}
+.clip {
+  position:relative; display:block; aspect-ratio:16/9;
+  border-radius:8px; overflow:hidden;
+  background:#000;
+  transition:transform 260ms ease;
+}
+.clip img {
+  width:100%; height:100%; object-fit:cover;
+  transition:transform 400ms ease, filter 260ms ease;
+  filter:saturate(0.9) brightness(0.85);
+}
+.clip:hover img { transform:scale(1.06); filter:saturate(1) brightness(1); }
+.clip .play {
+  position:absolute; inset:0; display:flex;
+  align-items:center; justify-content:center;
+  color:#fff; font-size:22px;
+  text-shadow:0 2px 10px rgba(0,0,0,0.6);
+  opacity:0.85; transition:opacity 200ms ease;
+}
+.clip:hover .play { opacity:1; }
+
+.clips-fallback {
+  display:inline-block; margin-top:4px;
+  color:var(--accent); text-decoration:none;
+  font-size:13px; border-bottom:1px dashed rgba(255,179,71,0.4);
+  padding-bottom:1px;
+}
+.clips-fallback:hover { border-bottom-style:solid; }
+
+.empty {
+  margin-top:48px; padding:32px;
+  border:1px dashed var(--border); border-radius:var(--radius);
+  color:var(--muted); text-align:center;
+  font-family:'Fraunces', serif; font-style:italic;
+}
+
+footer.site-foot {
+  margin-top:72px; padding-top:24px;
+  border-top:1px solid var(--border);
+  color:var(--muted); font-size:12px;
+  display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between;
+}
+footer a { color:var(--muted); }
+
+@keyframes fade-up {
+  from { opacity:0; transform:translateY(14px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation:none !important; transition:none !important; }
+}
+
+@media (max-width: 520px) {
+  .wrap { padding:32px 18px 64px; }
+  .shows a { grid-template-columns:80px 1fr; grid-template-areas:"date venue" "date city"; }
+  .show-time { display:none; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <span class="eyebrow">amysterling · boston comedy</span>
+    <h1 class="month">APRIL</h1>
+    <p class="month-sub">stand-up announced for greater Boston — 2026</p>
+    <div class="stats">
+      <div class="stat"><b>6</b><span>comedians</span></div>
+      <div class="stat"><b>6</b><span>shows</span></div>
+    </div>
+    <div class="venues"><span class="pill">Chevalier Theatre</span> <span class="pill">Laugh Boston</span> <span class="pill">Orpheum Theatre</span> <span class="pill">The Comedy Studio</span> <span class="pill">The Wilbur</span></div>
+  </header>
+
+  
+
+  <section class="grid">
+<article class="card" style="--i:0; --hue:0">
+  <header class="card-head">
+    <h2 class="name">Nate Bargatze</h2>
+    <span class="badge">1 show</span>
+  </header>
+  <ul class="shows"><li class="show"><a href="https://thewilbur.com" target="_blank" rel="noopener"><span class="show-date">Thu Apr 23</span><span class="show-time">10:45 AM</span><span class="show-venue">The Wilbur</span><span class="show-city">Boston</span></a></li></ul>
+  <a class="clips-fallback" href="https://www.youtube.com/results?search_query=Nate+Bargatze+stand+up" target="_blank" rel="noopener">Watch clips on YouTube →</a>
+</article>
+<article class="card" style="--i:1; --hue:23">
+  <header class="card-head">
+    <h2 class="name">Mike Birbiglia</h2>
+    <span class="badge">1 show</span>
+  </header>
+  <ul class="shows"><li class="show"><a href="https://chevaliertheatre.com" target="_blank" rel="noopener"><span class="show-date">Wed Apr 29</span><span class="show-time">11:45 AM</span><span class="show-venue">Chevalier Theatre</span><span class="show-city">Medford</span></a></li></ul>
+  <a class="clips-fallback" href="https://www.youtube.com/results?search_query=Mike+Birbiglia+stand+up" target="_blank" rel="noopener">Watch clips on YouTube →</a>
+</article>
+<article class="card" style="--i:2; --hue:46">
+  <header class="card-head">
+    <h2 class="name">Tig Notaro</h2>
+    <span class="badge">1 show</span>
+  </header>
+  <ul class="shows"><li class="show"><a href="https://laughboston.com" target="_blank" rel="noopener"><span class="show-date">Wed May 6</span><span class="show-time">11:15 AM</span><span class="show-venue">Laugh Boston</span><span class="show-city">Boston</span></a></li></ul>
+  <a class="clips-fallback" href="https://www.youtube.com/results?search_query=Tig+Notaro+stand+up" target="_blank" rel="noopener">Watch clips on YouTube →</a>
+</article>
+<article class="card" style="--i:3; --hue:69">
+  <header class="card-head">
+    <h2 class="name">Jim Gaffigan</h2>
+    <span class="badge">1 show</span>
+  </header>
+  <ul class="shows"><li class="show"><a href="https://crossroadspresents.com" target="_blank" rel="noopener"><span class="show-date">Sun May 10</span><span class="show-time">11:45 AM</span><span class="show-venue">Orpheum Theatre</span><span class="show-city">Boston</span></a></li></ul>
+  <a class="clips-fallback" href="https://www.youtube.com/results?search_query=Jim+Gaffigan+stand+up" target="_blank" rel="noopener">Watch clips on YouTube →</a>
+</article>
+<article class="card" style="--i:4; --hue:92">
+  <header class="card-head">
+    <h2 class="name">Maria Bamford</h2>
+    <span class="badge">1 show</span>
+  </header>
+  <ul class="shows"><li class="show"><a href="https://thecomedystudio.com" target="_blank" rel="noopener"><span class="show-date">Wed May 13</span><span class="show-time">11:45 AM</span><span class="show-venue">The Comedy Studio</span><span class="show-city">Somerville</span></a></li></ul>
+  <a class="clips-fallback" href="https://www.youtube.com/results?search_query=Maria+Bamford+stand+up" target="_blank" rel="noopener">Watch clips on YouTube →</a>
+</article>
+<article class="card" style="--i:5; --hue:115">
+  <header class="card-head">
+    <h2 class="name">Bill Burr</h2>
+    <span class="badge">1 show</span>
+  </header>
+  <ul class="shows"><li class="show"><a href="https://crossroadspresents.com" target="_blank" rel="noopener"><span class="show-date">Sun May 17</span><span class="show-time">11:45 AM</span><span class="show-venue">Orpheum Theatre</span><span class="show-city">Boston</span></a></li></ul>
+  <a class="clips-fallback" href="https://www.youtube.com/results?search_query=Bill+Burr+stand+up" target="_blank" rel="noopener">Watch clips on YouTube →</a>
+</article>
+  </section>
+
+  <footer class="site-foot">
+    <span>Updated April 17, 2026. Refreshed monthly.</span>
+    <span><a href="/">amysterling.org</a></span>
+  </footer>
+</div>
+</body>
+</html>
