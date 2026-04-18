@@ -8,10 +8,11 @@ Source code lives in `../scripts/comedy_scraper/`. The GitHub Actions workflow
 `monthly-comedy.yml` runs on the 1st of every month:
 
 1. Scrapes each venue (JSON-LD `Event` schema first, DOM fallback).
-2. Merges shows by comedian.
-3. Finds 2–3 short YouTube clips per comedian.
-4. Rewrites `index.html` + `data.json` in this folder.
-5. Sends an email digest via SMTP.
+2. Merges shows by comedian across a rolling ~3-month window.
+3. Pulls a profile photo for each comedian from Wikipedia.
+4. Picks 2 vertical YouTube clips (≤ 70s, Shorts-flavored) ranked by view count.
+5. Rewrites `index.html` + `data.json` in this folder, grouped by month.
+6. Sends an email digest via SMTP.
 
 ### Configured venues
 
@@ -44,4 +45,6 @@ Run locally:
 ```bash
 pip install -r requirements.txt
 python -m scripts.comedy_scraper.run --out comedy --no-email
+# Or regenerate the demo preview (no scraping, no email):
+python -m scripts.seed_preview
 ```

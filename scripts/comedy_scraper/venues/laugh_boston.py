@@ -38,7 +38,7 @@ def scrape() -> list[Show]:
         if date_el:
             date_text = date_el.get_text(" ", strip=True)
         when = parse_date(date_text or title)
-        if not when or not within_window(when, days=60):
+        if not when or not within_window(when, days=110):
             continue
         link = card.find("a", href=True)
         href = link["href"] if link else URL

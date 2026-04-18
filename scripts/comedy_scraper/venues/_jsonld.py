@@ -70,7 +70,7 @@ def extract_shows(
         if not comedian:
             continue
         when = parse_date(start)
-        if not when or not within_window(when, days=60):
+        if not when or not within_window(when, days=110):
             continue
         key = (comedian.lower(), when.date().isoformat())
         if key in seen:

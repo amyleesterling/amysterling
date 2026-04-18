@@ -85,7 +85,9 @@ def parse_date(text: str, *, default_year: Optional[int] = None) -> Optional[dat
         return None
 
 
-def within_window(d: datetime, *, days: int = 45) -> bool:
+def within_window(d: datetime, *, days: int = 110) -> bool:
+    """Default window is ~3.5 months — covers the current month plus the
+    next three, matching the site's rolling three-month view."""
     now = datetime.now()
     return now - timedelta(days=1) <= d <= now + timedelta(days=days)
 
