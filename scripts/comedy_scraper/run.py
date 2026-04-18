@@ -7,7 +7,7 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-from .aggregate import collect_shows, enrich_with_clips, group_by_comedian
+from .aggregate import collect_shows, enrich, group_by_comedian
 from .build_site import render
 from .send_email import send_digest
 
@@ -22,7 +22,7 @@ def main(argv: list[str] | None = None) -> int:
         help="Output directory (relative to repo root).",
     )
     parser.add_argument("--no-email", action="store_true", help="Skip sending email.")
-    parser.add_argument("--no-clips", action="store_true", help="Skip YouTube enrichment.")
+    parser.add_argument("--no-enrich", action="store_true", help="Skip clips + profile photos.")
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
 
@@ -35,8 +35,8 @@ def main(argv: list[str] | None = None) -> int:
     comedians = group_by_comedian(shows)
     log.info("Aggregated %d comedians across %d shows.", len(comedians), len(shows))
 
-    if not args.no_clips:
-        enrich_with_clips(comedians)
+    if not args.no_enrich:
+        enrich(comedians)
 
     out_dir = Path(args.out).resolve()
     page = render(comedians, out_dir=out_dir, now=datetime.now())

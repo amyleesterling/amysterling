@@ -1,17 +1,18 @@
 {
-  "generated_at": "2026-04-17T15:45:52.119914",
+  "generated_at": "2026-04-18T01:25:40.631994",
   "month": "April",
   "year": 2026,
   "comedians": [
     {
       "name": "Nate Bargatze",
+      "photo": null,
       "shows": [
         {
           "comedian": "Nate Bargatze",
           "venue": "The Wilbur",
           "venue_city": "Boston",
-          "date": "2026-04-23T10:45:52.119914",
-          "url": "https://thewilbur.com",
+          "date": "2026-04-24T19:00:00",
+          "url": "https://thewilbur.com/shows/",
           "source": "seed"
         }
       ],
@@ -19,13 +20,14 @@
     },
     {
       "name": "Mike Birbiglia",
+      "photo": null,
       "shows": [
         {
           "comedian": "Mike Birbiglia",
           "venue": "Chevalier Theatre",
           "venue_city": "Medford",
-          "date": "2026-04-29T11:45:52.119914",
-          "url": "https://chevaliertheatre.com",
+          "date": "2026-04-30T20:00:00",
+          "url": "https://chevaliertheatre.com/events/",
           "source": "seed"
         }
       ],
@@ -33,13 +35,14 @@
     },
     {
       "name": "Tig Notaro",
+      "photo": null,
       "shows": [
         {
           "comedian": "Tig Notaro",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-05-06T11:15:52.119914",
-          "url": "https://laughboston.com",
+          "date": "2026-05-06T19:30:00",
+          "url": "https://laughboston.com/",
           "source": "seed"
         }
       ],
@@ -47,13 +50,14 @@
     },
     {
       "name": "Jim Gaffigan",
+      "photo": null,
       "shows": [
         {
           "comedian": "Jim Gaffigan",
           "venue": "Orpheum Theatre",
           "venue_city": "Boston",
-          "date": "2026-05-10T11:45:52.119914",
-          "url": "https://crossroadspresents.com",
+          "date": "2026-05-10T20:00:00",
+          "url": "https://www.crossroadspresents.com/orpheum-theatre",
           "source": "seed"
         }
       ],
@@ -61,13 +65,14 @@
     },
     {
       "name": "Maria Bamford",
+      "photo": null,
       "shows": [
         {
           "comedian": "Maria Bamford",
           "venue": "The Comedy Studio",
           "venue_city": "Somerville",
-          "date": "2026-05-13T11:45:52.119914",
-          "url": "https://thecomedystudio.com",
+          "date": "2026-05-15T20:00:00",
+          "url": "https://thecomedystudio.com/shows/",
           "source": "seed"
         }
       ],
@@ -75,13 +80,134 @@
     },
     {
       "name": "Bill Burr",
+      "photo": null,
       "shows": [
         {
           "comedian": "Bill Burr",
           "venue": "Orpheum Theatre",
           "venue_city": "Boston",
-          "date": "2026-05-17T11:45:52.119914",
-          "url": "https://crossroadspresents.com",
+          "date": "2026-05-22T20:00:00",
+          "url": "https://www.crossroadspresents.com/orpheum-theatre",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "John Mulaney",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "John Mulaney",
+          "venue": "The Wilbur",
+          "venue_city": "Boston",
+          "date": "2026-05-30T19:00:00",
+          "url": "https://thewilbur.com/shows/",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Roy Wood Jr.",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Roy Wood Jr.",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-05T19:30:00",
+          "url": "https://laughboston.com/",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Jo Koy",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Jo Koy",
+          "venue": "Orpheum Theatre",
+          "venue_city": "Boston",
+          "date": "2026-06-12T20:00:00",
+          "url": "https://www.crossroadspresents.com/orpheum-theatre",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Michelle Wolf",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Michelle Wolf",
+          "venue": "The Wilbur",
+          "venue_city": "Boston",
+          "date": "2026-06-20T20:00:00",
+          "url": "https://thewilbur.com/shows/",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Bert Kreischer",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Bert Kreischer",
+          "venue": "The Cabot",
+          "venue_city": "Beverly",
+          "date": "2026-06-29T20:00:00",
+          "url": "https://thecabot.org/events/",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Hasan Minhaj",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Hasan Minhaj",
+          "venue": "Chevalier Theatre",
+          "venue_city": "Medford",
+          "date": "2026-07-12T20:00:00",
+          "url": "https://chevaliertheatre.com/events/",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Sarah Silverman",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Sarah Silverman",
+          "venue": "The Wilbur",
+          "venue_city": "Boston",
+          "date": "2026-07-21T19:00:00",
+          "url": "https://thewilbur.com/shows/",
+          "source": "seed"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Ronny Chieng",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Ronny Chieng",
+          "venue": "Orpheum Theatre",
+          "venue_city": "Boston",
+          "date": "2026-07-29T20:00:00",
+          "url": "https://www.crossroadspresents.com/orpheum-theatre",
           "source": "seed"
         }
       ],

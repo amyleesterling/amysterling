@@ -2,9 +2,9 @@
 from __future__ import annotations
 
 import logging
-from collections import defaultdict
 
 from .models import Comedian, Show
+from .profile import find_profile
 from .venues import ALL_SCRAPERS
 from .youtube import find_clips
 
@@ -31,21 +31,29 @@ def group_by_comedian(shows: list[Show]) -> list[Comedian]:
         key = s.comedian.strip().lower()
         if key not in buckets:
             buckets[key] = Comedian(name=s.comedian.strip(), shows=[])
-        # Dedupe exact (venue, date) duplicates from overlapping sources.
         existing = {(x.venue, x.date.date()) for x in buckets[key].shows}
         if (s.venue, s.date.date()) not in existing:
             buckets[key].shows.append(s)
-    # Sort comedians by earliest upcoming show.
     comedians = list(buckets.values())
     comedians.sort(key=lambda c: min(s.date for s in c.shows))
     return comedians
 
 
-def enrich_with_clips(comedians: list[Comedian], *, limit: int = 3) -> None:
+def enrich(comedians: list[Comedian], *, clip_limit: int = 2) -> None:
+    """Attach 2 vertical clips and a profile photo to each comedian."""
     for c in comedians:
         try:
-            c.clips = find_clips(c.name, limit=limit)
+            c.clips = find_clips(c.name, limit=clip_limit)
         except Exception as e:
             log.warning("clip lookup failed for %s: %s", c.name, e)
             c.clips = []
-        log.info("%-32s %d clips", c.name, len(c.clips))
+        try:
+            c.photo = find_profile(c.name)
+        except Exception as e:
+            log.warning("photo lookup failed for %s: %s", c.name, e)
+            c.photo = None
+        log.info("%-32s %d clips · photo=%s", c.name, len(c.clips), bool(c.photo))
+
+
+# Back-compat alias for the old function name.
+enrich_with_clips = enrich

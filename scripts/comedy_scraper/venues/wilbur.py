@@ -42,7 +42,7 @@ def scrape() -> list[Show]:
         if not comedian:
             continue
         when = parse_date((date_el.get_text(" ", strip=True) if date_el else "") or title)
-        if not when or not within_window(when, days=60):
+        if not when or not within_window(when, days=110):
             continue
         link = card.find("a", href=True)
         href = link["href"] if link else URLS[0]
