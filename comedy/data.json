@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T01:25:40.631994",
+  "generated_at": "2026-04-24T18:15:05.097990",
   "month": "April",
   "year": 2026,
   "comedians": [
@@ -11,8 +11,8 @@
           "comedian": "Nate Bargatze",
           "venue": "The Wilbur",
           "venue_city": "Boston",
-          "date": "2026-04-24T19:00:00",
-          "url": "https://thewilbur.com/shows/",
+          "date": "2026-04-30T19:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Nate+Bargatze+Boston",
           "source": "seed"
         }
       ],
@@ -26,8 +26,8 @@
           "comedian": "Mike Birbiglia",
           "venue": "Chevalier Theatre",
           "venue_city": "Medford",
-          "date": "2026-04-30T20:00:00",
-          "url": "https://chevaliertheatre.com/events/",
+          "date": "2026-05-06T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Mike+Birbiglia+Medford",
           "source": "seed"
         }
       ],
@@ -41,8 +41,8 @@
           "comedian": "Tig Notaro",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-05-06T19:30:00",
-          "url": "https://laughboston.com/",
+          "date": "2026-05-12T19:30:00",
+          "url": "https://www.ticketmaster.com/search?q=Tig+Notaro+Boston",
           "source": "seed"
         }
       ],
@@ -56,8 +56,8 @@
           "comedian": "Jim Gaffigan",
           "venue": "Orpheum Theatre",
           "venue_city": "Boston",
-          "date": "2026-05-10T20:00:00",
-          "url": "https://www.crossroadspresents.com/orpheum-theatre",
+          "date": "2026-05-16T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Jim+Gaffigan+Boston",
           "source": "seed"
         }
       ],
@@ -71,8 +71,8 @@
           "comedian": "Maria Bamford",
           "venue": "The Comedy Studio",
           "venue_city": "Somerville",
-          "date": "2026-05-15T20:00:00",
-          "url": "https://thecomedystudio.com/shows/",
+          "date": "2026-05-21T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Maria+Bamford+Somerville",
           "source": "seed"
         }
       ],
@@ -86,8 +86,8 @@
           "comedian": "Bill Burr",
           "venue": "Orpheum Theatre",
           "venue_city": "Boston",
-          "date": "2026-05-22T20:00:00",
-          "url": "https://www.crossroadspresents.com/orpheum-theatre",
+          "date": "2026-05-28T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Bill+Burr+Boston",
           "source": "seed"
         }
       ],
@@ -101,8 +101,8 @@
           "comedian": "John Mulaney",
           "venue": "The Wilbur",
           "venue_city": "Boston",
-          "date": "2026-05-30T19:00:00",
-          "url": "https://thewilbur.com/shows/",
+          "date": "2026-06-05T19:00:00",
+          "url": "https://www.ticketmaster.com/search?q=John+Mulaney+Boston",
           "source": "seed"
         }
       ],
@@ -116,8 +116,8 @@
           "comedian": "Roy Wood Jr.",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-06-05T19:30:00",
-          "url": "https://laughboston.com/",
+          "date": "2026-06-11T19:30:00",
+          "url": "https://www.ticketmaster.com/search?q=Roy+Wood+Jr.+Boston",
           "source": "seed"
         }
       ],
@@ -131,8 +131,8 @@
           "comedian": "Jo Koy",
           "venue": "Orpheum Theatre",
           "venue_city": "Boston",
-          "date": "2026-06-12T20:00:00",
-          "url": "https://www.crossroadspresents.com/orpheum-theatre",
+          "date": "2026-06-18T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Jo+Koy+Boston",
           "source": "seed"
         }
       ],
@@ -146,8 +146,8 @@
           "comedian": "Michelle Wolf",
           "venue": "The Wilbur",
           "venue_city": "Boston",
-          "date": "2026-06-20T20:00:00",
-          "url": "https://thewilbur.com/shows/",
+          "date": "2026-06-26T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Michelle+Wolf+Boston",
           "source": "seed"
         }
       ],
@@ -161,8 +161,8 @@
           "comedian": "Bert Kreischer",
           "venue": "The Cabot",
           "venue_city": "Beverly",
-          "date": "2026-06-29T20:00:00",
-          "url": "https://thecabot.org/events/",
+          "date": "2026-07-05T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Bert+Kreischer+Beverly",
           "source": "seed"
         }
       ],
@@ -176,8 +176,8 @@
           "comedian": "Hasan Minhaj",
           "venue": "Chevalier Theatre",
           "venue_city": "Medford",
-          "date": "2026-07-12T20:00:00",
-          "url": "https://chevaliertheatre.com/events/",
+          "date": "2026-07-18T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Hasan+Minhaj+Medford",
           "source": "seed"
         }
       ],
@@ -191,8 +191,8 @@
           "comedian": "Sarah Silverman",
           "venue": "The Wilbur",
           "venue_city": "Boston",
-          "date": "2026-07-21T19:00:00",
-          "url": "https://thewilbur.com/shows/",
+          "date": "2026-07-27T19:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Sarah+Silverman+Boston",
           "source": "seed"
         }
       ],
@@ -206,8 +206,8 @@
           "comedian": "Ronny Chieng",
           "venue": "Orpheum Theatre",
           "venue_city": "Boston",
-          "date": "2026-07-29T20:00:00",
-          "url": "https://www.crossroadspresents.com/orpheum-theatre",
+          "date": "2026-08-04T20:00:00",
+          "url": "https://www.ticketmaster.com/search?q=Ronny+Chieng+Boston",
           "source": "seed"
         }
       ],
