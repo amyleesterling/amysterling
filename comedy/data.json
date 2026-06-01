@@ -1,376 +1,8 @@
 {
-  "generated_at": "2026-05-01T14:13:49.434411",
-  "month": "May",
+  "generated_at": "2026-06-01T18:34:04.561205",
+  "month": "June",
   "year": 2026,
   "comedians": [
-    {
-      "name": "Matthew Broussard",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Matthew Broussard",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-01T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Don\u2019t Argue With Woke People #shorts #standup #standupcomedy #jokes",
-          "video_id": "m1HbavW3KQk",
-          "thumbnail": "https://i.ytimg.com/vi/m1HbavW3KQk/hqdefault.jpg",
-          "views": 9538999,
-          "duration": 60
-        },
-        {
-          "title": "Pok\u00e9mon C***block",
-          "video_id": "dWEXOohXlOA",
-          "thumbnail": "https://i.ytimg.com/vi/dWEXOohXlOA/hqdefault.jpg",
-          "views": 5090979,
-          "duration": 60
-        }
-      ]
-    },
-    {
-      "name": "Dirty Disney",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Dirty Disney",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-01T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        },
-        {
-          "comedian": "Dirty Disney",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-15T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Surgery with zero euro \ud83d\ude05\ud83e\udd37\u200d\u2640\ufe0f #shorts #funny #comedy",
-          "video_id": "gx1bD-rdv5E",
-          "thumbnail": "https://i.ytimg.com/vi/gx1bD-rdv5E/hqdefault.jpg",
-          "views": 256141126,
-          "duration": 16
-        },
-        {
-          "title": "Player Teaches Bully a Lesson, Makes Kid\u2019s Day! #shorts",
-          "video_id": "IjYH30iYuek",
-          "thumbnail": "https://i.ytimg.com/vi/IjYH30iYuek/hqdefault.jpg",
-          "views": 85528557,
-          "duration": 16
-        }
-      ]
-    },
-    {
-      "name": "Chris Andrade",
-      "photo": "https://upload.wikimedia.org/wikipedia/en/a/af/El_Chig%C3%BCire_Bipolar_logo.jpg",
-      "shows": [
-        {
-          "comedian": "Chris Andrade",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-07T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Pobre Salma...\ud83d\ude05 #salmahayek #jimmyfallon #shorts",
-          "video_id": "94RejLEwxCI",
-          "thumbnail": "https://i.ytimg.com/vi/94RejLEwxCI/hqdefault.jpg",
-          "views": 18125744,
-          "duration": 60
-        },
-        {
-          "title": "People before and after prison\ud83d\ude33 #shorts",
-          "video_id": "7TkIJ-5lvg4",
-          "thumbnail": "https://i.ytimg.com/vi/7TkIJ-5lvg4/hqdefault.jpg",
-          "views": 4316790,
-          "duration": 24
-        }
-      ]
-    },
-    {
-      "name": "Sugar Sammy",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/b/bc/SugarSammy%40justforlaughs.png",
-      "shows": [
-        {
-          "comedian": "Sugar Sammy",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-08T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "100% Qu\u00e9b\u00e9cois : Sugar Sammy | Shows suppl\u00e9mentaires \u00e0 Montr\u00e9al, Gatineau et Qu\u00e9bec #sugarsammy",
-          "video_id": "X37zMQRwELI",
-          "thumbnail": "https://i.ytimg.com/vi/X37zMQRwELI/hqdefault.jpg",
-          "views": 372962,
-          "duration": 41
-        },
-        {
-          "title": "Indians in Canada | Sugar Sammy #standupcomedy  #shorts",
-          "video_id": "RZbapAYhl_o",
-          "thumbnail": "https://i.ytimg.com/vi/RZbapAYhl_o/hqdefault.jpg",
-          "views": 190650,
-          "duration": 51
-        }
-      ]
-    },
-    {
-      "name": "Sarper G\u00fcven",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Sarper G\u00fcven",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-10T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Sarper Was a \ud83d\udc13 #90DayFiance",
-          "video_id": "jugQ8VLsAq4",
-          "thumbnail": "https://i.ytimg.com/vi/jugQ8VLsAq4/hqdefault.jpg",
-          "views": 210191,
-          "duration": 27
-        },
-        {
-          "title": "Sarper the Plastic Surgeon #90DayFiance",
-          "video_id": "Pn6_tLAegzw",
-          "thumbnail": "https://i.ytimg.com/vi/Pn6_tLAegzw/hqdefault.jpg",
-          "views": 135802,
-          "duration": 43
-        }
-      ]
-    },
-    {
-      "name": "Rayna Greenberg",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Rayna Greenberg",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-13T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Ashley Heseltine: Grower or Shower? @ashhess",
-          "video_id": "PQkf_SFD93U",
-          "thumbnail": "https://i.ytimg.com/vi/PQkf_SFD93U/hqdefault.jpg",
-          "views": 816364,
-          "duration": 60
-        },
-        {
-          "title": "\u201cSana Sana\u2026.\u201d my New Special \u201cMind Your Buisness\u201d  hits YouTube on Feb 25th! #comedy #ginabrillon",
-          "video_id": "q6a2pdVjUyQ",
-          "thumbnail": "https://i.ytimg.com/vi/q6a2pdVjUyQ/hqdefault.jpg",
-          "views": 560329,
-          "duration": 49
-        }
-      ]
-    },
-    {
-      "name": "Ryan Sickler",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Ryan Sickler",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-15T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "CARROT TOP'S DAD HOTBOXED HIM #comedy #funny #oldschool #smoke",
-          "video_id": "XNaVCmybNUY",
-          "thumbnail": "https://i.ytimg.com/vi/XNaVCmybNUY/hqdefault.jpg",
-          "views": 2927275,
-          "duration": 52
-        },
-        {
-          "title": "Getting Cancelled with Shane Gillis",
-          "video_id": "lL4ZAz3FbRA",
-          "thumbnail": "https://i.ytimg.com/vi/lL4ZAz3FbRA/hqdefault.jpg",
-          "views": 722266,
-          "duration": 41
-        }
-      ]
-    },
-    {
-      "name": "James McCann",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "James McCann",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-20T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "James McCann Destroys Ahren Belisle!!! \ud83d\ude02\ud83d\ude02\ud83d\ude02 | Kill Tony ft. Tony Hinchcliffe",
-          "video_id": "NWjh252BK2E",
-          "thumbnail": "https://i.ytimg.com/vi/NWjh252BK2E/hqdefault.jpg",
-          "views": 10623900,
-          "duration": 24
-        },
-        {
-          "title": "James McCann Hates The Homeless!!!\ud83d\ude02\ud83d\ude02\ud83d\ude02| HEY AMERICA",
-          "video_id": "GY9EHrf0F3k",
-          "thumbnail": "https://i.ytimg.com/vi/GY9EHrf0F3k/hqdefault.jpg",
-          "views": 2486021,
-          "duration": 60
-        }
-      ]
-    },
-    {
-      "name": "Dean Delray",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Dean Delray",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-23T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Gas Prices #shorts #comedy #standupcomedy #deandelray",
-          "video_id": "CuawaHgGhwM",
-          "thumbnail": "https://i.ytimg.com/vi/CuawaHgGhwM/hqdefault.jpg",
-          "views": 6778,
-          "duration": 40
-        },
-        {
-          "title": "Dean Delray Stand Up Comedy Cellar #standupcomedy",
-          "video_id": "t-07YYGoy0w",
-          "thumbnail": "https://i.ytimg.com/vi/t-07YYGoy0w/hqdefault.jpg",
-          "views": 6364,
-          "duration": 34
-        }
-      ]
-    },
-    {
-      "name": "Mike Goodwin",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Mike Goodwin",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-28T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "At church versus at home! #mikegoodwin #MikeGoodwinComedy #standupcomedy #church #churchhumor",
-          "video_id": "TjqO-2dUiWM",
-          "thumbnail": "https://i.ytimg.com/vi/TjqO-2dUiWM/hqdefault.jpg",
-          "views": 104448,
-          "duration": 53
-        },
-        {
-          "title": "Is this a scam? #mikegoodwin #standupcomedy #bigdadenergytour #bowtiecomedy #lasik",
-          "video_id": "mml5ST7T6NA",
-          "thumbnail": "https://i.ytimg.com/vi/mml5ST7T6NA/hqdefault.jpg",
-          "views": 90283,
-          "duration": 46
-        }
-      ]
-    },
-    {
-      "name": "Chris Turner",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Chris Turner",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-29T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Being a White Rapper is SO EASY #standupcomedy #comedy #comedian #greencard",
-          "video_id": "JsRpOSjG_PU",
-          "thumbnail": "https://i.ytimg.com/vi/JsRpOSjG_PU/hqdefault.jpg",
-          "views": 398256,
-          "duration": 55
-        },
-        {
-          "title": "Best Freestyle Rapper EVER On America's Got Talent \ud83e\udd2f Chris Turner",
-          "video_id": "9dj-sHV5vfs",
-          "thumbnail": "https://i.ytimg.com/vi/9dj-sHV5vfs/hqdefault.jpg",
-          "views": 50629,
-          "duration": 58
-        }
-      ]
-    },
-    {
-      "name": "Greg Fitzsimmons",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Greg Fitzsimmons",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-05-29T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "How Mexican People Get Abortions.. \ud83d\ude02\ud83d\ude02 | Kill Tony ft. Greg Fitzsimmons",
-          "video_id": "fIZY93XKSeQ",
-          "thumbnail": "https://i.ytimg.com/vi/fIZY93XKSeQ/hqdefault.jpg",
-          "views": 221139,
-          "duration": 39
-        },
-        {
-          "title": "Tony Hinchcliffe Meets a Mexican \ud83d\ude02 Kill Tony ft. Greg Fitzsimmons  #shorts #shortvideo #comedy",
-          "video_id": "cbZxuY6oHgU",
-          "thumbnail": "https://i.ytimg.com/vi/cbZxuY6oHgU/hqdefault.jpg",
-          "views": 29402,
-          "duration": 41
-        }
-      ]
-    },
     {
       "name": "Jake Cornell",
       "photo": null,
@@ -384,22 +16,7 @@
           "source": "laughboston.com"
         }
       ],
-      "clips": [
-        {
-          "title": "i gave in\ud83e\udd27",
-          "video_id": "wlRlNsbbcig",
-          "thumbnail": "https://i.ytimg.com/vi/wlRlNsbbcig/hqdefault.jpg",
-          "views": 13898249,
-          "duration": 31
-        },
-        {
-          "title": "this never got posted to youtube\ud83d\ude33\ud83d\ude33 #music #cover #shawnmendes",
-          "video_id": "BAVlaKXVuYo",
-          "thumbnail": "https://i.ytimg.com/vi/BAVlaKXVuYo/hqdefault.jpg",
-          "views": 12955038,
-          "duration": 29
-        }
-      ]
+      "clips": []
     },
     {
       "name": "Timmy No Brakes",
@@ -416,18 +33,11 @@
       ],
       "clips": [
         {
-          "title": "Timmy no brakes performs at msg #killtonypodcast",
-          "video_id": "B2u7WILLf28",
-          "thumbnail": "https://i.ytimg.com/vi/B2u7WILLf28/hqdefault.jpg",
-          "views": 9815154,
-          "duration": 60
-        },
-        {
-          "title": "Timmy No Brakes Wingmans Tony Hinchcliffe.. \ud83d\ude02\ud83d\ude02 | Kill Tony ft. Tim Stiefler",
-          "video_id": "Wi3bHgHxCS4",
-          "thumbnail": "https://i.ytimg.com/vi/Wi3bHgHxCS4/hqdefault.jpg",
-          "views": 7543067,
-          "duration": 28
+          "title": "Timmy No Brakes Sir Winston Pickles Clown Talk",
+          "video_id": "10UYHmbpE4s",
+          "thumbnail": "https://i.ytimg.com/vi/10UYHmbpE4s/hqdefault.jpg",
+          "views": 20788,
+          "duration": 35
         }
       ]
     },
@@ -446,24 +56,24 @@
       ],
       "clips": [
         {
-          "title": "Playing sports builds character they said. #running #crosscountry #standupcomedy #comedy",
-          "video_id": "x8S2D8gi4ts",
-          "thumbnail": "https://i.ytimg.com/vi/x8S2D8gi4ts/hqdefault.jpg",
-          "views": 39807621,
-          "duration": 61
+          "title": "Crystal Marie Denha \"Headliners Ball\" Charity Event Red Carpet",
+          "video_id": "fVTxw0t0JvA",
+          "thumbnail": "https://i.ytimg.com/vi/fVTxw0t0JvA/hqdefault.jpg",
+          "views": 17142,
+          "duration": 57
         },
         {
-          "title": "Older men\u2026 #funny #comedy #shorts #standupcomedy #comedian #parents",
-          "video_id": "JlXNGprnjYs",
-          "thumbnail": "https://i.ytimg.com/vi/JlXNGprnjYs/hqdefault.jpg",
-          "views": 26340257,
-          "duration": 61
+          "title": "Radio superstar Adam Carolla dating sexy standup Crystal Denha after divorce | Page Six",
+          "video_id": "-B1qQTxW5e8",
+          "thumbnail": "https://i.ytimg.com/vi/-B1qQTxW5e8/hqdefault.jpg",
+          "views": 8971,
+          "duration": 44
         }
       ]
     },
     {
       "name": "Grace O'Malley",
-      "photo": null,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Grainne_Mhaol_Ni_Mhaille_Statue.jpg/330px-Grainne_Mhaol_Ni_Mhaille_Statue.jpg",
       "shows": [
         {
           "comedian": "Grace O'Malley",
@@ -476,18 +86,18 @@
       ],
       "clips": [
         {
-          "title": "#improv #crowdwork #characters",
-          "video_id": "cYi2ERD1fVc",
-          "thumbnail": "https://i.ytimg.com/vi/cYi2ERD1fVc/hqdefault.jpg",
-          "views": 1148938,
-          "duration": 48
+          "title": "Dave Portnoy addresses rumors that he forced Grace O\u2019Malley out of Barstool Sports",
+          "video_id": "6aOuk8JXdg0",
+          "thumbnail": "https://i.ytimg.com/vi/6aOuk8JXdg0/hqdefault.jpg",
+          "views": 10007,
+          "duration": 67
         },
         {
-          "title": "I\u2019m 50 years old \ud83d\ude02\ud83e\udd29\ud83d\udc99 #shorts",
-          "video_id": "rnHhiVn6B0k",
-          "thumbnail": "https://i.ytimg.com/vi/rnHhiVn6B0k/hqdefault.jpg",
-          "views": 378575,
-          "duration": 20
+          "title": "WELCOME TO DISGRACEFUL WITH GRACE O'MALLEY",
+          "video_id": "qNxj5pAnWd0",
+          "thumbnail": "https://i.ytimg.com/vi/qNxj5pAnWd0/hqdefault.jpg",
+          "views": 3606,
+          "duration": 28
         }
       ]
     },
@@ -506,17 +116,17 @@
       ],
       "clips": [
         {
-          "title": "I got my mom arrested \ud83d\ude94        #shorts #standupcomedy #comedian #alisiddiq #comedyshorts",
-          "video_id": "NeJSAJkGGfY",
-          "thumbnail": "https://i.ytimg.com/vi/NeJSAJkGGfY/hqdefault.jpg",
-          "views": 2910613,
-          "duration": 60
-        },
-        {
           "title": "Bringing a Friends To A Haitian Home - Success Jr",
           "video_id": "VwvOfEDxhO8",
           "thumbnail": "https://i.ytimg.com/vi/VwvOfEDxhO8/hqdefault.jpg",
-          "views": 42521,
+          "views": 42621,
+          "duration": 60
+        },
+        {
+          "title": "Haitian Parents Will Ruin Any Moment - Success Jr",
+          "video_id": "_XbLfvdnczg",
+          "thumbnail": "https://i.ytimg.com/vi/_XbLfvdnczg/hqdefault.jpg",
+          "views": 41649,
           "duration": 60
         }
       ]
@@ -536,20 +146,246 @@
       ],
       "clips": [
         {
-          "title": "Don\u2019t say this to your wife during an argument | Mike Cannon | stand up comedy",
-          "video_id": "d6Ft-dD_Dxg",
-          "thumbnail": "https://i.ytimg.com/vi/d6Ft-dD_Dxg/hqdefault.jpg",
-          "views": 61393,
+          "title": "Mike Cannon Stand Up Comedy - Going to the Bar with my Wife",
+          "video_id": "CTz9k3L69cs",
+          "thumbnail": "https://i.ytimg.com/vi/CTz9k3L69cs/hqdefault.jpg",
+          "views": 1268,
           "duration": 59
         },
         {
-          "title": "Is your dad racist? Mike Cannon and Wil Sylvince",
-          "video_id": "89IOXz6ZK5Y",
-          "thumbnail": "https://i.ytimg.com/vi/89IOXz6ZK5Y/hqdefault.jpg",
-          "views": 27739,
-          "duration": 46
+          "title": "TRAILER: Mike Cannon | LIFE BEGINS | Official Stand Up Comedy Special",
+          "video_id": "RyxCG_YuOxo",
+          "thumbnail": "https://i.ytimg.com/vi/RyxCG_YuOxo/hqdefault.jpg",
+          "views": 1260,
+          "duration": 58
         }
       ]
+    },
+    {
+      "name": "Samuel Comroe",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Samuel Comroe",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-13T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Take A Shower | Samuel J Comroe | Stand Up Comedy",
+          "video_id": "Yjq-PWnZJ8o",
+          "thumbnail": "https://i.ytimg.com/vi/Yjq-PWnZJ8o/hqdefault.jpg",
+          "views": 952,
+          "duration": 67
+        },
+        {
+          "title": "Seizure Kink | Samuel J Comroe | Stand Up Comedy",
+          "video_id": "bMlX4J00EIk",
+          "thumbnail": "https://i.ytimg.com/vi/bMlX4J00EIk/hqdefault.jpg",
+          "views": 662,
+          "duration": 62
+        }
+      ]
+    },
+    {
+      "name": "Misha Brown",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Misha Brown",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-18T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "I was on Good Morning America! ",
+          "video_id": "6W0YmYFlfKU",
+          "thumbnail": "https://i.ytimg.com/vi/6W0YmYFlfKU/hqdefault.jpg",
+          "views": 15444,
+          "duration": 57
+        }
+      ]
+    },
+    {
+      "name": "Rafi Gonzalez",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Rafi Gonzalez",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-20T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Rafi Gonzalez Comedy",
+          "video_id": "-bcvusKWVb4",
+          "thumbnail": "https://i.ytimg.com/vi/-bcvusKWVb4/hqdefault.jpg",
+          "views": 1150,
+          "duration": 23
+        },
+        {
+          "title": "Rafi Gonzalez Pregaming",
+          "video_id": "KGIVpbgM16U",
+          "thumbnail": "https://i.ytimg.com/vi/KGIVpbgM16U/hqdefault.jpg",
+          "views": 841,
+          "duration": 39
+        }
+      ]
+    },
+    {
+      "name": "Abby Govindan",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Abby Govindan",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-25T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Abby Govindan: Comedy, BJP Sleeper Agent? \ud83d\udd75\ufe0f\u200d\u2640\ufe0f\ud83d\udd0d\ud83d\udcbc #shorts",
+          "video_id": "VPBAX48p_C8",
+          "thumbnail": "https://i.ytimg.com/vi/VPBAX48p_C8/hqdefault.jpg",
+          "views": 306,
+          "duration": 61
+        }
+      ]
+    },
+    {
+      "name": "Radel Ortiz",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Radel Ortiz",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-26T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Radel Ortiz At The Bodega",
+          "video_id": "iW0e2JBwxJg",
+          "thumbnail": "https://i.ytimg.com/vi/iW0e2JBwxJg/hqdefault.jpg",
+          "views": 34358,
+          "duration": 61
+        },
+        {
+          "title": "Radel Ortiz Gets Kidnapped! #Shorts #ShortHuncho",
+          "video_id": "AnKYah9X758",
+          "thumbnail": "https://i.ytimg.com/vi/AnKYah9X758/hqdefault.jpg",
+          "views": 1346,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "name": "Michael Turner",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Michael Turner",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-06-28T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "New England's Funniest Comics",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "New England's Funniest Comics",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-07-03T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Martin Amini",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Martin_Amini_Tour_Portrait_2.jpg/330px-Martin_Amini_Tour_Portrait_2.jpg",
+      "shows": [
+        {
+          "comedian": "Martin Amini",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-07-10T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Desi Banks",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Desi_Banks_2020_01.png/330px-Desi_Banks_2020_01.png",
+      "shows": [
+        {
+          "comedian": "Desi Banks",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-08-14T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "How Hood Dudes Be When They Girl In The Car But They Got To Handle Something!",
+          "video_id": "Z6tG9CZSFnc",
+          "thumbnail": "https://i.ytimg.com/vi/Z6tG9CZSFnc/hqdefault.jpg",
+          "views": 3851123,
+          "duration": 61
+        },
+        {
+          "title": "When You Want The Bottom Bunk In Jail But your cell mate Not going for it. ft @garyowencom",
+          "video_id": "pGwmoy07j3A",
+          "thumbnail": "https://i.ytimg.com/vi/pGwmoy07j3A/hqdefault.jpg",
+          "views": 3081992,
+          "duration": 67
+        }
+      ]
+    },
+    {
+      "name": "Trish Suhr",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Trish Suhr",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-09T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
     }
   ]
 }
