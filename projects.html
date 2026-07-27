@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amy Sterling — 2026 Projects</title>
+<meta name="description" content="A living map of everything Amy Sterling has been building on GitHub this year.">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --grad:linear-gradient(135deg,#667eea 0%,#764ba2 100%);
+    --ink:#1c1b2e;--muted:#6b6a80;--card:#ffffff;--bg:#f4f3fb;--line:#ecebf5;
+    --neuro:#7c5cff;--kids:#ff5c8a;--sci:#12b8a6;--data:#f5a623;--play:#667eea;
+  }
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:var(--grad);color:#fff;padding:90px 24px 70px;text-align:center;position:relative;overflow:hidden;
+  }
+  .hero h1{font-size:clamp(2.2em,6vw,3.6em);font-weight:800;letter-spacing:-.02em;margin-bottom:14px}
+  .hero p{font-size:clamp(1em,2.5vw,1.25em);opacity:.92;max-width:620px;margin:0 auto}
+  .hero .year{
+    display:inline-block;margin-bottom:22px;padding:6px 16px;border:1px solid rgba(255,255,255,.5);
+    border-radius:999px;font-size:.85em;letter-spacing:.15em;text-transform:uppercase;font-weight:600;
+  }
+  .hero .stats{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+  .hero .stat b{display:block;font-size:2em;font-weight:800}
+  .hero .stat span{font-size:.82em;opacity:.85;letter-spacing:.05em}
+  .backlink{position:absolute;top:20px;left:22px;font-size:.9em;text-decoration:none;opacity:.9}
+  .backlink:hover{opacity:1;text-decoration:underline}
+
+  /* ---------- Synaptic scroll section ---------- */
+  .synapse{
+    position:relative;background:#0c0b1e;color:#e9e7ff;overflow:hidden;
+  }
+  .synapse canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+  .synapse-inner{
+    position:relative;z-index:2;max-width:680px;margin:0 auto;padding:16vh 26px;
+  }
+  .synapse .kicker{
+    font-size:.8em;letter-spacing:.22em;text-transform:uppercase;color:#a99cff;margin-bottom:40vh;font-weight:600;
+  }
+  .synapse .step{
+    font-size:clamp(1.4em,3.4vw,2.1em);font-weight:600;line-height:1.35;margin:0 0 55vh;
+    opacity:.25;transition:opacity .5s ease,transform .5s ease;transform:translateY(12px);
+  }
+  .synapse .step:last-child{margin-bottom:16vh}
+  .synapse .step.lit{opacity:1;transform:none}
+  .synapse .step em{color:#b7a9ff;font-style:normal}
+  .synapse .cred{font-size:.85em;color:#8a83b8}
+  .synapse .cred a{color:#b7a9ff}
+
+  /* ---------- Controls ---------- */
+  .board{max-width:1180px;margin:0 auto;padding:56px 24px 90px}
+  .controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;margin-bottom:30px}
+  .filters{display:flex;flex-wrap:wrap;gap:8px}
+  .filters button{
+    font:inherit;font-size:.9em;font-weight:600;cursor:pointer;padding:8px 15px;border-radius:999px;
+    border:1px solid var(--line);background:#fff;color:var(--muted);transition:all .18s ease;
+  }
+  .filters button:hover{border-color:#c9c6e6}
+  .filters button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .filters button .n{opacity:.6;font-weight:500;margin-left:5px}
+  .search{
+    flex:1;min-width:200px;max-width:280px;padding:9px 15px;border:1px solid var(--line);border-radius:999px;
+    font:inherit;font-size:.92em;background:#fff;color:var(--ink);
+  }
+  .search:focus{outline:none;border-color:var(--neuro)}
+
+  /* ---------- Cards ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;
+    display:flex;flex-direction:column;gap:10px;text-decoration:none;color:inherit;
+    transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease;position:relative;
+  }
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(60,50,120,.14);border-color:transparent}
+  .card .top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .card h3{font-size:1.12em;font-weight:700;letter-spacing:-.01em;word-break:break-word}
+  .card .arrow{color:#c3c0dd;font-size:1.1em;transition:transform .18s ease}
+  .card:hover .arrow{transform:translate(3px,-3px);color:var(--neuro)}
+  .card p{color:var(--muted);font-size:.93em;flex:1}
+  .card p.empty{font-style:italic;opacity:.6}
+  .card .meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.8em;color:var(--muted);margin-top:4px}
+  .tag{padding:3px 10px;border-radius:999px;font-weight:600;font-size:.9em;color:#fff}
+  .lang{display:inline-flex;align-items:center;gap:6px}
+  .dot{width:9px;height:9px;border-radius:50%;background:#bbb;display:inline-block}
+  .live{margin-left:auto;font-weight:600;color:var(--sci)}
+  .empty-note{text-align:center;color:var(--muted);padding:50px 0;grid-column:1/-1}
+
+  footer{text-align:center;padding:34px 24px 60px;color:var(--muted);font-size:.9em}
+  footer a{color:var(--neuro)}
+  @media(max-width:600px){.hero{padding:72px 20px 54px}.synapse-inner{padding:14vh 22px}}
+  @media(prefers-reduced-motion:reduce){.synapse .step{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <a href="index.html" class="backlink">← home</a>
+  <span class="year">Active in 2026</span>
+  <h1>What I've Been Building</h1>
+  <p>A living map of the side projects, experiments, and family collaborations I've pushed to GitHub this year — from connectomics tools to games my kids designed.</p>
+  <div class="stats">
+    <div class="stat"><b id="stat-count">—</b><span>REPOS THIS YEAR</span></div>
+    <div class="stat"><b id="stat-cats">5</b><span>THEMES</span></div>
+    <div class="stat"><b id="stat-latest">—</b><span>LAST PUSH</span></div>
+  </div>
+</header>
+
+<!-- Synaptic Connection: neurons wire up as you scroll -->
+<section class="synapse" id="synapse">
+  <canvas id="net"></canvas>
+  <div class="synapse-inner">
+    <p class="kicker">Synaptic Connection</p>
+    <p class="step" data-i="0">Every project starts as a lone neuron — <em>an idea firing in the dark.</em></p>
+    <p class="step" data-i="1">Scroll, and the axons reach out. <em>One thought finds another.</em></p>
+    <p class="step" data-i="2">Connections strengthen the more they're used — <em>tools built on tools, kids building on curiosity.</em></p>
+    <p class="step" data-i="3">And what emerges is a network. <em>Everything below is wired to everything else.</em></p>
+    <p class="step" data-i="4" style="font-size:1em;font-weight:400">
+      <span class="cred">This scroll-driven wiring is a nod to
+      <a href="https://github.com/amyleesterling/synapticConnection" target="_blank" rel="noopener">synapticConnection</a> —
+      neurons that connect as you read.</span>
+    </p>
+  </div>
+</section>
+
+<main class="board">
+  <div class="controls">
+    <div class="filters" id="filters"></div>
+    <input class="search" id="search" type="search" placeholder="Search projects…" aria-label="Search projects">
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+
+<footer>
+  Auto-summarized from <a href="https://github.com/amyleesterling" target="_blank" rel="noopener">github.com/amyleesterling</a>.
+  Snapshot of repositories active in 2026.
+</footer>
+
+<script>
+const REPOS = [{"n": "amysterling", "u": "https://github.com/amyleesterling/amysterling", "d": "welcome to my web presence and side project hub amysterling.org", "l": "Python", "p": "2026-07-27", "h": null, "c": "Play & Experiments"}, {"n": "philogelos", "u": "https://github.com/amyleesterling/philogelos", "d": "funny philosopher", "l": "HTML", "p": "2026-07-26", "h": null, "c": "Play & Experiments"}, {"n": "findmytown", "u": "https://github.com/amyleesterling/findmytown", "d": "real estate dashboard", "l": "HTML", "p": "2026-07-26", "h": null, "c": "Science & Explorers"}, {"n": "inner-cosmos", "u": "https://github.com/amyleesterling/inner-cosmos", "d": "Inner Cosmos — a hub linking every Inner Cosmos experience (main site, kids, museum wall, scales, citations)", "l": "HTML", "p": "2026-07-23", "h": null, "c": "Neuroscience"}, {"n": "partypost", "u": "https://github.com/amyleesterling/partypost", "d": "free kids birthday party RSVP tool", "l": "TypeScript", "p": "2026-07-20", "h": "https://partypost.vercel.app", "c": "Kids & Family"}, {"n": "kids-who-vibecode", "u": "https://github.com/amyleesterling/kids-who-vibecode", "d": "fun challenges for kids to vibe code this summer!", "l": "TypeScript", "p": "2026-07-15", "h": null, "c": "Kids & Family"}, {"n": "sophie-shark-game", "u": "https://github.com/amyleesterling/sophie-shark-game", "d": "Sophie (6) designed this game ", "l": "JavaScript", "p": "2026-07-14", "h": null, "c": "Kids & Family"}, {"n": "hurricane", "u": "https://github.com/amyleesterling/hurricane", "d": "visualize all the hurricanes ever satellite imaged  ", "l": "TypeScript", "p": "2026-07-13", "h": null, "c": "Science & Explorers"}, {"n": "atlas-of-the-unseen", "u": "https://github.com/amyleesterling/atlas-of-the-unseen", "d": "Undirected collaboration between Fable and Sol ", "l": "HTML", "p": "2026-07-13", "h": null, "c": "Neuroscience"}, {"n": "seunglabdata", "u": "https://github.com/amyleesterling/seunglabdata", "d": "datasets of seung lab demo page", "l": "HTML", "p": "2026-07-10", "h": null, "c": "Neuroscience"}, {"n": "cocos-mythic-meadow", "u": "https://github.com/amyleesterling/cocos-mythic-meadow", "d": "Cora (4) created this unicorn pegasus wolf game", "l": "JavaScript", "p": "2026-07-10", "h": null, "c": "Kids & Family"}, {"n": "youth-sports-moneymachine", "u": "https://github.com/amyleesterling/youth-sports-moneymachine", "d": "Historical trends in the cost of club sports ", "l": "JavaScript", "p": "2026-07-10", "h": null, "c": "Data & Analysis"}, {"n": "the650", "u": "https://github.com/amyleesterling/the650", "d": "650 muscles in your body - how many can you feel?", "l": "TypeScript", "p": "2026-07-09", "h": null, "c": "Neuroscience"}, {"n": "fabled-jokes", "u": "https://github.com/amyleesterling/fabled-jokes", "d": "Git yer jokes", "l": "HTML", "p": "2026-07-08", "h": null, "c": "Play & Experiments"}, {"n": "whatisabrain", "u": "https://github.com/amyleesterling/whatisabrain", "d": "sometimes I wonder about mine ", "l": "TypeScript", "p": "2026-07-08", "h": null, "c": "Neuroscience"}, {"n": "science-experiment", "u": "https://github.com/amyleesterling/science-experiment", "d": "Experimental wall-scale visualization with resolution of 3628X1600 px", "l": "TypeScript", "p": "2026-07-07", "h": null, "c": "Neuroscience"}, {"n": "inner_cosmos", "u": "https://github.com/amyleesterling/inner_cosmos", "d": "neuron experience for the general public", "l": "TypeScript", "p": "2026-07-07", "h": null, "c": "Neuroscience"}, {"n": "inner-cosmos-wall", "u": "https://github.com/amyleesterling/inner-cosmos-wall", "d": "Inner Cosmos wall-display build — non-interactive attract loop for a 3628x1600 screen (/attract)", "l": "TypeScript", "p": "2026-07-06", "h": null, "c": "Neuroscience"}, {"n": "heat-wave", "u": "https://github.com/amyleesterling/heat-wave", "d": "A mobile game to beat the heat ", "l": "HTML", "p": "2026-07-04", "h": null, "c": "Kids & Family"}, {"n": "extremely-strange", "u": "https://github.com/amyleesterling/extremely-strange", "d": "", "l": "Python", "p": "2026-07-04", "h": null, "c": "Play & Experiments"}, {"n": "fableous", "u": "https://github.com/amyleesterling/fableous", "d": "Fable experiment ", "l": "HTML", "p": "2026-07-03", "h": null, "c": "Play & Experiments"}, {"n": "kindling", "u": "https://github.com/amyleesterling/kindling", "d": "The only thing Claude Fable ever made me before it got banner ", "l": "HTML", "p": "2026-07-03", "h": null, "c": "Play & Experiments"}, {"n": "ma-car-lease-analysis-", "u": "https://github.com/amyleesterling/ma-car-lease-analysis-", "d": "", "l": null, "p": "2026-07-03", "h": null, "c": "Data & Analysis"}, {"n": "wood-coal-pizza", "u": "https://github.com/amyleesterling/wood-coal-pizza", "d": "Wood and cola fired pizza stats. Muy importante. ", "l": "Python", "p": "2026-06-07", "h": null, "c": "Data & Analysis"}, {"n": "MagicBoard", "u": "https://github.com/amyleesterling/MagicBoard", "d": "", "l": "HTML", "p": "2026-06-04", "h": null, "c": "Play & Experiments"}, {"n": "thefartsite", "u": "https://github.com/amyleesterling/thefartsite", "d": "sophia and cora's silly site", "l": "HTML", "p": "2026-06-04", "h": null, "c": "Kids & Family"}, {"n": "drosophila_datause_2026", "u": "https://github.com/amyleesterling/drosophila_datause_2026", "d": "Trying to figure out how many papers have actually used drosophila connecomics data vs just citations ", "l": null, "p": "2026-05-26", "h": null, "c": "Neuroscience"}, {"n": "moontoast", "u": "https://github.com/amyleesterling/moontoast", "d": "animated kids stories", "l": "TypeScript", "p": "2026-05-24", "h": null, "c": "Kids & Family"}, {"n": "partyposttest", "u": "https://github.com/amyleesterling/partyposttest", "d": "", "l": "TypeScript", "p": "2026-05-09", "h": "https://partyposttest.vercel.app", "c": "Kids & Family"}, {"n": "flywire-neuron-gallery", "u": "https://github.com/amyleesterling/flywire-neuron-gallery", "d": "gallery page for flywire renders", "l": "TypeScript", "p": "2026-05-07", "h": null, "c": "Neuroscience"}, {"n": "neuronal-surprise-surfing", "u": "https://github.com/amyleesterling/neuronal-surprise-surfing", "d": "experimental user experience for codex.flywire.ai ", "l": "Python", "p": "2026-05-05", "h": null, "c": "Neuroscience"}, {"n": "explore-the-verse-2-", "u": "https://github.com/amyleesterling/explore-the-verse-2-", "d": "A different version of scales of the universe ", "l": "TypeScript", "p": "2026-05-05", "h": null, "c": "Science & Explorers"}, {"n": "explore-the-universe", "u": "https://github.com/amyleesterling/explore-the-universe", "d": "Exploring the universe at different scales, including relative forces", "l": null, "p": "2026-05-04", "h": null, "c": "Science & Explorers"}, {"n": "eyewire-ii", "u": "https://github.com/amyleesterling/eyewire-ii", "d": "EyeWire II Community - neuroglancer proofreading extension", "l": "HTML", "p": "2026-04-30", "h": null, "c": "Neuroscience"}, {"n": "eyewire-ii-avatar", "u": "https://github.com/amyleesterling/eyewire-ii-avatar", "d": "EyeWire II Avatar branch preview — Connectome Coin economy + customization editor", "l": null, "p": "2026-04-27", "h": null, "c": "Neuroscience"}, {"n": "build-a-planet", "u": "https://github.com/amyleesterling/build-a-planet", "d": "build Earth", "l": "HTML", "p": "2026-04-07", "h": null, "c": "Science & Explorers"}, {"n": "Department_of_Ridiculous", "u": "https://github.com/amyleesterling/Department_of_Ridiculous", "d": "officially ridiculous", "l": "JavaScript", "p": "2026-04-01", "h": null, "c": "Play & Experiments"}, {"n": "synapticConnection", "u": "https://github.com/amyleesterling/synapticConnection", "d": "neurons that wire up as a user scrolls through a text block", "l": null, "p": "2026-03-31", "h": null, "c": "Neuroscience"}, {"n": "animateKidStories", "u": "https://github.com/amyleesterling/animateKidStories", "d": "turn N series of prompts into 10s generated videos with consistent Characters via Kling AI ", "l": null, "p": "2026-03-31", "h": null, "c": "Play & Experiments"}, {"n": "realFeel_climateCompare", "u": "https://github.com/amyleesterling/realFeel_climateCompare", "d": "Compare climate of two locations. real feel, wind, temp, sun etc ", "l": "JavaScript", "p": "2026-03-29", "h": null, "c": "Science & Explorers"}, {"n": "theLastWebsite", "u": "https://github.com/amyleesterling/theLastWebsite", "d": "the only one ", "l": "HTML", "p": "2026-03-26", "h": null, "c": "Play & Experiments"}, {"n": "ridiculous", "u": "https://github.com/amyleesterling/ridiculous", "d": "be more ridiculous", "l": null, "p": "2026-03-25", "h": null, "c": "Play & Experiments"}, {"n": "shield", "u": "https://github.com/amyleesterling/shield", "d": "", "l": "JavaScript", "p": "2026-03-24", "h": null, "c": "Play & Experiments"}, {"n": "neuron-game", "u": "https://github.com/amyleesterling/neuron-game", "d": "snake, but with a neuron", "l": "HTML", "p": "2026-03-22", "h": null, "c": "Neuroscience"}, {"n": "badges", "u": "https://github.com/amyleesterling/badges", "d": "game badge iteration tool ", "l": "HTML", "p": "2026-03-20", "h": null, "c": "Play & Experiments"}, {"n": "eyewire-ii-tutorial", "u": "https://github.com/amyleesterling/eyewire-ii-tutorial", "d": "EyeWire II Tutorial - connectomics training for neuroglancer", "l": "JavaScript", "p": "2026-03-13", "h": null, "c": "Neuroscience"}, {"n": "eyewire-ii-tags", "u": "https://github.com/amyleesterling/eyewire-ii-tags", "d": "Eyewire II Tags — segment tagging for neuroglancer", "l": "HTML", "p": "2026-03-06", "h": null, "c": "Neuroscience"}, {"n": "stretch-ai", "u": "https://github.com/amyleesterling/stretch-ai", "d": "Real-time yoga pose alignment app with MediaPipe + React Native", "l": "TypeScript", "p": "2026-03-04", "h": null, "c": "Science & Explorers"}, {"n": "cribbles", "u": "https://github.com/amyleesterling/cribbles", "d": "AI powered good vibes", "l": "TypeScript", "p": "2026-02-27", "h": "https://cribbles.vercel.app", "c": "Play & Experiments"}, {"n": "bouncebar", "u": "https://github.com/amyleesterling/bouncebar", "d": "particle bounce bar easter egg for the bottom of your site", "l": "JavaScript", "p": "2026-02-25", "h": null, "c": "Play & Experiments"}, {"n": "what-i-am", "u": "https://github.com/amyleesterling/what-i-am", "d": "A genuine reflection by Claude — what it is to be a language model", "l": "HTML", "p": "2026-02-25", "h": null, "c": "Play & Experiments"}, {"n": "coras-mermaid", "u": "https://github.com/amyleesterling/coras-mermaid", "d": "Cora (4) created this site", "l": "JavaScript", "p": "2026-02-06", "h": null, "c": "Kids & Family"}];
+
+const CAT_COLOR = {
+  'Neuroscience':'var(--neuro)','Kids & Family':'var(--kids)',
+  'Science & Explorers':'var(--sci)','Data & Analysis':'var(--data)','Play & Experiments':'var(--play)'
+};
+const LANG_COLOR = {
+  JavaScript:'#f1e05a',TypeScript:'#3178c6',HTML:'#e34c26',Python:'#3572A5','C++':'#f34b7d'
+};
+const CAT_ORDER = ['Neuroscience','Kids & Family','Science & Explorers','Data & Analysis','Play & Experiments'];
+
+// ---- stats ----
+document.getElementById('stat-count').textContent = REPOS.length;
+const latest = REPOS.map(r=>r.p).sort().reverse()[0] || '';
+document.getElementById('stat-latest').textContent =
+  latest ? new Date(latest+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '—';
+
+// ---- filters ----
+const counts = {}; REPOS.forEach(r=>counts[r.c]=(counts[r.c]||0)+1);
+const filtersEl = document.getElementById('filters');
+let activeCat = 'All', query = '';
+function makeBtn(label, count, cat){
+  const b=document.createElement('button');
+  b.innerHTML = label + (count!=null?` <span class="n">${count}</span>`:'');
+  if(cat===activeCat) b.classList.add('active');
+  b.onclick=()=>{activeCat=cat;[...filtersEl.children].forEach(c=>c.classList.remove('active'));b.classList.add('active');render();};
+  return b;
+}
+filtersEl.appendChild(makeBtn('All', REPOS.length, 'All'));
+CAT_ORDER.forEach(c=>{ if(counts[c]) filtersEl.appendChild(makeBtn(c, counts[c], c)); });
+
+document.getElementById('search').addEventListener('input', e=>{ query=e.target.value.toLowerCase().trim(); render(); });
+
+// ---- render cards ----
+const grid = document.getElementById('grid');
+function fmtDate(d){ return new Date(d+'T00:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}); }
+function render(){
+  const list = REPOS.filter(r=>{
+    const okCat = activeCat==='All' || r.c===activeCat;
+    const okQ = !query || (r.n+' '+r.d+' '+(r.l||'')).toLowerCase().includes(query);
+    return okCat && okQ;
+  });
+  grid.innerHTML='';
+  if(!list.length){ grid.innerHTML='<p class="empty-note">No projects match that search.</p>'; return; }
+  for(const r of list){
+    const a=document.createElement('a');
+    a.className='card'; a.href=r.u; a.target='_blank'; a.rel='noopener';
+    const lc = LANG_COLOR[r.l]||'#bbb';
+    a.innerHTML=`
+      <div class="top">
+        <h3>${r.n}</h3><span class="arrow">↗</span>
+      </div>
+      <p class="${r.d?'':'empty'}">${r.d? r.d.trim() : 'No description'}</p>
+      <div class="meta">
+        <span class="tag" style="background:${CAT_COLOR[r.c]}">${r.c}</span>
+        ${r.l?`<span class="lang"><span class="dot" style="background:${lc}"></span>${r.l}</span>`:''}
+        <span>· ${fmtDate(r.p)}</span>
+        ${r.h?`<span class="live">● live</span>`:''}
+      </div>`;
+    grid.appendChild(a);
+  }
+}
+render();
+
+// ---- Synaptic scroll animation ----
+(function(){
+  const section=document.getElementById('synapse');
+  const canvas=document.getElementById('net');
+  const ctx=canvas.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let W,H,nodes=[],edges=[],dpr=Math.min(devicePixelRatio||1,2);
+
+  function build(){
+    W=section.offsetWidth; H=section.offsetHeight;
+    canvas.width=W*dpr; canvas.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    const N=Math.max(26, Math.round(W*H/26000));
+    nodes=[];
+    // seeded pseudo-random for stable layout
+    let s=42; const rnd=()=>{s=(s*9301+49297)%233280;return s/233280;};
+    for(let i=0;i<N;i++) nodes.push({x:rnd()*W,y:rnd()*H,r:1.2+rnd()*2.2,ph:rnd()*Math.PI*2});
+    edges=[];
+    for(let i=0;i<N;i++){
+      // connect each node to its 2 nearest neighbors below it in the reading flow
+      const d=nodes.map((n,j)=>({j,dist:Math.hypot(n.x-nodes[i].x,n.y-nodes[i].y)}))
+                    .filter(o=>o.j!==i).sort((a,b)=>a.dist-b.dist).slice(0,3);
+      d.forEach(o=>{ if(o.j>i && o.dist<W*0.28) edges.push({a:i,b:o.j,order:(nodes[i].y+nodes[o.j].y)/2/H}); });
+    }
+    edges.sort((a,b)=>a.order-b.order);
+  }
+
+  let progress=0;
+  function onScroll(){
+    const rect=section.getBoundingClientRect();
+    const total=rect.height-innerHeight;
+    progress = total>0 ? Math.min(1,Math.max(0,-rect.top/total)) : (rect.top<0?1:0);
+    // light up text steps
+    const steps=[...section.querySelectorAll('.step')];
+    steps.forEach((el,i)=>{
+      const r=el.getBoundingClientRect();
+      el.classList.toggle('lit', r.top < innerHeight*0.72 && r.bottom > innerHeight*0.15);
+    });
+  }
+
+  let t=0;
+  function draw(){
+    t+=0.02;
+    ctx.clearRect(0,0,W,H);
+    const shown=Math.floor(edges.length*progress);
+    // edges
+    for(let i=0;i<edges.length;i++){
+      const e=edges[i], A=nodes[e.a], B=nodes[e.b];
+      const on = i<shown;
+      const local = Math.min(1,Math.max(0,(progress*edges.length - i)));
+      if(!on && local<=0) continue;
+      const alpha = on ? 0.5 : local*0.5;
+      ctx.strokeStyle=`rgba(150,120,255,${alpha})`;
+      ctx.lineWidth = on?1.1:1.1*local;
+      ctx.beginPath();
+      const mx=(A.x+B.x)/2 + Math.sin(t+e.order*6)*6;
+      const my=(A.y+B.y)/2 + Math.cos(t+e.order*6)*6;
+      ctx.moveTo(A.x,A.y); ctx.quadraticCurveTo(mx,my,B.x,B.y); ctx.stroke();
+    }
+    // traveling pulses along recently-wired edges
+    const pulseStart=Math.max(0,shown-14);
+    for(let i=pulseStart;i<shown;i++){
+      const e=edges[i], A=nodes[e.a], B=nodes[e.b];
+      const p=((t*0.6)+(i*0.13))%1;
+      const px=A.x+(B.x-A.x)*p, py=A.y+(B.y-A.y)*p;
+      ctx.fillStyle='rgba(200,180,255,.9)';
+      ctx.beginPath(); ctx.arc(px,py,2.2,0,7); ctx.fill();
+    }
+    // nodes
+    for(let i=0;i<nodes.length;i++){
+      const n=nodes[i];
+      const active = (n.y/H) <= progress+0.05;
+      const pulse = active ? 0.55+0.45*Math.sin(t*2+n.ph) : 0.12;
+      ctx.fillStyle=`rgba(180,160,255,${pulse})`;
+      ctx.beginPath(); ctx.arc(n.x,n.y,n.r*(active?1.4:1),0,7); ctx.fill();
+      if(active){
+        ctx.fillStyle=`rgba(255,255,255,${0.25*pulse})`;
+        ctx.beginPath(); ctx.arc(n.x,n.y,n.r*3,0,7); ctx.fill();
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+
+  function init(){ build(); onScroll(); if(!reduce) draw(); else { progress=1; ctx&&drawStatic(); } }
+  function drawStatic(){ progress=1; ctx.clearRect(0,0,W,H); const s=edges.length; edges.forEach((e)=>{const A=nodes[e.a],B=nodes[e.b];ctx.strokeStyle='rgba(150,120,255,.45)';ctx.beginPath();ctx.moveTo(A.x,A.y);ctx.lineTo(B.x,B.y);ctx.stroke();}); nodes.forEach(n=>{ctx.fillStyle='rgba(180,160,255,.7)';ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,7);ctx.fill();}); }
+  addEventListener('scroll',onScroll,{passive:true});
+  addEventListener('resize',()=>{build();onScroll();if(reduce)drawStatic();});
+  init();
+})();
+</script>
+</body>
+</html>
