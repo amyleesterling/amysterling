@@ -1,256 +1,14 @@
 {
-  "generated_at": "2026-07-01T15:35:28.482928",
-  "month": "July",
+  "generated_at": "2026-08-01T14:21:16.426723",
+  "month": "August",
   "year": 2026,
   "comedians": [
     {
-      "name": "New England's Funniest Comics",
+      "name": "Pat Burtscher",
       "photo": null,
       "shows": [
         {
-          "comedian": "New England's Funniest Comics",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-03T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Martin Amini",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Martin_Amini_Tour_Portrait_2.jpg/330px-Martin_Amini_Tour_Portrait_2.jpg",
-      "shows": [
-        {
-          "comedian": "Martin Amini",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-10T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Janelle Draper",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Janelle Draper",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-16T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Janelle Draper is not too thrilled bachelorette parties are back.  2021 Burbank Comedy Festival",
-          "video_id": "luV94wH1Fis",
-          "thumbnail": "https://i.ytimg.com/vi/luV94wH1Fis/hqdefault.jpg",
-          "views": 847,
-          "duration": 70
-        }
-      ]
-    },
-    {
-      "name": "Dirty Disney",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Dirty Disney",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-17T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "..do you see it?! \ud83d\ude31\ud83d\ude31\ud83d\ude31 #mickeymouse #disney #shorts",
-          "video_id": "uKzCxscPt_I",
-          "thumbnail": "https://i.ytimg.com/vi/uKzCxscPt_I/hqdefault.jpg",
-          "views": 3231824,
-          "duration": 41
-        }
-      ]
-    },
-    {
-      "name": "Fahim Anwar",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Fahim Anwar",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-17T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Fahim Anwar Standup - Pick Up Lines",
-          "video_id": "SzJ1xDxsjUU",
-          "thumbnail": "https://i.ytimg.com/vi/SzJ1xDxsjUU/hqdefault.jpg",
-          "views": 14987,
-          "duration": 60
-        }
-      ]
-    },
-    {
-      "name": "Tahir Moore",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Tahir Moore",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-19T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "When You Accept The Fact That You're Old ft.Tahir Moore | All Def Community | All Def",
-          "video_id": "W9PxqNsEaac",
-          "thumbnail": "https://i.ytimg.com/vi/W9PxqNsEaac/hqdefault.jpg",
-          "views": 64425,
-          "duration": 70
-        },
-        {
-          "title": "KevOnStage at the Roast Of Tahir Moore",
-          "video_id": "U8tGD4BiwqA",
-          "thumbnail": "https://i.ytimg.com/vi/U8tGD4BiwqA/hqdefault.jpg",
-          "views": 49433,
-          "duration": 57
-        }
-      ]
-    },
-    {
-      "name": "Ben Bankas",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Ben Bankas",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-23T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Christian Johnson",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Christian Johnson",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-26T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Christian Comedian | Anjelah Johnson",
-          "video_id": "StUzWswqoGc",
-          "thumbnail": "https://i.ytimg.com/vi/StUzWswqoGc/hqdefault.jpg",
-          "views": 49029,
-          "duration": 70
-        },
-        {
-          "title": "I Don\u2019t Like Working Overtime (Stand Up Clip)",
-          "video_id": "XsRezjWzryw",
-          "thumbnail": "https://i.ytimg.com/vi/XsRezjWzryw/hqdefault.jpg",
-          "views": 8204,
-          "duration": 63
-        }
-      ]
-    },
-    {
-      "name": "Sober & Curious Boston Comedy",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Sober & Curious Boston Comedy",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-30T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Michael John Ciszewski: LOVEFOOL (NYC Fringe 2024 Teaser)",
-          "video_id": "QF83kGytV64",
-          "thumbnail": "https://i.ytimg.com/vi/QF83kGytV64/hqdefault.jpg",
-          "views": 62,
-          "duration": 37
-        }
-      ]
-    },
-    {
-      "name": "Marina Franklin",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Comedy_Night_at_Gotham_Comedy_Club_%283811877239%29.jpg/330px-Comedy_Night_at_Gotham_Comedy_Club_%283811877239%29.jpg",
-      "shows": [
-        {
-          "comedian": "Marina Franklin",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-31T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Andrew Breen",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Andrew Breen",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-07-31T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Jenny McCarthy's an idiot",
-          "video_id": "LyxM5LYLIhk",
-          "thumbnail": "https://i.ytimg.com/vi/LyxM5LYLIhk/hqdefault.jpg",
-          "views": 4029,
-          "duration": 46
-        },
-        {
-          "title": "Having A Overprotective Dad | Alli Breen | Stand-Up Comedy",
-          "video_id": "9DscynodCYY",
-          "thumbnail": "https://i.ytimg.com/vi/9DscynodCYY/hqdefault.jpg",
-          "views": 2542,
-          "duration": 51
-        }
-      ]
-    },
-    {
-      "name": "Kiki Yeung & Esther Ku",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Kiki Yeung & Esther Ku",
+          "comedian": "Pat Burtscher",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
           "date": "2026-08-01T00:00:00",
@@ -259,6 +17,36 @@
         }
       ],
       "clips": []
+    },
+    {
+      "name": "Esther Ku",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Estherguit.PNG/330px-Estherguit.PNG",
+      "shows": [
+        {
+          "comedian": "Esther Ku",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-08-01T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Comedian Esther Ku April 19&20 Palm Beach Gardens",
+          "video_id": "qqkRUeWx-bA",
+          "thumbnail": "https://i.ytimg.com/vi/qqkRUeWx-bA/hqdefault.jpg",
+          "views": 6833,
+          "duration": 20
+        },
+        {
+          "title": "Apollo Comedy Club, Esther Ku 10 06 16",
+          "video_id": "FpdNoTZ81lw",
+          "thumbnail": "https://i.ytimg.com/vi/FpdNoTZ81lw/hqdefault.jpg",
+          "views": 766,
+          "duration": 42
+        }
+      ]
     },
     {
       "name": "Eric D\u2019Alessandro",
@@ -308,8 +96,46 @@
           "title": "the Mayor San Francisco NEEDS | Joey Avery",
           "video_id": "d4kNzmPtSvg",
           "thumbnail": "https://i.ytimg.com/vi/d4kNzmPtSvg/hqdefault.jpg",
-          "views": 8719,
+          "views": 8723,
           "duration": 61
+        }
+      ]
+    },
+    {
+      "name": "Dirty Disney",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Dirty Disney",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-08-07T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        },
+        {
+          "comedian": "Dirty Disney",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-08-21T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Mustache! #shorts",
+          "video_id": "QRL7NHyMkJs",
+          "thumbnail": "https://i.ytimg.com/vi/QRL7NHyMkJs/hqdefault.jpg",
+          "views": 401795291,
+          "duration": 17
+        },
+        {
+          "title": "the \u201c\u2728SEE EVERYTHING CLEAN SPRAY\u2728\u201d",
+          "video_id": "nQewuICJKkk",
+          "thumbnail": "https://i.ytimg.com/vi/nQewuICJKkk/hqdefault.jpg",
+          "views": 393268173,
+          "duration": 25
         }
       ]
     },
@@ -331,7 +157,7 @@
           "title": "Gabriel Rutledge Stand-Up: Daughter's Dance Lessons",
           "video_id": "4bnWhFo2Hjs",
           "thumbnail": "https://i.ytimg.com/vi/4bnWhFo2Hjs/hqdefault.jpg",
-          "views": 615,
+          "views": 622,
           "duration": 42
         }
       ]
@@ -354,45 +180,61 @@
           "title": "How Hood Dudes Be When They Girl In The Car But They Got To Handle Something!",
           "video_id": "Z6tG9CZSFnc",
           "thumbnail": "https://i.ytimg.com/vi/Z6tG9CZSFnc/hqdefault.jpg",
-          "views": 3852592,
+          "views": 3854630,
           "duration": 61
         },
         {
           "title": "When You Want The Bottom Bunk In Jail But your cell mate Not going for it. ft @garyowencom",
           "video_id": "pGwmoy07j3A",
           "thumbnail": "https://i.ytimg.com/vi/pGwmoy07j3A/hqdefault.jpg",
-          "views": 3084293,
+          "views": 3086455,
           "duration": 67
         }
       ]
     },
     {
-      "name": "Kyle Kinane",
+      "name": "Best of Boston Showcase",
       "photo": null,
       "shows": [
         {
-          "comedian": "Kyle Kinane",
+          "comedian": "Best of Boston Showcase",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-08-20T00:00:00",
+          "date": "2026-08-21T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        },
+        {
+          "comedian": "Best of Boston Showcase",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-08-22T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Stephan Dyer",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Stephan Dyer",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-08-27T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
       ],
       "clips": [
         {
-          "title": "Kyle Kinane - The Quandary of an Unsliced Pizza",
-          "video_id": "CGOQ6TiCtM0",
-          "thumbnail": "https://i.ytimg.com/vi/CGOQ6TiCtM0/hqdefault.jpg",
-          "views": 9216,
-          "duration": 65
-        },
-        {
-          "title": "\"I got a direct flight on orbitz, and that's not supposed to happen.\" \ud83c\udfa4: Kyle Kinane #shorts",
-          "video_id": "4s5LsTDxwNI",
-          "thumbnail": "https://i.ytimg.com/vi/4s5LsTDxwNI/hqdefault.jpg",
-          "views": 6475,
-          "duration": 61
+          "title": "El sue\u00f1o de los LATINOS en CANAD\u00c1 | Stephan Dyer Stand Up Comedy",
+          "video_id": "0tEuiMESccY",
+          "thumbnail": "https://i.ytimg.com/vi/0tEuiMESccY/hqdefault.jpg",
+          "views": 73,
+          "duration": 58
         }
       ]
     },
@@ -409,22 +251,7 @@
           "source": "laughboston.com"
         }
       ],
-      "clips": [
-        {
-          "title": "4am Wake Up #standupcomedy #shorts",
-          "video_id": "sgJxEN6pIt0",
-          "thumbnail": "https://i.ytimg.com/vi/sgJxEN6pIt0/hqdefault.jpg",
-          "views": 4374673,
-          "duration": 62
-        },
-        {
-          "title": "Everyone\u2019s Parents #standupcomedy #shorts",
-          "video_id": "B4rGUG4S4Ak",
-          "thumbnail": "https://i.ytimg.com/vi/B4rGUG4S4Ak/hqdefault.jpg",
-          "views": 1231321,
-          "duration": 49
-        }
-      ]
+      "clips": []
     },
     {
       "name": "Dylan Carlino",
@@ -440,6 +267,134 @@
         }
       ],
       "clips": []
+    },
+    {
+      "name": "Trish Suhr",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Trish Suhr",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-09T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Paul Virzi",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Paul Virzi",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-10T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Paul Virzi - Depression",
+          "video_id": "hoEpoApqiWs",
+          "thumbnail": "https://i.ytimg.com/vi/hoEpoApqiWs/hqdefault.jpg",
+          "views": 5504,
+          "duration": 48
+        },
+        {
+          "title": "Paul Virzi - Trump Curious",
+          "video_id": "R_yp1DLzO0Q",
+          "thumbnail": "https://i.ytimg.com/vi/R_yp1DLzO0Q/hqdefault.jpg",
+          "views": 3406,
+          "duration": 44
+        }
+      ]
+    },
+    {
+      "name": "Shapel Lacey",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Shapel Lacey",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-11T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Ify and Erika Solve Every Problem",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Ify and Erika Solve Every Problem",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-13T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "You got it, dude #shorts",
+          "video_id": "QgN0nOBnX6w",
+          "thumbnail": "https://i.ytimg.com/vi/QgN0nOBnX6w/hqdefault.jpg",
+          "views": 179984779,
+          "duration": 15
+        }
+      ]
+    },
+    {
+      "name": "Jane Don't Does America",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Jane Don't Does America",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-17T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Jay Larson",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Jay_Larson.jpg/330px-Jay_Larson.jpg",
+      "shows": [
+        {
+          "comedian": "Jay Larson",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-18T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Maybe Illegal Immigration's Not So Bad - 7 Shorts In 7 Days",
+          "video_id": "YKBW5m_CYpQ",
+          "thumbnail": "https://i.ytimg.com/vi/YKBW5m_CYpQ/hqdefault.jpg",
+          "views": 6182,
+          "duration": 64
+        },
+        {
+          "title": "Things Every Dad Must Do Before He Dies",
+          "video_id": "gvdUtDKxipE",
+          "thumbnail": "https://i.ytimg.com/vi/gvdUtDKxipE/hqdefault.jpg",
+          "views": 5293,
+          "duration": 58
+        }
+      ]
     }
   ]
 }
