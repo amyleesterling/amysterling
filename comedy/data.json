@@ -1,258 +1,8 @@
 {
-  "generated_at": "2026-08-01T14:21:16.426723",
-  "month": "August",
+  "generated_at": "2026-09-01T17:04:00.294561",
+  "month": "September",
   "year": 2026,
   "comedians": [
-    {
-      "name": "Pat Burtscher",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Pat Burtscher",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-01T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Esther Ku",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Estherguit.PNG/330px-Estherguit.PNG",
-      "shows": [
-        {
-          "comedian": "Esther Ku",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-01T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Comedian Esther Ku April 19&20 Palm Beach Gardens",
-          "video_id": "qqkRUeWx-bA",
-          "thumbnail": "https://i.ytimg.com/vi/qqkRUeWx-bA/hqdefault.jpg",
-          "views": 6833,
-          "duration": 20
-        },
-        {
-          "title": "Apollo Comedy Club, Esther Ku 10 06 16",
-          "video_id": "FpdNoTZ81lw",
-          "thumbnail": "https://i.ytimg.com/vi/FpdNoTZ81lw/hqdefault.jpg",
-          "views": 766,
-          "duration": 42
-        }
-      ]
-    },
-    {
-      "name": "Eric D\u2019Alessandro",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Eric D\u2019Alessandro",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-02T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Dale Jones",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Dale Jones",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-05T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Joey Avery",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Joey Avery",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-07T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "the Mayor San Francisco NEEDS | Joey Avery",
-          "video_id": "d4kNzmPtSvg",
-          "thumbnail": "https://i.ytimg.com/vi/d4kNzmPtSvg/hqdefault.jpg",
-          "views": 8723,
-          "duration": 61
-        }
-      ]
-    },
-    {
-      "name": "Dirty Disney",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Dirty Disney",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-07T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        },
-        {
-          "comedian": "Dirty Disney",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-21T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Mustache! #shorts",
-          "video_id": "QRL7NHyMkJs",
-          "thumbnail": "https://i.ytimg.com/vi/QRL7NHyMkJs/hqdefault.jpg",
-          "views": 401795291,
-          "duration": 17
-        },
-        {
-          "title": "the \u201c\u2728SEE EVERYTHING CLEAN SPRAY\u2728\u201d",
-          "video_id": "nQewuICJKkk",
-          "thumbnail": "https://i.ytimg.com/vi/nQewuICJKkk/hqdefault.jpg",
-          "views": 393268173,
-          "duration": 25
-        }
-      ]
-    },
-    {
-      "name": "Gabriel Rutledge",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Gabriel Rutledge",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-13T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Gabriel Rutledge Stand-Up: Daughter's Dance Lessons",
-          "video_id": "4bnWhFo2Hjs",
-          "thumbnail": "https://i.ytimg.com/vi/4bnWhFo2Hjs/hqdefault.jpg",
-          "views": 622,
-          "duration": 42
-        }
-      ]
-    },
-    {
-      "name": "Desi Banks",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Desi_Banks_2020_01.png/330px-Desi_Banks_2020_01.png",
-      "shows": [
-        {
-          "comedian": "Desi Banks",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-14T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "How Hood Dudes Be When They Girl In The Car But They Got To Handle Something!",
-          "video_id": "Z6tG9CZSFnc",
-          "thumbnail": "https://i.ytimg.com/vi/Z6tG9CZSFnc/hqdefault.jpg",
-          "views": 3854630,
-          "duration": 61
-        },
-        {
-          "title": "When You Want The Bottom Bunk In Jail But your cell mate Not going for it. ft @garyowencom",
-          "video_id": "pGwmoy07j3A",
-          "thumbnail": "https://i.ytimg.com/vi/pGwmoy07j3A/hqdefault.jpg",
-          "views": 3086455,
-          "duration": 67
-        }
-      ]
-    },
-    {
-      "name": "Best of Boston Showcase",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Best of Boston Showcase",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-21T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        },
-        {
-          "comedian": "Best of Boston Showcase",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-22T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Stephan Dyer",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Stephan Dyer",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-27T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "El sue\u00f1o de los LATINOS en CANAD\u00c1 | Stephan Dyer Stand Up Comedy",
-          "video_id": "0tEuiMESccY",
-          "thumbnail": "https://i.ytimg.com/vi/0tEuiMESccY/hqdefault.jpg",
-          "views": 73,
-          "duration": 58
-        }
-      ]
-    },
-    {
-      "name": "Will Burkart",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Will Burkart",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-08-28T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
     {
       "name": "Dylan Carlino",
       "photo": null,
@@ -298,18 +48,11 @@
       ],
       "clips": [
         {
-          "title": "Paul Virzi - Depression",
-          "video_id": "hoEpoApqiWs",
-          "thumbnail": "https://i.ytimg.com/vi/hoEpoApqiWs/hqdefault.jpg",
-          "views": 5504,
-          "duration": 48
-        },
-        {
-          "title": "Paul Virzi - Trump Curious",
-          "video_id": "R_yp1DLzO0Q",
-          "thumbnail": "https://i.ytimg.com/vi/R_yp1DLzO0Q/hqdefault.jpg",
-          "views": 3406,
-          "duration": 44
+          "title": "Cat Lady Judging Me | Paul Virzi Stand Up",
+          "video_id": "9Fg4kOZbb0w",
+          "thumbnail": "https://i.ytimg.com/vi/9Fg4kOZbb0w/hqdefault.jpg",
+          "views": 332,
+          "duration": 70
         }
       ]
     },
@@ -341,15 +84,7 @@
           "source": "laughboston.com"
         }
       ],
-      "clips": [
-        {
-          "title": "You got it, dude #shorts",
-          "video_id": "QgN0nOBnX6w",
-          "thumbnail": "https://i.ytimg.com/vi/QgN0nOBnX6w/hqdefault.jpg",
-          "views": 179984779,
-          "duration": 15
-        }
-      ]
+      "clips": []
     },
     {
       "name": "Jane Don't Does America",
@@ -368,7 +103,7 @@
     },
     {
       "name": "Jay Larson",
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Jay_Larson.jpg/330px-Jay_Larson.jpg",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Jay_Larson.jpg/330px-Jay_Larson.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "shows": [
         {
           "comedian": "Jay Larson",
@@ -384,17 +119,257 @@
           "title": "Maybe Illegal Immigration's Not So Bad - 7 Shorts In 7 Days",
           "video_id": "YKBW5m_CYpQ",
           "thumbnail": "https://i.ytimg.com/vi/YKBW5m_CYpQ/hqdefault.jpg",
-          "views": 6182,
+          "views": 6184,
           "duration": 64
         },
         {
           "title": "Things Every Dad Must Do Before He Dies",
           "video_id": "gvdUtDKxipE",
           "thumbnail": "https://i.ytimg.com/vi/gvdUtDKxipE/hqdefault.jpg",
-          "views": 5293,
+          "views": 5315,
           "duration": 58
         }
       ]
+    },
+    {
+      "name": "Yakov Smirnoff",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Yakov_Smirnoff_headshot.jpg/330px-Yakov_Smirnoff_headshot.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "shows": [
+        {
+          "comedian": "Yakov Smirnoff",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-20T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Yakov Smirnoff Miller Lite Commercial (1985)",
+          "video_id": "AbP1DVeJCT0",
+          "thumbnail": "https://i.ytimg.com/vi/AbP1DVeJCT0/hqdefault.jpg",
+          "views": 436738,
+          "duration": 30
+        },
+        {
+          "title": "Comedian Yakov Smirnoff discovers the Thanks in Thanksgiving",
+          "video_id": "ueK_xW9UDqk",
+          "thumbnail": "https://i.ytimg.com/vi/ueK_xW9UDqk/hqdefault.jpg",
+          "views": 5164,
+          "duration": 70
+        }
+      ]
+    },
+    {
+      "name": "Craig Robinson",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Craig Robinson",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-24T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Craig Robinson's Delaney character on Marriage",
+          "video_id": "GeVJYF843fk",
+          "thumbnail": "https://i.ytimg.com/vi/GeVJYF843fk/hqdefault.jpg",
+          "views": 611055,
+          "duration": 38
+        },
+        {
+          "title": "Craig Robinson rightfully angry with the crowd for ruining the moment",
+          "video_id": "Po7Jpw9wdSk",
+          "thumbnail": "https://i.ytimg.com/vi/Po7Jpw9wdSk/hqdefault.jpg",
+          "views": 356,
+          "duration": 23
+        }
+      ]
+    },
+    {
+      "name": "Gareth Reynolds",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Anthony_Corbett_Reynolds_%282%29.jpg/330px-Anthony_Corbett_Reynolds_%282%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+      "shows": [
+        {
+          "comedian": "Gareth Reynolds",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-09-27T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Magic Johnson | Gareth Reynolds",
+          "video_id": "OjMNEQ-pWC0",
+          "thumbnail": "https://i.ytimg.com/vi/OjMNEQ-pWC0/hqdefault.jpg",
+          "views": 1673,
+          "duration": 45
+        },
+        {
+          "title": "I Regret Talking To People | Gareth Reynolds",
+          "video_id": "gLj2O6pOg7Y",
+          "thumbnail": "https://i.ytimg.com/vi/gLj2O6pOg7Y/hqdefault.jpg",
+          "views": 1624,
+          "duration": 63
+        }
+      ]
+    },
+    {
+      "name": "The Kenny VS Spenny 2026 USA Comedy",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "The Kenny VS Spenny 2026 USA Comedy",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-01T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Biggest fart ever",
+          "video_id": "YraqQabax8A",
+          "thumbnail": "https://i.ytimg.com/vi/YraqQabax8A/hqdefault.jpg",
+          "views": 13625787,
+          "duration": 68
+        },
+        {
+          "title": "South Park's Theme, But Matt and Trey forgot to pitch their voices up",
+          "video_id": "wpNhuMRh5NY",
+          "thumbnail": "https://i.ytimg.com/vi/wpNhuMRh5NY/hqdefault.jpg",
+          "views": 8315550,
+          "duration": 28
+        }
+      ]
+    },
+    {
+      "name": "Santi Espinosa",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Santi Espinosa",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-02T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Nick Alex",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Nick Alex",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-03T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Getting Hit On By Black Women | Nick Alex | Stand Up Comedy #standupcomedy #comedy #jokes",
+          "video_id": "DlwG_si-inM",
+          "thumbnail": "https://i.ytimg.com/vi/DlwG_si-inM/hqdefault.jpg",
+          "views": 949933,
+          "duration": 69
+        },
+        {
+          "title": "SOBER FOR DIFFERENT REASONS | STAND UP COMEDY | NICK ALEX",
+          "video_id": "byUVc6euFxA",
+          "thumbnail": "https://i.ytimg.com/vi/byUVc6euFxA/hqdefault.jpg",
+          "views": 2101,
+          "duration": 67
+        }
+      ]
+    },
+    {
+      "name": "Laura Severse",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Laura Severse",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-03T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Tony Dabas",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Tony Dabas",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-04T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Andre de Freitas",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Andre de Freitas",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-07T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Amber Autry",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Amber Autry",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-09T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Chris Porter",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Chris Porter",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-10-11T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
     }
   ]
 }
