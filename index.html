@@ -1,264 +1,316 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Sterling - Social Links</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .profile {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .profile h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .profile p {
-            color: #666;
-            font-size: 1.1em;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .link-item {
-            display: flex;
-            align-items: center;
-            padding: 20px 25px;
-            background: white;
-            border-radius: 12px;
-            text-decoration: none;
-            color: #333;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid transparent;
-        }
-
-        .link-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            border-color: #667eea;
-        }
-
-        .link-icon {
-            width: 40px;
-            height: 40px;
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-        }
-
-        .link-text {
-            flex: 1;
-            font-weight: 500;
-            font-size: 1.1em;
-        }
-
-        .link-arrow {
-            color: #999;
-            font-size: 20px;
-        }
-
-        /* Platform specific colors */
-        .link-item.twitter:hover {
-            border-color: #1DA1F2;
-        }
-
-        .link-item.youtube:hover {
-            border-color: #FF0000;
-        }
-
-        .link-item.tiktok:hover {
-            border-color: #000000;
-        }
-
-        .link-item.xiaohongshu:hover {
-            border-color: #FF2442;
-        }
-
-        .link-item.instagram:hover {
-            border-color: #E1306C;
-        }
-
-        .featured {
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .featured-image-link {
-            display: block;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        }
-
-        .featured-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .featured-image-link:hover .featured-image {
-            transform: scale(1.05);
-        }
-
-        .featured-content {
-            padding: 20px 25px;
-        }
-
-        .featured-content h2 {
-            color: #333;
-            font-size: 1.3em;
-            margin-bottom: 10px;
-        }
-
-        .featured-content p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .featured-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-        }
-
-        .featured-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.5);
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 30px 20px;
-            }
-
-            .profile h1 {
-                font-size: 2em;
-            }
-
-            .link-item {
-                padding: 15px 20px;
-            }
-
-            .link-text {
-                font-size: 1em;
-            }
-
-            .featured {
-                margin-bottom: 30px;
-            }
-
-            .featured-content h2 {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amy Sterling</title>
+<meta name="description" content="Amy Sterling designs the games, tools and pictures that let people map the brain. EyeWire II, Pyr, FlyWire, and about a hundred things on GitHub you can play with here.">
+<meta property="og:title" content="Amy Sterling">
+<meta property="og:description" content="Games, tools and pictures for mapping the brain, and about a hundred other things you can play with.">
+<meta property="og:image" content="https://amysterling.org/media/full/rainbow-neurons.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%23ffc46b'/%3E%3Cpath d='M16 10V2M16 22v8M10 16H2M22 16h8M11.5 11.5 6 6M20.5 20.5 26 26' stroke='%23ffc46b' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <h1>Amy Sterling</h1>
-            <p>Connect with me on social media</p>
-        </div>
+<a class="skip" href="#now">Skip to content</a>
 
-        <div class="featured">
-            <a href="renders.html" class="featured-image-link">
-                <img src="images/nature_methods_2025.png" alt="Connectomics visualization" class="featured-image">
-            </a>
-            <div class="featured-content">
-                <h2>Renders & Media Gallery</h2>
-                <p>Explore my scientific visualizations and neural network renders</p>
-                <a href="renders.html" class="featured-button">View Renders and Media</a>
-            </div>
-        </div>
+<header class="top">
+  <a class="mark" href="#top" aria-label="Amy Sterling, back to top"><span class="dot" aria-hidden="true"></span>Amy Sterling</a>
+  <nav aria-label="Sections">
+    <a href="#now">Now</a>
+    <a href="#play">Play</a>
+    <a href="#map">Map</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#talks">Talks</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
 
-        <div class="links">
-            <a href="particles.html" class="link-item">
-                <div class="link-icon">✨</div>
-                <div class="link-text">Neuron Particle Simulation</div>
-                <div class="link-arrow">→</div>
-            </a>
+<main id="top">
 
-            <a href="comedy/" class="link-item">
-                <div class="link-icon">🎤</div>
-                <div class="link-text">Boston Comedy Calendar</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://x.com/amyneurons" class="link-item twitter" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">𝕏</div>
-                <div class="link-text">X (Twitter)</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://youtube.com/@amysterling?si=tsURz7mYXIWCPtXe" class="link-item youtube" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">▶</div>
-                <div class="link-text">YouTube</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://www.tiktok.com/@amyrsterling?_r=1&_t=ZT-93hMBnCKpV0" class="link-item tiktok" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">♪</div>
-                <div class="link-text">TikTok</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://xhslink.com/m/3g8HLlRoJ7v" class="link-item xiaohongshu" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">📕</div>
-                <div class="link-text">小红书 Xiaohongshu (Rednote)</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://www.instagram.com/amyrobinsonsterling/" class="link-item instagram" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">📷</div>
-                <div class="link-text">Instagram</div>
-                <div class="link-arrow">→</div>
-            </a>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Princeton Neuroscience Institute</p>
+    <h1>Amy Sterling</h1>
+    <p class="lede">I design the games, tools and pictures that let people map the brain, one neuron at a time. Then I build about a hundred other things, most of which you can play with on this page.</p>
+    <dl class="hero-stats" id="hero-stats" aria-live="polite">
+      <div><dt>Public repos</dt><dd data-stat="repos">100</dd></div>
+      <div><dt>Commits this year</dt><dd data-stat="commits">4,023</dd></div>
+      <div><dt>Live sites</dt><dd data-stat="live">72</dd></div>
+    </dl>
+    <p class="fine" id="hero-updated">Counted from GitHub every morning.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#play">Play something</a>
+      <a class="btn" href="https://github.com/amyleesterling">GitHub</a>
     </div>
+  </div>
+  <figure class="hero-cell">
+    <div class="cell-canvas" id="cell" role="img" aria-label="A rotating 3D reconstruction of a pyramidal neuron from mouse visual cortex. Drag to turn it.">
+      <img class="cell-fallback" src="media/thumb/pyramidal-single.webp" alt="" width="720" height="480">
+    </div>
+    <figcaption>
+      <span class="tag">Drag to turn</span>
+      <strong>Lightning Tree.</strong> A layer 5 thick tufted pyramidal cell from the MICrONS cubic millimeter of mouse visual cortex, segment 864691135572530981. Every branch was traced from electron microscopy; the mesh is simplified to load in a browser.
+    </figcaption>
+  </figure>
+</section>
+
+<!-- NOW -->
+<section id="now" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Now</p>
+    <h2>What I am working on</h2>
+  </header>
+  <div class="now-grid">
+    <article class="now-card">
+      <img src="media/thumb/pyr-posters-somas2.webp" alt="Pyramidal neurons from Pyr in purple, green and gold" loading="lazy" width="720" height="405">
+      <div class="now-body">
+        <p class="tag">Seung Lab</p>
+        <h3>EyeWire II and Pyr</h3>
+        <p>Games where players proofread real connectomes: the mouse retina in EyeWire II, the hippocampus in Pyr. I design the game, the tools and the community around it, and I write a lot of the code.</p>
+        <p class="links"><a href="https://pyr.ai/">pyr.ai</a><a href="https://connectome.quest/">connectome.quest</a><a href="https://eyewire.org">Eyewire</a></p>
+      </div>
+    </article>
+    <article class="now-card">
+      <img src="media/thumb/nature-cover-500k.webp" alt="Nature cover for the fly connectome issue, a colorful fly brain" loading="lazy" width="546" height="720">
+      <div class="now-body">
+        <p class="tag">FlyWire</p>
+        <h3>The fly connectome</h3>
+        <p>Design, renders and public tools for FlyWire, the first complete wiring diagram of an adult fly brain, and its sequel the BANC, which adds the nerve cord.</p>
+        <p class="links"><a href="https://flywire.ai/">flywire.ai</a><a href="https://codex.flywire.ai/">Codex</a><a href="https://amyleesterling.github.io/banc/">BANC renders</a></p>
+      </div>
+    </article>
+    <article class="now-card">
+      <img src="media/thumb/brain-to-neuron-scale-bar-graphic-sterling.webp" alt="Scales of the brain: a whole brain, a cortical column, a neuron, and a synapse" loading="lazy" width="720" height="394">
+      <div class="now-body">
+        <p class="tag">For everyone</p>
+        <h3>What's a brain?</h3>
+        <p>Real reconstructed neurons for people who have never seen one, from kindergarten up. It runs on a museum wall in Boston and as a site anyone can open.</p>
+        <p class="links"><a href="https://whatisabrain.com">whatisabrain.com</a><button class="linkish" data-play="inner_cosmos">Play it here</button></p>
+      </div>
+    </article>
+    <article class="now-card">
+      <img src="media/thumb/ca3-pyr-mossy-fibers.webp" alt="CA3 pyramidal cells in blue with mossy fiber axons in gold" loading="lazy" width="720" height="405">
+      <div class="now-body">
+        <p class="tag">Renders</p>
+        <h3>Pictures for papers</h3>
+        <p>Figures and animations for connectomics papers: CA3 in the hippocampus, the mouse retina with calcium imaging played back on it, MICrONS cortex, the BANC.</p>
+        <p class="links"><button class="linkish" data-play="ca3">CA3</button><button class="linkish" data-play="retina">Retina</button><button class="linkish" data-play="microns">MICrONS</button></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- PLAY -->
+<section id="play" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Play</p>
+    <h2>Try them right here</h2>
+    <p class="intro">Each one is the real, live site, running inside this page. Pick one from the list. Anything in the project list below with a ▶ can be opened here too.</p>
+  </header>
+  <div class="player">
+    <ol class="playlist" id="playlist" aria-label="Live projects"></ol>
+    <div class="stage-wrap">
+      <div class="stage-bar">
+        <span class="stage-title" id="stage-title">Pick a project</span>
+        <span class="stage-actions">
+          <button class="icon-btn" id="stage-reload" title="Reload" aria-label="Reload">↻</button>
+          <button class="icon-btn" id="stage-full" title="Full screen" aria-label="Full screen">⤢</button>
+          <a class="icon-btn" id="stage-open" href="#" target="_blank" rel="noopener" title="Open in a new tab" aria-label="Open in a new tab">↗</a>
+        </span>
+      </div>
+      <div class="stage" id="stage">
+        <div class="stage-idle" id="stage-idle">
+          <p>Choose something on the left.<br>Neuron Snake is a good place to start.</p>
+        </div>
+      </div>
+      <p class="stage-desc" id="stage-desc"></p>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section id="map" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Map</p>
+    <h2>Every repo, as a network</h2>
+    <p class="intro">My repository mapper pulls related projects close together and sorts them into seven rooms. Filter by room, play the year forward month by month, or take one of its guided tours.</p>
+  </header>
+  <div class="embed-frame map-frame">
+    <iframe data-src="https://amy-projects-2026.amysterling.chatgpt.site/#world" title="Repository mapper: an interactive network of Amy Sterling's projects" loading="lazy" allow="fullscreen"></iframe>
+    <button class="activate" type="button"><span>Click to explore the map</span></button>
+  </div>
+  <p class="fine">The mapper is a separate site with its own snapshot. <a href="https://amy-projects-2026.amysterling.chatgpt.site/#world" target="_blank" rel="noopener">Open it full size ↗</a></p>
+</section>
+
+<!-- ACTIVITY + PROJECTS -->
+<section id="projects" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Projects</p>
+    <h2>Everything on GitHub</h2>
+    <p class="intro" id="projects-intro">Pulled from GitHub every morning. Commits count only what I wrote this year; the robots that refresh some sites on a schedule are left out.</p>
+  </header>
+
+  <div class="activity">
+    <figure class="chart">
+      <figcaption><span id="chart-title">Commits per month</span><span class="fine" id="chart-note"></span></figcaption>
+      <div class="bars" id="bars" role="img" aria-label="Bar chart of commits per month this year"></div>
+    </figure>
+    <div class="leaders">
+      <h3 class="mini">Busiest this year</h3>
+      <ol id="leaders"></ol>
+    </div>
+  </div>
+
+  <div class="filters">
+    <div class="chips" id="rooms" role="group" aria-label="Filter by room"></div>
+    <div class="controls">
+      <label class="search"><span class="sr">Search projects</span><input id="q" type="search" placeholder="Search" autocomplete="off"></label>
+      <label class="sort"><span class="sr">Sort</span>
+        <select id="sort">
+          <option value="pushed">Most recent</option>
+          <option value="commits">Most commits</option>
+          <option value="title">A to Z</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <p class="count fine" id="count" aria-live="polite"></p>
+  <div class="cards" id="cards"></div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Gallery</p>
+    <h2>Renders and posters</h2>
+    <p class="intro">Every cell in these was reconstructed from electron microscopy, mostly by people playing games. Click any one to see it large.</p>
+  </header>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<!-- TALKS / EXHIBITIONS / PRESS -->
+<section id="talks" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Talks, exhibitions, press</p>
+    <h2>Out in the world</h2>
+  </header>
+
+  <div class="talk">
+    <div class="yt" data-yt="R6WEElXC8wI">
+      <button type="button" aria-label="Play the TEDxKyoto talk">
+        <img src="https://i.ytimg.com/vi/R6WEElXC8wI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <span class="play-glyph" aria-hidden="true">▶</span>
+      </button>
+    </div>
+    <div>
+      <p class="tag">TEDxKyoto</p>
+      <h3>Play a game, map the mind</h3>
+      <p>On blending machine intelligence with crowdsourced human intellect to map the brain.</p>
+      <p class="links"><a href="https://www.youtube.com/watch?v=R6WEElXC8wI">Watch on YouTube</a></p>
+    </div>
+  </div>
+
+  <ol class="exhibits">
+    <li><span class="where">Barbican Centre, London, then touring</span><strong>AI: More than Human.</strong> One of four people featured on video, with a kiosk version of Eyewire for visitors to map neurons.</li>
+    <li><span class="where">Times Square, New York</span><strong>Brain City.</strong> Eyewire neurons on dozens of billboards for the Midnight Moment, with filmmaker Noah Hutton.</li>
+    <li><span class="where">Gulbenkian, Lisbon</span><strong>Brain: wider than the sky.</strong> A touch screen explorer of neurons reconstructed by Eyewirers and AI.</li>
+    <li><span class="where">Tribeca Film Festival, New York</span><strong>BrainVR.</strong> A working neural circuit in VR with the MIT Media Lab Fluid Interfaces Group. Visitors painted with light to trigger a circuit Eyewirers discovered and published in Nature.</li>
+    <li><span class="where">TED, Vancouver, 2014</span><strong>Neurons in Space.</strong> Fly through a field of retinal neurons in an Oculus Rift, then out to a life size International Space Station. With Microsoft Research.</li>
+    <li><span class="where">Franklin Park Zoo, Boston, 2015</span><strong>Zoo Brains.</strong> Posters on brain and behavior, with MassArt and Tufts.</li>
+    <li><span class="where">Also</span>Istanbul Design Biennial, the MIT Museum, and pop up exhibitions in San Francisco, Barcelona and Hong Kong.</li>
+  </ol>
+
+  <div class="quotes">
+    <blockquote><p>Among the nerds who matter.</p><cite>NBC News</cite></blockquote>
+    <blockquote><p>There is no limb she won't go out on, no dendrite she won't explore, if she thinks it will lead to a breakthrough.</p><cite>The Boston Globe</cite></blockquote>
+    <blockquote><p>Pretty impressive.</p><cite>Chris Hadfield, former ISS commander</cite></blockquote>
+  </div>
+
+  <p class="press-row" aria-label="Press">
+    <a href="https://www.nytimes.com/video/science/100000002899950/citizen-neuroscience.html">The New York Times</a>
+    <a href="https://www.wired.com/2013/08/a-video-game-that-lets-you-be-a-neuroscientist/">Wired</a>
+    <a href="https://www.nationalgeographic.com/science/article/flying-through-inner-space">National Geographic</a>
+    <a href="https://www.nature.com/articles/d41586-019-02208-0">Nature</a>
+    <a href="https://www.npr.org/2014/05/05/309694759/computer-game-aides-scientist-mapping-eye-nerve-cells">NPR</a>
+    <a href="https://www.smithsonianmag.com/science-nature/how-scientists-are-using-games-unlock-bodys-mysteries-180951864/">Smithsonian</a>
+    <a href="https://www.nbcnews.com/science/science-news/eyewire-video-gamers-help-untangle-retinas-space-time-secrets-n95861">NBC News</a>
+    <a href="https://blogs.scientificamerican.com/expeditions/journey-through-the-brain-mit-neurotech/">Scientific American</a>
+    <a href="https://slate.com/technology/2016/08/citizen-science-isnt-just-about-collecting-data.html">Slate</a>
+    <a href="https://www.youtube.com/watch?v=t2ZWf-DeexY">Vsauce3</a>
+    <a href="https://www.forbes.com/sites/amysterling/">My Forbes column</a>
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="block about">
+  <div class="about-text">
+    <p class="eyebrow">About</p>
+    <h2>Hi, I'm Amy.</h2>
+    <p>I work at the Princeton Neuroscience Institute in Sebastian Seung's lab, where we map the brain neuron by neuron and invite everyone to help. For years I ran Eyewire, the game where players all over the world trace neurons in the retina. Now I build its successors, EyeWire II and Pyr, and I give some of my time to FlyWire and the Murthy Lab.</p>
+    <p>I have published in Nature and Cell, written about neuroscience and data visualization for Forbes, and advised the White House Office of Science and Technology Policy on innovation methods. Forbes put me on its 30 Under 30 list in 2015, and Fast Company called me an Innovation Agent. I also founded the TEDx Music Project.</p>
+    <p>Most evenings I build things with my two kids: games, a robot, a site full of jokes. They have strong opinions and they are usually right.</p>
+  </div>
+  <div class="about-side">
+    <h3 class="mini">Get in touch</h3>
+    <p><a class="big-link" href="mailto:amysterling@princeton.edu">amysterling@princeton.edu</a></p>
+    <ul class="socials">
+      <li><a href="https://github.com/amyleesterling">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/amyleesterling/">LinkedIn</a></li>
+      <li><a href="https://x.com/amyneurons">X</a></li>
+      <li><a href="https://www.instagram.com/amyrobinsonsterling/">Instagram</a></li>
+      <li><a href="https://youtube.com/@amysterling">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@amyrsterling">TikTok</a></li>
+      <li><a href="https://xhslink.com/m/3g8HLlRoJ7v">Rednote</a></li>
+    </ul>
+
+    <form class="subscribe" id="subscribe" hidden>
+      <h3 class="mini">A rare email</h3>
+      <p>I don't often write a newsletter, but when I do I promise it won't be boring.</p>
+      <label class="sr" for="sub-email">Email address</label>
+      <div class="sub-row">
+        <input id="sub-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+        <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn primary" type="submit">Sign up</button>
+      </div>
+      <p class="fine sub-msg" id="sub-msg" role="status"></p>
+    </form>
+
+    <h3 class="mini">Elsewhere on this site</h3>
+    <ul class="elsewhere">
+      <li><a href="comedy/">Boston comedy calendar</a>, refreshed monthly</li>
+      <li><a href="particles.html">Neuron particles</a></li>
+      <li><a href="sol/">Project Sol</a>, notes on recursive cognitive development</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Thank you for being here. ♡</p>
+  <p class="fine">Built from scratch, no template. Data from GitHub, refreshed daily. <a href="https://github.com/amyleesterling/amysterling">Source</a></p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<script type="module" src="assets/site.js"></script>
+<script type="module" src="assets/hero.js"></script>
 </body>
 </html>
