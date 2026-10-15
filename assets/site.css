@@ -292,6 +292,7 @@ h3 { font-size: 22px; line-height: 1.2; }
 .about { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 72px); }
 .about-text p { font-family: var(--serif); font-size: 21px; line-height: 1.5; color: var(--ink-2); max-width: 60ch; }
 .about-text h2 { margin-bottom: 20px; }
+.about-text p.eyebrow { font-family: var(--mono); font-size: 13px; line-height: 1.6; color: var(--amber); margin: 0 0 12px; }
 .about-side { padding-top: 32px; }
 .about-side > * + .mini { margin-top: 32px; }
 .big-link { font-family: var(--serif); font-size: 24px; word-break: break-word; }
