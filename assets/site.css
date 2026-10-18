@@ -456,3 +456,51 @@ html { scrollbar-color: rgba(110, 168, 255, 0.35) var(--bg); }
 /* a live embed in place of a screenshot */
 .live { position: relative; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 16 / 10; background: var(--panel); }
 .live iframe { position: absolute; inset: 0 auto 0 0; width: calc(100% + var(--sbw, 0px)); height: 100%; border: 0; }
+
+/* network map of repos */
+.netmap { position: relative; border: 1px solid var(--line); border-radius: 12px; background: radial-gradient(90% 70% at 50% 50%, #0d1626 0%, var(--bg-2) 70%); overflow: hidden; margin-bottom: 14px; }
+.net-rooms { position: absolute; top: 12px; left: 12px; right: 12px; z-index: 2; }
+.net-rooms .chip { background: rgba(7, 8, 11, 0.75); font-size: 13px; padding: 5px 11px; }
+.net-rooms .chip[aria-pressed="true"] { background: var(--ink); }
+.net-rooms .chip i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+#net-svg { display: block; width: 100%; height: clamp(460px, 70vh, 680px); touch-action: pan-y; }
+.net-links line { stroke: rgba(124, 196, 255, 0.16); transition: stroke 0.15s, opacity 0.2s; }
+.net-links line.hot { stroke: rgba(124, 196, 255, 0.75); }
+.net-links line.off { opacity: 0.04; }
+.net-node { cursor: pointer; transition: opacity 0.2s; outline: none; }
+.net-node circle { stroke: rgba(7, 8, 11, 0.9); stroke-width: 1.5; }
+.net-node.hot circle, .net-node:focus-visible circle { stroke: #fff; stroke-width: 2; }
+.net-node.dim, .net-node.off { opacity: 0.18; }
+.net-node text { font: 500 11px var(--sans); fill: var(--ink-2); text-anchor: middle; pointer-events: none; opacity: 0; paint-order: stroke; stroke: var(--bg); stroke-width: 3px; }
+.net-node text.on, .net-node.hot text { opacity: 1; }
+.net-tip { position: absolute; z-index: 3; width: 260px; padding: 12px 14px; border: 1px solid var(--line-2); border-radius: 10px; background: rgba(13, 15, 20, 0.96); pointer-events: none; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.net-tip h3 { font-size: 19px; margin: 2px 0 6px; }
+.net-tip p { margin: 0 0 6px; font-size: 14px; color: var(--ink-2); }
+.net-tip .fine { margin: 0; }
+.net-private { color: var(--ink-2); font-size: 16px; margin: 0 0 40px; max-width: 900px; }
+.net-private strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 600px) { .net-rooms .chip { font-size: 12px; padding: 4px 9px; } #net-svg { height: 520px; } }
+
+/* Executive Producer */
+.ep-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 2.1fr); gap: 22px; margin-bottom: 48px; align-items: start; }
+.ep-item { margin: 0; }
+.ep-item > button { all: unset; cursor: zoom-in; display: block; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); }
+.ep-item > button:hover { border-color: var(--indigo); }
+.ep-item > button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.ep-item img { width: 100%; height: auto; display: block; }
+/* drawn at its design size and scaled to fit, so its desktop layout keeps its shape */
+.ep-live { aspect-ratio: 16 / 10; }
+.ep-live iframe { width: 1280px !important; height: 800px !important; transform-origin: 0 0; transform: scale(var(--fit, 0.5)); }
+.ep-item figcaption { padding-top: 12px; }
+.ep-item figcaption h3 { margin: 2px 0 4px; }
+.ep-item figcaption p:not(.tag) { color: var(--ink-2); font-size: 15px; margin: 0; }
+@media (max-width: 900px) { .ep-grid { grid-template-columns: 1fr 1fr; } .ep-grid .ep-item:last-child { grid-column: 1 / -1; } }
+@media (max-width: 600px) { .ep-grid { grid-template-columns: 1fr; } }
+
+/* blog: older writing */
+.older { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+.older p { color: var(--ink-2); font-size: 17px; max-width: 62ch; }
+/* sign up: after submitting, the form gives way to the thank you */
+form.subscribe.done .sub-row, form.subscribe.done > p:not(.sub-msg) { display: none; }
+form.subscribe.done .sub-msg { font: 400 17px/1.5 var(--sans); color: var(--ink); background: rgba(124, 196, 255, 0.08); border: 1px solid rgba(124, 196, 255, 0.35); border-radius: 10px; padding: 14px 16px; letter-spacing: 0; }
+form.subscribe.done .sub-msg strong { color: var(--accent); }

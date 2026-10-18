@@ -135,6 +135,7 @@ function load(name, { scroll = false } = {}) {
 }
 
 function wirePlayer() {
+  window.__play = (name) => load(name, { scroll: true });
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-play]");
     if (!b) return;
@@ -176,6 +177,10 @@ function wireHero() {
 
 /* ---------- live embeds that load when they come into view ---------- */
 function wireLive() {
+  // A frame drawn at a fixed design size (the Pyr avatar creator) is scaled to its box.
+  $$(".ep-live").forEach((box) => {
+    new ResizeObserver(() => box.style.setProperty("--fit", String(box.clientWidth / 1280))).observe(box);
+  });
   $$(".live iframe[data-src]").forEach((f) => {
     const io = new IntersectionObserver((es) => {
       if (es.some((e) => e.isIntersecting)) { io.disconnect(); f.src = f.dataset.src; }
