@@ -256,7 +256,25 @@ async function papers() {
 }
 
 /* ---------- boot ---------- */
+// The width of the browser's default scrollbar (0 where scrollbars overlay).
+// Embedded frames are widened by this much so their own scrollbars are clipped off.
+// Measured in a blank frame: this page styles its own scrollbars thinner, but the
+// embedded sites get the browser default.
+function measureScrollbar() {
+  const f = document.createElement("iframe");
+  f.style.cssText = "position:absolute;top:-9999px;width:200px;height:200px;border:0;visibility:hidden";
+  f.srcdoc = '<div style="width:100px;height:100px;overflow:scroll"></div>';
+  f.onload = () => {
+    const d = f.contentDocument?.querySelector("div");
+    const w = d ? d.offsetWidth - d.clientWidth : 0;
+    document.documentElement.style.setProperty("--sbw", `${w}px`);
+    f.remove();
+  };
+  document.body.appendChild(f);
+}
+
 async function boot() {
+  measureScrollbar();
   navSpy();
   wireYouTube();
   gallery();
