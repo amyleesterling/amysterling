@@ -75,17 +75,27 @@ function navSpy() {
   links.forEach((_, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
 }
 
-/* ---------- hero stats ---------- */
+/* ---------- hero readout (scifi-ui holoReadout, every figure derived from the data) ---------- */
 function heroStats() {
+  const el = $("#hero-readout");
+  if (!el || !window.holoReadout) return;
   const repos = DATA.repos;
   const commits = repos.reduce((s, r) => s + r.commits, 0);
   const live = repos.filter((r) => r.live).length;
-  $('[data-stat="repos"]').textContent = fmt(repos.length);
-  $('[data-stat="commits"]').textContent = fmt(commits);
-  $('[data-stat="live"]').textContent = fmt(live);
-  $$("#hero-stats dt")[1].textContent = `Commits in ${DATA.year}`;
-  const d = new Date(DATA.updated);
-  $("#hero-updated").textContent = `Counted from GitHub on ${d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}.`;
+  const upd = new Date(DATA.updated);
+  const thisMonth = upd.getUTCFullYear() === DATA.year ? upd.getUTCMonth() : 11;
+  const months = Array(12).fill(0);
+  repos.forEach((r) => r.months.forEach((n, i) => (months[i] += n)));
+  window.holoReadout(el, {
+    stats: [
+      { value: repos.length, label: "public repos" },
+      { value: commits, label: `commits in ${DATA.year}` },
+      { value: live, label: "live sites" },
+    ],
+    histogram: { values: months.slice(0, thisMonth + 1), colour: () => "rgb(124 196 255)" },
+    caption: `commits per month, Jan to ${MONTHS[thisMonth]} ${DATA.year}`,
+    provenance: `github.com/amyleesterling · counted ${upd.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`,
+  });
 }
 
 /* ---------- player ---------- */
