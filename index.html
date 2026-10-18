@@ -9,7 +9,7 @@
 <meta property="og:description" content="Games, tools and pictures for mapping the brain, and about a hundred other things you can play with.">
 <meta property="og:image" content="https://amysterling.org/media/full/rainbow-neurons.webp">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f5d142'/%3E%3Cpath d='M16 10V2M16 22v8M10 16H2M22 16h8M11.5 11.5 6 6M20.5 20.5 26 26' stroke='%23f5d142' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%237cc4ff'/%3E%3Cpath d='M16 10V2M16 22v8M10 16H2M22 16h8M11.5 11.5 6 6M20.5 20.5 26 26' stroke='%237cc4ff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
   <div class="hero-text">
     <p class="eyebrow roles"><span>Executive Director, Eyewire</span> <span>Crowdsourcing Specialist, Princeton University</span></p>
     <h1>Amy Sterling</h1>
-    <p class="lede">I design the games, tools and pictures that let people map the brain, one neuron at a time. Then I build about a hundred other things, most of which you can play with on this page.</p>
+    <p class="lede">I design the games, tools and pictures that let people map and explore the brain. Then I build about a hundred other things. Scroll on to play!</p>
     <dl class="hero-stats" id="hero-stats" aria-live="polite">
       <div><dt>Public repos</dt><dd data-stat="repos">100</dd></div>
       <div><dt>Commits this year</dt><dd data-stat="commits">4,023</dd></div>
@@ -62,9 +62,11 @@
   </div>
   <figure class="hero-cell">
     <div class="brain-box" id="brain">
-      <iframe class="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
+      <iframe class="brain-frame" id="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
+      <button class="btn primary brain-explore" id="brain-explore" type="button">Explore: zoom in ▸</button>
+      <button class="btn brain-back" id="brain-back" type="button" hidden>◂ Back to the cortex</button>
     </div>
-    <figcaption>
+    <figcaption id="brain-cap">
       <span class="tag">Drag to turn · click an area</span>
       <strong>Every area of the human cortex.</strong> All 360 areas of the HCP-MMP1 atlas, with the measured white matter cables that reach area 4, the primary motor cortex. Click any other area to light up its own cables. <a href="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3" target="_blank" rel="noopener">Open it full size ↗</a>
     </figcaption>
@@ -122,7 +124,7 @@
   <header class="block-head">
     <p class="eyebrow">What's a brain?</p>
     <h2>Brains you can explore</h2>
-    <p class="intro">Real data, drawn in your browser: a human brain at three scales, a mouse brain, a whole fly. All of it lives at <a href="https://whatisabrain.com">whatisabrain.com</a>.</p>
+    <p class="intro">Real data, drawn in your browser: a whole human brain, a mouse brain, a whole fly. All of it lives at <a href="https://whatisabrain.com">whatisabrain.com</a>.</p>
   </header>
   <div class="brain-grid">
     <article class="brain-card">
@@ -132,15 +134,6 @@
         <h3>Every area of the human cortex</h3>
         <p>All 360 areas of the HCP parcellation and the measured white matter cables that reach each one. Click any part of the cortex and it tells you what you hit.</p>
         <p class="links"><a href="https://whatisabrain.com/tracks/" target="_blank" rel="noopener">whatisabrain.com/tracks ↗</a></p>
-      </div>
-    </article>
-    <article class="brain-card">
-      <button class="shot" type="button" data-play="wab-hippocampus" aria-label="Play The hippocampus at 50 micrometers here"><img src="media/brains/wab-hippocampus.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-      <div class="brain-body">
-        <p class="tag">Human</p>
-        <h3>The hippocampus at 50 micrometers</h3>
-        <p>A human hippocampus scanned at fifty micrometers, the finest diffusion MRI of a human brain reported so far.</p>
-        <p class="links"><a href="https://whatisabrain.com/human/hippocampus/" target="_blank" rel="noopener">whatisabrain.com/human/hippocampus ↗</a></p>
       </div>
     </article>
     <article class="brain-card">
@@ -158,16 +151,16 @@
         <p class="tag">Fly</p>
         <h3>A whole nervous system, one cell at a time</h3>
         <p>The FlyWire connectome in 3D: every neuron and synapse of the fruit fly brain, open to anyone.</p>
-        <p class="links"><a href="https://whatisabrain.com/fly/" target="_blank" rel="noopener">whatisabrain.com/fly ↗</a></p>
+        <p class="links"><a href="https://whatisabrain.com/fly/#2" target="_blank" rel="noopener">whatisabrain.com/fly ↗</a></p>
       </div>
     </article>
   </div>
   <article class="feature">
-    <button class="shot" type="button" data-play="human-history-map" aria-label="Play Human History Map here"><img src="media/brains/humanhistorymap.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+    <div class="live"><iframe data-src="https://humanhistorymap.com/" title="Human History Map, live: a globe and timeline of civilizations" allow="fullscreen" loading="lazy"></iframe></div>
     <div class="brain-body">
       <p class="tag">Also</p>
       <h3>Human History Map</h3>
-      <p>An interactive globe and timeline of civilizations, their changing borders, inventions, and ideas. Press play and watch five thousand years go by.</p>
+      <p>An interactive globe and timeline of civilizations, their changing borders, inventions, and ideas. It is live right here: press play and watch five thousand years go by, or drag the globe.</p>
       <p class="links"><a href="https://humanhistorymap.com/" target="_blank" rel="noopener">humanhistorymap.com ↗</a></p>
     </div>
   </article>
@@ -193,7 +186,7 @@
       </div>
       <div class="stage" id="stage">
         <div class="stage-idle" id="stage-idle">
-          <p>Choose something on the left.<br>Neuron Snake is a good place to start.</p>
+          <p>Choose something on the left.<br>Be the Fly is a good place to start.</p>
         </div>
       </div>
       <p class="stage-desc" id="stage-desc"></p>
@@ -206,9 +199,51 @@
   <header class="block-head">
     <p class="eyebrow">Built with my kids</p>
     <h2>Sophia &amp; Cora</h2>
-    <p class="intro">My daughters Sophia, 7, and Cora, 5, dream up the games and we build them together. Everything lives at <a href="https://sophieandcora.com/">sophieandcora.com</a>, free, with no account needed.</p>
+    <p class="intro">My daughters Sophia, 7, and Cora, 5, dream up the games and we build them together. Everything lives at <a href="https://sophieandcora.com/">sophieandcora.com</a>. On this page find a host of reading and math games that are all free.</p>
   </header>
-  <h3 class="mini">Dreamed up by them</h3>
+  <h3 class="mini">Reading games</h3>
+  <div class="kid-grid">
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-reading" aria-label="Play Reading Adventure here"><img src="media/kids/reading-adventure.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 4 to 8</p>
+        <h3>Reading Adventure</h3>
+        <p>Build words, read words, find rhymes, and pop sight words. Earn stars and fill your sticker book!</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-books" aria-label="Play Little Books here"><img src="media/kids/little-books.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 5 to 8</p>
+        <h3>Little Books</h3>
+        <p>Thirty stories to read all by yourself, from tiny tales to chapter books.</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-letters" aria-label="Play Letter Sounds here"><img src="media/kids/letter-sounds.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 3 to 5</p>
+        <h3>Letter Sounds</h3>
+        <p>Every letter with its pictures, and a game about first sounds.</p>
+      </article>
+      <article class="kid-card wip">
+        <div class="shot blank" aria-hidden="true"><span>Coming soon</span></div>
+        <p class="tag">Under construction</p>
+        <h3>Paintbrush Island</h3>
+        <p>A grey 3D island. Read the words and paint it back to life!</p>
+      </article>
+  </div>
+  <h3 class="mini kid-sub">Math games</h3>
+  <div class="kid-grid">
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-math" aria-label="Play Math Arcade here"><img src="media/kids/math-arcade.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 4 to 8</p>
+        <h3>Math Arcade</h3>
+        <p>Block Math and Ten Drop: add, take away, times and share with towers of blocks, then fill the falling rows to ten.</p>
+      </article>
+      <article class="kid-card wip">
+        <button class="shot" type="button" data-play="sc-mountain" aria-label="Play Math Mountain here"><img src="media/kids/math-mountain.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Under construction</p>
+        <h3>Math Mountain</h3>
+        <p>Climb from number lines and fractions all the way to physics and the maths behind AI.</p>
+      </article>
+  </div>
+  <h3 class="mini kid-sub">Game games</h3>
   <div class="kid-grid">
       <article class="kid-card">
         <button class="shot" type="button" data-play="sophia-funny-dragon" aria-label="Play Funny Dragons here"><img src="media/kids/funny-dragons.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
@@ -235,45 +270,6 @@
         <p>Explore Magic Meadow. Collect stars. Watch out for the wolf!</p>
       </article>
   </div>
-  <h3 class="mini kid-sub">Learning games we made together</h3>
-  <div class="kid-grid">
-      <article class="kid-card">
-        <button class="shot" type="button" data-play="sc-reading" aria-label="Play Reading Adventure here"><img src="media/kids/reading-adventure.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-        <p class="tag">Ages 4 to 8</p>
-        <h3>Reading Adventure</h3>
-        <p>Build words, read words, find rhymes, and pop sight words. Earn stars and fill your sticker book!</p>
-      </article>
-      <article class="kid-card">
-        <button class="shot" type="button" data-play="sc-books" aria-label="Play Little Books here"><img src="media/kids/little-books.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-        <p class="tag">Ages 5 to 8</p>
-        <h3>Little Books</h3>
-        <p>Thirty stories to read all by yourself, from tiny tales to chapter books.</p>
-      </article>
-      <article class="kid-card">
-        <button class="shot" type="button" data-play="sc-letters" aria-label="Play Letter Sounds here"><img src="media/kids/letter-sounds.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-        <p class="tag">Ages 3 to 5</p>
-        <h3>Letter Sounds</h3>
-        <p>Every letter with its pictures, and a game about first sounds.</p>
-      </article>
-      <article class="kid-card">
-        <button class="shot" type="button" data-play="sc-math" aria-label="Play Math Arcade here"><img src="media/kids/math-arcade.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-        <p class="tag">Ages 4 to 8</p>
-        <h3>Math Arcade</h3>
-        <p>Block Math and Ten Drop: add, take away, times and share with towers of blocks.</p>
-      </article>
-      <article class="kid-card wip">
-        <button class="shot" type="button" data-play="sc-mountain" aria-label="Play Math Mountain here"><img src="media/kids/math-mountain.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-        <p class="tag">Under construction</p>
-        <h3>Math Mountain</h3>
-        <p>Climb from number lines and fractions all the way to physics and the maths behind AI.</p>
-      </article>
-      <article class="kid-card wip">
-        <div class="shot blank" aria-hidden="true"><span>Coming soon</span></div>
-        <p class="tag">Under construction</p>
-        <h3>Paintbrush Island</h3>
-        <p>A grey 3D island. Read the words and paint it back to life!</p>
-      </article>
-  </div>
   <p class="links kid-links"><a class="btn" href="https://sophieandcora.com/">Visit sophieandcora.com ↗</a></p>
 </section>
 
@@ -281,9 +277,15 @@
 <section id="github" class="block">
   <header class="block-head">
     <p class="eyebrow">Code</p>
-    <h2>Everything else is on GitHub</h2>
-    <p class="intro" id="projects-intro">About a hundred public repos, from connectome tools to a pizza oven log. Counted every morning; commits are only mine, with the scheduled robots left out.</p>
+    <h2>Every project, as a network</h2>
+    <p class="intro" id="projects-intro">All my public GitHub repos, pulled every morning. Projects that share ideas pull together, and each dot grows with this year's commits. Drag a dot, hover to read, click to open.</p>
   </header>
+  <div class="netmap" id="netmap">
+    <div class="chips net-rooms" id="net-rooms" role="group" aria-label="Highlight a room"></div>
+    <svg id="net-svg" role="img" aria-label="Network map of public GitHub repositories, grouped by theme"></svg>
+    <div class="net-tip" id="net-tip" hidden></div>
+  </div>
+  <p class="net-private" id="net-private"></p>
   <div class="activity">
     <figure class="chart">
       <figcaption><span id="chart-title">Commits per month</span><span class="fine" id="chart-note"></span></figcaption>
@@ -313,10 +315,24 @@
 <!-- EXECUTIVE PRODUCER -->
 <section id="producer" class="block">
   <header class="block-head">
-    <p class="eyebrow">Executive Producer</p>
-    <h2>Art I produced</h2>
-    <p class="intro">Beyond my own renders, I produce art for Eyewire with illustrators and students.</p>
+    <p class="eyebrow">Art</p>
+    <h2>Executive Producer</h2>
+    <p class="intro">Art I produced with illustrators, artists and students: a Nature cover, concept art, the characters of Pyr, and posters for a zoo.</p>
   </header>
+  <div class="ep-grid">
+    <figure class="ep-item single-view">
+      <button type="button" data-full="media/covers/nature-fly-connectome-full.webp" data-title="Nature, 3 October 2024. Fly Connectome: a complete map of neuronal connections in an adult fruit fly's brain."><img src="media/covers/nature-fly-connectome-thumb.webp" alt="Nature cover, 3 October 2024: Fly Connectome" width="485" height="640" loading="lazy"></button>
+      <figcaption><p class="tag">Nature cover</p><h3>Fly Connectome</h3><p>The cover of Nature's fly connectome issue, 3 October 2024.</p></figcaption>
+    </figure>
+    <figure class="ep-item single-view">
+      <button type="button" data-full="media/full/perception-concept-render-3-upscaled-base.webp" data-title="Perception, concept render"><img src="media/thumb/perception-concept-render-3-upscaled-base.webp" alt="Perception concept render: a fly brain glowing in yellow, green and pink inside a dark field of neurons" width="545" height="720" loading="lazy"></button>
+      <figcaption><p class="tag">Concept art</p><h3>Perception</h3><p>A concept render of the fly brain.</p></figcaption>
+    </figure>
+    <figure class="ep-item">
+      <div class="live ep-live"><iframe data-src="https://seunglab.org/avatar-prototype/" title="The Pyr avatar creator, live" loading="lazy"></iframe></div>
+      <figcaption><p class="tag">Live · try it</p><h3>Pyr avatars</h3><p>The character creator for Pyr. Pick a look, an outfit and a lab to stand in. <a href="https://seunglab.org/avatar-prototype/" target="_blank" rel="noopener">Open full size ↗</a></p></figcaption>
+    </figure>
+  </div>
   <article class="zoo">
     <div class="zoo-text">
       <p class="tag">Franklin Park Zoo, Boston</p>
@@ -487,7 +503,9 @@
   <button class="lb-next" aria-label="Next">›</button>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script type="module" src="assets/site.js"></script>
+<script type="module" src="assets/netmap.js"></script>
 <script type="module" src="assets/subscribe.js"></script>
 </body>
 </html>

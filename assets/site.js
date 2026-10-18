@@ -9,10 +9,9 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 // The player list. url overrides the live URL from GitHub; note overrides the description.
 const PLAY = [
   { group: "What's a brain?" },
-  { name: "wab-tracks", title: "White matter explorer", url: "https://whatisabrain.com/tracks/", note: "All 360 areas of the human cortex and the measured white matter cables that reach each one. Click any part of the cortex." },
-  { name: "wab-hippocampus", title: "Human hippocampus", url: "https://whatisabrain.com/human/hippocampus/", note: "A human hippocampus scanned at fifty micrometers, the finest diffusion MRI of a human brain reported so far." },
-  { name: "wab-mouse", title: "Mouse brain", url: "https://whatisabrain.com/mouse/", note: "30,000 neurons of 70 million. Watch a signal leave a cell body and reach every region its axon touches." },
-  { name: "wab-fly", title: "Fly brain", url: "https://whatisabrain.com/fly/", note: "The FlyWire connectome in 3D: every neuron and synapse of the fruit fly brain." },
+  { name: "wab-tracks", title: "White matter explorer", url: "https://whatisabrain.com/tracks/?areas=every&area=4&hemi=L&conn=1&surf=0.3#soma", note: "All 360 areas of the human cortex and the measured white matter cables that reach each one. Click any part of the cortex." },
+  { name: "wab-mouse", title: "Mouse brain", url: "https://whatisabrain.com/mouse/#mouse", note: "30,000 neurons of 70 million. Watch a signal leave a cell body and reach every region its axon touches." },
+  { name: "wab-fly", title: "Fly brain", url: "https://whatisabrain.com/fly/#2", note: "The FlyWire connectome in 3D: every neuron and synapse of the fruit fly brain." },
   { name: "inner_cosmos", title: "Inner Cosmos", url: "https://whatisabrain.com/explore/explore", note: "Zoom from a whole mouse brain down to a single dendrite, through real reconstructed cells." },
   { group: "Brains" },
   { name: "neuron-game", title: "Neuron Snake", url: "https://neuronsnake.com/", note: "Snake, but you are a growing neuron. Arrow keys or swipe." },
@@ -22,7 +21,7 @@ const PLAY = [
   { name: "microns", title: "MICrONS cortex" },
   { name: "banc", title: "BANC renderings" },
   { name: "flywire-neuron-gallery", title: "FlyWire neuron gallery" },
-  { name: "seunglabdata", title: "connectome.quest", url: "https://connectome.quest/" },
+  { name: "seunglabdata", title: "Pyr", url: "https://connectome.quest/", note: "A game to map the brain, the sequel to Eyewire." },
   { name: "eyewire-ii-tutorial", title: "EyeWire II tutorial" },
   { name: "connectome", title: "What is connectomics?" },
   { name: "the650", title: "The 650" },
@@ -136,6 +135,7 @@ function load(name, { scroll = false } = {}) {
 }
 
 function wirePlayer() {
+  window.__play = (name) => load(name, { scroll: true });
   document.addEventListener("click", (e) => {
     const b = e.target.closest("[data-play]");
     if (!b) return;
@@ -146,13 +146,47 @@ function wirePlayer() {
   $("#stage-full").onclick = () => { const s = $("#stage"); (s.requestFullscreen || s.webkitRequestFullscreen)?.call(s); };
   $("#stage-open").addEventListener("click", (e) => { if (!stage.current) e.preventDefault(); });
 
-  const m = location.hash.match(/^#play=(.+)$/);
-  if (m) { load(decodeURIComponent(m[1])); setTimeout(() => document.getElementById("play").scrollIntoView(), 50); return; }
-  // Start Neuron Snake once the player comes into view, so nothing heavy loads before it is wanted.
+  const m = location.hash.match(/^#play(?:=(.+))?$/);
+  if (m) { load(m[1] ? decodeURIComponent(m[1]) : "banc-explorer"); setTimeout(() => document.getElementById("play").scrollIntoView(), 50); return; }
+  // Start Be the Fly once the player comes into view, so nothing heavy loads before it is wanted.
   const io = new IntersectionObserver((es) => {
-    if (es.some((e) => e.isIntersecting)) { io.disconnect(); if (!stage.current) load("neuron-game"); history.replaceState(null, "", location.pathname); }
+    if (es.some((e) => e.isIntersecting)) { io.disconnect(); if (!stage.current) load("banc-explorer"); history.replaceState(null, "", location.pathname); }
   }, { rootMargin: "0px 0px -30% 0px" });
   io.observe($("#stage"));
+}
+
+/* ---------- hero: the cortex, then Explore zooms in ---------- */
+function wireHero() {
+  const frame = $("#brain-frame"), go = $("#brain-explore"), back = $("#brain-back"), cap = $("#brain-cap");
+  if (!frame || !go) return;
+  const tracks = frame.src, capTracks = cap.innerHTML;
+  const explore = "https://whatisabrain.com/explore/explore";
+  go.onclick = () => {
+    frame.src = explore;
+    frame.title = "Inner Cosmos: zoom from a whole mouse brain down to a single dendrite";
+    go.hidden = true; back.hidden = false;
+    cap.innerHTML = `<span class="tag">Inner Cosmos</span> <strong>Zoom into a brain.</strong> From a whole mouse brain down to a single dendrite; every cell on screen is a real reconstructed mesh from the MICrONS mouse visual cortex. Use the arrows to move between stages. <a href="${explore}" target="_blank" rel="noopener">Open it full size ↗</a>`;
+  };
+  back.onclick = () => {
+    frame.src = tracks;
+    frame.title = "Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables";
+    back.hidden = true; go.hidden = false;
+    cap.innerHTML = capTracks;
+  };
+}
+
+/* ---------- live embeds that load when they come into view ---------- */
+function wireLive() {
+  // A frame drawn at a fixed design size (the Pyr avatar creator) is scaled to its box.
+  $$(".ep-live").forEach((box) => {
+    new ResizeObserver(() => box.style.setProperty("--fit", String(box.clientWidth / 1280))).observe(box);
+  });
+  $$(".live iframe[data-src]").forEach((f) => {
+    const io = new IntersectionObserver((es) => {
+      if (es.some((e) => e.isIntersecting)) { io.disconnect(); f.src = f.dataset.src; }
+    }, { rootMargin: "300px 0px" });
+    io.observe(f);
+  });
 }
 
 /* ---------- activity ---------- */
@@ -276,6 +310,8 @@ function measureScrollbar() {
 async function boot() {
   measureScrollbar();
   navSpy();
+  wireHero();
+  wireLive();
   wireYouTube();
   gallery();
   papers();

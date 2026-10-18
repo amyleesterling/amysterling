@@ -67,6 +67,50 @@ def answers(url):
         return False
 
 
+def count_commits(r, since, year, branch=None):
+    """Commits authored by OWNER this year, by month, on the default (or given) branch."""
+    months = [0] * 12
+    if (r.get("pushed_at") or "") < since or r.get("size", 0) == 0:
+        return months, 0
+    try:
+        url = (f"https://api.github.com/repos/{OWNER}/{r['name']}/commits"
+               f"?author={OWNER}&since={since}&per_page=100"
+               + (f"&sha={branch}" if branch else ""))
+        for c in get_all(url):
+            when = c["commit"]["author"]["date"]
+            if when.startswith(str(year)):
+                months[int(when[5:7]) - 1] += 1
+    except urllib.error.HTTPError as e:
+        if e.code != 409:  # 409 = empty repository
+            raise
+    return months, sum(months)
+
+
+def private_summary(since, year, room_of, previous):
+    """Totals only for the private repos: how many, commits this year, which rooms.
+    No names leave this function. Needs a token that can see them (a local gh login);
+    the Actions GITHUB_TOKEN cannot, so the daily run keeps the last summary."""
+    try:
+        repos = get_all("https://api.github.com/user/repos?visibility=private&affiliation=owner&per_page=100")
+    except urllib.error.HTTPError:
+        return previous
+    if not repos:
+        return previous
+    months, rooms = [0] * 12, {}
+    active = 0
+    for r in repos:
+        if r["archived"]:
+            continue
+        m, n = count_commits(r, since, year)
+        months = [a + b for a, b in zip(months, m)]
+        if (r.get("pushed_at") or "") >= since:
+            active += 1
+        room = room_of.get(r["name"], "toys")
+        rooms[room] = rooms.get(room, 0) + 1
+    return {"repos": sum(rooms.values()), "active": active, "commits": sum(months),
+            "months": months, "rooms": rooms, "as_of": dt.date.today().isoformat()}
+
+
 def main():
     now = dt.datetime.now(dt.timezone.utc)
     year = now.year
@@ -89,21 +133,7 @@ def main():
             continue
         if r["fork"] and name not in keep_forks:
             continue
-        months = [0] * 12
-        commits = 0
-        if (r.get("pushed_at") or "") >= since and r.get("size", 0) > 0:
-            try:
-                url = (f"https://api.github.com/repos/{OWNER}/{name}/commits"
-                       f"?author={OWNER}&since={since}&per_page=100"
-                       + (f"&sha={branches[name]}" if name in branches else ""))
-                for c in get_all(url):
-                    when = c["commit"]["author"]["date"]
-                    if when.startswith(str(year)):
-                        months[int(when[5:7]) - 1] += 1
-                        commits += 1
-            except urllib.error.HTTPError as e:
-                if e.code != 409:  # 409 = empty repository
-                    raise
+        months, commits = count_commits(r, since, year, branches.get(name))
         home = live_override.get(name) or (r.get("homepage") or "").strip()
         if not home and r.get("has_pages"):
             home = f"https://{OWNER}.github.io/{name}/"
@@ -126,6 +156,10 @@ def main():
         print(f"{name:40s} {commits:5d} {'live' if live else ''}", file=sys.stderr)
 
     rows.sort(key=lambda x: x["pushed"], reverse=True)
+    try:
+        previous = json.load(open(OUT, encoding="utf-8")).get("private")
+    except Exception:
+        previous = None
     data = {
         "owner": OWNER,
         "updated": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -133,6 +167,7 @@ def main():
         "commit_rule": f"Commits on each default branch since Jan 1 {year} authored by {OWNER}. Bot commits are not counted.",
         "rooms": {rid: {k: v for k, v in r.items() if k != "repos"} for rid, r in rooms.items()},
         "repos": rows,
+        "private": private_summary(since, year, room_of, previous),
     }
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     with open(OUT, "w", encoding="utf-8") as f:
