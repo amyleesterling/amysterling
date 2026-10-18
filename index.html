@@ -13,6 +13,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/scifi-ui/hologram.css">
+<link rel="stylesheet" href="assets/scifi-ui/ambient.css">
+<link rel="stylesheet" href="assets/scifi-ui/data-readout.css">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
@@ -34,18 +37,21 @@
 
 <main id="top">
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-text">
-    <p class="eyebrow roles"><span>Executive Director, Eyewire</span> <span>Crowdsourcing Specialist, Princeton University</span></p>
-    <h1>Amy Sterling</h1>
-    <p class="status-line"><span class="pulse" aria-hidden="true"></span><span class="status-k">Status:</span> mapping the brain</p>
-    <dl class="hero-stats" id="hero-stats" aria-live="polite">
-      <div><dt>Public repos</dt><dd data-stat="repos">100</dd></div>
-      <div><dt>Commits this year</dt><dd data-stat="commits">4,023</dd></div>
-      <div><dt>Live sites</dt><dd data-stat="live">72</dd></div>
-    </dl>
-    <p class="fine" id="hero-updated">Counted from GitHub every morning.</p>
+<!-- HERO: the scifi-ui banner pattern, with the live brain as the render -->
+<section class="sf-hero" aria-label="Amy Sterling">
+  <div class="sf-stage" id="brain">
+    <iframe class="brain-frame" id="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
+    <div class="topveil" aria-hidden="true"></div>
+    <div class="holoswarm" aria-hidden="true"></div>
+  </div>
+
+  <div class="masthead" data-holo-tap>
+    <p class="sf-eyebrow"><s></s><span class="status-k">Status:</span>&nbsp;mapping the brain<u></u></p>
+    <h1 class="wordmark">Amy Sterling</h1>
+    <p class="sf-roles"><span>Executive Director, Eyewire</span><span>Crowdsourcing Specialist, Princeton University</span></p>
+    <div class="holoreadout" id="hero-readout" aria-live="polite">
+      <p class="holoreadout-stats"><span><b>100</b> public repos</span><span><b>4,045</b> commits in 2026</span><span><b>72</b> live sites</span></p>
+    </div>
     <div class="hero-cta">
       <a class="btn primary" href="#play">Play something</a>
       <a class="btn" href="https://github.com/amyleesterling">GitHub</a>
@@ -60,24 +66,21 @@
       <li><a href="https://orcid.org/0000-0002-4961-3954">ORCID</a></li>
     </ul>
   </div>
-  <figure class="hero-cell">
-    <div class="brain-box" id="brain">
-      <iframe class="brain-frame" id="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
-      <button class="btn primary brain-explore" id="brain-explore" type="button">Explore: zoom in ▸</button>
-      <button class="btn brain-back" id="brain-back" type="button" hidden>◂ Back to the cortex</button>
-    </div>
-    <figcaption id="brain-cap">
-      <span class="tag">Drag to turn · click an area</span>
-      <strong>Every area of the human cortex.</strong> All 360 areas of the HCP-MMP1 atlas, with the measured white matter cables that reach area 4, the primary motor cortex. Click any other area to light up its own cables. <a href="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3" target="_blank" rel="noopener">Open it full size ↗</a>
-    </figcaption>
-  </figure>
+
+  <div class="sf-hud">
+    <p class="sf-cap" id="brain-cap"><span class="tag">Drag to turn · click an area</span> <strong>Every area of the human cortex</strong>, with the measured white matter cables that reach area 4, the primary motor cortex. <a href="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3" target="_blank" rel="noopener">Open full size ↗</a></p>
+    <button class="btn primary brain-explore" id="brain-explore" type="button">Explore: zoom in ▸</button>
+    <button class="btn brain-back" id="brain-back" type="button" hidden>◂ Back to the cortex</button>
+  </div>
 </section>
+
+<nav class="holorail" data-holorail=".block-head h2" aria-label="Sections on this page"></nav>
 
 <!-- ON THE COVER -->
 <section id="covers-strip" class="block cover-strip">
   <header class="block-head">
     <p class="eyebrow">On the cover</p>
-    <h2>Four journal covers</h2>
+    <h2 class="holounder">Four journal covers</h2>
   </header>
   <div class="covers strip single-view" id="covers">
     <figure>
@@ -111,7 +114,7 @@
 <section id="now" class="block">
   <header class="block-head">
     <p class="eyebrow">Now</p>
-    <h2>What I am working on</h2>
+    <h2 class="holounder">What I am working on</h2>
   </header>
   <div class="now-grid">
     <article class="now-card">
@@ -157,7 +160,7 @@
 <section id="brains" class="block">
   <header class="block-head">
     <p class="eyebrow">What's a brain?</p>
-    <h2>Brains you can explore</h2>
+    <h2 class="holounder">Brains you can explore</h2>
     <p class="intro">Real data, drawn in your browser: a whole human brain, a mouse brain, a whole fly. All of it lives at <a href="https://whatisabrain.com">whatisabrain.com</a>.</p>
   </header>
   <div class="brain-grid">
@@ -204,7 +207,7 @@
 <section id="play" class="block">
   <header class="block-head">
     <p class="eyebrow">Play</p>
-    <h2>Try them right here</h2>
+    <h2 class="holounder">Try them right here</h2>
     <p class="intro">Each one is the real, live site, running inside this page. Pick one from the list, or press ▶ on any card.</p>
   </header>
   <div class="player">
@@ -232,7 +235,7 @@
 <section id="kids" class="block">
   <header class="block-head">
     <p class="eyebrow">Built with my kids</p>
-    <h2>Sophia &amp; Cora</h2>
+    <h2 class="holounder">Sophia &amp; Cora</h2>
     <p class="intro">My daughters Sophia, 7, and Cora, 5, dream up the games and we build them together. Everything lives at <a href="https://sophieandcora.com/">sophieandcora.com</a>. On this page find a host of reading and math games that are all free.</p>
   </header>
   <h3 class="mini">Reading games</h3>
@@ -311,7 +314,7 @@
 <section id="github" class="block">
   <header class="block-head">
     <p class="eyebrow">Code</p>
-    <h2>Every project, as a network</h2>
+    <h2 class="holounder">Every project, as a network</h2>
     <p class="intro" id="projects-intro">All my public GitHub repos, pulled every morning. Projects that share ideas pull together, and each dot grows with this year's commits. Drag a dot, hover to read, click to open.</p>
   </header>
   <div class="netmap" id="netmap">
@@ -340,7 +343,7 @@
 <section id="gallery" class="block">
   <header class="block-head">
     <p class="eyebrow">Gallery</p>
-    <h2>Renders and posters</h2>
+    <h2 class="holounder">Renders and posters</h2>
     <p class="intro">Every cell in these was reconstructed from electron microscopy. Click any one to see it large.</p>
   </header>
   <div class="masonry" id="masonry"></div>
@@ -350,7 +353,7 @@
 <section id="producer" class="block">
   <header class="block-head">
     <p class="eyebrow">Art</p>
-    <h2>Executive Producer</h2>
+    <h2 class="holounder">Executive Producer</h2>
     <p class="intro">Art I produced with illustrators, artists and students: a Nature cover, concept art, the characters of Pyr, and posters for a zoo.</p>
   </header>
   <div class="ep-grid">
@@ -390,7 +393,7 @@
 <section id="papers" class="block">
   <header class="block-head">
     <p class="eyebrow">Publications</p>
-    <h2>Papers</h2>
+    <h2 class="holounder">Papers</h2>
     <p class="intro" id="papers-intro">From my ORCID record, with the journal version of each paper in place of its preprint. Connectomics papers have long author lists, so each shows its first author.</p>
   </header>
   <div class="filters">
@@ -404,7 +407,7 @@
 <section id="talks" class="block">
   <header class="block-head">
     <p class="eyebrow">Talks, exhibitions, press</p>
-    <h2>Out in the world</h2>
+    <h2 class="holounder">Out in the world</h2>
   </header>
 
   <div class="talk">
@@ -461,6 +464,43 @@
     <p>I am the Executive Director of Eyewire, the game where players all over the world trace neurons in the retina, and a Crowdsourcing Specialist at Princeton University. I've spent the past 15 years working with Sebastian Seung, first at MIT and now at Princeton University. We've created <a href="https://eyewire.org">Eyewire</a>, <a href="https://www.nature.com/collections/hgcfafejia">FlyWire</a>, and now the next chapter of citizen neuroscience: <a href="https://connectome.quest/">Pyr</a>.</p>
     <p>I have <a href="#papers">published</a> in Nature, Cell and Nature Methods, written about neuroscience and data visualization for Forbes, and advised the White House Office of Science and Technology Policy on innovation methods. Forbes put me on its 30 Under 30 list in 2015, and Fast Company called me an Innovation Agent. I also founded the TEDx Music Project.</p>
     <p>Most evenings I build things with my two kids: games, a robot, a site full of jokes. They have strong opinions and they are usually right.</p>
+    <h3 class="mini loves-h">Things I love</h3>
+    <ul class="loves" aria-label="Things I love">
+      <li>My kids</li>
+      <li>Family</li>
+      <li>Adventures</li>
+      <li>Scifi user interfaces</li>
+      <li>Interactive data visualization</li>
+      <li>Flowers and gardening</li>
+      <li>Surprises</li>
+      <li>Waterfalls</li>
+      <li>Babbling brooks</li>
+      <li>Plants with giant leaves</li>
+      <li>Animals</li>
+      <li>Consciousness</li>
+      <li>Network graphs</li>
+      <li>Antique maps</li>
+      <li>Colorful sunsets</li>
+      <li>Playfulness</li>
+      <li>Whimsy</li>
+      <li>Doing something new</li>
+      <li>Robots</li>
+      <li>Asian food</li>
+      <li>Holiday traditions</li>
+      <li>Festivals</li>
+      <li>Music</li>
+      <li>Cashmere</li>
+      <li>Carrots</li>
+      <li>Blueberries</li>
+      <li>Gyokuro</li>
+      <li>Porcelain</li>
+      <li>Optimists</li>
+      <li>Hygge in winter</li>
+      <li>Snuggles</li>
+      <li>Pets</li>
+      <li>Street art</li>
+      <li>A strong breeze</li>
+    </ul>
   </div>
   <div class="about-side">
     <h3 class="mini">Get in touch</h3>
@@ -509,6 +549,10 @@
   <button class="lb-next" aria-label="Next">›</button>
 </div>
 
+<script src="assets/scifi-ui/hologram.js"></script>
+<script src="assets/scifi-ui/hologram-tap.js"></script>
+<script src="assets/scifi-ui/ambient.js"></script>
+<script src="assets/scifi-ui/data-readout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script type="module" src="assets/site.js"></script>
 <script type="module" src="assets/netmap.js"></script>
