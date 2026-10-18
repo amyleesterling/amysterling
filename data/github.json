@@ -183,8 +183,8 @@
   },
   {
    "name": "seunglabdata",
-   "title": "connectome.quest",
-   "description": "Datasets for the Seung Lab demo page.",
+   "title": "Pyr",
+   "description": "A game to map the brain, the sequel to Eyewire.",
    "language": "HTML",
    "room": "brains",
    "repo": "https://github.com/amyleesterling/seunglabdata",

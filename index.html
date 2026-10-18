@@ -9,7 +9,7 @@
 <meta property="og:description" content="Games, tools and pictures for mapping the brain, and about a hundred other things you can play with.">
 <meta property="og:image" content="https://amysterling.org/media/full/rainbow-neurons.webp">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f5d142'/%3E%3Cpath d='M16 10V2M16 22v8M10 16H2M22 16h8M11.5 11.5 6 6M20.5 20.5 26 26' stroke='%23f5d142' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%237cc4ff'/%3E%3Cpath d='M16 10V2M16 22v8M10 16H2M22 16h8M11.5 11.5 6 6M20.5 20.5 26 26' stroke='%237cc4ff' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
   <div class="hero-text">
     <p class="eyebrow roles"><span>Executive Director, Eyewire</span> <span>Crowdsourcing Specialist, Princeton University</span></p>
     <h1>Amy Sterling</h1>
-    <p class="lede">I design the games, tools and pictures that let people map the brain, one neuron at a time. Then I build about a hundred other things, most of which you can play with on this page.</p>
+    <p class="lede">I design the games, tools and pictures that let people map and explore the brain. Then I build about a hundred other things. Scroll on to play!</p>
     <dl class="hero-stats" id="hero-stats" aria-live="polite">
       <div><dt>Public repos</dt><dd data-stat="repos">100</dd></div>
       <div><dt>Commits this year</dt><dd data-stat="commits">4,023</dd></div>
@@ -62,9 +62,11 @@
   </div>
   <figure class="hero-cell">
     <div class="brain-box" id="brain">
-      <iframe class="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
+      <iframe class="brain-frame" id="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
+      <button class="btn primary brain-explore" id="brain-explore" type="button">Explore: zoom in ▸</button>
+      <button class="btn brain-back" id="brain-back" type="button" hidden>◂ Back to the cortex</button>
     </div>
-    <figcaption>
+    <figcaption id="brain-cap">
       <span class="tag">Drag to turn · click an area</span>
       <strong>Every area of the human cortex.</strong> All 360 areas of the HCP-MMP1 atlas, with the measured white matter cables that reach area 4, the primary motor cortex. Click any other area to light up its own cables. <a href="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3" target="_blank" rel="noopener">Open it full size ↗</a>
     </figcaption>
@@ -122,7 +124,7 @@
   <header class="block-head">
     <p class="eyebrow">What's a brain?</p>
     <h2>Brains you can explore</h2>
-    <p class="intro">Real data, drawn in your browser: a human brain at three scales, a mouse brain, a whole fly. All of it lives at <a href="https://whatisabrain.com">whatisabrain.com</a>.</p>
+    <p class="intro">Real data, drawn in your browser: a whole human brain, a mouse brain, a whole fly. All of it lives at <a href="https://whatisabrain.com">whatisabrain.com</a>.</p>
   </header>
   <div class="brain-grid">
     <article class="brain-card">
@@ -132,15 +134,6 @@
         <h3>Every area of the human cortex</h3>
         <p>All 360 areas of the HCP parcellation and the measured white matter cables that reach each one. Click any part of the cortex and it tells you what you hit.</p>
         <p class="links"><a href="https://whatisabrain.com/tracks/" target="_blank" rel="noopener">whatisabrain.com/tracks ↗</a></p>
-      </div>
-    </article>
-    <article class="brain-card">
-      <button class="shot" type="button" data-play="wab-hippocampus" aria-label="Play The hippocampus at 50 micrometers here"><img src="media/brains/wab-hippocampus.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
-      <div class="brain-body">
-        <p class="tag">Human</p>
-        <h3>The hippocampus at 50 micrometers</h3>
-        <p>A human hippocampus scanned at fifty micrometers, the finest diffusion MRI of a human brain reported so far.</p>
-        <p class="links"><a href="https://whatisabrain.com/human/hippocampus/" target="_blank" rel="noopener">whatisabrain.com/human/hippocampus ↗</a></p>
       </div>
     </article>
     <article class="brain-card">
@@ -158,16 +151,16 @@
         <p class="tag">Fly</p>
         <h3>A whole nervous system, one cell at a time</h3>
         <p>The FlyWire connectome in 3D: every neuron and synapse of the fruit fly brain, open to anyone.</p>
-        <p class="links"><a href="https://whatisabrain.com/fly/" target="_blank" rel="noopener">whatisabrain.com/fly ↗</a></p>
+        <p class="links"><a href="https://whatisabrain.com/fly/#2" target="_blank" rel="noopener">whatisabrain.com/fly ↗</a></p>
       </div>
     </article>
   </div>
   <article class="feature">
-    <button class="shot" type="button" data-play="human-history-map" aria-label="Play Human History Map here"><img src="media/brains/humanhistorymap.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+    <div class="live"><iframe data-src="https://humanhistorymap.com/" title="Human History Map, live: a globe and timeline of civilizations" allow="fullscreen" loading="lazy"></iframe></div>
     <div class="brain-body">
       <p class="tag">Also</p>
       <h3>Human History Map</h3>
-      <p>An interactive globe and timeline of civilizations, their changing borders, inventions, and ideas. Press play and watch five thousand years go by.</p>
+      <p>An interactive globe and timeline of civilizations, their changing borders, inventions, and ideas. It is live right here: press play and watch five thousand years go by, or drag the globe.</p>
       <p class="links"><a href="https://humanhistorymap.com/" target="_blank" rel="noopener">humanhistorymap.com ↗</a></p>
     </div>
   </article>
@@ -193,7 +186,7 @@
       </div>
       <div class="stage" id="stage">
         <div class="stage-idle" id="stage-idle">
-          <p>Choose something on the left.<br>Neuron Snake is a good place to start.</p>
+          <p>Choose something on the left.<br>Be the Fly is a good place to start.</p>
         </div>
       </div>
       <p class="stage-desc" id="stage-desc"></p>
