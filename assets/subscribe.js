@@ -2,7 +2,7 @@
 // Put the Buttondown username here (the name in https://buttondown.com/<username>)
 // to switch it on. Until then every form stays hidden, so nobody types an email
 // into a form that goes nowhere.
-const BUTTONDOWN_USER = "";
+const BUTTONDOWN_USER = "amysterling";
 
 // Buttondown asks for a plain form post, not fetch: a subscriber may need to finish
 // a CAPTCHA or fix a typo on its page. It opens in a new tab so this page stays put.
