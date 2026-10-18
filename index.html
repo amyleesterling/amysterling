@@ -14,12 +14,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
-<script type="importmap">
-{ "imports": {
-  "three": "https://whatisabrain.com/mouse/vendor/three/three.module.min.js",
-  "three/addons/": "https://whatisabrain.com/mouse/vendor/three/addons/"
-} }
-</script>
 </head>
 <body>
 <a class="skip" href="#brains">Skip to content</a>
@@ -68,15 +62,11 @@
   </div>
   <figure class="hero-cell">
     <div class="brain-box" id="brain">
-      <div class="brain-canvas" id="brain-canvas" role="img" aria-label="A real human brain, turning slowly, with its white matter cables glowing in blue, pink and gold"></div>
-      <div class="brain-ui">
-        <button class="btn primary" id="brain-go" type="button">Explore</button>
-      </div>
-      <button class="icon-btn brain-back" id="brain-back" type="button" hidden aria-label="Back to the brain">×</button>
+      <iframe class="brain-frame" src="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3&amp;embed=1" title="Every area of the human cortex: drag to turn the brain, click an area to light up its white matter cables" allow="fullscreen"></iframe>
     </div>
-    <figcaption id="brain-cap">
-      <span class="tag">Real data</span>
-      <strong>A human brain and its white matter.</strong> The cortex is the HCP group average surface, and every cable is a streamline from the HCP1065 tractography atlas: 87 named bundles averaged over 1,065 people. The moving pulses are decoration on those real paths. Press Explore to zoom from a whole mouse brain down to a single dendrite.
+    <figcaption>
+      <span class="tag">Drag to turn · click an area</span>
+      <strong>Every area of the human cortex.</strong> All 360 areas of the HCP-MMP1 atlas, with the measured white matter cables that reach area 4, the primary motor cortex. Click any other area to light up its own cables. <a href="https://whatisabrain.com/tracks/?areas=every&amp;area=4&amp;hemi=L&amp;conn=1&amp;surf=0.3" target="_blank" rel="noopener">Open it full size ↗</a>
     </figcaption>
   </figure>
 </section>
@@ -499,6 +489,5 @@
 
 <script type="module" src="assets/site.js"></script>
 <script type="module" src="assets/subscribe.js"></script>
-<script type="module" src="assets/brain.js"></script>
 </body>
 </html>
