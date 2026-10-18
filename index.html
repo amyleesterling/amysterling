@@ -1,264 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amy Sterling - Social Links</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 600px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .profile {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .profile h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .profile p {
-            color: #666;
-            font-size: 1.1em;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .link-item {
-            display: flex;
-            align-items: center;
-            padding: 20px 25px;
-            background: white;
-            border-radius: 12px;
-            text-decoration: none;
-            color: #333;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border: 2px solid transparent;
-        }
-
-        .link-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            border-color: #667eea;
-        }
-
-        .link-icon {
-            width: 40px;
-            height: 40px;
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-        }
-
-        .link-text {
-            flex: 1;
-            font-weight: 500;
-            font-size: 1.1em;
-        }
-
-        .link-arrow {
-            color: #999;
-            font-size: 20px;
-        }
-
-        /* Platform specific colors */
-        .link-item.twitter:hover {
-            border-color: #1DA1F2;
-        }
-
-        .link-item.youtube:hover {
-            border-color: #FF0000;
-        }
-
-        .link-item.tiktok:hover {
-            border-color: #000000;
-        }
-
-        .link-item.xiaohongshu:hover {
-            border-color: #FF2442;
-        }
-
-        .link-item.instagram:hover {
-            border-color: #E1306C;
-        }
-
-        .featured {
-            margin-bottom: 40px;
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .featured-image-link {
-            display: block;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        }
-
-        .featured-image {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .featured-image-link:hover .featured-image {
-            transform: scale(1.05);
-        }
-
-        .featured-content {
-            padding: 20px 25px;
-        }
-
-        .featured-content h2 {
-            color: #333;
-            font-size: 1.3em;
-            margin-bottom: 10px;
-        }
-
-        .featured-content p {
-            color: #666;
-            margin-bottom: 15px;
-        }
-
-        .featured-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
-        }
-
-        .featured-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.5);
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                padding: 30px 20px;
-            }
-
-            .profile h1 {
-                font-size: 2em;
-            }
-
-            .link-item {
-                padding: 15px 20px;
-            }
-
-            .link-text {
-                font-size: 1em;
-            }
-
-            .featured {
-                margin-bottom: 30px;
-            }
-
-            .featured-content h2 {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amy Sterling</title>
+<meta name="description" content="Amy Sterling designs the games, tools and pictures that let people map the brain. EyeWire II, Pyr, FlyWire, and about a hundred things on GitHub you can play with here.">
+<meta property="og:title" content="Amy Sterling">
+<meta property="og:description" content="Games, tools and pictures for mapping the brain, and about a hundred other things you can play with.">
+<meta property="og:image" content="https://amysterling.org/media/full/rainbow-neurons.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='6' fill='%23f5d142'/%3E%3Cpath d='M16 10V2M16 22v8M10 16H2M22 16h8M11.5 11.5 6 6M20.5 20.5 26 26' stroke='%23f5d142' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://whatisabrain.com/mouse/vendor/three/three.module.min.js",
+  "three/addons/": "https://whatisabrain.com/mouse/vendor/three/addons/"
+} }
+</script>
 </head>
 <body>
-    <div class="container">
-        <div class="profile">
-            <h1>Amy Sterling</h1>
-            <p>Connect with me on social media</p>
-        </div>
+<a class="skip" href="#brains">Skip to content</a>
 
-        <div class="featured">
-            <a href="renders.html" class="featured-image-link">
-                <img src="images/nature_methods_2025.png" alt="Connectomics visualization" class="featured-image">
-            </a>
-            <div class="featured-content">
-                <h2>Renders & Media Gallery</h2>
-                <p>Explore my scientific visualizations and neural network renders</p>
-                <a href="renders.html" class="featured-button">View Renders and Media</a>
-            </div>
-        </div>
+<header class="top">
+  <a class="mark" href="#top" aria-label="Amy Sterling, back to top"><span class="dot" aria-hidden="true"></span>Amy Sterling</a>
+  <nav aria-label="Sections">
+    <a href="#brains">Brains</a>
+    <a href="#play">Play</a>
+    <a href="#kids">Kids</a>
+    <a href="#gallery">Art</a>
+    <a href="#papers">Papers</a>
+    <a href="#talks">Talks</a>
+    <a href="blog/">Blog</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
 
-        <div class="links">
-            <a href="particles.html" class="link-item">
-                <div class="link-icon">✨</div>
-                <div class="link-text">Neuron Particle Simulation</div>
-                <div class="link-arrow">→</div>
-            </a>
+<main id="top">
 
-            <a href="comedy/" class="link-item">
-                <div class="link-icon">🎤</div>
-                <div class="link-text">Boston Comedy Calendar</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://x.com/amyneurons" class="link-item twitter" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">𝕏</div>
-                <div class="link-text">X (Twitter)</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://youtube.com/@amysterling?si=tsURz7mYXIWCPtXe" class="link-item youtube" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">▶</div>
-                <div class="link-text">YouTube</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://www.tiktok.com/@amyrsterling?_r=1&_t=ZT-93hMBnCKpV0" class="link-item tiktok" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">♪</div>
-                <div class="link-text">TikTok</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://xhslink.com/m/3g8HLlRoJ7v" class="link-item xiaohongshu" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">📕</div>
-                <div class="link-text">小红书 Xiaohongshu (Rednote)</div>
-                <div class="link-arrow">→</div>
-            </a>
-
-            <a href="https://www.instagram.com/amyrobinsonsterling/" class="link-item instagram" target="_blank" rel="noopener noreferrer">
-                <div class="link-icon">📷</div>
-                <div class="link-text">Instagram</div>
-                <div class="link-arrow">→</div>
-            </a>
-        </div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow roles"><span>Executive Director, Eyewire</span> <span>Crowdsourcing Specialist, Princeton University</span></p>
+    <h1>Amy Sterling</h1>
+    <p class="lede">I design the games, tools and pictures that let people map the brain, one neuron at a time. Then I build about a hundred other things, most of which you can play with on this page.</p>
+    <dl class="hero-stats" id="hero-stats" aria-live="polite">
+      <div><dt>Public repos</dt><dd data-stat="repos">100</dd></div>
+      <div><dt>Commits this year</dt><dd data-stat="commits">4,023</dd></div>
+      <div><dt>Live sites</dt><dd data-stat="live">72</dd></div>
+    </dl>
+    <p class="fine" id="hero-updated">Counted from GitHub every morning.</p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#play">Play something</a>
+      <a class="btn" href="https://github.com/amyleesterling">GitHub</a>
     </div>
+    <ul class="follow" aria-label="Elsewhere">
+      <li><a href="https://youtube.com/@amysterling">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@amyrsterling">TikTok</a></li>
+      <li><a href="https://xhslink.com/m/3g8HLlRoJ7v">Rednote</a></li>
+      <li><a href="https://www.instagram.com/amyrobinsonsterling/">Instagram</a></li>
+      <li><a href="https://x.com/amyneurons">X</a></li>
+      <li><a href="https://www.linkedin.com/in/amyleesterling/">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0000-0002-4961-3954">ORCID</a></li>
+    </ul>
+  </div>
+  <figure class="hero-cell">
+    <div class="brain-box" id="brain">
+      <div class="brain-canvas" id="brain-canvas" role="img" aria-label="A real human brain, turning slowly, with its white matter cables glowing in blue, pink and gold"></div>
+      <div class="brain-ui">
+        <button class="btn primary" id="brain-go" type="button">Explore</button>
+      </div>
+      <button class="icon-btn brain-back" id="brain-back" type="button" hidden aria-label="Back to the brain">×</button>
+    </div>
+    <figcaption id="brain-cap">
+      <span class="tag">Real data</span>
+      <strong>A human brain and its white matter.</strong> The cortex is the HCP group average surface, and every cable is a streamline from the HCP1065 tractography atlas: 87 named bundles averaged over 1,065 people. The moving pulses are decoration on those real paths. Press Explore to zoom from a whole mouse brain down to a single dendrite.
+    </figcaption>
+  </figure>
+</section>
+
+<!-- NOW -->
+<section id="now" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Now</p>
+    <h2>What I am working on</h2>
+  </header>
+  <div class="now-grid">
+    <article class="now-card">
+      <img src="media/thumb/pyr-posters-somas2.webp" alt="Pyramidal neurons from Pyr in purple, green and gold" loading="lazy" width="720" height="405">
+      <div class="now-body">
+        <p class="tag">Seung Lab</p>
+        <h3>EyeWire II and Pyr</h3>
+        <p>Games where players proofread real connectomes: the mouse retina in EyeWire II, the hippocampus in Pyr. I design the game, the tools and the community around it, and I write a lot of the code.</p>
+        <p class="links"><a href="https://pyr.ai/">pyr.ai</a><a href="https://connectome.quest/">connectome.quest</a><a href="https://eyewire.org">Eyewire</a></p>
+      </div>
+    </article>
+    <article class="now-card">
+      <img src="media/thumb/nature-cover-500k.webp" alt="Nature cover for the fly connectome issue, a colorful fly brain" loading="lazy" width="546" height="720">
+      <div class="now-body">
+        <p class="tag">FlyWire</p>
+        <h3>The fly connectome</h3>
+        <p>Design, renders and public tools for FlyWire, the first complete wiring diagram of an adult fly brain, and its sequel the BANC, which adds the nerve cord.</p>
+        <p class="links"><a href="https://flywire.ai/">flywire.ai</a><a href="https://codex.flywire.ai/">Codex</a><a href="https://amyleesterling.github.io/banc/">BANC renders</a></p>
+      </div>
+    </article>
+    <article class="now-card">
+      <img src="media/thumb/brain-to-neuron-scale-bar-graphic-sterling.webp" alt="Scales of the brain: a whole brain, a cortical column, a neuron, and a synapse" loading="lazy" width="720" height="394">
+      <div class="now-body">
+        <p class="tag">For everyone</p>
+        <h3>What's a brain?</h3>
+        <p>Real reconstructed neurons for people who have never seen one, from kindergarten up. It runs on a museum wall in Boston and as a site anyone can open.</p>
+        <p class="links"><a href="https://whatisabrain.com">whatisabrain.com</a><a href="#brains">See the pages</a></p>
+      </div>
+    </article>
+    <article class="now-card">
+      <img src="media/thumb/ca3-pyr-mossy-fibers.webp" alt="CA3 pyramidal cells in blue with mossy fiber axons in gold" loading="lazy" width="720" height="405">
+      <div class="now-body">
+        <p class="tag">Renders</p>
+        <h3>Pictures for papers</h3>
+        <p>Figures and animations for connectomics papers: CA3 in the hippocampus, the mouse retina with calcium imaging played back on it, MICrONS cortex, the BANC.</p>
+        <p class="links"><button class="linkish" data-play="ca3">CA3</button><button class="linkish" data-play="retina">Retina</button><button class="linkish" data-play="microns">MICrONS</button></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- BRAINS -->
+<section id="brains" class="block">
+  <header class="block-head">
+    <p class="eyebrow">What's a brain?</p>
+    <h2>Brains you can explore</h2>
+    <p class="intro">Real data, drawn in your browser: a human brain at three scales, a mouse brain, a whole fly. All of it lives at <a href="https://whatisabrain.com">whatisabrain.com</a>.</p>
+  </header>
+  <div class="brain-grid">
+    <article class="brain-card">
+      <button class="shot" type="button" data-play="wab-tracks" aria-label="Play Every area of the human cortex here"><img src="media/brains/wab-tracks.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+      <div class="brain-body">
+        <p class="tag">White matter explorer</p>
+        <h3>Every area of the human cortex</h3>
+        <p>All 360 areas of the HCP parcellation and the measured white matter cables that reach each one. Click any part of the cortex and it tells you what you hit.</p>
+        <p class="links"><a href="https://whatisabrain.com/tracks/" target="_blank" rel="noopener">whatisabrain.com/tracks ↗</a></p>
+      </div>
+    </article>
+    <article class="brain-card">
+      <button class="shot" type="button" data-play="wab-hippocampus" aria-label="Play The hippocampus at 50 micrometers here"><img src="media/brains/wab-hippocampus.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+      <div class="brain-body">
+        <p class="tag">Human</p>
+        <h3>The hippocampus at 50 micrometers</h3>
+        <p>A human hippocampus scanned at fifty micrometers, the finest diffusion MRI of a human brain reported so far.</p>
+        <p class="links"><a href="https://whatisabrain.com/human/hippocampus/" target="_blank" rel="noopener">whatisabrain.com/human/hippocampus ↗</a></p>
+      </div>
+    </article>
+    <article class="brain-card">
+      <button class="shot" type="button" data-play="wab-mouse" aria-label="Play 30,000 neurons of 70 million here"><img src="media/brains/wab-mouse.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+      <div class="brain-body">
+        <p class="tag">Mouse</p>
+        <h3>30,000 neurons of 70 million</h3>
+        <p>Watch a signal leave a cell body and reach every region its axon touches. Every line is a real axon.</p>
+        <p class="links"><a href="https://whatisabrain.com/mouse/" target="_blank" rel="noopener">whatisabrain.com/mouse ↗</a></p>
+      </div>
+    </article>
+    <article class="brain-card">
+      <button class="shot" type="button" data-play="wab-fly" aria-label="Play A whole nervous system, one cell at a time here"><img src="media/brains/wab-fly.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+      <div class="brain-body">
+        <p class="tag">Fly</p>
+        <h3>A whole nervous system, one cell at a time</h3>
+        <p>The FlyWire connectome in 3D: every neuron and synapse of the fruit fly brain, open to anyone.</p>
+        <p class="links"><a href="https://whatisabrain.com/fly/" target="_blank" rel="noopener">whatisabrain.com/fly ↗</a></p>
+      </div>
+    </article>
+  </div>
+  <article class="feature">
+    <button class="shot" type="button" data-play="human-history-map" aria-label="Play Human History Map here"><img src="media/brains/humanhistorymap.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+    <div class="brain-body">
+      <p class="tag">Also</p>
+      <h3>Human History Map</h3>
+      <p>An interactive globe and timeline of civilizations, their changing borders, inventions, and ideas. Press play and watch five thousand years go by.</p>
+      <p class="links"><a href="https://humanhistorymap.com/" target="_blank" rel="noopener">humanhistorymap.com ↗</a></p>
+    </div>
+  </article>
+</section>
+
+<!-- PLAY -->
+<section id="play" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Play</p>
+    <h2>Try them right here</h2>
+    <p class="intro">Each one is the real, live site, running inside this page. Pick one from the list, or press ▶ on any card.</p>
+  </header>
+  <div class="player">
+    <ol class="playlist" id="playlist" aria-label="Live projects"></ol>
+    <div class="stage-wrap">
+      <div class="stage-bar">
+        <span class="stage-title" id="stage-title">Pick a project</span>
+        <span class="stage-actions">
+          <button class="icon-btn" id="stage-reload" title="Reload" aria-label="Reload">↻</button>
+          <button class="icon-btn" id="stage-full" title="Full screen" aria-label="Full screen">⤢</button>
+          <a class="icon-btn" id="stage-open" href="#" target="_blank" rel="noopener" title="Open in a new tab" aria-label="Open in a new tab">↗</a>
+        </span>
+      </div>
+      <div class="stage" id="stage">
+        <div class="stage-idle" id="stage-idle">
+          <p>Choose something on the left.<br>Neuron Snake is a good place to start.</p>
+        </div>
+      </div>
+      <p class="stage-desc" id="stage-desc"></p>
+    </div>
+  </div>
+</section>
+
+<!-- KIDS -->
+<section id="kids" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Built with my kids</p>
+    <h2>Sophia &amp; Cora</h2>
+    <p class="intro">My daughters Sophia, 7, and Cora, 5, dream up the games and we build them together. Everything lives at <a href="https://sophieandcora.com/">sophieandcora.com</a>, free, with no account needed.</p>
+  </header>
+  <h3 class="mini">Dreamed up by them</h3>
+  <div class="kid-grid">
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sophia-funny-dragon" aria-label="Play Funny Dragons here"><img src="media/kids/funny-dragons.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">By Sophia</p>
+        <h3>Funny Dragons</h3>
+        <p>Collect the gems while evading the flames of these four funny dragons!</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="cocos-pooping-unicorn-game" aria-label="Play Pooping Unicorn here"><img src="media/kids/pooping-unicorn.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">By Coco</p>
+        <h3>Pooping Unicorn</h3>
+        <p>A magical unicorn. Infinite rainbow poop.</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sophie-shark-game" aria-label="Play Shark & Fish here"><img src="media/kids/shark-fish.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">By Sophia</p>
+        <h3>Shark & Fish</h3>
+        <p>Collect gems, dodge sharks, and find the bedazzled octopus!</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="cocos-mythic-meadow" aria-label="Play Unicorn & Wolf here"><img src="media/kids/unicorn-wolf.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">By Coco</p>
+        <h3>Unicorn & Wolf</h3>
+        <p>Explore Magic Meadow. Collect stars. Watch out for the wolf!</p>
+      </article>
+  </div>
+  <h3 class="mini kid-sub">Learning games we made together</h3>
+  <div class="kid-grid">
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-reading" aria-label="Play Reading Adventure here"><img src="media/kids/reading-adventure.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 4 to 8</p>
+        <h3>Reading Adventure</h3>
+        <p>Build words, read words, find rhymes, and pop sight words. Earn stars and fill your sticker book!</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-books" aria-label="Play Little Books here"><img src="media/kids/little-books.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 5 to 8</p>
+        <h3>Little Books</h3>
+        <p>Thirty stories to read all by yourself, from tiny tales to chapter books.</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-letters" aria-label="Play Letter Sounds here"><img src="media/kids/letter-sounds.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 3 to 5</p>
+        <h3>Letter Sounds</h3>
+        <p>Every letter with its pictures, and a game about first sounds.</p>
+      </article>
+      <article class="kid-card">
+        <button class="shot" type="button" data-play="sc-math" aria-label="Play Math Arcade here"><img src="media/kids/math-arcade.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Ages 4 to 8</p>
+        <h3>Math Arcade</h3>
+        <p>Block Math and Ten Drop: add, take away, times and share with towers of blocks.</p>
+      </article>
+      <article class="kid-card wip">
+        <button class="shot" type="button" data-play="sc-mountain" aria-label="Play Math Mountain here"><img src="media/kids/math-mountain.webp" alt="" loading="lazy" width="960" height="600"><span class="play-chip">▶ Play here</span></button>
+        <p class="tag">Under construction</p>
+        <h3>Math Mountain</h3>
+        <p>Climb from number lines and fractions all the way to physics and the maths behind AI.</p>
+      </article>
+      <article class="kid-card wip">
+        <div class="shot blank" aria-hidden="true"><span>Coming soon</span></div>
+        <p class="tag">Under construction</p>
+        <h3>Paintbrush Island</h3>
+        <p>A grey 3D island. Read the words and paint it back to life!</p>
+      </article>
+  </div>
+  <p class="links kid-links"><a class="btn" href="https://sophieandcora.com/">Visit sophieandcora.com ↗</a></p>
+</section>
+
+<!-- GITHUB -->
+<section id="github" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Code</p>
+    <h2>Everything else is on GitHub</h2>
+    <p class="intro" id="projects-intro">About a hundred public repos, from connectome tools to a pizza oven log. Counted every morning; commits are only mine, with the scheduled robots left out.</p>
+  </header>
+  <div class="activity">
+    <figure class="chart">
+      <figcaption><span id="chart-title">Commits per month</span><span class="fine" id="chart-note"></span></figcaption>
+      <div class="bars" id="bars" role="img" aria-label="Bar chart of commits per month this year"></div>
+    </figure>
+    <div class="leaders">
+      <h3 class="mini">Busiest this year</h3>
+      <ol id="leaders"></ol>
+    </div>
+  </div>
+  <p class="hero-cta">
+    <a class="btn primary" href="https://github.com/amyleesterling">github.com/amyleesterling ↗</a>
+    <a class="btn" href="https://amy-projects-2026.amysterling.chatgpt.site/#world">My repository mapper ↗</a>
+  </p>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Gallery</p>
+    <h2>Renders and posters</h2>
+    <p class="intro">Every cell in these was reconstructed from electron microscopy, mostly by people playing games. Click any one to see it large.</p>
+  </header>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<!-- EXECUTIVE PRODUCER -->
+<section id="producer" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Executive Producer</p>
+    <h2>Art I produced</h2>
+    <p class="intro">Beyond my own renders, I produce art for Eyewire with illustrators and students.</p>
+  </header>
+  <article class="zoo">
+    <div class="zoo-text">
+      <p class="tag">Franklin Park Zoo, Boston</p>
+      <h3>Zoo Brains</h3>
+      <p>An exhibit at Zoo New England produced by Eyewire, of Princeton University's Seung Lab, with illustration students at Massachusetts College of Art and Design. It invites visitors to venture into the brains of animals, with a poster series on the uniqueness of a dozen species at the zoo.</p>
+      <p class="links"><a href="blog/enter-the-brain-zoo.html">Read the post</a></p>
+    </div>
+    <div class="zoo-grid single-view">
+      <button type="button" data-full="media/zoo/gorilla-full.webp" data-title="Zoo Brains: Gorillas have more neurons than any animal other than humans."><img src="media/zoo/gorilla-thumb.webp" alt="Zoo Brains poster: Gorillas have more neurons than any animal other than humans." loading="lazy" width="480" height="640"></button>
+      <button type="button" data-full="media/zoo/sloth-full.webp" data-title="Zoo Brains: Sloths sleep 10 to 16 hours per day."><img src="media/zoo/sloth-thumb.webp" alt="Zoo Brains poster: Sloths sleep 10 to 16 hours per day." loading="lazy" width="480" height="640"></button>
+      <button type="button" data-full="media/zoo/anaconda-full.webp" data-title="Zoo Brains: Anacondas have a unique part of the brain that lets them see in infrared."><img src="media/zoo/anaconda-thumb.webp" alt="Zoo Brains poster: Anacondas have a unique part of the brain that lets them see in infrared." loading="lazy" width="480" height="640"></button>
+      <button type="button" data-full="media/zoo/giraffe-full.webp" data-title="Zoo Brains: A giraffe has neurons that are longer than you!"><img src="media/zoo/giraffe-thumb.webp" alt="Zoo Brains poster: A giraffe has neurons that are longer than you!" loading="lazy" width="480" height="640"></button>
+      <button type="button" data-full="media/zoo/bee-full.webp" data-title="Zoo Brains: Honey bees use the waggle dance to communicate the location of flowers."><img src="media/zoo/bee-thumb.webp" alt="Zoo Brains poster: Honey bees use the waggle dance to communicate the location of flowers." loading="lazy" width="480" height="640"></button>
+      <button type="button" data-full="media/zoo/ostrich-full.webp" data-title="Zoo Brains: Ostriches' eyes are bigger than their brains!"><img src="media/zoo/ostrich-thumb.webp" alt="Zoo Brains poster: Ostriches' eyes are bigger than their brains!" loading="lazy" width="480" height="640"></button>
+      <button type="button" data-full="media/zoo/squirrel-full.webp" data-title="Zoo Brains: If a rodent had 86 billion neurons like you, its brain would weigh 99 pounds."><img src="media/zoo/squirrel-thumb.webp" alt="Zoo Brains poster: If a rodent had 86 billion neurons like you, its brain would weigh 99 pounds." loading="lazy" width="480" height="640"></button>
+    </div>
+  </article>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="papers" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Publications</p>
+    <h2>Papers</h2>
+    <p class="intro" id="papers-intro">From my ORCID record, with the journal version of each paper in place of its preprint. Connectomics papers have long author lists, so each shows its first author.</p>
+  </header>
+  <div class="filters">
+    <div class="chips" id="paper-kinds" role="group" aria-label="Filter papers"></div>
+    <p class="fine"><a href="https://orcid.org/0000-0002-4961-3954">ORCID 0000-0002-4961-3954 ↗</a></p>
+  </div>
+  <ol class="papers" id="paper-list"></ol>
+</section>
+
+<!-- TALKS / EXHIBITIONS / PRESS -->
+<section id="talks" class="block">
+  <header class="block-head">
+    <p class="eyebrow">Talks, exhibitions, press</p>
+    <h2>Out in the world</h2>
+  </header>
+
+  <div class="talk">
+    <div class="yt" data-yt="R6WEElXC8wI">
+      <button type="button" aria-label="Play the TEDxKyoto talk">
+        <img src="https://i.ytimg.com/vi/R6WEElXC8wI/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+        <span class="play-glyph" aria-hidden="true">▶</span>
+      </button>
+    </div>
+    <div>
+      <p class="tag">TEDxKyoto</p>
+      <h3>Play a game, map the mind</h3>
+      <p>On blending machine intelligence with crowdsourced human intellect to map the brain.</p>
+      <p class="links"><a href="https://www.youtube.com/watch?v=R6WEElXC8wI">Watch on YouTube</a></p>
+    </div>
+  </div>
+
+  <ol class="exhibits">
+    <li><span class="where">Barbican Centre, London, then touring</span><strong>AI: More than Human.</strong> One of four people featured on video, with a kiosk version of Eyewire for visitors to map neurons.</li>
+    <li><span class="where">Times Square, New York</span><strong>Brain City.</strong> Eyewire neurons on dozens of billboards for the Midnight Moment, with filmmaker Noah Hutton.</li>
+    <li><span class="where">Gulbenkian, Lisbon</span><strong>Brain: wider than the sky.</strong> A touch screen explorer of neurons reconstructed by Eyewirers and AI.</li>
+    <li><span class="where">Tribeca Film Festival, New York</span><strong>BrainVR.</strong> A working neural circuit in VR with the MIT Media Lab Fluid Interfaces Group. Visitors painted with light to trigger a circuit Eyewirers discovered and published in Nature.</li>
+    <li><span class="where">TED, Vancouver, 2014</span><strong>Neurons in Space.</strong> Fly through a field of retinal neurons in an Oculus Rift, then out to a life size International Space Station. With Microsoft Research.</li>
+    <li><span class="where">Franklin Park Zoo, Boston, 2015</span><strong>Zoo Brains.</strong> Posters on brain and behavior, with MassArt and Tufts.</li>
+    <li><span class="where">Also</span>Istanbul Design Biennial, the MIT Museum, and pop up exhibitions in San Francisco, Barcelona and Hong Kong.</li>
+  </ol>
+
+  <div class="quotes">
+    <blockquote><p>Among the nerds who matter.</p><cite>NBC News</cite></blockquote>
+    <blockquote><p>There is no limb she won't go out on, no dendrite she won't explore, if she thinks it will lead to a breakthrough.</p><cite>The Boston Globe</cite></blockquote>
+    <blockquote><p>She's a badass.</p><cite>Jeff Bezos</cite></blockquote>
+  </div>
+
+  <p class="press-row" aria-label="Press">
+    <a href="https://www.nytimes.com/video/science/100000002899950/citizen-neuroscience.html">The New York Times</a>
+    <a href="https://www.wired.com/2013/08/a-video-game-that-lets-you-be-a-neuroscientist/">Wired</a>
+    <a href="https://www.nationalgeographic.com/science/article/flying-through-inner-space">National Geographic</a>
+    <a href="https://www.nature.com/articles/d41586-019-02208-0">Nature</a>
+    <a href="https://www.npr.org/2014/05/05/309694759/computer-game-aides-scientist-mapping-eye-nerve-cells">NPR</a>
+    <a href="https://www.smithsonianmag.com/science-nature/how-scientists-are-using-games-unlock-bodys-mysteries-180951864/">Smithsonian</a>
+    <a href="https://www.nbcnews.com/science/science-news/eyewire-video-gamers-help-untangle-retinas-space-time-secrets-n95861">NBC News</a>
+    <a href="https://blogs.scientificamerican.com/expeditions/journey-through-the-brain-mit-neurotech/">Scientific American</a>
+    <a href="https://slate.com/technology/2016/08/citizen-science-isnt-just-about-collecting-data.html">Slate</a>
+    <a href="https://www.youtube.com/watch?v=t2ZWf-DeexY">Vsauce3</a>
+    <a href="https://www.forbes.com/sites/amysterling/">My Forbes column</a>
+  </p>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="block about">
+  <div class="about-text">
+    <p class="eyebrow">About</p>
+    <h2>Hi, I'm Amy.</h2>
+    <p>I am the Executive Director of Eyewire, the game where players all over the world trace neurons in the retina, and a Crowdsourcing Specialist at Princeton University. I've spent the past 15 years working with Sebastian Seung, first at MIT and now at Princeton University. We've created <a href="https://eyewire.org">Eyewire</a>, <a href="https://www.nature.com/collections/hgcfafejia">FlyWire</a>, and now the next chapter of citizen neuroscience: <a href="https://connectome.quest/">Pyr</a>.</p>
+    <p>I have <a href="#papers">published</a> in Nature, Cell and Nature Methods, written about neuroscience and data visualization for Forbes, and advised the White House Office of Science and Technology Policy on innovation methods. Forbes put me on its 30 Under 30 list in 2015, and Fast Company called me an Innovation Agent. I also founded the TEDx Music Project.</p>
+    <p>Most evenings I build things with my two kids: games, a robot, a site full of jokes. They have strong opinions and they are usually right.</p>
+  </div>
+  <div class="about-side">
+    <h3 class="mini">Covers</h3>
+    <div class="covers single-view" id="covers">
+      <figure class="star">
+        <button type="button" data-full="media/covers/nature-fly-connectome-full.webp" data-title="Nature, 3 October 2024. Fly Connectome: a complete map of neuronal connections in an adult fruit fly's brain.">
+          <img src="media/covers/nature-fly-connectome-thumb.webp" alt="Nature cover, 3 October 2024: Fly Connectome" width="485" height="640" loading="lazy">
+        </button>
+        <figcaption class="cap"><b>Nature</b> · 3 October 2024 · Fly connectome</figcaption>
+      </figure>
+      <figure>
+        <button type="button" data-full="media/covers/nature-neuroscience-ca3-full.webp" data-title="Nature Neuroscience, September 2026. Hippocampal CA3 connectomics.">
+          <img src="media/covers/nature-neuroscience-ca3-thumb.webp" alt="Nature Neuroscience cover, September 2026: Hippocampal CA3 connectomics" width="485" height="640" loading="lazy">
+        </button>
+        <figcaption class="cap"><b>Nature Neuroscience</b> Sep 2026<br>CA3</figcaption>
+      </figure>
+      <figure>
+        <button type="button" data-full="media/covers/nature-methods-full.webp" data-title="Nature Methods, December 2025. Method of the Year: EM based connectomics.">
+          <img src="media/covers/nature-methods-thumb.webp" alt="Nature Methods cover, December 2025: Method of the Year, EM based connectomics" width="482" height="640" loading="lazy">
+        </button>
+        <figcaption class="cap"><b>Nature Methods</b> Dec 2025<br>Method of the Year</figcaption>
+      </figure>
+      <figure>
+        <button type="button" data-full="media/covers/nature-microns-full.webp" data-title="Nature, 10 April 2025. Cortex in Context: detailed mapping of neural connections and functions in the mouse brain.">
+          <img src="media/covers/nature-microns-thumb.webp" alt="Nature cover, 10 April 2025: Cortex in Context" width="482" height="640" loading="lazy">
+        </button>
+        <figcaption class="cap"><b>Nature</b> Apr 2025<br>MICrONS</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="mini">Get in touch</h3>
+        <p><a class="big-link" href="mailto:amysterling@princeton.edu">amysterling@princeton.edu</a></p>
+    <ul class="socials">
+      <li><a href="https://github.com/amyleesterling">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/amyleesterling/">LinkedIn</a></li>
+      <li><a href="https://orcid.org/0000-0002-4961-3954">ORCID</a></li>
+      <li><a href="https://x.com/amyneurons">X</a></li>
+      <li><a href="https://www.instagram.com/amyrobinsonsterling/">Instagram</a></li>
+      <li><a href="https://youtube.com/@amysterling">YouTube</a></li>
+      <li><a href="https://www.tiktok.com/@amyrsterling">TikTok</a></li>
+      <li><a href="https://xhslink.com/m/3g8HLlRoJ7v">Rednote</a></li>
+    </ul>
+
+    <form class="subscribe" id="subscribe" hidden>
+      <h3 class="mini">A rare email</h3>
+      <p>I don't often write a newsletter, but when I do I promise it won't be boring.</p>
+      <label class="sr" for="sub-email">Email address</label>
+      <div class="sub-row">
+        <input id="sub-email" name="email" type="email" required placeholder="you@example.com" autocomplete="email">
+        <button class="btn primary" type="submit">Sign up</button>
+      </div>
+      <p class="fine sub-msg" id="sub-msg" role="status"></p>
+    </form>
+
+    <h3 class="mini">Elsewhere on this site</h3>
+    <ul class="elsewhere">
+      <li><a href="comedy/">Boston comedy calendar</a>, refreshed monthly</li>
+      <li><a href="particles.html">Neuron particles</a></li>
+      <li><a href="sol/">Project Sol</a>, notes on recursive cognitive development</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Thank you for being here. ♡</p>
+  <p class="fine">Built from scratch, no template. Data from GitHub, refreshed daily. <a href="https://github.com/amyleesterling/amysterling">Source</a></p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<script type="module" src="assets/site.js"></script>
+<script type="module" src="assets/subscribe.js"></script>
+<script type="module" src="assets/brain.js"></script>
 </body>
 </html>

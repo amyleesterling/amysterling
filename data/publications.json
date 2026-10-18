@@ -1,0 +1,189 @@
+{
+ "orcid": "https://orcid.org/0000-0002-4961-3954",
+ "works": [
+  {
+   "title": "Distributed control circuits across a brain-and-cord connectome",
+   "year": 2026,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-026-10735-w",
+   "kind": "paper",
+   "first_author": "Alexander Shakeel Bates"
+  },
+  {
+   "title": "Hippocampal CA3 connectomics reveals a gradient of mossy fiber inputs and selective feedforward inhibition onto pyramidal cells",
+   "year": 2026,
+   "venue": "Nature Neuroscience",
+   "doi": "10.1038/s41593-026-02388-9",
+   "kind": "paper",
+   "first_author": "Zhihao Zheng"
+  },
+  {
+   "title": "Eyewire II – A connectomic resource for resolving cell types and circuits of the mouse retina",
+   "year": 2026,
+   "venue": "bioRxiv",
+   "doi": "10.64898/2026.05.28.727403",
+   "kind": "preprint",
+   "first_author": "Sebastian Ströh"
+  },
+  {
+   "title": "Uncovering Sex Differences in the Drosophila Ventral Nerve Cord Through Connectome Alignment",
+   "year": 2026,
+   "venue": "SSRN",
+   "doi": "10.2139/ssrn.7500840",
+   "kind": "preprint",
+   "first_author": "Arie Matsliah"
+  },
+  {
+   "title": "Comparative connectomics of Drosophila descending and ascending neurons",
+   "year": 2025,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-025-08925-z",
+   "kind": "paper",
+   "first_author": "Tomke Stürner"
+  },
+  {
+   "title": "Functional connectomics spanning multiple areas of mouse visual cortex",
+   "year": 2025,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-025-08790-w",
+   "kind": "paper",
+   "first_author": "J. Alexander Bae"
+  },
+  {
+   "title": "Sexually dimorphic neurons in the Drosophila whole-brain connectome",
+   "year": 2025,
+   "venue": "bioRxiv",
+   "doi": "10.1101/2025.06.10.658788",
+   "kind": "preprint",
+   "first_author": "David S. Deutsch"
+  },
+  {
+   "title": "A Drosophila computational brain model reveals sensorimotor processing",
+   "year": 2024,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-024-07763-9",
+   "kind": "paper",
+   "first_author": "Philip K. Shiu"
+  },
+  {
+   "title": "Network statistics of the whole-brain connectome of Drosophila",
+   "year": 2024,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-024-07968-y",
+   "kind": "paper",
+   "first_author": "Albert Lin"
+  },
+  {
+   "title": "Neuronal parts list and wiring diagram for a visual system",
+   "year": 2024,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-024-07981-1",
+   "kind": "paper",
+   "first_author": "Arie Matsliah"
+  },
+  {
+   "title": "Neuronal wiring diagram of an adult brain",
+   "year": 2024,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-024-07558-y",
+   "kind": "paper",
+   "first_author": "Sven Dorkenwald"
+  },
+  {
+   "title": "Neurotransmitter classification from electron microscopy images at synaptic sites in Drosophila melanogaster",
+   "year": 2024,
+   "venue": "Cell",
+   "doi": "10.1016/j.cell.2024.03.016",
+   "kind": "paper",
+   "first_author": "Nils Eckstein"
+  },
+  {
+   "title": "Predicting modular functions and neural coding of behavior from a synaptic wiring diagram",
+   "year": 2024,
+   "venue": "Nature Neuroscience",
+   "doi": "10.1038/s41593-024-01784-3",
+   "kind": "paper",
+   "first_author": "Ashwin Vishwanathan"
+  },
+  {
+   "title": "The fly connectome reveals a path to the effectome",
+   "year": 2024,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-024-07982-0",
+   "kind": "paper",
+   "first_author": "Dean A. Pospisil"
+  },
+  {
+   "title": "Whole-brain annotation and multi-connectome cell typing of Drosophila",
+   "year": 2024,
+   "venue": "Nature",
+   "doi": "10.1038/s41586-024-07686-5",
+   "kind": "paper",
+   "first_author": "Philipp Schlegel"
+  },
+  {
+   "title": "Cyclic structure with cellular precision in a vertebrate sensorimotor neural circuit",
+   "year": 2023,
+   "venue": "Current Biology",
+   "doi": "10.1016/j.cub.2023.05.010",
+   "kind": "paper",
+   "first_author": "Runzhe Yang"
+  },
+  {
+   "title": "Special nuclear layer contacts between starburst amacrine cells in the mouse retina",
+   "year": 2023,
+   "venue": "Frontiers in Ophthalmology",
+   "doi": "10.3389/fopht.2023.1129463",
+   "kind": "paper",
+   "first_author": "Shang Mu"
+  },
+  {
+   "title": "FlyWire: online community for whole-brain connectomics",
+   "year": 2021,
+   "venue": "Nature Methods",
+   "doi": "10.1038/s41592-021-01330-0",
+   "kind": "paper",
+   "first_author": "Sven Dorkenwald"
+  },
+  {
+   "title": "How do Players and Developers of Citizen Science Games Conceptualize Skill Chains?",
+   "year": 2021,
+   "venue": "Proceedings of the ACM on HCI",
+   "doi": "10.1145/3474671",
+   "kind": "paper",
+   "first_author": "Josh Aaron Miller"
+  },
+  {
+   "title": "Digital Museum of Retinal Ganglion Cells with Dense Anatomy and Physiology",
+   "year": 2018,
+   "venue": "Cell",
+   "doi": "10.1016/j.cell.2018.04.040",
+   "kind": "paper",
+   "first_author": "J. Alexander Bae"
+  },
+  {
+   "title": "Repurposing citizen science games as software tools for professional scientists",
+   "year": 2018,
+   "venue": "Foundations of Digital Games",
+   "doi": "10.1145/3235765.3235770",
+   "kind": "paper",
+   "first_author": "Seth Cooper"
+  },
+  {
+   "title": "Open Neuroimaging Laboratory",
+   "year": 2016,
+   "venue": "Research Ideas and Outcomes",
+   "doi": "10.3897/rio.2.e9113",
+   "kind": "paper",
+   "first_author": "Roberto Toro"
+  },
+  {
+   "title": "Space–time wiring specificity supports direction selectivity in the retina",
+   "year": 2014,
+   "venue": "Nature",
+   "doi": "10.1038/nature13240",
+   "kind": "paper",
+   "first_author": "the EyeWirers"
+  }
+ ]
+}
