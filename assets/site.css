@@ -41,6 +41,8 @@ a:hover { color: var(--amber); text-decoration-color: currentColor; }
   letter-spacing: 0.04em;
 }
 .eyebrow { color: var(--amber); font-size: 13px; text-transform: uppercase; margin: 0 0 12px; }
+.roles span { display: block; }
+.roles span + span { margin-top: 2px; }
 .tag { color: var(--cyan); font-size: 12px; text-transform: uppercase; margin: 0 0 6px; display: inline-block; }
 .fine { color: var(--ink-3); font-size: 13px; }
 .mini { font-size: 12px; text-transform: uppercase; color: var(--ink-3); font-weight: 500; margin: 0 0 12px; }
@@ -337,6 +339,7 @@ h3 { font-size: 22px; line-height: 1.2; }
   .search { flex: 1; }
   .search input { width: 100%; }
   .bars { gap: 3px; min-height: 170px; }
+  .roles { font-size: 11px; letter-spacing: 0.02em; }
   .hero-stats { gap: 14px; flex-wrap: nowrap; }
   .hero-stats div { padding-left: 10px; }
   .hero-stats dt { font-size: 10px; }
