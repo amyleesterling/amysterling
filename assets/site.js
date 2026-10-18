@@ -272,6 +272,36 @@ function wireSubscribe() {
   };
 }
 
+/* ---------- publications ---------- */
+async function papers() {
+  let data;
+  try { data = await fetch("data/publications.json").then((r) => r.json()); } catch { return; }
+  const works = data.works;
+  const nPapers = works.filter((w) => w.kind === "paper").length;
+  const nNature = works.filter((w) => w.venue === "Nature").length;
+  $("#papers-intro").textContent = `${nPapers} papers and ${works.length - nPapers} preprints, ${nNature} of them in Nature. From my ORCID record, with the journal version of each paper in place of its preprint. Connectomics papers have long author lists, so each shows its first author.`;
+  let kind = "all";
+  const kinds = [["all", "All", works.length], ["paper", "Papers", nPapers], ["preprint", "Preprints", works.length - nPapers]];
+  $("#paper-kinds").innerHTML = kinds.map(([k, label, n]) => `<button class="chip" type="button" data-kind="${k}" aria-pressed="${k === kind}">${label}<span class="k">${n}</span></button>`).join("");
+  const render = () => {
+    let year = null, out = "";
+    for (const w of works.filter((w) => kind === "all" || w.kind === kind)) {
+      if (w.year !== year) { year = w.year; out += `<li class="yr" aria-hidden="true">${year}</li>`; }
+      out += `<li class="paper"><a class="t" href="https://doi.org/${esc(w.doi)}">${esc(w.title)}</a>
+        <span class="venue">${esc(w.venue)}${w.kind === "preprint" ? `<span class="pre">Preprint</span>` : ""}</span>
+        <span class="by">${esc(w.first_author)} et al., ${year}</span></li>`;
+    }
+    $("#paper-list").innerHTML = out;
+  };
+  $("#paper-kinds").onclick = (e) => {
+    const b = e.target.closest("[data-kind]"); if (!b) return;
+    kind = b.dataset.kind;
+    $$("#paper-kinds .chip").forEach((c) => c.setAttribute("aria-pressed", String(c === b)));
+    render();
+  };
+  render();
+}
+
 /* ---------- boot ---------- */
 async function boot() {
   navSpy();
@@ -279,6 +309,7 @@ async function boot() {
   wireYouTube();
   wireSubscribe();
   gallery();
+  papers();
   try {
     DATA = await fetch("data/github.json").then((r) => r.json());
   } catch {

@@ -348,3 +348,25 @@ h3 { font-size: 22px; line-height: 1.2; }
   .lightbox { grid-template-columns: 40px minmax(0, 1fr) 40px; }
   .map-frame { height: 70svh; }
 }
+
+/* social row under the hero buttons */
+.follow { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.follow a { font: 500 14px var(--sans); color: var(--ink-2); text-decoration: none; }
+.follow a:hover { color: var(--amber); }
+
+/* publications */
+.papers { list-style: none; margin: 0; padding: 0; }
+.papers .yr { font: 500 13px var(--mono); color: var(--amber); padding: 28px 0 6px; border-bottom: 1px solid var(--line-2); }
+.papers .yr:first-child { padding-top: 8px; }
+.paper { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 24px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.paper a.t { font-family: var(--serif); font-size: 20px; line-height: 1.3; text-decoration: none; }
+.paper a.t:hover { text-decoration: underline; }
+.paper .by { grid-column: 1; color: var(--ink-3); font-size: 14px; }
+.paper .venue { grid-column: 2; grid-row: 1 / span 2; align-self: start; text-align: right; font: 500 12px var(--mono); color: var(--cyan); white-space: nowrap; }
+.paper .venue .pre { display: block; color: var(--ink-3); margin-top: 2px; }
+@media (max-width: 600px) {
+  .paper { grid-template-columns: 1fr; }
+  .paper .venue { grid-column: 1; grid-row: auto; text-align: left; }
+  .paper .venue .pre { display: inline; margin-left: 8px; }
+  .paper a.t { font-size: 18px; }
+}
