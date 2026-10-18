@@ -27,7 +27,7 @@ function start() {
   scene.add(new THREE.AmbientLight(0xffffff, 0.35));
   const key = new THREE.DirectionalLight(0xffffff, 1.6); key.position.set(2, 3, 4); scene.add(key);
   const fill = new THREE.DirectionalLight(COLOR, 0.9); fill.position.set(-3, -1, 2); scene.add(fill);
-  const rim = new THREE.DirectionalLight(0xffc46b, 0.8); rim.position.set(0, 2, -4); scene.add(rim);
+  const rim = new THREE.DirectionalLight(0xb18cff, 0.9); rim.position.set(0, 2, -4); scene.add(rim);
 
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableZoom = false;

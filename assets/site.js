@@ -227,7 +227,7 @@ async function gallery() {
   const lb = $("#lightbox"), img = $("img", lb), cap = $("figcaption", lb);
   let at = 0, opener = null;
   const show = (i) => { at = (i + items.length) % items.length; const g = items[at]; img.src = `media/full/${g.slug}.webp`; img.alt = g.title; cap.textContent = `${g.title}  ·  ${at + 1} of ${items.length}`; };
-  const close = () => { lb.hidden = true; document.body.style.overflow = ""; opener?.focus(); };
+  const close = () => { lb.hidden = true; delete lb.dataset.single; document.body.style.overflow = ""; opener?.focus(); };
   $("#masonry").onclick = (e) => { const b = e.target.closest("button"); if (!b) return; opener = b; show(+b.dataset.i); lb.hidden = false; document.body.style.overflow = "hidden"; $(".lb-close", lb).focus(); };
   $(".lb-close", lb).onclick = close;
   $(".lb-prev", lb).onclick = () => show(at - 1);
@@ -236,12 +236,20 @@ async function gallery() {
   document.addEventListener("keydown", (e) => {
     if (lb.hidden) return;
     if (e.key === "Escape") close();
+    if (lb.dataset.single) return;
     if (e.key === "ArrowLeft") show(at - 1);
     if (e.key === "ArrowRight") show(at + 1);
   });
   let x0 = null;
   lb.addEventListener("touchstart", (e) => (x0 = e.touches[0].clientX), { passive: true });
-  lb.addEventListener("touchend", (e) => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(at + (dx < 0 ? 1 : -1)); x0 = null; });
+  // Covers open one at a time in the same viewer, with no previous or next.
+  $("#covers")?.addEventListener("click", (e) => {
+    const b = e.target.closest("button[data-full]"); if (!b) return;
+    opener = b; lb.dataset.single = "1";
+    img.src = b.dataset.full; img.alt = b.dataset.title; cap.textContent = b.dataset.title;
+    lb.hidden = false; document.body.style.overflow = "hidden"; $(".lb-close", lb).focus();
+  });
+  lb.addEventListener("touchend", (e) => { if (lb.dataset.single) return; if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(at + (dx < 0 ? 1 : -1)); x0 = null; });
 }
 
 /* ---------- YouTube, loaded only on click ---------- */
