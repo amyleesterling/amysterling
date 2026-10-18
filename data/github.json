@@ -1527,8 +1527,8 @@
   },
   {
    "name": "banc-explorer",
-   "title": "BANC Explorer",
-   "description": "A public exploration hub for BANC, the combined Drosophila brain and central nervous system connectome.",
+   "title": "Be the Fly",
+   "description": "Be the fly: a fruit fly simulation built on BANC, the brain and nerve cord connectome.",
    "language": "TypeScript",
    "room": "brains",
    "repo": "https://github.com/amyleesterling/banc-explorer",
