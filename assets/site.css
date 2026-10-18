@@ -359,19 +359,7 @@ html { scrollbar-color: rgba(177, 140, 255, 0.35) var(--bg); }
   border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
   background: radial-gradient(110% 80% at 50% 45%, #101a2e 0%, #0b0d18 55%, var(--bg) 100%);
 }
-.brain-canvas { position: absolute; inset: 0; opacity: 0; transition: opacity 1.4s ease; }
-.brain-canvas canvas { width: 100% !important; height: 100% !important; display: block; }
-.brain-canvas iframe { position: absolute; inset: 0 auto 0 0; width: calc(100% + var(--sbw, 0px)); height: 100%; border: 0; background: #000; }
-.brain-ui { position: absolute; left: 0; right: 0; bottom: 22px; display: flex; justify-content: center; pointer-events: none; }
-.brain-ui .btn { pointer-events: auto; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); }
-.brain-box.exploring .brain-ui { display: none; }
-.brain-back { position: absolute; bottom: 12px; right: 12px; z-index: 2; background: rgba(7, 8, 11, 0.8); font-size: 20px; }
-.brain-back[hidden] { display: none; }
-.brain-box.failed::after, .brain-box.still::after {
-  content: "The brain lives at whatisabrain.com. Press Explore to step inside.";
-  position: absolute; inset: 0; display: grid; place-items: center; padding: 32px; text-align: center;
-  font-family: var(--serif); font-size: 20px; color: var(--ink-3);
-}
+.brain-frame { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; background: transparent; }
 .hero-cell figcaption .tag { margin-right: 8px; }
 
 /* cards with a live screenshot that loads into the player */
