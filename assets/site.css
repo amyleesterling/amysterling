@@ -504,3 +504,34 @@ html { scrollbar-color: rgba(110, 168, 255, 0.35) var(--bg); }
 form.subscribe.done .sub-row, form.subscribe.done > p:not(.sub-msg) { display: none; }
 form.subscribe.done .sub-msg { font: 400 17px/1.5 var(--sans); color: var(--ink); background: rgba(124, 196, 255, 0.08); border: 1px solid rgba(124, 196, 255, 0.35); border-radius: 10px; padding: 14px 16px; letter-spacing: 0; }
 form.subscribe.done .sub-msg strong { color: var(--accent); }
+
+/* blog archive list */
+.archive { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+.archive-intro { color: var(--ink-2); font-size: 17px; max-width: 62ch; }
+.arch-year { font: 500 28px var(--serif); margin: 36px 0 8px; }
+.arch-year .fine { font-size: 13px; margin-left: 6px; }
+.arch-list { list-style: none; margin: 0; padding: 0; }
+.arch-list li { border-top: 1px solid var(--line); }
+.arch-list a { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 2px 14px; padding: 10px 0; text-decoration: none; }
+.arch-list a:hover .arch-title { color: var(--accent); }
+.arch-date { font: 400 13px var(--mono); color: var(--ink-3); padding-top: 3px; }
+.arch-title { font: 500 18px/1.35 var(--serif); color: var(--ink); }
+.arch-dek { grid-column: 2; color: var(--ink-2); font-size: 15px; }
+.arch-list li.long .arch-title { font-size: 21px; }
+
+/* imported post bodies */
+.post-html { font-family: var(--serif); font-size: 20px; line-height: 1.6; color: var(--ink-2); max-width: 66ch; }
+.post-html p, .post-html ul, .post-html ol, .post-html blockquote { margin: 0 0 1em; }
+.post-html h2, .post-html h3, .post-html h4 { color: var(--ink); margin: 1.4em 0 0.5em; }
+.post-html h2 { font-size: 30px; } .post-html h3 { font-size: 24px; } .post-html h4 { font-size: 20px; }
+.post-html a { color: var(--accent); }
+.post-html img { max-width: 100%; height: auto; border-radius: 6px; margin: 0.4em 0; display: inline-block; }
+.post-html blockquote { border-left: 2px solid var(--accent); padding-left: 16px; color: var(--ink); }
+.post-html .embed { display: block; position: relative; aspect-ratio: 16 / 9; margin: 1em 0; border-radius: 8px; overflow: hidden; background: #000; }
+.post-html .embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.post-origin { margin-top: 36px; padding-top: 16px; border-top: 1px solid var(--line); }
+.post-nav { display: flex; justify-content: space-between; gap: 16px; margin-top: 18px; font-size: 15px; }
+.post-nav a { max-width: 48%; text-decoration: none; color: var(--ink-2); }
+.post-nav a:hover { color: var(--accent); }
+.post-nav a:last-child { text-align: right; margin-left: auto; }
+@media (max-width: 600px) { .post-html { font-size: 18px; } .arch-list a { grid-template-columns: 52px minmax(0, 1fr); } }
