@@ -75,26 +75,30 @@ function navSpy() {
   links.forEach((_, id) => { const el = document.getElementById(id); if (el) io.observe(el); });
 }
 
-/* ---------- hero readout (scifi-ui holoReadout, every figure derived from the data) ---------- */
-function heroStats() {
+/* ---------- hero readout (scifi-ui holoReadout, every figure derived from the data) ----------
+   The science, not the code: papers from data/publications.json (ORCID), covers
+   counted from the cover strip on this page. GitHub has its own section below. */
+async function heroStats() {
   const el = $("#hero-readout");
   if (!el || !window.holoReadout) return;
-  const repos = DATA.repos;
-  const commits = repos.reduce((s, r) => s + r.commits, 0);
-  const live = repos.filter((r) => r.live).length;
-  const upd = new Date(DATA.updated);
-  const thisMonth = upd.getUTCFullYear() === DATA.year ? upd.getUTCMonth() : 11;
-  const months = Array(12).fill(0);
-  repos.forEach((r) => r.months.forEach((n, i) => (months[i] += n)));
+  let works;
+  try { works = (await fetch("data/publications.json").then((r) => r.json())).works; } catch { return; }
+  const papers = works.filter((w) => w.kind === "paper");
+  const nature = papers.filter((w) => w.venue === "Nature").length;
+  const covers = $$("#covers figure").length;
+  const years = works.map((w) => w.year);
+  const y0 = Math.min(...years), y1 = Math.max(...years);
+  const perYear = [];
+  for (let y = y0; y <= y1; y++) perYear.push(works.filter((w) => w.year === y).length);
   window.holoReadout(el, {
     stats: [
-      { value: repos.length, label: "public repos" },
-      { value: commits, label: `commits in ${DATA.year}` },
-      { value: live, label: "live sites" },
+      { value: papers.length, label: "papers" },
+      { value: nature, label: "in Nature" },
+      { value: covers, label: "journal covers" },
     ],
-    histogram: { values: months.slice(0, thisMonth + 1), colour: () => "rgb(124 196 255)" },
-    caption: `commits per month, Jan to ${MONTHS[thisMonth]} ${DATA.year}`,
-    provenance: `github.com/amyleesterling · counted ${upd.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`,
+    histogram: { values: perYear, colour: () => "rgb(124 196 255)" },
+    caption: `papers and preprints per year, ${y0} to ${y1}`,
+    provenance: `<a href="#papers">ORCID 0000-0002-4961-3954</a> · covers on this page`,
   });
 }
 
