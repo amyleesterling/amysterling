@@ -1,6 +1,6 @@
 {
  "owner": "amyleesterling",
- "updated": "2026-10-18T13:38:55Z",
+ "updated": "2026-10-19T16:40:38Z",
  "year": 2026,
  "commit_rule": "Commits on each default branch since Jan 1 2026 authored by amyleesterling. Bot commits are not counted.",
  "rooms": {
@@ -49,11 +49,11 @@
    "room": "tools",
    "repo": "https://github.com/amyleesterling/amysterling",
    "live": "https://amyleesterling.github.io/amysterling/",
-   "pushed": "2026-10-18",
+   "pushed": "2026-10-19",
    "created": "2026-02-06",
    "stars": 0,
    "fork": false,
-   "commits": 94,
+   "commits": 96,
    "months": [
     0,
     63,
@@ -64,7 +64,35 @@
     1,
     0,
     0,
-    27,
+    29,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "ng-extend",
+   "title": "EyeWire II",
+   "description": "The Neuroglancer extension that EyeWire II is built on, forked from the Seung Lab.",
+   "language": "Vue",
+   "room": "brains",
+   "repo": "https://github.com/amyleesterling/ng-extend",
+   "live": "",
+   "pushed": "2026-10-19",
+   "created": "2025-03-24",
+   "stars": 0,
+   "fork": true,
+   "commits": 1083,
+   "months": [
+    0,
+    6,
+    177,
+    82,
+    0,
+    0,
+    75,
+    136,
+    368,
+    239,
     0,
     0
    ]
@@ -98,34 +126,6 @@
    ]
   },
   {
-   "name": "ng-extend",
-   "title": "EyeWire II",
-   "description": "The Neuroglancer extension that EyeWire II is built on, forked from the Seung Lab.",
-   "language": "Vue",
-   "room": "brains",
-   "repo": "https://github.com/amyleesterling/ng-extend",
-   "live": "",
-   "pushed": "2026-10-18",
-   "created": "2025-03-24",
-   "stars": 0,
-   "fork": true,
-   "commits": 1083,
-   "months": [
-    0,
-    6,
-    177,
-    82,
-    0,
-    0,
-    75,
-    136,
-    368,
-    239,
-    0,
-    0
-   ]
-  },
-  {
    "name": "findmytown",
    "title": "FindMyTown",
    "description": "A real estate dashboard that searches thirty seven towns north of Boston every morning at seven.",
@@ -133,7 +133,7 @@
    "room": "tools",
    "repo": "https://github.com/amyleesterling/findmytown",
    "live": "https://amyleesterling.github.io/findmytown/",
-   "pushed": "2026-10-17",
+   "pushed": "2026-10-18",
    "created": "2026-03-21",
    "stars": 0,
    "fork": false,
@@ -149,6 +149,34 @@
     8,
     0,
     0,
+    0,
+    0
+   ]
+  },
+  {
+   "name": "seunglabdata",
+   "title": "Pyr",
+   "description": "A game to map the brain, the sequel to Eyewire.",
+   "language": "HTML",
+   "room": "brains",
+   "repo": "https://github.com/amyleesterling/seunglabdata",
+   "live": "https://amyleesterling.github.io/seunglabdata/",
+   "pushed": "2026-10-18",
+   "created": "2026-02-02",
+   "stars": 0,
+   "fork": false,
+   "commits": 167,
+   "months": [
+    0,
+    24,
+    1,
+    0,
+    0,
+    0,
+    59,
+    22,
+    43,
+    18,
     0,
     0
    ]
@@ -177,34 +205,6 @@
     34,
     24,
     4,
-    0,
-    0
-   ]
-  },
-  {
-   "name": "seunglabdata",
-   "title": "Pyr",
-   "description": "A game to map the brain, the sequel to Eyewire.",
-   "language": "HTML",
-   "room": "brains",
-   "repo": "https://github.com/amyleesterling/seunglabdata",
-   "live": "https://amyleesterling.github.io/seunglabdata/",
-   "pushed": "2026-10-13",
-   "created": "2026-02-02",
-   "stars": 0,
-   "fork": false,
-   "commits": 166,
-   "months": [
-    0,
-    24,
-    1,
-    0,
-    0,
-    0,
-    59,
-    22,
-    43,
-    17,
     0,
     0
    ]
