@@ -1,6 +1,6 @@
 {
  "owner": "amyleesterling",
- "updated": "2026-10-19T16:40:38Z",
+ "updated": "2026-10-20T14:32:51Z",
  "year": 2026,
  "commit_rule": "Commits on each default branch since Jan 1 2026 authored by amyleesterling. Bot commits are not counted.",
  "rooms": {
@@ -70,6 +70,34 @@
    ]
   },
   {
+   "name": "findmytown",
+   "title": "FindMyTown",
+   "description": "A real estate dashboard that searches thirty seven towns north of Boston every morning at seven.",
+   "language": "HTML",
+   "room": "tools",
+   "repo": "https://github.com/amyleesterling/findmytown",
+   "live": "https://amyleesterling.github.io/findmytown/",
+   "pushed": "2026-10-19",
+   "created": "2026-03-21",
+   "stars": 0,
+   "fork": false,
+   "commits": 46,
+   "months": [
+    0,
+    0,
+    38,
+    0,
+    0,
+    0,
+    0,
+    8,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
    "name": "ng-extend",
    "title": "EyeWire II",
    "description": "The Neuroglancer extension that EyeWire II is built on, forked from the Seung Lab.",
@@ -121,34 +149,6 @@
     15,
     7,
     26,
-    0,
-    0
-   ]
-  },
-  {
-   "name": "findmytown",
-   "title": "FindMyTown",
-   "description": "A real estate dashboard that searches thirty seven towns north of Boston every morning at seven.",
-   "language": "HTML",
-   "room": "tools",
-   "repo": "https://github.com/amyleesterling/findmytown",
-   "live": "https://amyleesterling.github.io/findmytown/",
-   "pushed": "2026-10-18",
-   "created": "2026-03-21",
-   "stars": 0,
-   "fork": false,
-   "commits": 46,
-   "months": [
-    0,
-    0,
-    38,
-    0,
-    0,
-    0,
-    0,
-    8,
-    0,
-    0,
     0,
     0
    ]
