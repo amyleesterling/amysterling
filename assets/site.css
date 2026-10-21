@@ -491,7 +491,7 @@ html { scrollbar-color: rgba(110, 168, 255, 0.35) var(--bg); }
 .ep-item img { width: 100%; height: auto; display: block; }
 /* drawn at its design size and scaled to fit, so its desktop layout keeps its shape */
 .ep-live { aspect-ratio: 16 / 10; }
-.ep-live iframe { width: 1280px !important; height: 800px !important; transform-origin: 0 0; transform: scale(var(--fit, 0.5)); }
+/* the Pyr avatar creator lays itself out for the box it is given (an icon rail and an options drawer at this size), so it runs at its real size, never scaled */
 .ep-item figcaption { padding-top: 12px; }
 .ep-item figcaption h3 { margin: 2px 0 4px; }
 .ep-item figcaption p:not(.tag) { color: var(--ink-2); font-size: 15px; margin: 0; }
