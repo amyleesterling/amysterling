@@ -1,6 +1,6 @@
 {
  "owner": "amyleesterling",
- "updated": "2026-10-21T14:43:47Z",
+ "updated": "2026-10-22T14:43:34Z",
  "year": 2026,
  "commit_rule": "Commits on each default branch since Jan 1 2026 authored by amyleesterling. Bot commits are not counted.",
  "rooms": {
@@ -42,6 +42,34 @@
  },
  "repos": [
   {
+   "name": "babyzelda",
+   "title": "babyzelda",
+   "description": "like Zelda but for little kids",
+   "language": "JavaScript",
+   "room": "toys",
+   "repo": "https://github.com/amyleesterling/babyzelda",
+   "live": "https://amyleesterling.github.io/babyzelda/",
+   "pushed": "2026-10-22",
+   "created": "2026-10-21",
+   "stars": 0,
+   "fork": false,
+   "commits": 2,
+   "months": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0
+   ]
+  },
+  {
    "name": "ng-extend",
    "title": "EyeWire II",
    "description": "The Neuroglancer extension that EyeWire II is built on, forked from the Seung Lab.",
@@ -49,7 +77,7 @@
    "room": "brains",
    "repo": "https://github.com/amyleesterling/ng-extend",
    "live": "",
-   "pushed": "2026-10-21",
+   "pushed": "2026-10-22",
    "created": "2025-03-24",
    "stars": 0,
    "fork": true,
@@ -77,11 +105,11 @@
    "room": "tools",
    "repo": "https://github.com/amyleesterling/amysterling",
    "live": "https://amyleesterling.github.io/amysterling/",
-   "pushed": "2026-10-20",
+   "pushed": "2026-10-21",
    "created": "2026-02-06",
    "stars": 0,
    "fork": false,
-   "commits": 96,
+   "commits": 97,
    "months": [
     0,
     63,
@@ -92,7 +120,7 @@
     1,
     0,
     0,
-    29,
+    30,
     0,
     0
    ]
@@ -105,7 +133,7 @@
    "room": "tools",
    "repo": "https://github.com/amyleesterling/findmytown",
    "live": "https://amyleesterling.github.io/findmytown/",
-   "pushed": "2026-10-20",
+   "pushed": "2026-10-21",
    "created": "2026-03-21",
    "stars": 0,
    "fork": false,
