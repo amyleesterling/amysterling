@@ -1,251 +1,100 @@
 {
-  "generated_at": "2026-10-01T18:37:58.246641",
-  "month": "October",
+  "generated_at": "2026-11-01T18:11:34.082921",
+  "month": "November",
   "year": 2026,
   "comedians": [
     {
-      "name": "The Kenny VS Spenny 2026 USA Comedy",
-      "photo": null,
+      "name": "Michael Rapaport",
+      "photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Michael_Rapaport_on_the_Public_Morals_Red_Carpet.png/330px-Michael_Rapaport_on_the_Public_Morals_Red_Carpet.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
       "shows": [
         {
-          "comedian": "The Kenny VS Spenny 2026 USA Comedy",
+          "comedian": "Michael Rapaport",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-10-01T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Santi Espinosa",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Santi Espinosa",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-02T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Nick Alex",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Nick Alex",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-03T00:00:00",
+          "date": "2026-11-04T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
       ],
       "clips": [
         {
-          "title": "Getting Hit On By Black Women | Nick Alex | Stand Up Comedy #standupcomedy #comedy #jokes",
-          "video_id": "DlwG_si-inM",
-          "thumbnail": "https://i.ytimg.com/vi/DlwG_si-inM/hqdefault.jpg",
-          "views": 950612,
-          "duration": 69
+          "title": "Michael Rapaport destroys a Heckler at his NYC show",
+          "video_id": "bCvJbQ98W1U",
+          "thumbnail": "https://i.ytimg.com/vi/bCvJbQ98W1U/hqdefault.jpg",
+          "views": 26281,
+          "duration": 61
         },
         {
-          "title": "SOBER FOR DIFFERENT REASONS | STAND UP COMEDY | NICK ALEX",
-          "video_id": "byUVc6euFxA",
-          "thumbnail": "https://i.ytimg.com/vi/byUVc6euFxA/hqdefault.jpg",
-          "views": 2104,
-          "duration": 67
-        }
-      ]
-    },
-    {
-      "name": "Laura Severse",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Laura Severse",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-03T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "CAPE CODDER COMEDY ON THE ROAD 1 26 2019",
-          "video_id": "7GOgdOteZXc",
-          "thumbnail": "https://i.ytimg.com/vi/7GOgdOteZXc/hqdefault.jpg",
-          "views": 170,
-          "duration": 37
-        }
-      ]
-    },
-    {
-      "name": "Tony Dabas",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Tony Dabas",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-04T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Andre de Freitas",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Andre de Freitas",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-07T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Amber Autry",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Amber Autry",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-09T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": []
-    },
-    {
-      "name": "Chris Porter",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Chris Porter",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-11T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Quicklaffs - Chris Porter - Funny Videos",
-          "video_id": "4z2bNO8elgI",
-          "thumbnail": "https://i.ytimg.com/vi/4z2bNO8elgI/hqdefault.jpg",
-          "views": 1173,
-          "duration": 33
-        }
-      ]
-    },
-    {
-      "name": "Anthony Fuentes",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Anthony Fuentes",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-15T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Comedy #mentalhealth #army #funny #trending #comedy #viralvideo #fyp",
-          "video_id": "TTVYCifPE6U",
-          "thumbnail": "https://i.ytimg.com/vi/TTVYCifPE6U/hqdefault.jpg",
-          "views": 1071,
-          "duration": 51
-        },
-        {
-          "title": "Fun Facts! Funny clip standup comedy",
-          "video_id": "WpKjHINssP4",
-          "thumbnail": "https://i.ytimg.com/vi/WpKjHINssP4/hqdefault.jpg",
-          "views": 580,
-          "duration": 17
-        }
-      ]
-    },
-    {
-      "name": "Robert Kelly",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Robert Kelly",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-16T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Robert Kelly Watches 1 Guy 1 Jar",
-          "video_id": "DHnyIOn4ejw",
-          "thumbnail": "https://i.ytimg.com/vi/DHnyIOn4ejw/hqdefault.jpg",
-          "views": 60043,
-          "duration": 68
-        },
-        {
-          "title": "Robert Kelly - Sneaking Cookies in the Shower",
-          "video_id": "DsJvUXF5Q1A",
-          "thumbnail": "https://i.ytimg.com/vi/DsJvUXF5Q1A/hqdefault.jpg",
-          "views": 8355,
-          "duration": 62
-        }
-      ]
-    },
-    {
-      "name": "Cactus Tate",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Cactus Tate",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-18T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "she makes everyday an adventure \ud83d\ude05#fyp#momlife#toddlermom#funnyvideos#kidscursing #cactustate#777#333",
-          "video_id": "kQY6245sZp4",
-          "thumbnail": "https://i.ytimg.com/vi/kQY6245sZp4/hqdefault.jpg",
-          "views": 992,
+          "title": "Mustache Man #michaelrapaport #comedy I\u2019m performing in #chicago this weekend at City Winery",
+          "video_id": "PzvJ4PtCfKY",
+          "thumbnail": "https://i.ytimg.com/vi/PzvJ4PtCfKY/hqdefault.jpg",
+          "views": 11861,
           "duration": 61
         }
       ]
     },
     {
-      "name": "Patricia Pe\u00f1a",
+      "name": "Comedic Cody Smith",
       "photo": null,
       "shows": [
         {
-          "comedian": "Patricia Pe\u00f1a",
+          "comedian": "Comedic Cody Smith",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-10-21T00:00:00",
+          "date": "2026-11-05T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "COMEDIC RELIEF : THE TOUR!",
+          "video_id": "m3SXTpeQzbs",
+          "thumbnail": "https://i.ytimg.com/vi/m3SXTpeQzbs/hqdefault.jpg",
+          "views": 5892,
+          "duration": 62
+        },
+        {
+          "title": "comedic Cody",
+          "video_id": "bErlbWIvF0A",
+          "thumbnail": "https://i.ytimg.com/vi/bErlbWIvF0A/hqdefault.jpg",
+          "views": 153,
+          "duration": 44
+        }
+      ]
+    },
+    {
+      "name": "Dirty Disney",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Dirty Disney",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-06T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Robin Williams on Donald Trump from 2012",
+          "video_id": "kupZj_TN_XI",
+          "thumbnail": "https://i.ytimg.com/vi/kupZj_TN_XI/hqdefault.jpg",
+          "views": 3706311,
+          "duration": 68
+        }
+      ]
+    },
+    {
+      "name": "Joe Fenti",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Joe Fenti",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-06T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
@@ -253,67 +102,14 @@
       "clips": []
     },
     {
-      "name": "Desi Alexander",
+      "name": "Tina Friml",
       "photo": null,
       "shows": [
         {
-          "comedian": "Desi Alexander",
+          "comedian": "Tina Friml",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-10-22T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Desi Alexander at the stardome clean",
-          "video_id": "kVtTm_LJZqE",
-          "thumbnail": "https://i.ytimg.com/vi/kVtTm_LJZqE/hqdefault.jpg",
-          "views": 34,
-          "duration": 56
-        }
-      ]
-    },
-    {
-      "name": "Ryan Davis",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Ryan Davis",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-23T00:00:00",
-          "url": "https://laughboston.com/",
-          "source": "laughboston.com"
-        }
-      ],
-      "clips": [
-        {
-          "title": "Who Saw Something",
-          "video_id": "WjB3O3Nmr50",
-          "thumbnail": "https://i.ytimg.com/vi/WjB3O3Nmr50/hqdefault.jpg",
-          "views": 12843883,
-          "duration": 26
-        },
-        {
-          "title": "Ryan Davis doing standup on HBO",
-          "video_id": "G4Jh9jovOrk",
-          "thumbnail": "https://i.ytimg.com/vi/G4Jh9jovOrk/hqdefault.jpg",
-          "views": 48084,
-          "duration": 66
-        }
-      ]
-    },
-    {
-      "name": "Dale Elliot Jr.",
-      "photo": null,
-      "shows": [
-        {
-          "comedian": "Dale Elliot Jr.",
-          "venue": "Laugh Boston",
-          "venue_city": "Boston",
-          "date": "2026-10-25T00:00:00",
+          "date": "2026-11-07T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
@@ -321,74 +117,301 @@
       "clips": []
     },
     {
-      "name": "Jessimae Peluso",
+      "name": "Lil Mo Mozzarella",
       "photo": null,
       "shows": [
         {
-          "comedian": "Jessimae Peluso",
+          "comedian": "Lil Mo Mozzarella",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-10-29T00:00:00",
+          "date": "2026-11-08T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
       ],
       "clips": [
         {
-          "title": "Jessimae Peluso - Where`s Beirut? | The Stand-Up Show with Jon Dore",
-          "video_id": "ENYZQ5pfHV8",
-          "thumbnail": "https://i.ytimg.com/vi/ENYZQ5pfHV8/hqdefault.jpg",
-          "views": 452,
-          "duration": 48
+          "title": "Lil Mo Mozzarella - Sidetalk",
+          "video_id": "wAYtGHE_tMc",
+          "thumbnail": "https://i.ytimg.com/vi/wAYtGHE_tMc/hqdefault.jpg",
+          "views": 313504,
+          "duration": 58
         },
         {
-          "title": "Jessimae Peluso getting down at Crackers Comedy Club - Indianapolis",
-          "video_id": "u_lPjfK4D_A",
-          "thumbnail": "https://i.ytimg.com/vi/u_lPjfK4D_A/hqdefault.jpg",
-          "views": 385,
-          "duration": 29
+          "title": "Lil Mo Mozzarella & Cugine Tuxedo Shoppin @ karakosuits",
+          "video_id": "pQMmMwvg9xc",
+          "thumbnail": "https://i.ytimg.com/vi/pQMmMwvg9xc/hqdefault.jpg",
+          "views": 8483,
+          "duration": 41
         }
       ]
     },
     {
-      "name": "Jeff Allen",
+      "name": "Mohanad Elshieky",
       "photo": null,
       "shows": [
         {
-          "comedian": "Jeff Allen",
+          "comedian": "Mohanad Elshieky",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-10-31T00:00:00",
+          "date": "2026-11-13T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
       ],
       "clips": [
         {
-          "title": "Jeff Allen's First 'Final' Farewell Tour",
-          "video_id": "JG0OeEr0lHU",
-          "thumbnail": "https://i.ytimg.com/vi/JG0OeEr0lHU/hqdefault.jpg",
-          "views": 1546581,
-          "duration": 57
+          "title": "Mohanad Elshieky's Funniest Joke",
+          "video_id": "y9xPiCi5_Og",
+          "thumbnail": "https://i.ytimg.com/vi/y9xPiCi5_Og/hqdefault.jpg",
+          "views": 2268,
+          "duration": 21
         },
         {
-          "title": "After Binge-Watching Dateline, Every Marriage Looks Suspicious! \ud83d\ude02 | #jeffallencomedy",
-          "video_id": "CeVqhFmhPfQ",
-          "thumbnail": "https://i.ytimg.com/vi/CeVqhFmhPfQ/hqdefault.jpg",
-          "views": 4147,
-          "duration": 48
+          "title": "Joke for the Well-Read #34",
+          "video_id": "p7HEfbwv7A4",
+          "thumbnail": "https://i.ytimg.com/vi/p7HEfbwv7A4/hqdefault.jpg",
+          "views": 40,
+          "duration": 39
         }
       ]
     },
     {
-      "name": "Demetrius Hullum & Friends",
+      "name": "Salty Mom Comedy",
       "photo": null,
       "shows": [
         {
-          "comedian": "Demetrius Hullum & Friends",
+          "comedian": "Salty Mom Comedy",
           "venue": "Laugh Boston",
           "venue_city": "Boston",
-          "date": "2026-10-31T00:00:00",
+          "date": "2026-11-14T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Rocky Dale Davis",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Rocky Dale Davis",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-14T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Rocky Dale Davis - White Trash | Unprotected Sets",
+          "video_id": "gKH6AaOBZBc",
+          "thumbnail": "https://i.ytimg.com/vi/gKH6AaOBZBc/hqdefault.jpg",
+          "views": 6713,
+          "duration": 65
+        }
+      ]
+    },
+    {
+      "name": "Shannon Fielder",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Shannon Fielder",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-15T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Shannon Fiedler Stand-Up: The Conference Call",
+          "video_id": "KCLzkc1wu_8",
+          "thumbnail": "https://i.ytimg.com/vi/KCLzkc1wu_8/hqdefault.jpg",
+          "views": 7597,
+          "duration": 45
+        }
+      ]
+    },
+    {
+      "name": "Michael Palascak",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Michael Palascak",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-18T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Maggie High DePalo",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Maggie High DePalo",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-19T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Deric Cahill",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Deric Cahill",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-20T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "road rage",
+          "video_id": "Ipyf-byFLCw",
+          "thumbnail": "https://i.ytimg.com/vi/Ipyf-byFLCw/hqdefault.jpg",
+          "views": 1864,
+          "duration": 43
+        },
+        {
+          "title": "Bwoccowi Teens",
+          "video_id": "6rycIpPBs7k",
+          "thumbnail": "https://i.ytimg.com/vi/6rycIpPBs7k/hqdefault.jpg",
+          "views": 1508,
+          "duration": 61
+        }
+      ]
+    },
+    {
+      "name": "Ian Lara",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Ian Lara",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-27T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Don't spend money on dates | Ian Lara",
+          "video_id": "yEjaDUQ3axk",
+          "thumbnail": "https://i.ytimg.com/vi/yEjaDUQ3axk/hqdefault.jpg",
+          "views": 389,
+          "duration": 62
+        }
+      ]
+    },
+    {
+      "name": "Janet McNamara",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Janet McNamara",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-11-28T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Do Neurotypical people just say things they don't mean?",
+          "video_id": "kJF1gFFiPYg",
+          "thumbnail": "https://i.ytimg.com/vi/kJF1gFFiPYg/hqdefault.jpg",
+          "views": 1313,
+          "duration": 19
+        }
+      ]
+    },
+    {
+      "name": "Gabby Bryan",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Gabby Bryan",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-12-04T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Sarper G\u00fcven",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Sarper G\u00fcven",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-12-06T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": []
+    },
+    {
+      "name": "Stone Cold and The Jackal",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Stone Cold and The Jackal",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-12-08T00:00:00",
+          "url": "https://laughboston.com/",
+          "source": "laughboston.com"
+        }
+      ],
+      "clips": [
+        {
+          "title": "Merry Christmas from Steve Burton & Bradford Anderson",
+          "video_id": "5sfuFdLQ1wI",
+          "thumbnail": "https://i.ytimg.com/vi/5sfuFdLQ1wI/hqdefault.jpg",
+          "views": 4387,
+          "duration": 28
+        },
+        {
+          "title": "Stone Cold and The Jackal",
+          "video_id": "ZRNSq-QGKSM",
+          "thumbnail": "https://i.ytimg.com/vi/ZRNSq-QGKSM/hqdefault.jpg",
+          "views": 3015,
+          "duration": 33
+        }
+      ]
+    },
+    {
+      "name": "Peter Liu",
+      "photo": null,
+      "shows": [
+        {
+          "comedian": "Peter Liu",
+          "venue": "Laugh Boston",
+          "venue_city": "Boston",
+          "date": "2026-12-10T00:00:00",
           "url": "https://laughboston.com/",
           "source": "laughboston.com"
         }
