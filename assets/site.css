@@ -660,3 +660,12 @@ form.subscribe.done .sub-msg strong { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .loves li { transition: none; } .loves li:hover { transform: none; } }
 
 .about-side form.subscribe { margin-top: 32px; }
+
+/* Human History Map: the live map gets most of the row and a squarer frame */
+.feature.hhm { grid-template-columns: minmax(0, 2.2fr) minmax(0, 1fr); align-items: center; }
+.feature.hhm .live { aspect-ratio: 5 / 4; }
+.feature.hhm .hero-cta { margin-top: 18px; }
+.masthead .holoreadout a { color: inherit; }
+@media (max-width: 900px) { .feature.hhm { grid-template-columns: 1fr; } .feature.hhm .live { aspect-ratio: 4 / 5; } }
+
+#spectrum .feature { margin-top: 0; padding-top: 0; border-top: 0; }
