@@ -704,3 +704,8 @@ body.light .dot { box-shadow: none; }
 .tl-what { font-size: 18px; line-height: 1.5; }
 .post-html ol.timeline li.tl-big .tl-what { color: var(--ink); font-weight: 600; }
 @media (max-width: 600px) { .post-html ol.timeline li { grid-template-columns: 1fr; gap: 0; } .tl-what { font-size: 17px; } }
+.recipe-photo { margin: 4px 0 20px; max-width: 640px; }
+.recipe-photo img { width: 100%; height: auto; border-radius: 14px; display: block; }
+.recipe-photo.sq { max-width: 460px; }
+.recipe-photo figcaption { margin-top: 6px; font-size: 12px; line-height: 1.4; }
+.recipe-photo figcaption a { color: inherit; }
