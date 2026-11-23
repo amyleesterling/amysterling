@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A pumpkin pie with one slice pulled out and a dollop of whipped cream">
+  <rect width="640" height="360" rx="18" fill="#f8e7d2"/>
+  <circle cx="260" cy="180" r="140" fill="#c98c4e"/>
+  <circle cx="260" cy="180" r="120" fill="#d9772b"/>
+  <g fill="#e09a5a"><circle cx="260" cy="48" r="12"/><circle cx="326" cy="66" r="12"/><circle cx="374" cy="114" r="12"/><circle cx="392" cy="180" r="12"/><circle cx="374" cy="246" r="12"/><circle cx="326" cy="294" r="12"/><circle cx="260" cy="312" r="12"/><circle cx="194" cy="294" r="12"/><circle cx="146" cy="246" r="12"/><circle cx="128" cy="180" r="12"/><circle cx="146" cy="114" r="12"/><circle cx="194" cy="66" r="12"/></g>
+  <path d="M260 180 L392 180 A132 132 0 0 0 354 87 Z" fill="#f8e7d2"/>
+  <g transform="translate(70 -24)"><path d="M400 180 L532 180 A132 132 0 0 0 494 87 Z" fill="#c98c4e"/><path d="M406 176 L520 176 A118 118 0 0 0 486 96 Z" fill="#d9772b"/>
+    <g fill="#fffaf2"><circle cx="470" cy="148" r="20"/><circle cx="486" cy="140" r="16"/><circle cx="476" cy="128" r="13"/><circle cx="482" cy="116" r="7"/></g></g>
+  <g fill="#fffaf2"><circle cx="240" cy="190" r="26"/><circle cx="262" cy="180" r="22"/><circle cx="248" cy="164" r="18"/><circle cx="254" cy="148" r="9"/></g>
+  <g fill="#8e4a26" opacity=".35"><circle cx="210" cy="120" r="2.5"/><circle cx="300" cy="250" r="2.5"/><circle cx="180" cy="230" r="2.5"/><circle cx="320" cy="210" r="2.5"/></g>
+</svg>

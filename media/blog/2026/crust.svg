@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Three discs of pie dough and a rolling pin on a floured board">
+  <rect width="640" height="360" rx="18" fill="#f3e6d0"/>
+  <g fill="#fff" opacity=".7"><circle cx="90" cy="300" r="3"/><circle cx="120" cy="320" r="2"/><circle cx="540" cy="60" r="3"/><circle cx="570" cy="90" r="2"/><circle cx="300" cy="40" r="2"/><circle cx="420" cy="320" r="3"/></g>
+  <g>
+    <ellipse cx="170" cy="200" rx="92" ry="58" fill="#d9b680"/><ellipse cx="170" cy="190" rx="92" ry="58" fill="#ecd3a3"/>
+    <ellipse cx="320" cy="150" rx="92" ry="58" fill="#d9b680"/><ellipse cx="320" cy="140" rx="92" ry="58" fill="#ecd3a3"/>
+    <ellipse cx="470" cy="200" rx="92" ry="58" fill="#d9b680"/><ellipse cx="470" cy="190" rx="92" ry="58" fill="#ecd3a3"/>
+  </g>
+  <g fill="#f8ecd6" opacity=".8"><ellipse cx="150" cy="178" rx="22" ry="8"/><ellipse cx="300" cy="128" rx="22" ry="8"/><ellipse cx="450" cy="178" rx="22" ry="8"/></g>
+  <g transform="rotate(-8 320 300)">
+    <rect x="130" y="282" width="380" height="34" rx="17" fill="#b9814a"/>
+    <rect x="130" y="284" width="380" height="10" rx="5" fill="#cf9a62"/>
+    <rect x="70" y="290" width="70" height="18" rx="9" fill="#8e5a2b"/>
+    <rect x="500" y="290" width="70" height="18" rx="9" fill="#8e5a2b"/>
+  </g>
+</svg>

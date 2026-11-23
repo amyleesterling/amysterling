@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A steaming mug of red cranberry cider with an orange slice, cinnamon stick and cranberries">
+  <rect width="640" height="360" rx="18" fill="#f7e4dc"/>
+  <g fill="none" stroke="#c9a99c" stroke-width="6" stroke-linecap="round" opacity=".8">
+    <path d="M260 92c-16-20 16-30 0-52"/><path d="M310 86c-16-20 16-30 0-52"/><path d="M360 92c-16-20 16-30 0-52"/>
+  </g>
+  <path d="M410 160h26a40 40 0 0 1 0 80h-26" fill="none" stroke="#3d6b78" stroke-width="18"/>
+  <path d="M210 120h220l-16 190a20 20 0 0 1-20 18H246a20 20 0 0 1-20-18z" fill="#3d6b78"/><path d="M236 150h14l-6 150h-10z" fill="#4f8290" opacity=".7"/>
+  <ellipse cx="320" cy="124" rx="108" ry="18" fill="#9e1b2f"/>
+  <ellipse cx="320" cy="124" rx="96" ry="12" fill="#b8263b"/>
+  <g transform="translate(380 116) rotate(-20)"><circle r="34" fill="#f29b30"/><circle r="27" fill="#fbbf5c"/><g stroke="#f29b30" stroke-width="3"><path d="M0 0V-27M0 0L23 -14M0 0L23 14M0 0V27M0 0L-23 14M0 0L-23 -14"/></g></g>
+  <g transform="rotate(18 260 100)"><rect x="248" y="40" width="22" height="110" rx="8" fill="#8e5530"/><rect x="252" y="40" width="6" height="110" rx="3" fill="#a96a3e"/></g>
+  <g fill="#b8263b"><circle cx="120" cy="300" r="14"/><circle cx="146" cy="290" r="13"/><circle cx="132" cy="318" r="12"/><circle cx="520" cy="300" r="14"/><circle cx="545" cy="314" r="12"/><circle cx="500" cy="320" r="11"/></g>
+  <g fill="#e2586b" opacity=".7"><circle cx="116" cy="296" r="4"/><circle cx="142" cy="286" r="4"/><circle cx="516" cy="296" r="4"/></g>
+  <g transform="translate(520 200)"><circle r="26" fill="#f29b30"/><circle r="20" fill="#fbbf5c"/></g>
+  <path d="M80 160c10-20 30-26 40-20-10 16-26 24-40 20z" fill="#5f8d3e"/>
+</svg>
