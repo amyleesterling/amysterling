@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" role="img" aria-label="A pumpkin pie and a lattice apple pie">
+  <rect width="240" height="320" fill="#12151c"/>
+  <!-- pumpkin pie, top view -->
+  <circle cx="120" cy="96" r="70" fill="#c98a4b"/>
+  <circle cx="120" cy="96" r="58" fill="#d9772b"/>
+  <g fill="#c98a4b">
+    <circle cx="120" cy="26" r="6"/><circle cx="155" cy="35" r="6"/><circle cx="181" cy="61" r="6"/>
+    <circle cx="190" cy="96" r="6"/><circle cx="181" cy="131" r="6"/><circle cx="155" cy="157" r="6"/>
+    <circle cx="120" cy="166" r="6"/><circle cx="85" cy="157" r="6"/><circle cx="59" cy="131" r="6"/>
+    <circle cx="50" cy="96" r="6"/><circle cx="59" cy="61" r="6"/><circle cx="85" cy="35" r="6"/>
+  </g>
+  <!-- apple pie, lattice -->
+  <circle cx="120" cy="236" r="70" fill="#b5773e"/>
+  <circle cx="120" cy="236" r="58" fill="#8e4a26"/>
+  <g stroke="#e1b071" stroke-width="10" stroke-linecap="round">
+    <line x1="88" y1="186" x2="88" y2="286"/><line x1="120" y1="178" x2="120" y2="294"/><line x1="152" y1="186" x2="152" y2="286"/>
+    <line x1="70" y1="204" x2="170" y2="204"/><line x1="62" y1="236" x2="178" y2="236"/><line x1="70" y1="268" x2="170" y2="268"/>
+  </g>
+</svg>

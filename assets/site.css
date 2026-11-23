@@ -660,3 +660,47 @@ form.subscribe.done .sub-msg strong { color: var(--accent); }
 @media (prefers-reduced-motion: reduce) { .loves li { transition: none; } .loves li:hover { transform: none; } }
 
 .about-side form.subscribe { margin-top: 32px; }
+
+/* recipe posts */
+.recipe { margin-top: 48px; padding-top: 28px; border-top: 1px solid var(--line); }
+.post-html .recipe h2 { margin-top: 0; }
+.recipe-meta { font: 400 14px/1.5 var(--mono); color: var(--ink-3); margin: -0.2em 0 1.2em; }
+.post-html .recipe h3 { font-size: 20px; font-family: var(--sans); font-weight: 600; letter-spacing: 0.02em; margin: 1.4em 0 0.5em; }
+.post-html .recipe ul { padding-left: 1.1em; }
+.post-html .recipe ol { padding-left: 1.3em; }
+.post-html .recipe li { margin-bottom: 0.35em; }
+.recipe-toc { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: var(--sans); font-size: 16px; }
+.recipe-note { border-left: 2px solid var(--accent); padding-left: 16px; color: var(--ink); }
+
+/* light pages (recipe posts) */
+body.light {
+  --bg: #fbf7ef;
+  --bg-2: #f3ede1;
+  --panel: #ffffff;
+  --line: rgba(43, 33, 22, 0.12);
+  --line-2: rgba(43, 33, 22, 0.24);
+  --ink: #2b2116;
+  --ink-2: #4f4436;
+  --ink-3: #7a6d5c;
+  --accent: #b4531c;
+  --accent-2: #8f3f12;
+  --indigo: #b4531c;
+  --cyan: #b4531c;
+  color-scheme: light;
+}
+body.light .top { background: rgba(251, 247, 239, 0.88); }
+body.light .top nav a:hover, body.light .top nav a.on { background: rgba(43, 33, 22, 0.06); }
+body.light .dot { box-shadow: none; }
+.tiktok-embed-wrap { width: 100%; max-width: 325px; aspect-ratio: 325 / 578; margin: 1em 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+.tiktok-embed-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+.recipe-art { width: 100%; max-width: 640px; height: auto; border-radius: 14px; margin: 4px 0 20px; }
+.post-html h3.tl-day { font-family: var(--serif); font-weight: 500; font-size: 24px; letter-spacing: 0; margin: 1.6em 0 0.6em; }
+.post-html ol.timeline { list-style: none; padding: 0 0 0 4px; margin: 0; position: relative; }
+.post-html ol.timeline::before { content: ""; position: absolute; left: 10px; top: 10px; bottom: 10px; width: 2px; background: var(--line-2); }
+.post-html ol.timeline li { position: relative; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 14px; padding: 0 0 18px 30px; margin: 0; }
+.post-html ol.timeline li::before { content: ""; position: absolute; left: 1px; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+.post-html ol.timeline li.tl-big::before { background: var(--accent); }
+.tl-time { font: 500 14px/1.9 var(--mono); color: var(--accent); white-space: nowrap; }
+.tl-what { font-size: 18px; line-height: 1.5; }
+.post-html ol.timeline li.tl-big .tl-what { color: var(--ink); font-weight: 600; }
+@media (max-width: 600px) { .post-html ol.timeline li { grid-template-columns: 1fr; gap: 0; } .tl-what { font-size: 17px; } }

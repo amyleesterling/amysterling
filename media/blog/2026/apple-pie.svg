@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="A lattice-top apple pie beside two apples">
+  <rect width="640" height="360" rx="18" fill="#f6e3cf"/>
+  <circle cx="300" cy="180" r="140" fill="#c98c4e"/>
+  <circle cx="300" cy="180" r="118" fill="#9b4f24"/>
+  <clipPath id="ap"><circle cx="300" cy="180" r="124"/></clipPath>
+  <g clip-path="url(#ap)" fill="#e7b675">
+    <rect x="200" y="40" width="26" height="280" rx="10"/><rect x="250" y="40" width="26" height="280" rx="10"/><rect x="300" y="40" width="26" height="280" rx="10"/><rect x="350" y="40" width="26" height="280" rx="10"/>
+    <rect x="160" y="92" width="280" height="26" rx="10"/><rect x="160" y="142" width="280" height="26" rx="10"/><rect x="160" y="192" width="280" height="26" rx="10"/><rect x="160" y="242" width="280" height="26" rx="10"/>
+  </g>
+  <g fill="#f3cf98" opacity=".9"><circle cx="300" cy="44" r="9"/><circle cx="368" cy="62" r="9"/><circle cx="418" cy="112" r="9"/><circle cx="436" cy="180" r="9"/><circle cx="418" cy="248" r="9"/><circle cx="368" cy="298" r="9"/><circle cx="300" cy="316" r="9"/><circle cx="232" cy="298" r="9"/><circle cx="182" cy="248" r="9"/><circle cx="164" cy="180" r="9"/><circle cx="182" cy="112" r="9"/><circle cx="232" cy="62" r="9"/></g>
+  <g transform="translate(520 120)"><circle r="44" fill="#c63b2b"/><circle cx="-14" cy="-14" r="10" fill="#e66a55"/><rect x="-3" y="-60" width="6" height="22" rx="3" fill="#6b4226"/><path d="M4-50c18-16 34-10 34-10s-10 18-34 10z" fill="#5f8d3e"/></g>
+  <g transform="translate(540 255)"><circle r="40" fill="#8fbf4a"/><circle cx="-12" cy="-12" r="9" fill="#b6d97a"/><rect x="-3" y="-54" width="6" height="20" rx="3" fill="#6b4226"/></g>
+</svg>

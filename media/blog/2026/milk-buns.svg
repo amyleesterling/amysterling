@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Golden Japanese milk buns packed into a round pan, with a dish of garlic butter">
+  <rect width="640" height="360" rx="18" fill="#f2e6d6"/>
+  <circle cx="290" cy="180" r="150" fill="#6f6a64"/>
+  <circle cx="290" cy="180" r="140" fill="#8a847c"/>
+  <defs><radialGradient id="bun" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#f6c77d"/><stop offset=".6" stop-color="#d98d3a"/><stop offset="1" stop-color="#a95f22"/></radialGradient></defs>
+  <g fill="url(#bun)">
+    <circle cx="290" cy="180" r="44"/>
+    <circle cx="290" cy="88" r="44"/><circle cx="370" cy="128" r="44"/><circle cx="382" cy="220" r="44"/><circle cx="320" cy="276" r="44"/>
+    <circle cx="230" cy="268" r="44"/><circle cx="196" cy="188" r="44"/><circle cx="214" cy="104" r="44"/>
+  </g>
+  <g fill="#fff4dc" opacity=".55"><ellipse cx="276" cy="166" rx="12" ry="7"/><ellipse cx="276" cy="74" rx="12" ry="7"/><ellipse cx="356" cy="114" rx="12" ry="7"/><ellipse cx="368" cy="206" rx="12" ry="7"/><ellipse cx="306" cy="262" rx="12" ry="7"/><ellipse cx="216" cy="254" rx="12" ry="7"/><ellipse cx="182" cy="174" rx="12" ry="7"/><ellipse cx="200" cy="90" rx="12" ry="7"/></g>
+  <g transform="translate(530 250)"><ellipse rx="62" ry="40" fill="#d8cfc3"/><ellipse rx="50" ry="30" fill="#f3d36b"/><g fill="#6f8f3a"><circle cx="-14" cy="-6" r="3"/><circle cx="8" cy="4" r="3"/><circle cx="18" cy="-10" r="2.5"/><circle cx="-4" cy="10" r="2.5"/></g></g>
+  <g transform="translate(540 92)"><path d="M0 34c-22 0-30-20-24-36 4-10 14-14 24-30 10 16 20 20 24 30 6 16-2 36-24 36z" fill="#fbf4e8" stroke="#d8cfc3" stroke-width="3"/><path d="M0-30v60" stroke="#d8cfc3" stroke-width="3"/></g>
+</svg>
