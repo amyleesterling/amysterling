@@ -709,3 +709,11 @@ body.light .dot { box-shadow: none; }
 .recipe-photo.sq { max-width: 460px; }
 .recipe-photo figcaption { margin-top: 6px; font-size: 12px; line-height: 1.4; }
 .recipe-photo figcaption a { color: inherit; }
+.post-html ul.grocery { list-style: none; padding: 0; margin: 0 0 0.5em; }
+.post-html ul.grocery li { margin: 0; border-top: 1px solid var(--line); }
+.post-html ul.grocery li:last-child { border-bottom: 1px solid var(--line); }
+.grocery label { display: grid; grid-template-columns: 22px minmax(0, 1fr); gap: 12px; align-items: start; padding: 9px 0; cursor: pointer; }
+.grocery input { width: 20px; height: 20px; margin: 5px 0 0; accent-color: var(--accent); cursor: pointer; }
+.grocery input:checked + span { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--line-2); }
+.gl-for { display: block; font: 400 12px/1.4 var(--mono); color: var(--ink-3); letter-spacing: 0.02em; }
+.gl-clear { font: 500 14px var(--sans); }
