@@ -671,3 +671,23 @@ form.subscribe.done .sub-msg strong { color: var(--accent); }
 .post-html .recipe li { margin-bottom: 0.35em; }
 .recipe-toc { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; font-family: var(--sans); font-size: 16px; }
 .recipe-note { border-left: 2px solid var(--accent); padding-left: 16px; color: var(--ink); }
+
+/* light pages (recipe posts) */
+body.light {
+  --bg: #fbf7ef;
+  --bg-2: #f3ede1;
+  --panel: #ffffff;
+  --line: rgba(43, 33, 22, 0.12);
+  --line-2: rgba(43, 33, 22, 0.24);
+  --ink: #2b2116;
+  --ink-2: #4f4436;
+  --ink-3: #7a6d5c;
+  --accent: #b4531c;
+  --accent-2: #8f3f12;
+  --indigo: #b4531c;
+  --cyan: #b4531c;
+  color-scheme: light;
+}
+body.light .top { background: rgba(251, 247, 239, 0.88); }
+body.light .top nav a:hover, body.light .top nav a.on { background: rgba(43, 33, 22, 0.06); }
+body.light .dot { box-shadow: none; }
