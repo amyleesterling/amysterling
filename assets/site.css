@@ -691,3 +691,5 @@ body.light {
 body.light .top { background: rgba(251, 247, 239, 0.88); }
 body.light .top nav a:hover, body.light .top nav a.on { background: rgba(43, 33, 22, 0.06); }
 body.light .dot { box-shadow: none; }
+.tiktok-embed-wrap { width: 100%; max-width: 325px; aspect-ratio: 325 / 578; margin: 1em 0; border-radius: 10px; overflow: hidden; border: 1px solid var(--line); background: #000; }
+.tiktok-embed-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
