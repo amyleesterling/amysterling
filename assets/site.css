@@ -723,3 +723,14 @@ body.light .dot { box-shadow: none; }
 /* recipe steps: ingredients bold, temperatures and times italic */
 .recipe ol strong { color: var(--ink); font-weight: 600; }
 .recipe ol em { font-style: italic; color: var(--accent); }
+
+/* recipe jump bar, pinned under the site nav */
+.recipe-bar { position: fixed; top: 56px; left: 0; right: 0; z-index: 39; background: rgba(251, 247, 239, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
+.recipe-bar ul { list-style: none; margin: 0 auto; padding: 0 var(--gutter); display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; max-width: 920px; }
+.recipe-bar ul::-webkit-scrollbar { display: none; }
+.recipe-bar a { display: block; padding: 10px 10px; font: 500 14px var(--sans); color: var(--ink-2); text-decoration: none; white-space: nowrap; border-bottom: 2px solid transparent; }
+.recipe-bar a:hover { color: var(--accent); }
+.recipe-bar a.on { color: var(--accent); border-bottom-color: var(--accent); }
+html:has(body.has-recipe-bar) { scroll-padding-top: 112px; }
+body.has-recipe-bar .blog { padding-top: 160px; }
+@media (max-width: 600px) { .recipe-bar a { padding: 9px 8px; font-size: 13px; } body.has-recipe-bar .blog { padding-top: 140px; } }
