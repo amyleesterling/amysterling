@@ -717,3 +717,6 @@ body.light .dot { box-shadow: none; }
 .grocery input:checked + span { color: var(--ink-3); text-decoration: line-through; text-decoration-color: var(--line-2); }
 .gl-for { display: block; font: 400 12px/1.4 var(--mono); color: var(--ink-3); letter-spacing: 0.02em; }
 .gl-clear { font: 500 14px var(--sans); }
+.feature-photo { margin: 8px 0 28px; max-width: 560px; }
+.feature-photo img { width: 100%; height: auto; border-radius: 16px; display: block; }
+.feature-photo figcaption { margin-top: 6px; font-size: 12px; }
