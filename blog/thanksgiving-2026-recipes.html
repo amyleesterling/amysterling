@@ -472,7 +472,7 @@
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/site.css">
 </head>
-<body class="light">
+<body class="light has-recipe-bar">
 <header class="top">
   <a class="mark" href="../" aria-label="Amy Sterling, home"><span class="dot" aria-hidden="true"></span>Amy Sterling</a>
   <nav aria-label="Sections">
@@ -485,6 +485,18 @@
     <a href="../#about">About</a>
   </nav>
 </header>
+<nav class="recipe-bar" aria-label="Recipes on this page">
+  <ul>
+    <li><a href="#crust">Pie crust</a></li>
+    <li><a href="#apple">Apple pie</a></li>
+    <li><a href="#pumpkin">Pumpkin pie</a></li>
+    <li><a href="#buns">Japanese milk buns</a></li>
+    <li><a href="#cider">Cranberry cider</a></li>
+    <li><a href="#slaw">Brussels sprouts slaw</a></li>
+    <li><a href="#groceries">Grocery list</a></li>
+    <li><a href="#plan">Timeline</a></li>
+  </ul>
+</nav>
 
 <main class="block blog">
   <article class="post">
@@ -493,16 +505,6 @@
     <figure class="feature-photo"><img src="../media/blog/2026/pumpkin-pie.webp" alt="A homemade pumpkin pie decorated with maple-leaf pastry cutouts" width="1179" height="1179"><figcaption class="fine">Pumpkin pie made by Sophia and Cora</figcaption></figure>
     <div class="post-html">
       <p>Uncle Cole is smoking the turkey this year, so we're bringing the sides and pies to go with it. Here they are, all in one place: soft Japanese milk buns, an apple pie, a pumpkin pie, one batch of homemade crust that covers both pies, a hot cranberry cider, and a Brussels sprouts slaw with pecan brittle.</p>
-      <ul class="recipe-toc">
-        <li><a href="#crust">Pie crust</a></li>
-        <li><a href="#apple">Apple pie</a></li>
-        <li><a href="#pumpkin">Pumpkin pie</a></li>
-        <li><a href="#buns">Japanese milk buns</a></li>
-        <li><a href="#cider">Cranberry cider</a></li>
-        <li><a href="#slaw">Brussels sprouts slaw</a></li>
-        <li><a href="#groceries">Grocery list</a></li>
-        <li><a href="#plan">Timeline</a></li>
-      </ul>
 
       <section class="recipe" id="crust">
         <h2>Homemade pie crust, for both pies</h2>
@@ -829,6 +831,23 @@
     saved = {};
     try { localStorage.removeItem(KEY); } catch (e) {}
   });
+})();
+</script>
+<script>
+(function () {
+  var links = document.querySelectorAll(".recipe-bar a");
+  if (!("IntersectionObserver" in window) || !links.length) return;
+  var byId = {};
+  links.forEach(function (a) { byId[a.getAttribute("href").slice(1)] = a; });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      links.forEach(function (a) { a.classList.remove("on"); });
+      var a = byId[e.target.id];
+      if (a) { a.classList.add("on"); a.scrollIntoView({ block: "nearest", inline: "center" }); }
+    });
+  }, { rootMargin: "-110px 0px -70% 0px" });
+  Object.keys(byId).forEach(function (id) { var el = document.getElementById(id); if (el) io.observe(el); });
 })();
 </script>
 </body>
