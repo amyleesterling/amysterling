@@ -720,3 +720,6 @@ body.light .dot { box-shadow: none; }
 .feature-photo { margin: 8px 0 28px; max-width: 560px; }
 .feature-photo img { width: 100%; height: auto; border-radius: 16px; display: block; }
 .feature-photo figcaption { margin-top: 6px; font-size: 12px; }
+/* recipe steps: ingredients bold, temperatures and times italic */
+.recipe ol strong { color: var(--ink); font-weight: 600; }
+.recipe ol em { font-style: italic; color: var(--accent); }
