@@ -1,0 +1,4391 @@
+{
+  "stops": [
+    {
+      "id": "before-neurons",
+      "order": 0,
+      "branch": "trunk",
+      "parent": null,
+      "title": "Before neurons",
+      "clade": "Porifera and Placozoa",
+      "exemplars": [
+        {
+          "common": "Freshwater sponge",
+          "scientific": "Ephydatia muelleri"
+        },
+        {
+          "common": "Placozoan",
+          "scientific": "Trichoplax adhaerens"
+        }
+      ],
+      "diverged_mya": {
+        "value": 741.6,
+        "min": 649.8,
+        "max": 833.5,
+        "node": "Crown animals; context for both exemplars",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "649.8 | 833.5",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Ephydatia muelleri",
+          "value": 0,
+          "region": "whole animal; recognizable neurons",
+          "method": "Anatomical examination of contracting sponge tissue.",
+          "confidence": "settled",
+          "evidence_quote": "absence of neurons and true muscle",
+          "source_ids": [
+            "spongA"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Trichoplax adhaerens",
+          "value": 0,
+          "region": "whole animal; recognizable neurons",
+          "method": "Comparative cell descriptions and gene-activity surveys.",
+          "confidence": "settled",
+          "evidence_quote": "no neurons",
+          "source_ids": [
+            "plac2"
+          ],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A freshwater sponge can flush waste by squeezing its canals. Trichoplax glides over algae, stops and releases digestive chemicals exactly where its meal lies. Both coordinate behavior without neurons.",
+      "structures": [
+        {
+          "name": "Digestive-chamber signaling",
+          "region": "cellular",
+          "origin": "elaborated",
+          "description": "In a freshwater sponge, cells with tiny secretory packets reach around neighboring feeding cells. Both use proteins also found at nerve junctions.",
+          "confidence": "well supported",
+          "evidence_quote": "conserved modules",
+          "source_ids": [
+            "sponge"
+          ],
+          "species_context": "Spongilla lacustris in the digestive-chamber experiment. Ephydatia muelleri in the canal-flushing experiment.",
+          "additional_evidence": [
+            {
+              "source_id": "sponge",
+              "evidence_quote": "freshwater demosponge Spongilla lacustris"
+            }
+          ]
+        },
+        {
+          "name": "Contractile sheets",
+          "region": "cellular",
+          "origin": null,
+          "description": "Sheets of sponge cells contain linked bundles of contractile fibers. Waves of tightening travel across them.",
+          "confidence": "well supported",
+          "evidence_quote": "continuous tracts spanning the whole sponge",
+          "source_ids": [
+            "spongA"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Gliding hairs",
+          "region": "cellular",
+          "origin": "elaborated",
+          "description": "Tiny beating hairs carry Trichoplax across its food.",
+          "confidence": "well supported",
+          "evidence_quote": "ciliary gliding",
+          "source_ids": [
+            "plac",
+            "cili"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "cili",
+              "evidence_quote": "gliding motility along surfaces"
+            }
+          ]
+        },
+        {
+          "name": "Digestive secretory cells",
+          "region": "cellular",
+          "origin": null,
+          "description": "Individual Trichoplax cells release material that breaks open nearby algae.",
+          "confidence": "well supported",
+          "evidence_quote": "only lipophils located near algae",
+          "source_ids": [
+            "plac"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Flush clogged canals",
+          "description": "After mechanical stimulation, researchers watched waves of contraction push waste out of a freshwater sponge.",
+          "linked_structures": [
+            "Contractile sheets"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "expelling clumps of waste material",
+          "source_ids": [
+            "spongA"
+          ]
+        },
+        {
+          "name": "Park over food",
+          "description": "Live imaging showed Trichoplax stopping its beating hairs over algae and gliding away after feeding.",
+          "linked_structures": [
+            "Gliding hairs"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "cilia stop beating",
+          "source_ids": [
+            "plac"
+          ]
+        },
+        {
+          "name": "Digest food on the spot",
+          "description": "Live imaging caught only the cells beside algae releasing digestive packets.",
+          "linked_structures": [
+            "Digestive secretory cells"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "only lipophils located near algae",
+          "source_ids": [
+            "plac"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Beating hairs used for movement long before animals diverged",
+          "from_stop": null,
+          "confidence": "well supported",
+          "evidence_quote": "the last common ancestor of all eukaryotic organisms possessed a 9+2 flagellum",
+          "source_ids": [
+            "cili"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "A synapse gene means an animal has synapses.",
+          "reality": "A marine sponge carries many genes for proteins used on the receiving side of a nerve junction. Anatomists have found no recognizable neuronal synapses.",
+          "confidence": "settled",
+          "evidence_quote": "sponges lack neurons with clearly recognizable synapses",
+          "source_ids": [
+            "spongesyn"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Coordinated behavior requires neurons.",
+          "reality": "Trichoplax stops, feeds and moves on without neurons. Researchers found multiple kinds of cells that send short chemical messages in placozoans.",
+          "confidence": "well supported",
+          "evidence_quote": "no neurons but also show coordinated behaviors triggered by peptide-secreting cells",
+          "source_ids": [
+            "plac2"
+          ]
+        },
+        {
+          "type": "debate",
+          "claim": "Which living lineage branches first in the animal tree?",
+          "reality": "Schultz and colleagues found chromosome arrangements favoring comb jellies. Pisani and colleagues argued that some sequence analyses favor comb jellies because of how they model evolution. The position of the root and the origin of neurons are separate questions.",
+          "confidence": "disputed",
+          "evidence_quote": "placing ctenophores as the sister group to all other animals",
+          "source_ids": [
+            "spongeRoot",
+            "spongeAlternative"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "spongeAlternative",
+              "evidence_quote": "no support for Ctenophora-sister"
+            }
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "none",
+        "description": "These exemplars have no recognized neuronal synapses to map. Electron microscopy has mapped contacts among other kinds of cells.",
+        "projects": [],
+        "confidence": "settled",
+        "evidence_quote": "lack neurons with clearly recognizable synapses",
+        "source_ids": [
+          "spongesyn",
+          "plac",
+          "sponge"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "plac",
+            "evidence_quote": "without Synapses"
+          },
+          {
+            "source_id": "sponge",
+            "evidence_quote": "correlative x-ray and electron microscopy"
+          }
+        ]
+      },
+      "open_question": {
+        "text": "What tells a whole Trichoplax to stop while only the cells beside food release digestive packets?",
+        "confidence": "well supported",
+        "evidence_quote": "local control of lipophil secretion",
+        "source_ids": [
+          "plac"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "spongA",
+          "plac",
+          "plac2"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "spongA",
+            "evidence_quote_ref": "/stops/0/abilities/0/evidence_quote"
+          },
+          {
+            "source_id": "plac",
+            "evidence_quote_ref": "/stops/0/structures/3/evidence_quote"
+          },
+          {
+            "source_id": "plac2",
+            "evidence_quote_ref": "/stops/0/neuron_counts/1/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nerve-nets",
+      "order": 1,
+      "branch": "trunk",
+      "parent": "before-neurons",
+      "title": "Nerve nets",
+      "clade": "Cnidaria and Ctenophora",
+      "exemplars": [
+        {
+          "common": "Caribbean box jellyfish",
+          "scientific": "Tripedalia cystophora"
+        },
+        {
+          "common": "Freshwater hydra",
+          "scientific": "Hydra vulgaris"
+        },
+        {
+          "common": "Comb jelly",
+          "scientific": "Mnemiopsis leidyi"
+        }
+      ],
+      "diverged_mya": {
+        "value": 586.6,
+        "min": 531.5,
+        "max": 641.8,
+        "node": "Crown cnidarians (Hydra and box jelly); excludes comb jellies",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "531.5 | 641.8",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Hydra vulgaris",
+          "value": 559,
+          "region": "cells in the illustrated whole-animal activity recording; one polyp",
+          "method": "Fluorescent activity imaging in a polyp with labeled neurons; identified cells in this recording.",
+          "confidence": "single study",
+          "evidence_quote": "559 cells",
+          "source_ids": [
+            "hydra"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Mnemiopsis leidyi",
+          "value": 5,
+          "region": "under-surface nerve net in the reconstructed larval volume only",
+          "method": "Three-dimensional electron microscopy; count of cell bodies in the sampled net.",
+          "confidence": "single study",
+          "evidence_quote": "5 nerve net neurons",
+          "source_ids": [
+            "comb3"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Tripedalia cystophora",
+          "value": 1000,
+          "region": "one rhopalium (eye-bearing sensory center); approximate",
+          "method": null,
+          "confidence": "well supported",
+          "evidence_quote": "rhopalial nervous system of approximately 1000 neurons",
+          "source_ids": [
+            "rhopa",
+            "jellyN2"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "jellyN2",
+              "evidence_quote": "histochemical staining techniques and electron microscopy"
+            }
+          ],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A Hydra stretches and contracts with different networks. A box jellyfish can learn near its eyes. In a comb jelly, parts of a nerve net even share one continuous membrane. These are three different solutions to coordinating a body.",
+      "structures": [
+        {
+          "name": "Eye-bearing sensory centers",
+          "region": "other",
+          "origin": null,
+          "description": "The box jellyfish has four sensory centers connected to a nerve running around its bell. Each center brings eyes and nearby nerve tissue together.",
+          "confidence": "well supported",
+          "evidence_quote": "four eye-bearing sensory structures",
+          "source_ids": [
+            "jellyN",
+            "jellyCount"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "jellyCount",
+              "evidence_quote": "four identical sensory structures"
+            }
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Body-wide activity networks",
+          "region": "nerve_net",
+          "origin": "elaborated",
+          "description": "In Hydra, distinct groups of neurons become active during different body movements.",
+          "confidence": "well supported",
+          "evidence_quote": "anatomically non-overlapping",
+          "source_ids": [
+            "hydra",
+            "hydraO"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "hydraO",
+              "evidence_quote": "as in many cnidarian polyps, are organized in a nerve net"
+            }
+          ]
+        },
+        {
+          "name": "Continuous nerve net",
+          "region": "nerve_net",
+          "origin": null,
+          "description": "In the comb jelly studied, parts of the net just under the body surface share a continuous outer membrane.",
+          "confidence": "single study",
+          "evidence_quote": "a continuous plasma membrane that forms a syncytium",
+          "source_ids": [
+            "comb3",
+            "comb2"
+          ],
+          "origin_scope": "Unknown for the continuous net. Independent and shared origins of neurons are both proposed; see the debate below.",
+          "additional_evidence": [
+            {
+              "source_id": "comb2",
+              "evidence_quote_ref": "/stops/1/open_question/evidence_quote"
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Learn to avoid obstacles",
+          "description": "In a tank experiment, Caribbean box jellyfish learned to combine visual contrast with contact. Tests on isolated sensory centers linked learning to those centers.",
+          "linked_structures": [
+            "Eye-bearing sensory centers"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "combines visual and mechanical stimuli during operant conditioning",
+          "source_ids": [
+            "jelly"
+          ]
+        },
+        {
+          "name": "Shorten the body",
+          "description": "Researchers filmed activity throughout Hydra and saw one network light up during lengthwise contractions.",
+          "linked_structures": [
+            "Body-wide activity networks"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "longitudinal contractions",
+          "source_ids": [
+            "hydra"
+          ]
+        },
+        {
+          "name": "Lengthen in response to light",
+          "description": "A different network lit up as Hydra lengthened in response to light.",
+          "linked_structures": [
+            "Body-wide activity networks"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "elongations in response to light",
+          "source_ids": [
+            "hydra"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "An older toolkit for sending and receiving chemical signals",
+          "from_stop": "before-neurons",
+          "confidence": "well supported",
+          "evidence_quote": "conserved modules",
+          "source_ids": [
+            "sponge"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "debate",
+          "claim": "Did neurons arise independently in comb jellies?",
+          "reality": "Moroz and colleagues interpret unusual signaling chemistry as evidence for independent origins. Jékely and colleagues point to shared signaling molecules and sensory cells consistent with common ancestry.",
+          "confidence": "disputed",
+          "evidence_quote": "ctenophore neural systems, and possibly muscle specification, evolved independently",
+          "source_ids": [
+            "comb",
+            "comb2"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "comb2",
+              "evidence_quote_ref": "/stops/1/open_question/evidence_quote"
+            }
+          ]
+        },
+        {
+          "type": "myth",
+          "claim": "A box jellyfish spreads all processing evenly through its net.",
+          "reality": "Its ring nerve runs into four eye-bearing centers. The obstacle-learning experiment localized learning to these sensory centers.",
+          "confidence": "well supported",
+          "evidence_quote": "one coherent CNS including the rhopalia",
+          "source_ids": [
+            "jellyN",
+            "jelly"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "jelly",
+              "evidence_quote": "rhopalial nervous system is the learning center"
+            }
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "Volume electron microscopy traced a young comb jelly’s under-surface net. A separate Hydra study imaged bundles of nerve fibers. Neither project claims every connection in the animal.",
+        "projects": [
+          {
+            "name": "Ctenophore nerve-net reconstruction",
+            "year": 2023,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37079688/"
+          },
+          {
+            "name": "Hydra nerve-bundle ultrastructure",
+            "year": 2024,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38407174/"
+          }
+        ],
+        "confidence": "single study",
+        "evidence_quote": "three-dimensional reconstructions to characterize the nerve net",
+        "source_ids": [
+          "comb3",
+          "hydraO"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "hydraO",
+            "evidence_quote": "serial block face SEM"
+          }
+        ]
+      },
+      "open_question": {
+        "text": "Which features of comb-jelly neurons can distinguish a shared origin from independent invention?",
+        "confidence": "disputed",
+        "evidence_quote": "consistent with a shared ancestry of nervous systems",
+        "source_ids": [
+          "comb2"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "hydra",
+          "jelly",
+          "comb3"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "hydra",
+            "evidence_quote_ref": "/stops/1/abilities/2/evidence_quote"
+          },
+          {
+            "source_id": "jelly",
+            "evidence_quote_ref": "/stops/1/nuances/1/additional_evidence/0/evidence_quote"
+          },
+          {
+            "source_id": "comb3",
+            "evidence_quote": "a continuous plasma membrane"
+          }
+        ]
+      }
+    },
+    {
+      "id": "heads",
+      "order": 2,
+      "branch": "trunk",
+      "parent": "nerve-nets",
+      "title": "Heads",
+      "clade": "Bilateria: two protostome examples",
+      "exemplars": [
+        {
+          "common": "Planarian",
+          "scientific": "Dugesia japonica"
+        },
+        {
+          "common": "Roundworm",
+          "scientific": "Caenorhabditis elegans"
+        }
+      ],
+      "diverged_mya": {
+        "value": 642.0,
+        "min": 595.7,
+        "max": 688.3,
+        "node": "Crown bilaterians; shared ancestral context for the trail",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "595.7 | 688.3",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Caenorhabditis elegans",
+          "value": 302,
+          "region": "whole nervous system; adult hermaphrodite",
+          "method": "Reconstruction from electron micrographs of consecutive tissue slices.",
+          "confidence": "settled",
+          "evidence_quote": "302 neurons",
+          "source_ids": [
+            "worm"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Caenorhabditis elegans",
+          "value": 385,
+          "region": "neuronal nodes in the published adult male reference graph",
+          "method": "Cook and colleagues combined serial electron microscopy reconstructions; this number describes the published graph.",
+          "confidence": "single study",
+          "evidence_quote": "385 neurons",
+          "source_ids": [
+            "worm2"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Dugesia japonica",
+          "value": null,
+          "region": "whole nervous system",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A flatworm can weigh the pull of a chemical against the glare of light. A roundworm switches from tight turns to wider exploration after it loses food. Both examples let researchers connect choices to particular neurons.",
+      "structures": [
+        {
+          "name": "Planarian brain",
+          "region": "cerebral_ganglia",
+          "origin": null,
+          "description": "In the flatworm’s head, a brain receives several kinds of sensory input. Which input wins can depend on light intensity.",
+          "confidence": "well supported",
+          "evidence_quote": "integrating multiple external signals",
+          "source_ids": [
+            "flat",
+            "flatN"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature.",
+          "additional_evidence": [
+            {
+              "source_id": "flatN",
+              "evidence_quote": "counting the numbers of specific neurons in the eye and brain"
+            }
+          ]
+        },
+        {
+          "name": "Longitudinal nerve bundles",
+          "region": "nerve_cord",
+          "origin": null,
+          "description": "In the roundworm, bundles of nerve fibers run lengthwise. Neighbors make many of their connections locally.",
+          "confidence": "well supported",
+          "evidence_quote": "arranged longitudinally and circumferentially",
+          "source_ids": [
+            "worm"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Search circuit",
+          "region": "other",
+          "origin": null,
+          "description": "Smell and taste cells feed roundworm neurons that change the frequency of turns and reversals.",
+          "confidence": "well supported",
+          "evidence_quote": "AWC olfactory neurons",
+          "source_ids": [
+            "nemaA"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Choose between food cues and light",
+          "description": "Given an attractive chemical and light together, planarians followed the chemical under dimmer conditions and increasingly avoided stronger light.",
+          "linked_structures": [
+            "Planarian brain"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "negative phototaxis rather than chemoattraction",
+          "source_ids": [
+            "flat"
+          ]
+        },
+        {
+          "name": "Follow chemical cues",
+          "description": "Suppressing nerve transmission in the regenerated head disrupted the flatworm’s movement toward chemicals.",
+          "linked_structures": [
+            "Planarian brain"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "lost both chemotactic and thigmotactic behaviors",
+          "source_ids": [
+            "flat"
+          ]
+        },
+        {
+          "name": "Search near a lost meal",
+          "description": "After removal from food, roundworms backed up and made tight turns. Manipulating identified neurons separated local searching from later dispersal.",
+          "linked_structures": [
+            "Search circuit"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "reversals and deep omega-shaped turns",
+          "source_ids": [
+            "nemaA"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Neurons and their shared developmental machinery",
+          "from_stop": "nerve-nets",
+          "confidence": "well supported",
+          "evidence_quote": "last common ancestor of Bilateria and Cnidaria was an animal with a well-established nervous system",
+          "source_ids": [
+            "cnidinherit"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "Every adult C. elegans has exactly the same nervous system.",
+          "reality": "The familiar count describes the adult hermaphrodite. Whole-animal maps show differences between adult sexes, including in connections between neurons they share.",
+          "confidence": "settled",
+          "evidence_quote": "differs between sexes",
+          "source_ids": [
+            "worm2"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "The original wiring map captured every junction.",
+          "reality": "White and colleagues described most identifiable connections. Later work combined new and older images to extend the maps to both sexes.",
+          "confidence": "well supported",
+          "evidence_quote": "Most of the morphologically identifiable",
+          "source_ids": [
+            "worm",
+            "worm2",
+            "worm3"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "worm2",
+              "evidence_quote_ref": "/stops/2/connectome/evidence_quote"
+            },
+            {
+              "source_id": "worm3",
+              "evidence_quote": "for the first time the complete set of synaptic connections"
+            }
+          ]
+        },
+        {
+          "type": "debate",
+          "claim": "Did the common ancestor of bilaterians already have a brain?",
+          "reality": "Northcutt argues for independent centralization from a diffuse net. Holland and colleagues argue that shared developmental patterns favor an ancestral central nervous system.",
+          "confidence": "disputed",
+          "evidence_quote": "brains evolved independently at least four times",
+          "source_ids": [
+            "deep",
+            "neurodeep"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "neurodeep",
+              "evidence_quote": "a CNS evolved just once"
+            }
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "complete",
+        "description": "Whole-animal reference maps for both adult sexes combine reconstructions across specimens and image series. Completeness describes anatomical scope.",
+        "projects": [
+          {
+            "name": "Whole-animal connectomes of both sexes",
+            "year": 2019,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/31270481/"
+          },
+          {
+            "name": "White and colleagues’ serial-section reconstruction",
+            "year": 1986,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22462104/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "new and previously published electron micrographs",
+        "source_ids": [
+          "worm2",
+          "worm"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "worm",
+            "evidence_quote": "electron micrographs of serial sections"
+          }
+        ]
+      },
+      "open_question": {
+        "text": "Which differences in connection strength between the sexes actually change behavior?",
+        "confidence": "well supported",
+        "evidence_quote": "connections differ in strength",
+        "source_ids": [
+          "worm2"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "flat",
+          "nemaA"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "flat",
+            "evidence_quote_ref": "/stops/2/structures/0/evidence_quote"
+          },
+          {
+            "source_id": "nemaA",
+            "evidence_quote": "omega turns are suppressed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "arthropod-brains",
+      "order": 3,
+      "branch": "side",
+      "parent": "heads",
+      "title": "Arthropod brains",
+      "clade": "Arthropoda: insects",
+      "exemplars": [
+        {
+          "common": "Fruit fly",
+          "scientific": "Drosophila melanogaster"
+        },
+        {
+          "common": "Western honeybee",
+          "scientific": "Apis mellifera"
+        }
+      ],
+      "diverged_mya": {
+        "value": 583.8,
+        "min": 557.2,
+        "max": 610.4,
+        "node": "Arthropod and nematode lineages in the sampled tree",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "557.2 | 610.4",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Drosophila melanogaster",
+          "value": 139255,
+          "region": "adult female brain, including visual lobes",
+          "method": "FlyWire reconstruction from serial electron microscopy.",
+          "confidence": "settled",
+          "evidence_quote": "139,255 neurons",
+          "source_ids": [
+            "fly"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Apis mellifera",
+          "value": 170000,
+          "region": "class I Kenyon cells per mushroom body; approximate",
+          "method": null,
+          "confidence": "well supported",
+          "evidence_quote": "170,000 class I KCs",
+          "source_ids": [
+            "beeSub"
+          ],
+          "unit": "neurons",
+          "estimate_text": "The review reports a regional anatomical estimate and distinguishes two cell classes. The original counting protocol was not verified."
+        }
+      ],
+      "summary": "A walking fly keeps track of which way it faces even when the lights go out. In a honeybee, the activity leaving a learning center changes when a familiar smell predicts food.",
+      "structures": [
+        {
+          "name": "Heading compass",
+          "region": "central_complex",
+          "origin": "elaborated",
+          "description": "A ring-shaped part of the fly’s central complex carries a moving pattern of activity that tracks the direction the fly faces.",
+          "confidence": "well supported",
+          "evidence_quote": "encodes the fly's azimuth",
+          "source_ids": [
+            "compass",
+            "central"
+          ],
+          "origin_scope": "The inherited structure is the insect central complex. The fly experiment identifies a heading signal in one part of it.",
+          "additional_evidence": [
+            {
+              "source_id": "central",
+              "evidence_quote": "sky compass orientation, and integration of spatial information"
+            }
+          ]
+        },
+        {
+          "name": "Mushroom bodies",
+          "region": "mushroom_body",
+          "origin": "elaborated",
+          "description": "These insect brain centers combine sensory information. In honeybees their output changes after an odor predicts a reward.",
+          "confidence": "well supported",
+          "evidence_quote": "Mushroom body output neurons encode odor-reward associations",
+          "source_ids": [
+            "beeA",
+            "insect"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "insect",
+              "evidence_quote": "olfactory input to the mushroom body calyces in more recent insect orders is an acquired character"
+            }
+          ],
+          "origin_scope": "Elaboration of smell input to the mushroom bodies; the date of the first mushroom body is a separate question."
+        },
+        {
+          "name": "Visual lobes",
+          "region": "optic_lobe",
+          "origin": "elaborated",
+          "description": "These paired fly brain regions connect with the central brain. Electron microscopy lets researchers trace paths from light sensors toward movement circuits.",
+          "confidence": "well supported",
+          "evidence_quote": "central brain and the optic lobes",
+          "source_ids": [
+            "fly",
+            "optic2"
+          ],
+          "origin_scope": "Comparison of visual lobes in insects and crustaceans; applies to the shared processing regions.",
+          "additional_evidence": [
+            {
+              "source_id": "optic2",
+              "evidence_quote": "the equivalent region of insects"
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Keep a heading in the dark",
+          "description": "As flies walked on a ball, the heading signal kept updating from the flies’ own movements after the lights went out.",
+          "linked_structures": [
+            "Heading compass"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "self-motion cues in darkness",
+          "source_ids": [
+            "compass"
+          ]
+        },
+        {
+          "name": "Orient to landmarks",
+          "description": "Imaging walking flies in virtual reality showed that the same activity pattern tracked visible landmarks.",
+          "linked_structures": [
+            "Heading compass"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "tracking visual landmarks",
+          "source_ids": [
+            "compass"
+          ]
+        },
+        {
+          "name": "Remember a rewarded odor",
+          "description": "Bees learned to extend their feeding tube for an odor. Hours later, activity leaving the mushroom bodies distinguished the rewarded smell.",
+          "linked_structures": [
+            "Mushroom bodies"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "associative plastic changes occurred only during retention 3 h after conditioning",
+          "source_ids": [
+            "beeA"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Neurons connected into sensory and movement circuits",
+          "from_stop": "nerve-nets",
+          "confidence": "well supported",
+          "evidence_quote": "well-established nervous system",
+          "source_ids": [
+            "cnidinherit"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "The fly number counts every neuron in its body.",
+          "reality": "The count is for one adult female fruit fly brain. It includes the visual lobes.",
+          "confidence": "settled",
+          "evidence_quote": "139,255 neurons",
+          "source_ids": [
+            "fly"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "A compass needs a landmark at every moment.",
+          "reality": "The heading signal can persist even when the fly stops receiving both visual and movement cues.",
+          "confidence": "well supported",
+          "evidence_quote": "persistent activity",
+          "source_ids": [
+            "compass"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "complete",
+        "description": "FlyWire mapped chemical connections across one adult female fly brain. In honeybees, a separate study reconstructed small clusters of input synapses in the mushroom bodies.",
+        "projects": [
+          {
+            "name": "FlyWire adult female brain",
+            "year": 2024,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/"
+          },
+          {
+            "name": "Honeybee mushroom-body input synapses",
+            "year": 2012,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22430260/"
+          }
+        ],
+        "confidence": "settled",
+        "evidence_quote": "diagram of a whole brain",
+        "source_ids": [
+          "fly",
+          "beeEM"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "beeEM",
+            "evidence_quote": "we employed serial-section electron microscopy"
+          }
+        ],
+        "project_scope": "complete refers to the adult female fly brain; honeybee coverage is partial."
+      },
+      "open_question": {
+        "text": "Which of the routes from photoreceptors to movement neurons actually control a given visual behavior?",
+        "confidence": "well supported",
+        "evidence_quote": "putative circuit mechanisms",
+        "source_ids": [
+          "fly"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "compass",
+          "beeA"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "compass",
+            "evidence_quote_ref": "/stops/3/abilities/0/evidence_quote"
+          },
+          {
+            "source_id": "beeA",
+            "evidence_quote_ref": "/stops/3/structures/1/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cephalopods",
+      "order": 4,
+      "branch": "side",
+      "parent": "heads",
+      "title": "Cephalopods",
+      "clade": "Mollusca: Cephalopoda",
+      "exemplars": [
+        {
+          "common": "Common octopus",
+          "scientific": "Octopus vulgaris"
+        },
+        {
+          "common": "California two-spot octopus",
+          "scientific": "Octopus bimaculoides"
+        }
+      ],
+      "diverged_mya": {
+        "value": 412.08,
+        "min": 408.14,
+        "max": 419.51,
+        "node": "Crown cephalopods; nautilus and coleoid lineages",
+        "value_basis": "Published clock estimate and 95% credible interval.",
+        "confidence": "well supported",
+        "evidence_quote": "412.08 Mya (95% HPD: 408.14 – 419.51",
+        "source_ids": [
+          "cephD"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Octopus vulgaris",
+          "value": 500000000,
+          "region": "whole nervous system; approximate",
+          "method": "Historical regional anatomical estimates summed across lobes and ganglia.",
+          "confidence": "single study",
+          "evidence_quote": "500 million nerve cells",
+          "source_ids": [
+            "young"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Octopus vulgaris",
+          "value": 300000000,
+          "region": "arm ganglia combined; approximate",
+          "method": "Historical estimates for clusters of nerve cells in the arms.",
+          "confidence": "single study",
+          "evidence_quote": "ganglia within the arms",
+          "source_ids": [
+            "young"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Octopus bimaculoides",
+          "value": null,
+          "region": "whole nervous system",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A common octopus carries most of its neurons in its arms. An arm can produce part of a reach locally, while a learning center in the head helps the animal remember which objects to avoid.",
+      "structures": [
+        {
+          "name": "Arm nerve cords",
+          "region": "nerve_cord",
+          "origin": null,
+          "description": "An octopus arm contains circuitry that can produce a coordinated reach locally.",
+          "confidence": "well supported",
+          "evidence_quote": "neural circuitry of the arm itself",
+          "source_ids": [
+            "oct2"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Contact-taste receptors",
+          "region": "cellular",
+          "origin": "new",
+          "description": "Specialized proteins in octopus suckers detect substances that dissolve poorly in seawater. Contact makes these substances available to the animal.",
+          "confidence": "well supported",
+          "evidence_quote": "a family of cephalopod-specific chemotactile receptors",
+          "source_ids": [
+            "octskin"
+          ]
+        },
+        {
+          "name": "Vertical lobe",
+          "region": "vertical_lobe",
+          "origin": "convergent",
+          "description": "The vertical lobe supports memory. Its wiring resembles circuits used in other animals for learning associations. The claim of convergence concerns the arrangement of connections.",
+          "confidence": "well supported",
+          "evidence_quote": "the VL has evolved a unique circuit",
+          "source_ids": [
+            "oct3",
+            "mollusc"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "mollusc",
+              "evidence_quote": "independently evolved twice on this planet"
+            },
+            {
+              "source_id": "oct3",
+              "evidence_quote": "sharing morphological and wiring features with circuits supporting associative learning in other animals"
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Extend an arm",
+          "description": "Mechanical or electrical stimulation produced a reach-like extension even after researchers disconnected an arm from the brain.",
+          "linked_structures": [
+            "Arm nerve cords"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "connection with the brain has been severed",
+          "source_ids": [
+            "oct2"
+          ]
+        },
+        {
+          "name": "Taste a surface",
+          "description": "Receptor tests and recordings from sensory cells showed how the California two-spot octopus detects prey chemicals by touch.",
+          "linked_structures": [
+            "Contact-taste receptors"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "detect poorly soluble natural products",
+          "source_ids": [
+            "octskin"
+          ]
+        },
+        {
+          "name": "Acquire lasting memories",
+          "description": "After researchers cut or electrically stimulated a vertical-lobe pathway, octopuses were worse the next day at remembering an object they had learned to avoid.",
+          "linked_structures": [
+            "Vertical lobe"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "both treatments impaired long-term recall the next day",
+          "source_ids": [
+            "octA"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "A nervous system inherited from the common ancestor of bilaterians and cnidarians",
+          "from_stop": "nerve-nets",
+          "confidence": "well supported",
+          "evidence_quote": "well-established nervous system",
+          "source_ids": [
+            "cnidinherit"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "Each arm is an independent animal.",
+          "reality": "The arm can generate part of a reach locally. Normal movement also engages circuits in the central brain.",
+          "confidence": "well supported",
+          "evidence_quote": "engages every division of the octopus nervous system",
+          "source_ids": [
+            "oct"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Most of the octopus’s neurons sit between its eyes.",
+          "reality": "Young estimated about 300 million arm neurons out of about 500 million neurons in a common octopus.",
+          "confidence": "single study",
+          "evidence_quote": "500 million nerve cells",
+          "source_ids": [
+            "young",
+            "octAlt"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "octAlt",
+              "evidence_quote": "peripheral ganglia (350 million neurons)"
+            }
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "Serial electron microscopy mapped a small piece of the common octopus’s vertical lobe, including two interconnected learning pathways.",
+        "projects": [
+          {
+            "name": "Common octopus vertical lobe",
+            "year": 2023,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37410519/"
+          }
+        ],
+        "confidence": "single study",
+        "evidence_quote": "connectome of a small volume",
+        "source_ids": [
+          "oct3"
+        ]
+      },
+      "open_question": {
+        "text": "How does the central brain recruit local arm programs during an ordinary reach?",
+        "confidence": "well supported",
+        "evidence_quote": "open questions and areas for further study",
+        "source_ids": [
+          "oct"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "young",
+          "oct2",
+          "octA"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "young",
+            "evidence_quote_ref": "/stops/4/neuron_counts/1/evidence_quote"
+          },
+          {
+            "source_id": "oct2",
+            "evidence_quote_ref": "/stops/4/abilities/0/evidence_quote"
+          },
+          {
+            "source_id": "octA",
+            "evidence_quote_ref": "/stops/4/abilities/2/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "chordate-origins",
+      "order": 5,
+      "branch": "trunk",
+      "parent": "heads",
+      "title": "Chordate origins",
+      "clade": "Chordata: lancelets and tunicates",
+      "exemplars": [
+        {
+          "common": "European lancelet",
+          "scientific": "Branchiostoma lanceolatum"
+        },
+        {
+          "common": "Sea squirt",
+          "scientific": "Ciona intestinalis"
+        },
+        {
+          "common": "Pacific sea squirt",
+          "scientific": "Ciona robusta"
+        }
+      ],
+      "diverged_mya": {
+        "value": 595.5,
+        "min": 555.4,
+        "max": 635.7,
+        "node": "Crown chordates; lancelet lineage versus tunicates and vertebrates",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "555.4 | 635.7",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Ciona intestinalis",
+          "value": 177,
+          "region": "larval central nervous system; species name as published",
+          "method": "Electron microscopy of consecutive tissue slices.",
+          "confidence": "single study",
+          "evidence_quote": "177 CNS neurons",
+          "source_ids": [
+            "squirt"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Branchiostoma lanceolatum",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        },
+        {
+          "species": "Ciona robusta",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A swimming sea squirt larva has separate routes for light direction and sudden dimming. When the animal changes shape, some larval cells help rebuild its adult nervous system. A lancelet’s frontal eye offers another clue to the shared history of chordate senses.",
+      "structures": [
+        {
+          "name": "Dorsal nerve tube",
+          "region": "nerve_cord",
+          "origin": "elaborated",
+          "description": "The sea squirt larva has a hollow central nervous system running along its back. This overall layout is shared across chordates.",
+          "confidence": "well supported",
+          "evidence_quote": "dorsal tubular nervous system",
+          "source_ids": [
+            "squirt",
+            "squirtA"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "squirtA",
+              "evidence_quote": "common CNS architecture"
+            }
+          ]
+        },
+        {
+          "name": "Two visual routes",
+          "region": "other",
+          "origin": null,
+          "description": "In sea squirt larvae, different light-sensitive cells feed separate routes to swimming muscles. One responds to light direction, the other to dimming.",
+          "confidence": "well supported",
+          "evidence_quote": "two parallel visuomotor circuits",
+          "source_ids": [
+            "squirtA"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Frontal eye",
+          "region": "other",
+          "origin": "elaborated",
+          "description": "Light-sensitive and pigment cells in the lancelet’s front eye share molecular features with cells in the vertebrate retina, the eye’s light-sensitive tissue.",
+          "confidence": "well supported",
+          "evidence_quote": "homology between amphioxus frontal eye and vertebrate eyes",
+          "source_ids": [
+            "lance"
+          ],
+          "origin_scope": "Applies to the underlying anatomical structure; the date of the measured response is unknown."
+        },
+        {
+          "name": "Nerve-tube lining cells",
+          "region": "cellular",
+          "origin": null,
+          "description": "Some cells lining the larval sea squirt nervous system can generate adult neurons as the animal changes shape.",
+          "confidence": "well supported",
+          "evidence_quote": "differentiate into neurons",
+          "source_ids": [
+            "squirt2"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Swim in response to light direction",
+          "description": "Combining a wiring map with behavioral tests identified a route from light-sensitive cells toward motor neurons that responds to directional light.",
+          "linked_structures": [
+            "Two visual routes"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "direction of light",
+          "source_ids": [
+            "squirtA"
+          ]
+        },
+        {
+          "name": "Escape when light fades",
+          "description": "Blocking a chemical signal and testing larvae with missing light sensors helped identify a separate escape route triggered by dimming.",
+          "linked_structures": [
+            "Two visual routes"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "mediates an escape response",
+          "source_ids": [
+            "squirtA"
+          ]
+        },
+        {
+          "name": "Rebuild the adult nervous system",
+          "description": "By labeling and following individual cells through the larva’s transformation, researchers found that some lining cells became adult neurons.",
+          "linked_structures": [
+            "Nerve-tube lining cells"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "construction of the adult CNS",
+          "source_ids": [
+            "squirt2"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Genes that pattern the body and nervous system from head to tail",
+          "from_stop": "heads",
+          "confidence": "well supported",
+          "evidence_quote": "similarly expressed both in the CNS and in the remainder of the ectoderm in many bilaterians",
+          "source_ids": [
+            "neurodeep"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "The sea squirt eats its whole brain.",
+          "reality": "Many larval neurons disappear, but tracing marked cells showed that some neurons persist and other larval cells help build the adult nervous system.",
+          "confidence": "well supported",
+          "evidence_quote": "a subset of cholinergic motor neurons",
+          "source_ids": [
+            "squirt2"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Matching numbers on both sides mean matching wiring.",
+          "reality": "The sea squirt larva has equal numbers of cells on its two sides, yet the identities and pathways can differ.",
+          "confidence": "well supported",
+          "evidence_quote": "pathways differ left/right",
+          "source_ids": [
+            "squirt"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "complete",
+        "description": "Serial electron microscopy mapped the central nervous system of a swimming Ciona intestinalis larva. The Pacific Ciona robusta used in behavioral studies is a separate species.",
+        "projects": [
+          {
+            "name": "Serial-section Ciona larval CNS",
+            "year": 2016,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27921996/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "177 CNS neurons",
+        "source_ids": [
+          "squirt",
+          "squirtA"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "squirtA",
+            "evidence_quote": "Ciona intestinalis type A"
+          }
+        ]
+      },
+      "open_question": {
+        "text": "Which lancelet and vertebrate eye cells descend from the same ancestral cell types?",
+        "confidence": "well supported",
+        "evidence_quote": "remains so far unresolved",
+        "source_ids": [
+          "lance"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "squirtA",
+          "squirt2",
+          "lance"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "squirtA",
+            "evidence_quote_ref": "/stops/5/structures/1/evidence_quote"
+          },
+          {
+            "source_id": "squirt2",
+            "evidence_quote_ref": "/stops/5/abilities/2/evidence_quote"
+          },
+          {
+            "source_id": "lance",
+            "evidence_quote_ref": "/stops/5/structures/2/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "first-vertebrates",
+      "order": 6,
+      "branch": "trunk",
+      "parent": "chordate-origins",
+      "title": "First vertebrates",
+      "clade": "Vertebrata: lampreys",
+      "exemplars": [
+        {
+          "common": "Sea lamprey",
+          "scientific": "Petromyzon marinus"
+        },
+        {
+          "common": "River lamprey",
+          "scientific": "Lampetra fluviatilis"
+        }
+      ],
+      "diverged_mya": {
+        "value": 496.5,
+        "min": 459.3,
+        "max": 533.8,
+        "node": "Crown vertebrates; jawless versus jawed vertebrate lineages",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "459.3 | 533.8",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Lampetra fluviatilis",
+          "value": 590000,
+          "region": "whole brain; modeled estimate from four river lampreys",
+          "method": "Counted nuclei in dispersed tissue, then estimated the neuronal share using a ratio extrapolated from other species.",
+          "confidence": "single study",
+          "evidence_quote": "the total neuron number ntotal was approximated",
+          "source_ids": [
+            "lampN"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Petromyzon marinus",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A lamprey can turn toward a slowly moving object or away from a looming one. Its brain shares movement-control circuits with mammals, including routes that restrain other movement centers.",
+      "structures": [
+        {
+          "name": "Basal ganglia",
+          "region": "basal_ganglia",
+          "origin": "elaborated",
+          "description": "These connected forebrain centers regulate pathways for movement. Lampreys and mammals share both the main centers and the direct and indirect routes between them.",
+          "confidence": "well supported",
+          "evidence_quote": "physiological activity patterns are conserved",
+          "source_ids": [
+            "lamp",
+            "inherit"
+          ],
+          "origin_scope": "Vertebrate circuit shared by lampreys and mammals. Its deeper origin remains open.",
+          "additional_evidence": [
+            {
+              "source_id": "inherit",
+              "evidence_quote": "suggests deep homology of arthropod central complex and vertebrate basal ganglia"
+            }
+          ]
+        },
+        {
+          "name": "Visual orienting center",
+          "region": "midbrain_tectum",
+          "origin": "elaborated",
+          "description": "The optic tectum links sight to movement. In a lamprey, its output can recruit different circuits depending on how an object moves.",
+          "confidence": "well supported",
+          "evidence_quote": "common ancestor of vertebrates",
+          "source_ids": [
+            "lampA"
+          ],
+          "origin_scope": "Shared across vertebrates."
+        },
+        {
+          "name": "Descending movement pathways",
+          "region": "hindbrain",
+          "origin": "elaborated",
+          "description": "Nerve cells in the brainstem send commands toward the spinal cord. The visual orienting center uses these routes to steer responses.",
+          "confidence": "well supported",
+          "evidence_quote": "downstream reticulospinal circuits",
+          "source_ids": [
+            "lampA"
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Gate candidate movements",
+          "description": "Tracing and electrical recordings showed that lamprey output cells continually restrain movement centers. Researchers infer a role in selecting actions.",
+          "linked_structures": [
+            "Basal ganglia"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "pallidal output neurons tonically inhibit tectum",
+          "source_ids": [
+            "lamp"
+          ]
+        },
+        {
+          "name": "Turn toward a moving object",
+          "description": "In an eye–brain–spinal cord preparation, slowly moving targets triggered one-sided nerve activity corresponding to a turn.",
+          "linked_structures": [
+            "Visual orienting center"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "slowly expanding or moving stimuli",
+          "source_ids": [
+            "lampA"
+          ]
+        },
+        {
+          "name": "Switch to avoidance",
+          "description": "Rapidly looming targets triggered an avoidance pattern. Blocking particular signals in the visual center changed which motor pattern appeared.",
+          "linked_structures": [
+            "Visual orienting center"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "rapidly expanding looming stimuli",
+          "source_ids": [
+            "lampA"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Regional organization of the developing nerve tube",
+          "from_stop": "chordate-origins",
+          "confidence": "well supported",
+          "evidence_quote": "amphioxus shares multiple features of this bauplan",
+          "source_ids": [
+            "spinal",
+            "squirt"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "squirt",
+              "evidence_quote_ref": "/stops/5/structures/0/evidence_quote"
+            }
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "All vertebrates wrap their nerve fibers in myelin.",
+          "reality": "Lampreys and hagfish lack the tightly layered insulating wrap called myelin. Neighboring support cells can still surround nerve fibers.",
+          "confidence": "settled",
+          "evidence_quote": "both lamprey and hagfish lack myelin",
+          "source_ids": [
+            "myelin"
+          ]
+        },
+        {
+          "type": "debate",
+          "claim": "Did the lamprey inherit a cerebellum?",
+          "reality": "Sugahara and colleagues found developmental signals resembling those that build a cerebellum. Lamanna and colleagues found no convincing counterparts of its characteristic mature cell types. These are different tests of ancestry.",
+          "confidence": "disputed",
+          "evidence_quote": "ancestral genetic programs for the formation of a distinct cerebellum",
+          "source_ids": [
+            "cer2",
+            "cer3"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "cer3",
+              "evidence_quote": "did not provide evidence for the presence of granule or Purkinje cells"
+            }
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "In river lamprey retina, researchers labeled nerve fibers arriving from the brain and identified their local synaptic targets by electron microscopy.",
+        "projects": [
+          {
+            "name": "River lamprey retinal feedback study",
+            "year": 1989,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/2776010/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "the centrifugal terminals synapse either upon unlabeled somata or profiles containing synaptic vesicles",
+        "source_ids": [
+          "lampEM"
+        ]
+      },
+      "open_question": {
+        "text": "How much of the ancestral cerebellum can be identified from developmental signals when mature cell types give a different answer?",
+        "confidence": "disputed",
+        "evidence_quote": "probably devoid of cerebellar cell types",
+        "source_ids": [
+          "cer3",
+          "cer2"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "cer2",
+            "evidence_quote": "ancestral genetic programs"
+          }
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "lampA",
+          "lamp"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "lampA",
+            "evidence_quote": "approach or evade"
+          },
+          {
+            "source_id": "lamp",
+            "evidence_quote_ref": "/stops/6/abilities/0/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "jawed-fish",
+      "order": 7,
+      "branch": "trunk",
+      "parent": "first-vertebrates",
+      "title": "Jawed fish",
+      "clade": "Gnathostomata",
+      "exemplars": [
+        {
+          "common": "Zebrafish",
+          "scientific": "Danio rerio"
+        },
+        {
+          "common": "Smooth dogfish",
+          "scientific": "Mustelus canis"
+        },
+        {
+          "common": "Elephantnose fish",
+          "scientific": "Gnathonemus petersii"
+        },
+        {
+          "common": "Goldfish",
+          "scientific": "Carassius auratus"
+        }
+      ],
+      "diverged_mya": {
+        "value": 450.1,
+        "min": 432.1,
+        "max": 468.1,
+        "node": "Crown jawed vertebrates; cartilaginous versus bony vertebrates",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "432.1 | 468.1",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Danio rerio",
+          "value": null,
+          "region": "olfactory bulb of one larval zebrafish; reconstructed neurons",
+          "method": "Three-dimensional electron microscopy and cell tracing.",
+          "estimate_text": "Over 1,000 neurons were reconstructed in one larval zebrafish smell center.",
+          "min_exclusive": 1000,
+          "confidence": "well supported",
+          "evidence_quote": "all neurons (>1,000)",
+          "source_ids": [
+            "olfmap"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Mustelus canis",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        },
+        {
+          "species": "Gnathonemus petersii",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        },
+        {
+          "species": "Carassius auratus",
+          "value": null,
+          "region": "ganglion cells in one retina across adult goldfish of different sizes",
+          "method": "Counts of cell nuclei in tissue sections, scaled by measured retinal area.",
+          "estimate_text": "About 60,000 to 350,000 output neurons per adult goldfish retina across the sampled sizes.",
+          "min": 60000,
+          "max": 350000,
+          "confidence": "well supported",
+          "evidence_quote": "the ganglion cells from 60,000 to 350,000",
+          "source_ids": [
+            "goldN"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Danio rerio",
+          "value": 100000,
+          "unit": "neurons",
+          "region": "whole larval brain; order of magnitude only",
+          "method": "Review estimate based on stereological sampling: count cells in tissue samples and scale to brain volume.",
+          "confidence": "well supported",
+          "evidence_quote": "total number of neurons is on the order of",
+          "source_ids": [
+            "zebReview",
+            "zebraCount"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "zebraCount",
+              "evidence_quote": "using a quantitative stereological technique"
+            }
+          ],
+          "estimate_text": "On the order of 10⁵ neurons in a larval zebrafish brain. The value encodes the order of magnitude."
+        }
+      ],
+      "summary": "A goldfish can remember a place, a shark can steer by which nostril smells an odor first, and an electric fish can learn while sensing. Experiments let us name different circuits and signals behind each ability.",
+      "structures": [
+        {
+          "name": "Myelin",
+          "region": "cellular",
+          "origin": "new",
+          "description": "In jawed vertebrates, support cells wrap nerve fibers in compact layers of insulation. This entry dates the vertebrate version of the wrap.",
+          "confidence": "well supported",
+          "evidence_quote": "in ancestors of the living cartilaginous fishes",
+          "source_ids": [
+            "myelin"
+          ]
+        },
+        {
+          "name": "Layered cerebellum",
+          "region": "cerebellum",
+          "origin": "elaborated",
+          "description": "Two signature types of cerebellar neuron develop in distinct places. The shared layout is recognizable across living jawed vertebrates.",
+          "confidence": "well supported",
+          "evidence_quote": "shared in all extant jawed vertebrates",
+          "source_ids": [
+            "cer2"
+          ]
+        },
+        {
+          "name": "Spatial-memory forebrain",
+          "region": "pallium",
+          "origin": "elaborated",
+          "description": "The lateral pallium, part of the goldfish forebrain, supports memory for places. Damage there affects navigation much as damage to the mammalian hippocampus does.",
+          "confidence": "well supported",
+          "evidence_quote": "homologous to the hippocampus",
+          "source_ids": [
+            "pall",
+            "fish26"
+          ],
+          "origin_scope": "The broad forebrain territory is inherited. Lesions test function; matching individual subdivisions across fish and mammals also requires anatomical and developmental evidence.",
+          "additional_evidence": [
+            {
+              "source_id": "fish26",
+              "evidence_quote": "homologues of the olfactory pallium, hippocampus, and pallial amygdala"
+            }
+          ]
+        },
+        {
+          "name": "Paired smell inputs",
+          "region": "other",
+          "origin": null,
+          "description": "A smooth dogfish can compare when odor reaches the two sides of its snout.",
+          "confidence": "well supported",
+          "evidence_quote": "bilateral odor arrival time differences",
+          "source_ids": [
+            "shark"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Electric-sense lobe",
+          "region": "hindbrain",
+          "origin": null,
+          "description": "This processing center in an electric fish learns while it continues to transmit signals. Different parts of the same cells can carry different signals.",
+          "confidence": "well supported",
+          "evidence_quote": "functional compartmentalization within intermediate layer neurons",
+          "source_ids": [
+            "eFish"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Remember a place",
+          "description": "Goldfish with damage to the lateral pallium struggled to find a remembered location. They could still follow a visible cue.",
+          "linked_structures": [
+            "Spatial-memory forebrain"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "impairment in goldfish",
+          "source_ids": [
+            "pall"
+          ]
+        },
+        {
+          "name": "Follow an odor plume",
+          "description": "Researchers delivered carefully timed pulses into each nostril. Smooth dogfish turned toward the side that got the odor first, even when the later pulse was stronger.",
+          "linked_structures": [
+            "Paired smell inputs"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "They turned toward the side stimulated first",
+          "source_ids": [
+            "shark"
+          ]
+        },
+        {
+          "name": "Learn while sensing",
+          "description": "Recordings in electric fish showed how the same network carries sensory output while updating its response to repeated input.",
+          "linked_structures": [
+            "Electric-sense lobe"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "reconcile learning and signaling functions without switching its mode of operation",
+          "source_ids": [
+            "eFish"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Basal ganglia circuits that regulate movement",
+          "from_stop": "first-vertebrates",
+          "confidence": "well supported",
+          "evidence_quote": "physiological activity patterns are conserved",
+          "source_ids": [
+            "lamp"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "A fish has no counterpart to the mammalian memory forebrain.",
+          "reality": "Goldfish and turtle lesion experiments support a shared spatial-memory system. They test one functional correspondence, leaving other region-by-region matches open.",
+          "confidence": "well supported",
+          "evidence_quote": "map-like memory representations",
+          "source_ids": [
+            "pall",
+            "fish26"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "fish26",
+              "evidence_quote": "remains highly controversial"
+            }
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Imaging an entire brain gives a complete wiring diagram.",
+          "reality": "Researchers imaged an entire larval zebrafish brain and traced its myelinated fibers. The published reconstruction covers a subset of all circuits.",
+          "confidence": "well supported",
+          "evidence_quote": "survey all myelinated axons",
+          "source_ids": [
+            "zebra"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Only vertebrates invented nerve insulation.",
+          "reality": "Some segmented worms and crustaceans also wrap nerve fibers in layers. Comparative anatomy supports separate origins of these wraps.",
+          "confidence": "well supported",
+          "evidence_quote": "arisen independently in evolution several times",
+          "source_ids": [
+            "fishmy"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "In a larval zebrafish smell center, researchers reconstructed nearly all neurons and marked synapses on selected cells. A separate project imaged the whole larval brain and traced selected pathways.",
+        "projects": [
+          {
+            "name": "Larval zebrafish olfactory bulb",
+            "year": 2016,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/27089019/"
+          },
+          {
+            "name": "Whole larval brain serial-section atlas",
+            "year": 2017,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/28489821/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "annotated all synapses on subsets of neurons",
+        "source_ids": [
+          "olfmap",
+          "zebra"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "zebra",
+            "evidence_quote_ref": "/stops/7/nuances/1/evidence_quote"
+          }
+        ],
+        "project_scope": "partial refers to traced connectivity, including the larval smell center."
+      },
+      "open_question": {
+        "text": "Which connections explain the activity of each identified nerve fiber in a behaving zebrafish?",
+        "confidence": "well supported",
+        "evidence_quote": "set the stage for whole-brain structure-function comparisons",
+        "source_ids": [
+          "zebra"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "pall",
+          "shark",
+          "eFish"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "pall",
+            "evidence_quote_ref": "/stops/7/abilities/0/evidence_quote"
+          },
+          {
+            "source_id": "shark",
+            "evidence_quote_ref": "/stops/7/abilities/1/evidence_quote"
+          },
+          {
+            "source_id": "eFish",
+            "evidence_quote": "reconcile learning and signaling functions"
+          }
+        ]
+      }
+    },
+    {
+      "id": "onto-land",
+      "order": 8,
+      "branch": "trunk",
+      "parent": "jawed-fish",
+      "title": "Onto land",
+      "clade": "Tetrapoda: living amphibians",
+      "exemplars": [
+        {
+          "common": "African clawed frog",
+          "scientific": "Xenopus laevis"
+        },
+        {
+          "common": "Italian cave salamander",
+          "scientific": "Hydromantes italicus"
+        }
+      ],
+      "diverged_mya": {
+        "value": 346.1,
+        "min": 338.2,
+        "max": 354.0,
+        "node": "Crown tetrapods; amphibian versus amniote lineages",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "338.2 | 354.0",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Xenopus laevis",
+          "value": null,
+          "region": "hatchling nervous system",
+          "method": "Anatomical and physiological literature synthesis; approximate scale only.",
+          "estimate_text": "A hatchling clawed frog has a few thousand neurons.",
+          "confidence": "well supported",
+          "evidence_quote": "a few thousand neurons",
+          "source_ids": [
+            "frogReview"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Hydromantes italicus",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "Between a touch and a tadpole’s first swim stroke, nerve cells build up activity. In some salamanders, evolution reduced the number and variety of visual neurons while the animals continued to rely on vision.",
+      "structures": [
+        {
+          "name": "Swimming command neurons",
+          "region": "hindbrain",
+          "origin": "elaborated",
+          "description": "In frog tadpoles, cells near the back of the brain receive touch-related signals. Swimming starts when enough excitation builds up.",
+          "confidence": "well supported",
+          "evidence_quote": "excitation reaches threshold",
+          "source_ids": [
+            "frog",
+            "frogCount"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "frogCount",
+              "evidence_quote": "central pattern generators"
+            }
+          ]
+        },
+        {
+          "name": "Visual orienting center",
+          "region": "midbrain_tectum",
+          "origin": "elaborated",
+          "description": "In the Italian cave salamander, neurons in this midbrain area respond to moving shapes with different sizes and orientations.",
+          "confidence": "well supported",
+          "evidence_quote": "responded selectively to moving visual stimuli",
+          "source_ids": [
+            "salamove"
+          ],
+          "origin_scope": "Applies to the underlying anatomical structure; the date of the measured response is unknown."
+        },
+        {
+          "name": "Large, sparsely packed visual neurons",
+          "region": "cellular",
+          "origin": "elaborated",
+          "description": "Some salamanders have relatively few, large neurons in the visual system. Comparisons among relatives suggest that this arrangement arose through secondary simplification.",
+          "confidence": "well supported",
+          "evidence_quote": "small numbers of large neurons",
+          "source_ids": [
+            "sala"
+          ],
+          "origin_scope": "Applies to the underlying anatomical structure; the date of the measured response is unknown."
+        },
+        {
+          "name": "Midbrain steering pathways",
+          "region": "other",
+          "origin": "elaborated",
+          "description": "Signals from the midbrain influence the timing and direction of swimming in a newly hatched clawed frog.",
+          "confidence": "well supported",
+          "evidence_quote": "descending control",
+          "source_ids": [
+            "frogCount"
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Start swimming after a touch",
+          "description": "Electrical recordings in hatchling frog tadpoles showed nerve activity accumulating between a brief touch and the first swimming command.",
+          "linked_structures": [
+            "Swimming command neurons"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "build-up of synaptic excitation",
+          "source_ids": [
+            "frog"
+          ]
+        },
+        {
+          "name": "Distinguish moving shapes",
+          "description": "Recordings from Italian cave salamanders separated cells that responded differently to squares and to vertical or horizontal rectangles.",
+          "linked_structures": [
+            "Visual orienting center"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "differed strongly in their responses to rectangles",
+          "source_ids": [
+            "salamove"
+          ]
+        },
+        {
+          "name": "Steer after a touch",
+          "description": "Tadpoles kept swimming after small midbrain injuries, but the time they took to start and the path they swam changed.",
+          "linked_structures": [
+            "Midbrain steering pathways"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "latency and trajectory",
+          "source_ids": [
+            "frogCount"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Descending control of spinal swimming circuits",
+          "from_stop": "first-vertebrates",
+          "confidence": "well supported",
+          "evidence_quote": "descending control",
+          "source_ids": [
+            "frogCount",
+            "lampA"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "lampA",
+              "evidence_quote_ref": "/stops/6/structures/2/evidence_quote"
+            }
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "Similar-looking brain regions always preserve the ancestral arrangement.",
+          "reality": "Comparisons across salamanders suggest some lineages secondarily reduced the number and variety of visual neurons. The proposed role of genome size is a further hypothesis.",
+          "confidence": "well supported",
+          "evidence_quote": "derived secondarily from a more complex ancestral state",
+          "source_ids": [
+            "sala"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "A touch triggers an immediate fixed swimming reflex.",
+          "reality": "The delay varies in hatchling frogs. A brief touch can leave a longer-lasting trace in the swimming circuit.",
+          "confidence": "well supported",
+          "evidence_quote": "memory of the sensory stimulus",
+          "source_ids": [
+            "frog"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "Time-lapse imaging and electron microscopy identified and reconstructed synapses on individual visual-center neurons in clawed frog tadpoles.",
+        "projects": [
+          {
+            "name": "Xenopus tectal circuit development",
+            "year": 2011,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21262466/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "electron microscope reconstructions of imaged neurons",
+        "source_ids": [
+          "frogEM"
+        ]
+      },
+      "open_question": {
+        "text": "Which upstream neurons maintain the brief memory of touch in a frog tadpole?",
+        "confidence": "well supported",
+        "evidence_quote": "undefined presynaptic hindbrain neurons",
+        "source_ids": [
+          "frog"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "frog",
+          "sala"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "frog",
+            "evidence_quote_ref": "/stops/8/abilities/0/evidence_quote"
+          },
+          {
+            "source_id": "sala",
+            "evidence_quote_ref": "/stops/8/nuances/0/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reptiles",
+      "order": 9,
+      "branch": "trunk",
+      "parent": "onto-land",
+      "title": "Reptiles",
+      "clade": "Sauropsida: nonavian examples",
+      "exemplars": [
+        {
+          "common": "Central bearded dragon",
+          "scientific": "Pogona vitticeps"
+        },
+        {
+          "common": "Red-eared slider",
+          "scientific": "Trachemys scripta elegans"
+        }
+      ],
+      "diverged_mya": {
+        "value": 324.8,
+        "min": 318.0,
+        "max": 331.5,
+        "node": "Crown amniotes; reptile and mammal lineages",
+        "value_basis": "Midpoint of the published composite interval, table 1; millions of years.",
+        "confidence": "well supported",
+        "evidence_quote": "318.0 | 331.5",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Trachemys scripta elegans",
+          "value": 15388000,
+          "region": "whole brain; one female red-eared slider",
+          "method": "Tissue dispersed into nuclei, followed by counts of labeled neuronal nuclei; supplementary datasets 1 and 2.",
+          "confidence": "single study",
+          "evidence_quote": "15388000",
+          "source_ids": [
+            "amnioteN"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Pogona vitticeps",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A turtle remembers places using a part of its forebrain that shares features with our hippocampus. Gene activity in turtles and lizards also reveals forebrain cell families that reptiles and mammals inherited together.",
+      "structures": [
+        {
+          "name": "Medial cortex",
+          "region": "pallium",
+          "origin": "elaborated",
+          "description": "A part of the turtle forebrain helps remember places relative to their surroundings. Its anatomy and function link it with the mammalian hippocampus.",
+          "confidence": "well supported",
+          "evidence_quote": "function in quite similar ways",
+          "source_ids": [
+            "turtle",
+            "pall"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "pall",
+              "evidence_quote_ref": "/stops/7/structures/2/evidence_quote"
+            }
+          ],
+          "origin_scope": "Applies to the underlying anatomical structure; the date of the measured response is unknown."
+        },
+        {
+          "name": "Local inhibitory neurons",
+          "region": "pallium",
+          "origin": "elaborated",
+          "description": "These cells reduce activity in nearby neurons. Comparing gene activity in lizards and turtles traced several classes back to the common ancestor of reptiles and mammals.",
+          "confidence": "well supported",
+          "evidence_quote": "common ancestor of all amniotes",
+          "source_ids": [
+            "reptile"
+          ]
+        },
+        {
+          "name": "Retinal dopamine cells",
+          "region": "other",
+          "origin": null,
+          "description": "In the turtle’s eye, a branching nerve cell receives input from several types of neighbor. Researchers paired recordings with microscope reconstructions.",
+          "confidence": "well supported",
+          "evidence_quote": "Bipolar ribbon synapses occurred in all three dendritic tiers",
+          "source_ids": [
+            "reptem"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Find a place from a new start",
+          "description": "Intact turtles swam to a goal from new starting points. Damaging this region impaired that ability in a maze.",
+          "linked_structures": [
+            "Medial cortex"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "independently of start location",
+          "source_ids": [
+            "pall"
+          ]
+        },
+        {
+          "name": "Change a learned route",
+          "description": "After damage to this brain region, turtles could relearn a place task. Probe trials showed that they now solved it differently.",
+          "linked_structures": [
+            "Medial cortex"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "MC lesioned turtles were different",
+          "source_ids": [
+            "turtle"
+          ]
+        },
+        {
+          "name": "Register sustained light",
+          "description": "Recordings from turtle retinal cells showed a response that could outlast a bright flash. Electron microscopy identified their local connections.",
+          "linked_structures": [
+            "Retinal dopamine cells"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "lasting beyond the stimulus duration",
+          "source_ids": [
+            "reptem"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "A forebrain system that supports memory for places",
+          "from_stop": "jawed-fish",
+          "confidence": "well supported",
+          "evidence_quote": "spatial cognition",
+          "source_ids": [
+            "pall"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "A reptile brain survives as an instinct-only core inside the human brain.",
+          "reality": "Cesario, Johnson and Eisthen review why the three-part model fails. Reptiles and mammals inherited forebrain circuits that changed along both branches.",
+          "confidence": "settled",
+          "evidence_quote": "has long been discredited among neurobiologists",
+          "source_ids": [
+            "onion",
+            "reptile"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "reptile",
+              "evidence_quote_ref": "/stops/9/structures/1/evidence_quote"
+            }
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "A memory area has to look like a human hippocampus to do similar work.",
+          "reality": "Damage to the turtle medial cortex selectively disrupted place-based navigation, while turtles could still use a single visual cue.",
+          "confidence": "well supported",
+          "evidence_quote": "single intramaze visual cue",
+          "source_ids": [
+            "turtle"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "Serial electron microscopy reconstructed local inputs and outputs of a dopamine-producing cell in turtle retina. This is a cell-centered map.",
+        "projects": [
+          {
+            "name": "Turtle retinal dopamine-cell reconstruction",
+            "year": 1997,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/9238095/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "EM reconstruction of a Toh-IR cell revealed new circuitry",
+        "source_ids": [
+          "reptem"
+        ]
+      },
+      "open_question": {
+        "text": "Which reptile forebrain cells share an ancestor with particular mammalian cortical cells?",
+        "confidence": "well supported",
+        "evidence_quote": "neurons and areas evolved",
+        "source_ids": [
+          "reptile"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "pall",
+          "reptile"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "pall",
+            "evidence_quote_ref": "/stops/7/nuances/0/evidence_quote"
+          },
+          {
+            "source_id": "reptile",
+            "evidence_quote_ref": "/stops/9/structures/1/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "birds",
+      "order": 10,
+      "branch": "side",
+      "parent": "reptiles",
+      "title": "Birds",
+      "clade": "Aves",
+      "exemplars": [
+        {
+          "common": "Carrion crow",
+          "scientific": "Corvus corone"
+        },
+        {
+          "common": "American crow",
+          "scientific": "Corvus brachyrhynchos"
+        },
+        {
+          "common": "Blue-and-yellow macaw",
+          "scientific": "Ara ararauna"
+        },
+        {
+          "common": "Budgerigar",
+          "scientific": "Melopsittacus undulatus"
+        }
+      ],
+      "diverged_mya": {
+        "value": 67.4,
+        "min": 66.2,
+        "max": 68.9,
+        "node": "Crown Neoaves as inferred by Stiller and colleagues; this includes the crow and parrot lineages.",
+        "value_basis": "Published clock estimate and 95% credible interval; younger than the bird–crocodilian split.",
+        "confidence": "well supported",
+        "evidence_quote": "67.4 Ma (95% credible interval 66.2–68.9)",
+        "source_ids": [
+          "birdD"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Ara ararauna",
+          "value": 3135790000,
+          "region": "whole brain; one blue-and-yellow macaw",
+          "method": "Nuclear counting with the isotropic fractionator; supplementary table S1, counts in millions.",
+          "confidence": "single study",
+          "evidence_quote": "3,135.79",
+          "source_ids": [
+            "bird"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Melopsittacus undulatus",
+          "value": 321820000,
+          "region": "whole brain; average of three budgerigars",
+          "method": "Nuclear counting with the isotropic fractionator; supplementary table S1, counts in millions.",
+          "confidence": "single study",
+          "evidence_quote": "321.82 ± 10.62",
+          "source_ids": [
+            "bird"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Corvus corone",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        },
+        {
+          "species": "Corvus brachyrhynchos",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "Large parrots and crows can fit as many forebrain neurons as some much larger primates into a smaller brain. In a crow doing a visual task, the timing of individual neurons can predict whether the bird will report seeing a target.",
+      "structures": [
+        {
+          "name": "Crow and parrot pallium",
+          "region": "pallium",
+          "origin": "elaborated",
+          "description": "Large parrots and members of the crow family pack enough neurons into the pallium, the outer forebrain, to match some much larger primate brains.",
+          "confidence": "well supported",
+          "evidence_quote": "primates with much larger brains",
+          "source_ids": [
+            "bird",
+            "reptile"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "reptile",
+              "evidence_quote": "atlas of the pallium"
+            }
+          ],
+          "origin_scope": "Applies to the underlying anatomical structure; the date of the measured response is unknown."
+        },
+        {
+          "name": "Parrot vocal core and shell",
+          "region": "pallium",
+          "origin": "new",
+          "description": "Parrots have a vocal circuit with an outer shell surrounding a core. Comparisons with other vocal-learning birds identify the shell as a parrot specialization.",
+          "confidence": "well supported",
+          "evidence_quote": "\"shell\" song system is unique to parrots",
+          "source_ids": [
+            "parrot"
+          ],
+          "origin_scope": "New outer shell in parrots; applies to the shell specifically."
+        },
+        {
+          "name": "Tool-related circuits",
+          "region": "cerebellum",
+          "origin": null,
+          "description": "In American crows skilled at a stone-tool task, several regions including the cerebellum became more active as the birds prepared to act.",
+          "confidence": "single study",
+          "evidence_quote": "increase activity in circuits associated with motor learning and tactile control",
+          "source_ids": [
+            "audbird"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Report a faint visual stimulus",
+          "description": "In trained carrion crows, early activity in this region tracked stimulus strength. Later activity predicted the bird’s report. The recordings did not test whether neuron density explains performance.",
+          "linked_structures": [
+            "Crow and parrot pallium"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "later component predicts the crows' perceptual reports",
+          "source_ids": [
+            "crow"
+          ]
+        },
+        {
+          "name": "Learn vocal sounds",
+          "description": "Researchers compared gene activity during singing and traced connections. They identified linked circuits used in vocal learning, with a distinctive outer shell in parrots.",
+          "linked_structures": [
+            "Parrot vocal core and shell"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "singing-driven gene expression",
+          "source_ids": [
+            "parrot"
+          ]
+        },
+        {
+          "name": "Prepare to use a stone tool",
+          "description": "Brain imaging compared trained and inexperienced American crows. The regions recruited before a stone-tool task differed with proficiency.",
+          "linked_structures": [
+            "Tool-related circuits"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "talent affects the neural circuits activated by crows",
+          "source_ids": [
+            "audbird"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "An inherited forebrain system for remembering places",
+          "from_stop": "reptiles",
+          "confidence": "well supported",
+          "evidence_quote": "critical for spatial memory",
+          "source_ids": [
+            "pall"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "pall",
+              "evidence_quote": "medial cortex"
+            }
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "A small brain necessarily has few forebrain neurons.",
+          "reality": "A blue-and-yellow macaw has about 1.9 billion neurons in its pallium. Regional counts, brain mass and neuron density answer different questions.",
+          "confidence": "well supported",
+          "evidence_quote": "primates with much larger brains",
+          "source_ids": [
+            "bird"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "bird",
+              "evidence_quote": "∼1.9 billion pallial"
+            }
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "A recording from a living crow can tell us when conscious sensation originated.",
+          "reality": "Nieder and colleagues discuss both a shared origin and separate origins. Their experiment measures activity that predicts a report in a living bird. It cannot distinguish those evolutionary histories.",
+          "confidence": "well supported",
+          "evidence_quote": "either before the emergence of mammals or independently",
+          "source_ids": [
+            "crow"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": null,
+        "description": "A synaptic map for the listed crow or parrot species was not verified. A chicken comparison is available.",
+        "projects": [],
+        "source_ids": [],
+        "comparative_projects": [
+          {
+            "name": "Chicken outer-retina reconstruction",
+            "year": 2021,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/33893221/",
+            "species": "Gallus gallus",
+            "evidence_quote": "contacts to other photoreceptor and bipolar cells in the chicken retina",
+            "confidence": "single study",
+            "source_ids": [
+              "birdEM"
+            ]
+          }
+        ]
+      },
+      "open_question": {
+        "text": "What does the parrot’s outer vocal shell contribute to its ability to copy sounds?",
+        "confidence": "well supported",
+        "evidence_quote": "differences in vocal and cognitive abilities",
+        "source_ids": [
+          "parrot"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "bird",
+          "crow"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "bird",
+            "evidence_quote_ref": "/stops/10/structures/0/evidence_quote"
+          },
+          {
+            "source_id": "crow",
+            "evidence_quote_ref": "/stops/10/abilities/0/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "early-mammals",
+      "order": 11,
+      "branch": "trunk",
+      "parent": "onto-land",
+      "title": "Early mammals",
+      "clade": "Mammalia: marsupial and placental examples",
+      "exemplars": [
+        {
+          "common": "Gray short-tailed opossum",
+          "scientific": "Monodelphis domestica"
+        },
+        {
+          "common": "House mouse",
+          "scientific": "Mus musculus"
+        }
+      ],
+      "diverged_mya": {
+        "value": 164,
+        "min": 157,
+        "max": 170,
+        "node": "Marsupial and placental lineages",
+        "value_basis": "Published rounded mean and 95% interval.",
+        "confidence": "well supported",
+        "evidence_quote": "marsupials diverged from placentals 157-170 Ma",
+        "source_ids": [
+          "placdate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Mus musculus",
+          "value": 70890000,
+          "region": "whole brain; mean for four adult male Swiss mice",
+          "method": "Nuclear counting with the isotropic fractionator; table 1, counts in millions.",
+          "confidence": "single study",
+          "evidence_quote": "70.89 ⫾ 10.41",
+          "source_ids": [
+            "mouseN"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Monodelphis domestica",
+          "value": 800000,
+          "region": "neocortex of one hemisphere; group mean",
+          "method": "Dissected one cortical hemisphere and counted neuronal nuclei with the isotropic fractionator.",
+          "confidence": "single study",
+          "evidence_quote": "0.80 ± 0.20 million neurons",
+          "source_ids": [
+            "oposN"
+          ],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A mouse and an opossum both feel through their whiskers. Their touch maps differ, and their brain halves use different bridges to communicate. The six-layer cortical plan is older than the placental mammal’s corpus callosum.",
+      "structures": [
+        {
+          "name": "Six-layer neocortex",
+          "region": "neocortex",
+          "origin": "new",
+          "description": "The outer processing sheet of mammals has a distinctive six-layer plan. It developed from an older forebrain territory shared with reptiles.",
+          "confidence": "settled",
+          "evidence_quote": "six-layered neocortex",
+          "source_ids": [
+            "callosum",
+            "reptile"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "reptile",
+              "evidence_quote": "diversification of ancestral gene-regulatory programs"
+            }
+          ],
+          "origin_scope": "New six-layer arrangement of the inherited pallium."
+        },
+        {
+          "name": "Anterior commissure",
+          "region": "other",
+          "origin": "elaborated",
+          "description": "This older bridge carries signals between brain halves. Marsupials and egg-laying mammals route connections between their cortical areas through it.",
+          "confidence": "settled",
+          "evidence_quote": "anterior commissure",
+          "source_ids": [
+            "callosum"
+          ]
+        },
+        {
+          "name": "Corpus callosum",
+          "region": "other",
+          "origin": "new",
+          "description": "Placental mammals have a separate bridge between the brain halves. An opossum uses the older route for corresponding connections.",
+          "confidence": "settled",
+          "evidence_quote": "separate commissural tract",
+          "source_ids": [
+            "callosum"
+          ],
+          "origin_scope": "New within placental mammals, after their divergence from marsupials."
+        },
+        {
+          "name": "Whisker touch area",
+          "region": "neocortex",
+          "origin": "elaborated",
+          "description": "In the opossum’s touch cortex, neurons can respond to several whiskers and usually respond most strongly to one.",
+          "confidence": "well supported",
+          "evidence_quote": "single best whisker",
+          "source_ids": [
+            "oposA"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "oposA",
+              "evidence_quote": "present in most mammals"
+            }
+          ]
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Locate touch on the whiskers",
+          "description": "Researchers moved individual opossum whiskers and recorded cortical neurons. Neighboring whiskers often activated the same cell to different degrees.",
+          "linked_structures": [
+            "Whisker touch area"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "multiwhisker receptive fields",
+          "source_ids": [
+            "oposA"
+          ]
+        },
+        {
+          "name": "Exchange signals between hemispheres",
+          "description": "Fiber imaging and cell tracing in a marsupial revealed organized routes connecting matching and different cortical areas on opposite sides.",
+          "linked_structures": [
+            "Anterior commissure"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "regions connected to different areas",
+          "source_ids": [
+            "callosum"
+          ]
+        },
+        {
+          "name": "Process visual patterns",
+          "description": "In an awake mouse watching natural and synthetic images, researchers measured nerve activity and matched it to reconstructed visual cortex circuits.",
+          "linked_structures": [
+            "Six-layer neocortex"
+          ],
+          "confidence": "well supported",
+          "evidence_quote": "in an awake mouse that is viewing natural and synthetic stimuli",
+          "source_ids": [
+            "mouse"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Forebrain inhibitory cells inherited from the common ancestor of reptiles and mammals",
+          "from_stop": "reptiles",
+          "confidence": "well supported",
+          "evidence_quote": "common ancestor of all amniotes",
+          "source_ids": [
+            "reptile"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "myth",
+          "claim": "Every mammal has a corpus callosum.",
+          "reality": "Marsupials and egg-laying mammals connect their cortical hemispheres using the anterior commissure. Placental mammals evolved the extra bridge.",
+          "confidence": "settled",
+          "evidence_quote": "separate commissural tract",
+          "source_ids": [
+            "callosum"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Whiskers require a barrel-shaped brain map.",
+          "reality": "The opossum actively moves its whiskers and has touch-sensitive cortical neurons even though its cortex lacks the barrel-shaped clusters seen in mice.",
+          "confidence": "well supported",
+          "evidence_quote": "lack barrels and septa",
+          "source_ids": [
+            "oposA"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "MICrONS paired visual responses in a living mouse with electron microscopy of the same cortical tissue. The map includes several visual areas in one animal.",
+        "projects": [
+          {
+            "name": "MICrONS visual cortex",
+            "year": 2025,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/40205214/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "electron microscopy reconstruction containing more than 200,000 cells and 0.5 billion synapses",
+        "source_ids": [
+          "mouse"
+        ]
+      },
+      "open_question": {
+        "text": "Which aspects of mouse whisker processing also work in a cortex without barrels?",
+        "confidence": "well supported",
+        "evidence_quote": "may not generalize",
+        "source_ids": [
+          "oposA"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "oposA",
+          "callosum"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "oposA",
+            "evidence_quote": "active whisking behavior"
+          },
+          {
+            "source_id": "callosum",
+            "evidence_quote_ref": "/stops/11/structures/2/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "mammal-radiations",
+      "order": 12,
+      "branch": "trunk",
+      "parent": "early-mammals",
+      "title": "Mammal radiations",
+      "clade": "Placentalia: three branches",
+      "exemplars": [
+        {
+          "common": "Egyptian fruit bat",
+          "scientific": "Rousettus aegyptiacus"
+        },
+        {
+          "common": "Common bottlenose dolphin",
+          "scientific": "Tursiops truncatus"
+        },
+        {
+          "common": "African savanna elephant",
+          "scientific": "Loxodonta africana"
+        }
+      ],
+      "diverged_mya": {
+        "value": 93,
+        "min": 86,
+        "max": 100,
+        "node": "Crown placental mammals",
+        "value_basis": "Published rounded mean and 95% interval.",
+        "confidence": "well supported",
+        "evidence_quote": "crown Placentalia diverged 86-100 Ma",
+        "source_ids": [
+          "placdate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Loxodonta africana",
+          "value": 257000000000,
+          "region": "brain excluding olfactory bulbs; one adult African elephant, approximate",
+          "method": "Tissue divided by region, dispersed into nuclei and counted with neuronal labeling.",
+          "confidence": "single study",
+          "evidence_quote": "257 billion",
+          "source_ids": [
+            "ele"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "ele",
+              "evidence_quote": "isotropic fractionator"
+            }
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Loxodonta africana",
+          "value": 251000000000,
+          "region": "cerebellum; same specimen, approximate",
+          "method": "Region-by-region nuclear counting.",
+          "confidence": "single study",
+          "evidence_quote": "251 billion",
+          "source_ids": [
+            "ele"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Rousettus aegyptiacus",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "source_ids": [],
+          "unit": "neurons"
+        },
+        {
+          "species": "Tursiops truncatus",
+          "value": 95004,
+          "region": "auditory ganglion of the inner ear; anatomical estimate",
+          "method": "Anatomical count of nerve-cell bodies in the cochlea, the coiled hearing organ.",
+          "confidence": "single study",
+          "evidence_quote": "a total of 95,004 cells",
+          "source_ids": [
+            "dolphEar"
+          ],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "A flying bat’s hippocampus represents positions in three dimensions. A dolphin can group its clicks while approaching a distant target. In the African elephant examined, the cerebellum accounts for nearly all brain neurons.",
+      "structures": [
+        {
+          "name": "Three-dimensional place cells",
+          "region": "hippocampus",
+          "origin": "elaborated",
+          "description": "In flying bats, some memory-region neurons become active when the animal enters a particular volume of space.",
+          "confidence": "well supported",
+          "evidence_quote": "confined 3D volumes",
+          "source_ids": [
+            "bat",
+            "pall"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "pall",
+              "evidence_quote_ref": "/stops/10/inherited/0/evidence_quote"
+            }
+          ],
+          "origin_scope": "Applies to the underlying anatomical structure; the date of the measured response is unknown."
+        },
+        {
+          "name": "Echo-ranging system",
+          "region": "other",
+          "origin": "convergent",
+          "description": "Echolocating bats and toothed whales independently acquired echo-based sensing. In both groups, changes appeared in a protein used by sound-sensitive cells.",
+          "confidence": "well supported",
+          "evidence_quote": "convergent amino acid substitutions in echolocating dolphins",
+          "source_ids": [
+            "dolphin"
+          ],
+          "origin_scope": "Convergence between echolocating bats and toothed whales. Place-cell recordings and hearing-gene comparisons sampled different animals."
+        },
+        {
+          "name": "Neuron-rich cerebellum",
+          "region": "cerebellum",
+          "origin": "elaborated",
+          "description": "The African elephant brain examined had an especially large share of its neurons in the cerebellum. The reason for this concentration is still open.",
+          "confidence": "well supported",
+          "evidence_quote": "97.5%",
+          "source_ids": [
+            "ele"
+          ],
+          "origin_scope": "Elaboration of the inherited cerebellum in the elephant lineage; measured from one animal."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Represent a flight path in three dimensions",
+          "description": "Wireless recordings in freely flying bats found different cells active in different volumes, together covering the available room.",
+          "linked_structures": [
+            "Three-dimensional place cells"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "available space in the room",
+          "source_ids": [
+            "bat"
+          ]
+        },
+        {
+          "name": "Approach a distant target",
+          "description": "Researchers put sound recording tags on trained bottlenose dolphins. Their click timing changed with target distance as they swam toward it.",
+          "linked_structures": [
+            "Echo-ranging system"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "ranges up to 400 m",
+          "source_ids": [
+            "dolphA"
+          ]
+        },
+        {
+          "name": "Switch how clicks are grouped",
+          "description": "At longer ranges, the dolphins frequently sent packets of clicks before waiting for returning echoes. Individual animals used different timing strategies.",
+          "linked_structures": [
+            "Echo-ranging system"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "click packet production",
+          "source_ids": [
+            "dolphA"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "The mammalian six-layer cortical plan",
+          "from_stop": "early-mammals",
+          "confidence": "well supported",
+          "evidence_quote": "six-layered neocortex",
+          "source_ids": [
+            "callosum"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "Three times as many neurons means three times as many cortical neurons.",
+          "reality": "The sampled African elephant had about 257 billion brain neurons. About 251 billion were in its cerebellum and about 5.6 billion in its cerebral cortex.",
+          "confidence": "single study",
+          "evidence_quote": "5.6 billion neurons",
+          "source_ids": [
+            "ele"
+          ]
+        },
+        {
+          "type": "myth",
+          "claim": "A dolphin must wait for each echo before making another click.",
+          "reality": "Free-swimming bottlenose dolphins could group clicks into packets at long range.",
+          "confidence": "well supported",
+          "evidence_quote": "not a fixed echolocation strategy",
+          "source_ids": [
+            "dolphA"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": null,
+        "description": "No connectivity map was verified for the three listed species. A comparative study identified nerve endings on sensory cells in the ear of a mustached bat.",
+        "projects": [],
+        "source_ids": [],
+        "comparative_projects": [
+          {
+            "name": "Mustached bat cochlear terminal study",
+            "species_common": "Mustached bat",
+            "year": 1993,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/7682545/",
+            "confidence": "single study",
+            "evidence_quote": "every OHC had a single, large terminal",
+            "source_ids": [
+              "batEar"
+            ]
+          }
+        ]
+      },
+      "open_question": {
+        "text": "Do the elephant’s unusually numerous cerebellar neurons support special demands on sensing and movement?",
+        "confidence": "well supported",
+        "evidence_quote": "sensorimotor specializations",
+        "source_ids": [
+          "ele"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "bat",
+          "dolphA",
+          "ele"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "bat",
+            "evidence_quote_ref": "/stops/12/structures/0/evidence_quote"
+          },
+          {
+            "source_id": "dolphA",
+            "evidence_quote_ref": "/stops/12/abilities/2/evidence_quote"
+          },
+          {
+            "source_id": "ele",
+            "evidence_quote_ref": "/stops/12/structures/2/evidence_quote"
+          }
+        ]
+      }
+    },
+    {
+      "id": "primates-and-humans",
+      "order": 13,
+      "branch": "trunk",
+      "parent": "mammal-radiations",
+      "title": "Primates and humans",
+      "clade": "Primates: apes and Old World monkeys",
+      "exemplars": [
+        {
+          "common": "Rhesus macaque",
+          "scientific": "Macaca mulatta"
+        },
+        {
+          "common": "Human",
+          "scientific": "Homo sapiens"
+        }
+      ],
+      "diverged_mya": {
+        "value": 85,
+        "min": 80,
+        "max": 90,
+        "node": "Crown primates",
+        "value_basis": "Midpoint of approximate literature range in the introduction; not a confidence interval.",
+        "confidence": "well supported",
+        "evidence_quote": "roughly 80–90 MYA",
+        "source_ids": [
+          "primdate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Homo sapiens",
+          "value": 86100000000,
+          "region": "whole brain; mean in the adult male sample",
+          "method": "Isotropic fractionator: disperse tissue, count nuclei, identify neurons with a marker.",
+          "confidence": "well supported",
+          "evidence_quote": "86.1 +/- 8.1 billion",
+          "source_ids": [
+            "human"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Homo sapiens",
+          "value": 16000000000,
+          "region": "cerebral cortex; approximate",
+          "method": "Same nuclear count, rounded from the reported cortical share of the total.",
+          "confidence": "well supported",
+          "evidence_quote": "19% of all neurons",
+          "source_ids": [
+            "human"
+          ],
+          "unit": "neurons"
+        },
+        {
+          "species": "Macaca mulatta",
+          "value": 6376160000,
+          "region": "brain excluding olfactory bulbs; two young adults, group estimate",
+          "method": "Counted nuclei in one hemisphere and doubled the result. The later comparative paper identifies these animals as rhesus macaques.",
+          "confidence": "single study",
+          "evidence_quote": "6,376.16",
+          "source_ids": [
+            "macaque",
+            "extraMa"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "extraMa",
+              "evidence_quote": "Macaca mulatta (87.35 g, 3,900 g)"
+            }
+          ],
+          "unit": "neurons"
+        }
+      ],
+      "summary": "The measured adult human brain averages about 86 billion neurons. Regional counts tell a different story from skull volume, the measure fossils preserve. Recordings in living people reveal that individual neurons can respond to different pictures of the same person.",
+      "structures": [
+        {
+          "name": "Action-responsive motor cortex",
+          "region": "neocortex",
+          "origin": "elaborated",
+          "description": "Some macaque motor-planning neurons fire during both a mouth action and observation of a similar action by another individual.",
+          "confidence": "well supported",
+          "evidence_quote": "execution and observation of mouth actions",
+          "source_ids": [
+            "macaqueA",
+            "callosum"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "callosum",
+              "evidence_quote_ref": "/stops/11/structures/0/evidence_quote"
+            }
+          ],
+          "origin_scope": "Elaboration of inherited mammalian cortex; the first appearance of matching action responses is undated."
+        },
+        {
+          "name": "Identity-sensitive temporal neurons",
+          "region": "other",
+          "origin": null,
+          "description": "Some human neurons on the inner side of the temporal lobe respond to very different pictures of the same person or landmark.",
+          "confidence": "well supported",
+          "evidence_quote": "different pictures of given individuals",
+          "source_ids": [
+            "humanMem"
+          ],
+          "origin_scope": "The observation is documented. The available evidence does not date the origin of this particular feature."
+        },
+        {
+          "name": "Speech-sensitive parietal cortex",
+          "region": "neocortex",
+          "origin": "elaborated",
+          "description": "Researchers recording individual neurons near the side of the human brain found signals related to words participants spoke silently.",
+          "confidence": "single study",
+          "evidence_quote": "significant neural representation of internal and vocalized speech",
+          "source_ids": [
+            "prim2",
+            "callosum"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "callosum",
+              "evidence_quote_ref": "/stops/11/structures/0/evidence_quote"
+            }
+          ],
+          "origin_scope": "Elaboration of inherited mammalian cortex; the experiment does not date silent speech."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Represent observed actions",
+          "description": "Macaque recordings identified cells active during eating movements and while watching similar movements. Some also responded when another individual made a mouth gesture.",
+          "linked_structures": [
+            "Action-responsive motor cortex"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "communicative mouth gestures",
+          "source_ids": [
+            "macaqueA"
+          ]
+        },
+        {
+          "name": "Recognize identity across images",
+          "description": "In recordings from people viewing different images of one individual, some neurons responded across viewpoints and sometimes even to the written name.",
+          "linked_structures": [
+            "Identity-sensitive temporal neurons"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "letter strings with their names",
+          "source_ids": [
+            "humanMem"
+          ]
+        },
+        {
+          "name": "Form words silently",
+          "description": "In two people doing a limited word task, researchers could predict some silently spoken words from activity in a patch of parietal cortex.",
+          "linked_structures": [
+            "Speech-sensitive parietal cortex"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "internally spoken and vocalized words were significantly decodable",
+          "source_ids": [
+            "prim2"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "A cortical bridge between hemispheres",
+          "from_stop": "early-mammals",
+          "confidence": "well supported",
+          "evidence_quote": "separate commissural tract",
+          "source_ids": [
+            "callosum"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "Human neuron counts break every primate scaling rule.",
+          "reality": "About 86 billion neurons in the adult human brain fit the cellular scaling relationship examined for primates. This result concerns counts relative to brain size.",
+          "confidence": "well supported",
+          "evidence_quote": "expected for a primate of human proportions",
+          "source_ids": [
+            "human"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "Modern humans always had larger brains than Neanderthals.",
+          "reality": "Estimated skull-cavity volumes overlap. In one comparison, Neanderthals averaged 1,450 milliliters and present-day humans averaged 1,328 milliliters. Fossil skulls preserve a volume estimate, not a neuron count.",
+          "confidence": "well supported",
+          "evidence_quote": "present-day humans (mean, 1328 ml; SD, 164 ml) and Neandertals (mean, 1450 ml; SD, 189 ml)",
+          "source_ids": [
+            "neand"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "partial",
+        "description": "H01 maps about one cubic millimeter of human temporal cortex. A separate comparative project traced color-related connections at the center of the retina in humans, macaques and marmosets.",
+        "projects": [
+          {
+            "name": "H01 human temporal cortex",
+            "year": 2024,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/38723085/"
+          },
+          {
+            "name": "Comparative primate central-retina connectomics",
+            "year": 2023,
+            "url": "https://pubmed.ncbi.nlm.nih.gov/37098066/"
+          }
+        ],
+        "confidence": "well supported",
+        "evidence_quote": "a cubic millimeter of human temporal cortex",
+        "source_ids": [
+          "humanem",
+          "humanRet"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "humanRet",
+            "evidence_quote": "We applied connectomic electron microscopy to the specialized foveal retina"
+          }
+        ],
+        "project_scope": "partial refers to local cortex or retina, depending on the project."
+      },
+      "open_question": {
+        "text": "How do cells that recognize an individual across different pictures participate in forming a lasting memory?",
+        "confidence": "well supported",
+        "evidence_quote": "long-term and more abstract memories",
+        "source_ids": [
+          "humanMem"
+        ]
+      },
+      "summary_evidence": {
+        "source_ids": [
+          "human",
+          "neand",
+          "humanMem"
+        ],
+        "confidence": "well supported",
+        "passages": [
+          {
+            "source_id": "human",
+            "evidence_quote_ref": "/stops/13/neuron_counts/0/evidence_quote"
+          },
+          {
+            "source_id": "neand",
+            "evidence_quote": "endocranial volume estimates of our fossil reconstructions"
+          },
+          {
+            "source_id": "humanMem",
+            "evidence_quote_ref": "/stops/13/structures/1/evidence_quote"
+          }
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "sponge",
+      "citation": "Musser JM et al (2021). Profiling cellular diversity in sponges informs animal cell type and nervous system evolution. Science (New York, N.Y.).",
+      "doi": "10.1126/science.abj2949",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34735222/",
+      "year": 2021,
+      "type": "primary"
+    },
+    {
+      "id": "spongA",
+      "citation": "Elliott GR, Leys SP (2007). Coordinated contractions effectively expel water from the aquiferous system of a freshwater sponge. The Journal of experimental biology.",
+      "doi": "10.1242/jeb.003392",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17951414/",
+      "year": 2007,
+      "type": "primary"
+    },
+    {
+      "id": "plac",
+      "citation": "Smith CL, Pivovarova N, Reese TS (2015). Coordinated Feeding Behavior in Trichoplax, an Animal without Synapses. PloS one.",
+      "doi": "10.1371/journal.pone.0136098",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26333190/",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "spongesyn",
+      "citation": "Sakarya O, Armstrong KA, Adamska M, Adamski M, Wang IF, Tidor B, Degnan BM, Oakley TH, Kosik KS (2007). A post-synaptic scaffold at the origin of the animal kingdom. PloS one.",
+      "doi": "10.1371/journal.pone.0000506",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17551586/",
+      "year": 2007,
+      "type": "primary"
+    },
+    {
+      "id": "plac2",
+      "citation": "Najle SR et al (2023). Stepwise emergence of the neuronal gene expression program in early animal evolution. Cell.",
+      "doi": "10.1016/j.cell.2023.08.027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37729907/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "jellyN",
+      "citation": "Garm A, Ekström P, Boudes M, Nilsson DE (2006). Rhopalia are integrated parts of the central nervous system in box jellyfish. Cell and tissue research.",
+      "doi": "10.1007/s00441-005-0134-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16557386/",
+      "year": 2006,
+      "type": "primary"
+    },
+    {
+      "id": "hydra",
+      "citation": "Dupre C, Yuste R (2017). Non-overlapping Neural Networks in Hydra vulgaris. Current biology : CB.",
+      "doi": "10.1016/j.cub.2017.02.049",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28366745/",
+      "year": 2017,
+      "type": "primary"
+    },
+    {
+      "id": "comb3",
+      "citation": "Burkhardt P, Colgren J, Medhus A, Digel L, Naumann B, Soto-Angel JJ, Nordmann EL, Sachkova MY, Kittelmann M (2023). Syncytial nerve net in a ctenophore adds insights on the evolution of nervous systems. Science (New York, N.Y.).",
+      "doi": "10.1126/science.ade5645",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37079688/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "jelly",
+      "citation": "Bielecki J, Dam Nielsen SK, Nachman G, Garm A (2023). Associative learning in the box jellyfish Tripedalia cystophora. Current biology : CB.",
+      "doi": "10.1016/j.cub.2023.08.056",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37741280/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "comb",
+      "citation": "Moroz LL et al (2014). The ctenophore genome and the evolutionary origins of neural systems. Nature.",
+      "doi": "10.1038/nature13400",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24847885/",
+      "year": 2014,
+      "type": "primary"
+    },
+    {
+      "id": "comb2",
+      "citation": "Jékely G, Paps J, Nielsen C (2015). The phylogenetic position of ctenophores and the origin(s) of nervous systems. EvoDevo.",
+      "doi": "10.1186/2041-9139-6-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25905000/",
+      "year": 2015,
+      "type": "review"
+    },
+    {
+      "id": "flat",
+      "citation": "Inoue T, Hoshino H, Yamashita T, Shimoyama S, Agata K (2015). Planarian shows decision-making behavior in response to multiple stimuli by integrative brain function. Zoological letters.",
+      "doi": "10.1186/s40851-014-0010-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26605052/",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "worm",
+      "citation": "White JG, Southgate E, Thomson JN, Brenner S (1986). The structure of the nervous system of the nematode Caenorhabditis elegans. Philosophical transactions of the Royal Society of London. Series B, Biological sciences.",
+      "doi": "10.1098/rstb.1986.0056",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22462104/",
+      "year": 1986,
+      "type": "primary"
+    },
+    {
+      "id": "nemaA",
+      "citation": "Gray JM, Hill JJ, Bargmann CI (2005). A circuit for navigation in Caenorhabditis elegans. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.0409009101",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15689400/",
+      "year": 2005,
+      "type": "primary"
+    },
+    {
+      "id": "worm2",
+      "citation": "Cook SJ, Jarrell TA, Brittin CA, Wang Y, Bloniarz AE, Yakovlev MA, Nguyen KCQ, Tang LT, Bayer EA, Duerr JS, Bülow HE, Hobert O, Hall DH, Emmons SW (2019). Whole-animal connectomes of both Caenorhabditis elegans sexes. Nature.",
+      "doi": "10.1038/s41586-019-1352-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31270481/",
+      "year": 2019,
+      "type": "primary"
+    },
+    {
+      "id": "compass",
+      "citation": "Seelig JD, Jayaraman V (2015). Neural dynamics for landmark orientation and angular path integration. Nature.",
+      "doi": "10.1038/nature14446",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25971509/",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "beeA",
+      "citation": "Strube-Bloss MF, Nawrot MP, Menzel R (2011). Mushroom body output neurons encode odor-reward associations. The Journal of neuroscience : the official journal of the Society for Neuroscience.",
+      "doi": "10.1523/jneurosci.2583-10.2011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21414933/",
+      "year": 2011,
+      "type": "primary"
+    },
+    {
+      "id": "fly",
+      "citation": "Dorkenwald S et al (2024). Neuronal wiring diagram of an adult brain. Nature.",
+      "doi": "10.1038/s41586-024-07558-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39358518/",
+      "year": 2024,
+      "type": "primary"
+    },
+    {
+      "id": "oct2",
+      "citation": "Sumbre G, Gutfreund Y, Fiorito G, Flash T, Hochner B (2001). Control of octopus arm extension by a peripheral motor program. Science (New York, N.Y.).",
+      "doi": "10.1126/science.1060976",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11546877/",
+      "year": 2001,
+      "type": "primary"
+    },
+    {
+      "id": "octskin",
+      "citation": "van Giesen L, Kilian PB, Allard CAH, Bellono NW (2020). Molecular Basis of Chemotactile Sensation in Octopus. Cell.",
+      "doi": "10.1016/j.cell.2020.09.008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33125889/",
+      "year": 2020,
+      "type": "primary"
+    },
+    {
+      "id": "oct3",
+      "citation": "Bidel F, Meirovitch Y, Schalek RL, Lu X, Pavarino EC, Yang F, Peleg A, Wu Y, Shomrat T, Berger DR, Shaked A, Lichtman JW, Hochner B (2023). Connectomics of the Octopus vulgaris vertical lobe provides insight into conserved and novel principles of a memory acquisition network. eLife.",
+      "doi": "10.7554/elife.84257",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37410519/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "oct",
+      "citation": "Olson CS, Ragsdale CW (2023). Toward an Understanding of Octopus Arm Motor Control. Integrative and comparative biology.",
+      "doi": "10.1093/icb/icad069",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37327080/",
+      "year": 2023,
+      "type": "review"
+    },
+    {
+      "id": "young",
+      "citation": "Young JZ (1963). The number and sizes of nerve cells in Octopus. Proceedings of the Zoological Society of London.",
+      "doi": "10.1111/j.1469-7998.1963.tb01862.x",
+      "url": "https://doi.org/10.1111/j.1469-7998.1963.tb01862.x",
+      "year": 1963,
+      "type": "primary"
+    },
+    {
+      "id": "squirt",
+      "citation": "Ryan K, Lu Z, Meinertzhagen IA (2016). The CNS connectome of a tadpole larva of Ciona intestinalis (L.) highlights sidedness in the brain of a chordate sibling. eLife.",
+      "doi": "10.7554/elife.16962",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27921996/",
+      "year": 2016,
+      "type": "primary"
+    },
+    {
+      "id": "squirtA",
+      "citation": "Kourakis MJ, Borba C, Zhang A, Newman-Smith E, Salas P, Manjunath B, Smith WC (2019). Parallel visual circuitry in a basal chordate. eLife.",
+      "doi": "10.7554/elife.44753",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30998184/",
+      "year": 2019,
+      "type": "primary"
+    },
+    {
+      "id": "lance",
+      "citation": "Pergner J, Vavrova A, Kozmikova I, Kozmik Z (2020). Molecular Fingerprint of Amphioxus Frontal Eye Illuminates the Evolution of Homologous Cell Types in the Chordate Retina. Frontiers in cell and developmental biology.",
+      "doi": "10.3389/fcell.2020.00705",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32850825/",
+      "year": 2020,
+      "type": "primary"
+    },
+    {
+      "id": "squirt2",
+      "citation": "Horie T, Shinki R, Ogura Y, Kusakabe TG, Satoh N, Sasakura Y (2011). Ependymal cells of chordate larvae are stem-like cells that form the adult nervous system. Nature.",
+      "doi": "10.1038/nature09631",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21196932/",
+      "year": 2011,
+      "type": "primary"
+    },
+    {
+      "id": "lamp",
+      "citation": "Stephenson-Jones M, Samuelsson E, Ericsson J, Robertson B, Grillner S (2011). Evolutionary conservation of the basal ganglia as a common vertebrate mechanism for action selection. Current biology : CB.",
+      "doi": "10.1016/j.cub.2011.05.001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21700460/",
+      "year": 2011,
+      "type": "primary"
+    },
+    {
+      "id": "lampA",
+      "citation": "Suzuki DG, Pérez-Fernández J, Wibble T, Kardamakis AA, Grillner S (2019). The role of the optic tectum for visually evoked orienting and evasive movements. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.1907962116",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31296565/",
+      "year": 2019,
+      "type": "primary"
+    },
+    {
+      "id": "myelin",
+      "citation": "Bullock TH, Moore JK, Fields RD (1984). Evolution of myelin sheaths: both lamprey and hagfish lack myelin. Neuroscience letters.",
+      "doi": "10.1016/0304-3940(84)90010-7",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/6483278/",
+      "year": 1984,
+      "type": "primary"
+    },
+    {
+      "id": "cer2",
+      "citation": "Sugahara F, Pascual-Anaya J, Kuraku S, Kuratani S, Murakami Y (2021). Genetic Mechanism for the Cyclostome Cerebellar Neurons Reveals Early Evolution of the Vertebrate Cerebellum. Frontiers in cell and developmental biology.",
+      "doi": "10.3389/fcell.2021.700860",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34485287/",
+      "year": 2021,
+      "type": "primary"
+    },
+    {
+      "id": "cer3",
+      "citation": "Lamanna F et al (2023). A lamprey neural cell type atlas illuminates the origins of the vertebrate brain. Nature ecology & evolution.",
+      "doi": "10.1038/s41559-023-02170-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37710042/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "pall",
+      "citation": "Rodríguez F, López JC, Vargas JP, Gómez Y, Broglio C, Salas C (2002). Conservation of spatial memory function in the pallial forebrain of reptiles and ray-finned fishes. The Journal of neuroscience : the official journal of the Society for Neuroscience.",
+      "doi": "10.1523/jneurosci.22-07-02894.2002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11923454/",
+      "year": 2002,
+      "type": "primary"
+    },
+    {
+      "id": "shark",
+      "citation": "Gardiner JM, Atema J (2010). The function of bilateral odor arrival time differences in olfactory orientation of sharks. Current biology : CB.",
+      "doi": "10.1016/j.cub.2010.04.053",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20541411/",
+      "year": 2010,
+      "type": "primary"
+    },
+    {
+      "id": "eFish",
+      "citation": "Muller SZ, Zadina AN, Abbott LF, Sawtell NB (2019). Continual Learning in a Multi-Layer Network of an Electric Fish. Cell.",
+      "doi": "10.1016/j.cell.2019.10.020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31735497/",
+      "year": 2019,
+      "type": "primary"
+    },
+    {
+      "id": "zebra",
+      "citation": "Hildebrand DGC et al (2017). Whole-brain serial-section electron microscopy in larval zebrafish. Nature.",
+      "doi": "10.1038/nature22356",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28489821/",
+      "year": 2017,
+      "type": "primary"
+    },
+    {
+      "id": "frog",
+      "citation": "Koutsikou S, Merrison-Hort R, Buhl E, Ferrario A, Li WC, Borisyuk R, Soffe SR, Roberts A (2018). A simple decision to move in response to touch reveals basic sensory memory and mechanisms for variable response times. The Journal of physiology.",
+      "doi": "10.1113/jp276356",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30074236/",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "salamove",
+      "citation": "Roth G (1982). Responses in the optic tectum of the salamander Hydromantes italicus to moving prey stimuli. Experimental brain research.",
+      "doi": "10.1007/bf01208598",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7067773/",
+      "year": 1982,
+      "type": "primary"
+    },
+    {
+      "id": "sala",
+      "citation": "Roth G, Nishikawa KC, Wake DB (1997). Genome size, secondary simplification, and the evolution of the brain in salamanders. Brain, behavior and evolution.",
+      "doi": "10.1159/000113321",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9209766/",
+      "year": 1997,
+      "type": "review"
+    },
+    {
+      "id": "turtle",
+      "citation": "López JC, Vargas JP, Gómez Y, Salas C (2003). Spatial and non-spatial learning in turtles: the role of medial cortex. Behavioural brain research.",
+      "doi": "10.1016/s0166-4328(03)00030-5",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12900038/",
+      "year": 2003,
+      "type": "primary"
+    },
+    {
+      "id": "reptile",
+      "citation": "Tosches MA, Yamawaki TM, Naumann RK, Jacobi AA, Tushev G, Laurent G (2018). Evolution of pallium, hippocampus, and cortical cell types revealed by single-cell transcriptomics in reptiles. Science (New York, N.Y.).",
+      "doi": "10.1126/science.aar4237",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29724907/",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "reptem",
+      "citation": "Kolb H, Netzer E, Ammermüller J (1997). Neural circuitry and light responses of the dopamine amacrine cell of the turtle retina. Molecular vision.",
+      "doi": null,
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9238095/",
+      "year": 1997,
+      "type": "primary"
+    },
+    {
+      "id": "onion",
+      "citation": "Cesario J, Johnson DJ, Eisthen HL (2020). Your Brain Is Not an Onion With a Tiny Reptile Inside. Current Directions in Psychological Science.",
+      "doi": "10.1177/0963721420917687",
+      "url": "https://doi.org/10.1177/0963721420917687",
+      "year": 2020,
+      "type": "review"
+    },
+    {
+      "id": "bird",
+      "citation": "Olkowicz S, Kocourek M, Lučan RK, Porteš M, Fitch WT, Herculano-Houzel S, Němec P (2016). Birds have primate-like numbers of neurons in the forebrain. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.1517131113",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27298365/",
+      "year": 2016,
+      "type": "primary"
+    },
+    {
+      "id": "parrot",
+      "citation": "Chakraborty M, Walløe S, Walløe S, Nedergaard S, Fridel EE, Dabelsteen T, Pakkenberg B, Bertelsen MF, Dorrestein GM, Brauth SE, Durand SE, Jarvis ED (2015). Core and Shell Song Systems Unique to the Parrot Brain. PloS one.",
+      "doi": "10.1371/journal.pone.0118496",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26107173/",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "audbird",
+      "citation": "Pendergraft LT, Marzluff JM, Cross DJ, Shimizu T, Templeton CN (2023). American crows that excel at tool use activate neural circuits distinct from less talented individuals. Nature communications.",
+      "doi": "10.1038/s41467-023-42203-8",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37863938/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "crow",
+      "citation": "Nieder A, Wagener L, Rinnert P (2020). A neural correlate of sensory consciousness in a corvid bird. Science (New York, N.Y.).",
+      "doi": "10.1126/science.abb1447",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32973028/",
+      "year": 2020,
+      "type": "primary"
+    },
+    {
+      "id": "callosum",
+      "citation": "Suárez R, Paolino A, Fenlon LR, Morcom LR, Kozulin P, Kurniawan ND, Richards LJ (2018). A pan-mammalian map of interhemispheric brain connections predates the evolution of the corpus callosum. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.1808262115",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30181276/",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "oposA",
+      "citation": "Ramamurthy DL, Krubitzer LA (2016). The evolution of whisker-mediated somatosensation in mammals: Sensory processing in barrelless S1 cortex of a marsupial, Monodelphis domestica. The Journal of comparative neurology.",
+      "doi": "10.1002/cne.24018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27098555/",
+      "year": 2016,
+      "type": "primary"
+    },
+    {
+      "id": "mouse",
+      "citation": "MICrONS Consortium (2025). Functional connectomics spanning multiple areas of mouse visual cortex. Nature.",
+      "doi": "10.1038/s41586-025-08790-w",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40205214/",
+      "year": 2025,
+      "type": "primary"
+    },
+    {
+      "id": "bat",
+      "citation": "Yartsev MM, Ulanovsky N (2013). Representation of three-dimensional space in the hippocampus of flying bats. Science (New York, N.Y.).",
+      "doi": "10.1126/science.1235338",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23599496/",
+      "year": 2013,
+      "type": "primary"
+    },
+    {
+      "id": "dolphin",
+      "citation": "Liu Y, Cotton JA, Shen B, Han X, Rossiter SJ, Zhang S (2010). Convergent sequence evolution between echolocating bats and dolphins. Current biology : CB.",
+      "doi": "10.1016/j.cub.2009.11.058",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20129036/",
+      "year": 2010,
+      "type": "primary"
+    },
+    {
+      "id": "ele",
+      "citation": "Herculano-Houzel S, Avelino-de-Souza K, Neves K, Porfírio J, Messeder D, Mattos Feijó L, Maldonado J, Manger PR (2014). The elephant brain in numbers. Frontiers in neuroanatomy.",
+      "doi": "10.3389/fnana.2014.00046",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24971054/",
+      "year": 2014,
+      "type": "primary"
+    },
+    {
+      "id": "dolphA",
+      "citation": "Ladegaard M, Mulsow J, Houser DS, Jensen FH, Johnson M, Madsen PT, Finneran JJ (2019). Dolphin echolocation behaviour during active long-range target approaches. The Journal of experimental biology.",
+      "doi": "10.1242/jeb.189217",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30478155/",
+      "year": 2019,
+      "type": "primary"
+    },
+    {
+      "id": "macaqueA",
+      "citation": "Ferrari PF, Gallese V, Rizzolatti G, Fogassi L (2003). Mirror neurons responding to the observation of ingestive and communicative mouth actions in the monkey ventral premotor cortex. The European journal of neuroscience.",
+      "doi": "10.1046/j.1460-9568.2003.02601.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12752388/",
+      "year": 2003,
+      "type": "primary"
+    },
+    {
+      "id": "humanMem",
+      "citation": "Quiroga RQ, Reddy L, Kreiman G, Koch C, Fried I (2005). Invariant visual representation by single neurons in the human brain. Nature.",
+      "doi": "10.1038/nature03687",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15973409/",
+      "year": 2005,
+      "type": "primary"
+    },
+    {
+      "id": "prim2",
+      "citation": "Wandelt SK, Bjånes DA, Pejsa K, Lee B, Liu C, Andersen RA (2024). Representation of internal speech by single neurons in human supramarginal gyrus. Nature human behaviour.",
+      "doi": "10.1038/s41562-024-01867-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38740984/",
+      "year": 2024,
+      "type": "primary"
+    },
+    {
+      "id": "human",
+      "citation": "Azevedo FA, Carvalho LR, Grinberg LT, Farfel JM, Ferretti RE, Leite RE, Jacob Filho W, Lent R, Herculano-Houzel S (2009). Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain. The Journal of comparative neurology.",
+      "doi": "10.1002/cne.21974",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19226510/",
+      "year": 2009,
+      "type": "primary"
+    },
+    {
+      "id": "neand",
+      "citation": "Neubauer S, Hublin JJ, Gunz P (2018). The evolution of modern human brain shape. Science advances.",
+      "doi": "10.1126/sciadv.aao5961",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29376123/",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "humanem",
+      "citation": "Shapson-Coe A et al (2024). A petavoxel fragment of human cerebral cortex reconstructed at nanoscale resolution. Science (New York, N.Y.).",
+      "doi": "10.1126/science.adk4858",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38723085/",
+      "year": 2024,
+      "type": "primary"
+    },
+    {
+      "id": "cnidinherit",
+      "citation": "Kelava I, Rentzsch F, Technau U (2015). Evolution of eumetazoan nervous systems: insights from cnidarians. Philosophical transactions of the Royal Society of London. Series B, Biological sciences.",
+      "doi": "10.1098/rstb.2015.0065",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26554048/",
+      "year": 2015,
+      "type": "review"
+    },
+    {
+      "id": "deep",
+      "citation": "Northcutt RG (2012). Evolution of centralized nervous systems: two schools of evolutionary thought. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.1201889109",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22723354/",
+      "year": 2012,
+      "type": "review"
+    },
+    {
+      "id": "beeSub",
+      "citation": "Groh C, Rössler W (2020). Analysis of Synaptic Microcircuits in the Mushroom Bodies of the Honeybee. Insects.",
+      "doi": "10.3390/insects11010043",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31936165/",
+      "year": 2020,
+      "type": "review"
+    },
+    {
+      "id": "neurodeep",
+      "citation": "Holland LZ, Carvalho JE, Escriva H, Laudet V, Schubert M, Shimeld SM, Yu JK (2013). Evolution of bilaterian central nervous systems: a single origin?. EvoDevo.",
+      "doi": "10.1186/2041-9139-4-27",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24098981/",
+      "year": 2013,
+      "type": "review"
+    },
+    {
+      "id": "spinal",
+      "citation": "Albuixech-Crespo B, Herrera-Úbeda C, Marfany G, Irimia M, Garcia-Fernàndez J (2017). Origin and evolution of the chordate central nervous system: insights from amphioxus genoarchitecture. The International journal of developmental biology.",
+      "doi": "10.1387/ijdb.170258jg",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29319114/",
+      "year": 2017,
+      "type": "review"
+    },
+    {
+      "id": "lampEM",
+      "citation": "Vesselkin NP, Repérant J, Kenigfest NB, Rio JP, Miceli D, Shupliakov OV (1989). Centrifugal innervation of the lamprey retina. Light- and electron microscopic and electrophysiological investigations. Brain research.",
+      "doi": "10.1016/0006-8993(89)90999-2",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2776010/",
+      "year": 1989,
+      "type": "primary"
+    },
+    {
+      "id": "lampN",
+      "citation": "von Twickel A, Kowatschew D, Saltürk M, Schauer M, Robertson B, Korsching S, Walkowiak W, Grillner S, Pérez-Fernández J (2019). Individual Dopaminergic Neurons of Lamprey SNc/VTA Project to Both the Striatum and Optic Tectum but Restrict Co-release of Glutamate to Striatum Only. Current biology : CB.",
+      "doi": "10.1016/j.cub.2019.01.004",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30713108/",
+      "year": 2019,
+      "type": "primary"
+    },
+    {
+      "id": "fishmy",
+      "citation": "Hartline DK, Colman DR (2007). Rapid conduction and the evolution of giant axons and myelinated fibers. Current biology : CB.",
+      "doi": "10.1016/j.cub.2006.11.042",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17208176/",
+      "year": 2007,
+      "type": "review"
+    },
+    {
+      "id": "olfmap",
+      "citation": "Wanner AA, Genoud C, Masudi T, Siksou L, Friedrich RW (2016). Dense EM-based reconstruction of the interglomerular projectome in the zebrafish olfactory bulb. Nature neuroscience.",
+      "doi": "10.1038/nn.4290",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27089019/",
+      "year": 2016,
+      "type": "primary"
+    },
+    {
+      "id": "frogCount",
+      "citation": "Larbi MC, Messa G, Jalal H, Koutsikou S (2022). An early midbrain sensorimotor pathway is involved in the timely initiation and direction of swimming in the hatchling Xenopus laevis tadpole. Frontiers in neural circuits.",
+      "doi": "10.3389/fncir.2022.1027831",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36619662/",
+      "year": 2022,
+      "type": "primary"
+    },
+    {
+      "id": "frogEM",
+      "citation": "Li J, Erisir A, Cline H (2011). In vivo time-lapse imaging and serial section electron microscopy reveal developmental synaptic rearrangements. Neuron.",
+      "doi": "10.1016/j.neuron.2010.12.022",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21262466/",
+      "year": 2011,
+      "type": "primary"
+    },
+    {
+      "id": "amnioteN",
+      "citation": "Kverková K, Marhounová L, Polonyiová A, Kocourek M, Zhang Y, Olkowicz S, Straková B, Pavelková Z, Vodička R, Frynta D, Němec P (2022). The evolution of brain neuron numbers in amniotes. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.2121624119",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35254911/",
+      "year": 2022,
+      "type": "primary"
+    },
+    {
+      "id": "birdEM",
+      "citation": "Günther A, Dedek K, Haverkamp S, Irsen S, Briggman KL, Mouritsen H (2021). Double Cones and the Diverse Connectivity of Photoreceptors and Bipolar Cells in an Avian Retina. The Journal of neuroscience : the official journal of the Society for Neuroscience.",
+      "doi": "10.1523/jneurosci.2495-20.2021",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33893221/",
+      "year": 2021,
+      "type": "primary"
+    },
+    {
+      "id": "mouseN",
+      "citation": "Herculano-Houzel S, Mota B, Lent R (2006). Cellular scaling rules for rodent brains. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.0604911103",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16880386/",
+      "year": 2006,
+      "type": "primary"
+    },
+    {
+      "id": "oposN",
+      "citation": "Seelke AM, Dooley JC, Krubitzer LA (2014). The cellular composition of the marsupial neocortex. The Journal of comparative neurology.",
+      "doi": "10.1002/cne.23534",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24414857/",
+      "year": 2014,
+      "type": "primary"
+    },
+    {
+      "id": "spongeRoot",
+      "citation": "Schultz DT, Haddock SHD, Bredeson JV, Green RE, Simakov O, Rokhsar DS (2023). Ancient gene linkages support ctenophores as sister to other animals. Nature.",
+      "doi": "10.1038/s41586-023-05936-6",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37198475/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "macaque",
+      "citation": "Herculano-Houzel S, Collins CE, Wong P, Kaas JH (2007). Cellular scaling rules for primate brains. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.0611396104",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17360682/",
+      "year": 2007,
+      "type": "primary"
+    },
+    {
+      "id": "spongeAlternative",
+      "citation": "Pisani D, Walker J, Dohrmann M, Feuda R, Rota-Stabelli O, Philippe H, Lartillot N, Wörheide G (2015). Genomic data do not support comb jellies as the sister group to all other animals. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.1518127112",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26621703/",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "insect",
+      "citation": "Strausfeld NJ, Hansen L, Li Y, Gomez RS, Ito K (1998). Evolution, discovery, and interpretations of arthropod mushroom bodies. Learning & memory (Cold Spring Harbor, N.Y.).",
+      "doi": "10.1101/lm.5.1.11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10454370/",
+      "year": 1998,
+      "type": "review"
+    },
+    {
+      "id": "cili",
+      "citation": "Mitchell DR (2007). The evolution of eukaryotic cilia and flagella as motile and sensory organelles. Advances in experimental medicine and biology.",
+      "doi": "10.1007/978-0-387-74021-8_11",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17977465/",
+      "year": 2007,
+      "type": "review"
+    },
+    {
+      "id": "hydraO",
+      "citation": "Keramidioti A, Schneid S, Busse C, Cramer von Laue C, Bertulat B, Salvenmoser W, Hess M, Alexandrova O, Glauber KM, Steele RE, Hobmayer B, Holstein TW, David CN (2024). A new look at the architecture and dynamics of the Hydra nerve net. eLife.",
+      "doi": "10.7554/elife.87330",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38407174/",
+      "year": 2024,
+      "type": "primary"
+    },
+    {
+      "id": "jellyCount",
+      "citation": "Stamatis SA, Worsaae K, Garm A (2018). Regeneration of the Rhopalium and the Rhopalial Nervous System in the Box Jellyfish Tripedalia cystophora. The Biological bulletin.",
+      "doi": "10.1086/697071",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29694798/",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "mollusc",
+      "citation": "Albertin CB, Katz PS (2023). Evolution of cephalopod nervous systems. Current biology : CB.",
+      "doi": "10.1016/j.cub.2023.08.092",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37875089/",
+      "year": 2023,
+      "type": "review"
+    },
+    {
+      "id": "octA",
+      "citation": "Shomrat T, Zarrella I, Fiorito G, Hochner B (2008). The octopus vertical lobe modulates short-term learning rate and uses LTP to acquire long-term memory. Current biology : CB.",
+      "doi": "10.1016/j.cub.2008.01.056",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18328706/",
+      "year": 2008,
+      "type": "primary"
+    },
+    {
+      "id": "worm3",
+      "citation": "Emmons SW (2015). The beginning of connectomics: a commentary on White et al. (1986) 'The structure of the nervous system of the nematode Caenorhabditis elegans'. Philosophical transactions of the Royal Society of London. Series B, Biological sciences.",
+      "doi": "10.1098/rstb.2014.0309",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25750233/",
+      "year": 2015,
+      "type": "review"
+    },
+    {
+      "id": "extraMa",
+      "citation": "Gabi M, Collins CE, Wong P, Torres LB, Kaas JH, Herculano-Houzel S (2010). Cellular scaling rules for the brains of an extended number of primate species. Brain, behavior and evolution.",
+      "doi": "10.1159/000319872",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20926854/",
+      "year": 2010,
+      "type": "primary"
+    },
+    {
+      "id": "frogReview",
+      "citation": "Roberts A, Li WC, Soffe SR (2010). How neurons generate behavior in a hatchling amphibian tadpole: an outline. Frontiers in behavioral neuroscience.",
+      "doi": "10.3389/fnbeh.2010.00016",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20631854/",
+      "year": 2010,
+      "type": "review"
+    },
+    {
+      "id": "rhopa",
+      "citation": "Bielecki J, Garm A (2026). Extracellular Electrophysiological Recording of Visually Evoked Swim Pacemaker Signals from the Isolated Rhopalium of Tripedalia cystophora. Journal of visualized experiments : JoVE.",
+      "doi": "10.3791/72143",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42762151/",
+      "year": 2026,
+      "type": "primary"
+    },
+    {
+      "id": "jellyN2",
+      "citation": "Skogh C, Garm A, Nilsson DE, Ekström P (2006). Bilaterally symmetrical rhopalial nervous system of the box jellyfish Tripedalia cystophora. Journal of morphology.",
+      "doi": "10.1002/jmor.10472",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16874799/",
+      "year": 2006,
+      "type": "primary"
+    },
+    {
+      "id": "earlydate",
+      "citation": "dos Reis M, Thawornwattana Y, Angelis K, Telford MJ, Donoghue PC, Yang Z (2015). Uncertainty in the Timing of Origin of Animals and the Limits of Precision in Molecular Timescales. Current biology : CB.",
+      "doi": "10.1016/j.cub.2015.09.066",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26603774/",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "cephD",
+      "citation": "López-Córdova DA, Avaria-Llautureo J, Ulloa PM, Braid HE, Revell LJ, Fuchs D, Ibáñez CM (2022). Mesozoic origin of coleoid cephalopods and their abrupt shifts of diversification patterns. Molecular phylogenetics and evolution.",
+      "doi": "10.1016/j.ympev.2021.107331",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34687843/",
+      "year": 2022,
+      "type": "primary"
+    },
+    {
+      "id": "birdD",
+      "citation": "Stiller J et al (2024). Complexity of avian evolution revealed by family-level genomes. Nature.",
+      "doi": "10.1038/s41586-024-07323-1",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38560995/",
+      "year": 2024,
+      "type": "primary"
+    },
+    {
+      "id": "placdate",
+      "citation": "Tarver JE, Dos Reis M, Mirarab S, Moran RJ, Parker S, O'Reilly JE, King BL, O'Connell MJ, Asher RJ, Warnow T, Peterson KJ, Donoghue PC, Pisani D (2016). The Interrelationships of Placental Mammals and the Limits of Phylogenetic Inference. Genome biology and evolution.",
+      "doi": "10.1093/gbe/evv261",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26733575/",
+      "year": 2016,
+      "type": "primary"
+    },
+    {
+      "id": "primdate",
+      "citation": "Perelman P, Johnson WE, Roos C, Seuánez HN, Horvath JE, Moreira MA, Kessing B, Pontius J, Roelke M, Rumpler Y, Schneider MP, Silva A, O'Brien SJ, Pecon-Slattery J (2011). A molecular phylogeny of living primates. PLoS genetics.",
+      "doi": "10.1371/journal.pgen.1001342",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21436896/",
+      "year": 2011,
+      "type": "primary"
+    },
+    {
+      "id": "dolphEar",
+      "citation": "Wever EG, McCormick JG, Palin J, Ridgway SH (1971). The cochlea of the dolphin, Tursiops truncatus: hair cells and ganglion cells. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.68.12.2908",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5289233/",
+      "year": 1971,
+      "type": "primary"
+    },
+    {
+      "id": "batEar",
+      "citation": "Xie DH, Henson MM, Bishop AL, Henson OW (1993). Efferent terminals in the cochlea of the mustached bat: quantitative data. Hearing research.",
+      "doi": "10.1016/0378-5955(93)90262-y",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7682545/",
+      "year": 1993,
+      "type": "primary"
+    },
+    {
+      "id": "beeEM",
+      "citation": "Groh C, Lu Z, Meinertzhagen IA, Rössler W (2012). Age-related plasticity in the synaptic ultrastructure of neurons in the mushroom body calyx of the adult honeybee Apis mellifera. The Journal of comparative neurology.",
+      "doi": "10.1002/cne.23102",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/22430260/",
+      "year": 2012,
+      "type": "primary"
+    },
+    {
+      "id": "octAlt",
+      "citation": "Sivitilli DM, Smith JR, Gire DH (2022). Lessons for Robotics From the Control Architecture of the Octopus. Frontiers in robotics and AI.",
+      "doi": "10.3389/frobt.2022.862391",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35923303/",
+      "year": 2022,
+      "type": "review"
+    },
+    {
+      "id": "datesV",
+      "citation": "Blair JE, Hedges SB (2005). Molecular phylogeny and divergence times of deuterostome animals. Molecular biology and evolution.",
+      "doi": "10.1093/molbev/msi225",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16049193/",
+      "year": 2005,
+      "type": "primary"
+    },
+    {
+      "id": "zebCount",
+      "citation": "Hinsch K, Zupanc GK (2007). Generation and long-term persistence of new neurons in the adult zebrafish brain: a quantitative analysis. Neuroscience.",
+      "doi": "10.1016/j.neuroscience.2007.01.071",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17395385/",
+      "year": 2007,
+      "type": "primary"
+    },
+    {
+      "id": "zebReview",
+      "citation": "Friedrich RW, Genoud C, Wanner AA (2013). Analyzing the structure and function of neuronal circuits in zebrafish. Frontiers in neural circuits.",
+      "doi": "10.3389/fncir.2013.00071",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23630467/",
+      "year": 2013,
+      "type": "review"
+    },
+    {
+      "id": "humanRet",
+      "citation": "Kim YJ, Packer O, Pollreisz A, Martin PR, Grünert U, Dacey DM (2023). Comparative connectomics reveals noncanonical wiring for color vision in human foveal retina. Proceedings of the National Academy of Sciences of the United States of America.",
+      "doi": "10.1073/pnas.2300545120",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37098066/",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "inherit",
+      "citation": "Strausfeld NJ, Hirth F (2013). Deep homology of arthropod central complex and vertebrate basal ganglia. Science (New York, N.Y.).",
+      "doi": "10.1126/science.1231828",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23580521/",
+      "year": 2013,
+      "type": "review"
+    },
+    {
+      "id": "central",
+      "citation": "Pfeiffer K, Homberg U (2014). Organization and functional roles of the central complex in the insect brain. Annual review of entomology.",
+      "doi": "10.1146/annurev-ento-011613-162031",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24160424/",
+      "year": 2014,
+      "type": "review"
+    },
+    {
+      "id": "optic2",
+      "citation": "Sztarker J, Strausfeld NJ, Tomsic D (2005). Organization of optic lobes that support motion detection in a semiterrestrial crab. The Journal of comparative neurology.",
+      "doi": "10.1002/cne.20755",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16261533/",
+      "year": 2005,
+      "type": "primary"
+    },
+    {
+      "id": "fish26",
+      "citation": "Ocaña FM, Gómez A, Salas C, Rodríguez F (2026). Sensory maps in the telencephalic pallium of goldfish. Brain structure & function.",
+      "doi": "10.1007/s00429-026-03155-z",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42470448/",
+      "year": 2026,
+      "type": "primary"
+    },
+    {
+      "id": "goldN",
+      "citation": "Johns PR, Easter SS (1977). Growth of the adult goldfish eye. II. Increase in retinal cell number. The Journal of comparative neurology.",
+      "doi": "10.1002/cne.901760303",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/915041/",
+      "year": 1977,
+      "type": "primary"
+    },
+    {
+      "id": "flatN",
+      "citation": "Takeda H, Nishimura K, Agata K (2009). Planarians maintain a constant ratio of different cell types during changes in body size by using the stem cell system. Zoological science.",
+      "doi": "10.2108/zsj.26.805",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19968467/",
+      "year": 2009,
+      "type": "primary"
+    },
+    {
+      "id": "zebraCount",
+      "citation": "Hill A, Howard CV, Strahle U, Cossins A (2003). Neurodevelopmental defects in zebrafish (Danio rerio) at environmentally relevant dioxin (TCDD) concentrations. Toxicological sciences : an official journal of the Society of Toxicology.",
+      "doi": "10.1093/toxsci/kfg241",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/14600291/",
+      "year": 2003,
+      "type": "primary"
+    }
+  ]
+}
