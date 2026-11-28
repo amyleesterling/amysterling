@@ -340,12 +340,16 @@ export function createScene(canvas, opts = {}) {
 
   resize();
   raf = requestAnimationFrame(tick);
-  document.addEventListener("visibilitychange", () => {
-    running = !document.hidden;
+  let active = true;
+  function updateVisibility() {
+    running = active && !document.hidden;
+    if (!running && raf) { cancelAnimationFrame(raf); raf = 0; }
     if (running && !raf) { last = performance.now(); raf = requestAnimationFrame(tick); }
-  });
+  }
+  document.addEventListener("visibilitychange", updateVisibility);
 
   return {
+    setActive(value) { active = value; updateVisibility(); },
     setModel, setFrame, resize,
     setFeatured(f) { featured = f; applyLook(); },
     setFocus(f) { focus = f; applyLook(); },

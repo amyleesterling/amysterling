@@ -164,9 +164,9 @@ const RECIPES = {
       const x = Math.sin(ph) * Math.cos(a) * 0.98, z = Math.sin(ph) * Math.sin(a) * 0.98;
       const y = 0.25 + Math.cos(ph) * 0.88;
       b.dot([x, y, z], 0.016 + r() * 0.016, "nerve_net",
-        { w: ph / (Math.PI / 2), g: 0, struct: i % 2 ? "Continuous nerve net" : "Body-wide activity networks" });
+        { w: ph / (Math.PI / 2), g: 0, struct: null });
     }
-    b.ring([0, 0.27, 0], 0.99, 110, 0.03, "nerve_net", { struct: "Body-wide activity networks" });
+    b.ring([0, 0.27, 0], 0.99, 110, 0.03, "nerve_net", {});
     for (let k = 0; k < 4; k++) {
       const a = k * Math.PI / 2 + Math.PI / 4;
       const x = Math.cos(a) * 0.99, z = Math.sin(a) * 0.99;
@@ -179,11 +179,34 @@ const RECIPES = {
     return { yaw: 0.5, pitch: 0.22 };
   },
 
+  // Distribution schematics. Points indicate sampled territory, never cell counts.
+  "hydra-polyp"(b) {
+    b.part("column", "body", [0, 0, 0], [0.22, 0.9, 0.22], { ghost: true });
+    const r = rng(41);
+    for (let i = 0; i < 210; i++) {
+      const angle = r() * Math.PI * 2, y = r() * 1.7 - .85;
+      b.dot([.18 * Math.cos(angle), y, .18 * Math.sin(angle)], .018, "nerve_net", { struct: "Body-wide activity networks" });
+    }
+    for (let i = 0; i < 6; i++) {
+      const a = i * Math.PI / 3, x = Math.cos(a), z = Math.sin(a);
+      b.strand([[.12*x,.80,.12*z],[.42*x,1.08,.42*z],[.69*x,1.35,.69*z]], 22, .017, "body");
+    }
+    return { yaw: .3, pitch: .15 };
+  },
+  "comb-net-detail"(b) {
+    // Conceptual enlargement of membrane continuity. This is not a wiring reconstruction.
+    const links = [[[0,0,0],[-.45,.25,0],[-1,.35,.15]],[[0,0,0],[.35,.32,-.1],[.8,.8,0]],
+      [[0,0,0],[.42,-.23,0],[1,-.38,-.1]],[[-.45,.25,0],[-.6,-.18,0],[-.9,-.53,.05]]];
+    for (const points of links) b.strand(points, 48, .033, "nerve_net", { struct: "Continuous nerve net" });
+    b.part("junction","nerve_net",[0,0,0],[.1,.08,.07],{struct:"Continuous nerve net"});
+    return {yaw:.1,pitch:.09};
+  },
+
   // A planarian: two brain lobes at the front and a ladder of nerve cords.
   "heads"(b) {
     b.part("hull", "body", [-0.1, 0, 0], [1.85, 0.1, 0.42], { ghost: true });
     b.pair("cg", "cerebral_ganglia", [1.25, 0.0, 0.13], [0.26, 0.085, 0.13], { struct: "Planarian brain" });
-    b.pair("eye", "other", [1.42, 0.07, 0.1], [0.045, 0.035, 0.045], { struct: "Search circuit" });
+    b.pair("eye", "other", [1.42, 0.07, 0.1], [0.045, 0.035, 0.045], {});
     for (const s of [1, -1]) {
       b.strand([[1.15, 0, 0.16 * s], [0.5, 0, 0.21 * s], [-0.5, 0, 0.21 * s], [-1.4, 0, 0.13 * s], [-1.8, 0, 0.03 * s]],
         84, 0.03, "nerve_cord", { taper: 0.4, struct: "Longitudinal nerve bundles", g: 0.1 });
