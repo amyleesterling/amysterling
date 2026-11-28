@@ -10,11 +10,21 @@
       "exemplars": [
         {
           "common": "Freshwater sponge",
-          "scientific": "Ephydatia muelleri"
+          "scientific": "Ephydatia muelleri",
+          "illustration": {
+            "path": "illustrations/ephydatia-muelleri.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Oblique view showing surface openings"
+          }
         },
         {
           "common": "Placozoan",
-          "scientific": "Trichoplax adhaerens"
+          "scientific": "Trichoplax adhaerens",
+          "illustration": {
+            "path": "illustrations/trichoplax-adhaerens.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Oblique view of the body surface"
+          }
         }
       ],
       "diverged_mya": {
@@ -257,7 +267,78 @@
             "evidence_quote_ref": "/stops/0/neuron_counts/1/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "figure": "Figure 1A–B",
+          "species": "Ephydatia muelleri",
+          "stage": "Stage 5, one week old",
+          "view": "whole animal and body section",
+          "shows": "Exterior of a juvenile sponge and a fractured specimen showing the spaces beneath its surface. Use for body orientation.",
+          "paper": "A morphological cell atlas of the freshwater sponge Ephydatia muelleri with key insights from targeted single-cell transcriptomes",
+          "doi": "10.1186/s13227-025-00237-7",
+          "url": "https://doi.org/10.1186/s13227-025-00237-7",
+          "evidence_quote": "Stage 5, week-old, juvenile sponge viewed by stereo microscopy.",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlas07382acc"
+          ]
+        },
+        {
+          "figure": "Figure 1A–B",
+          "species": "Trichoplax adhaerens",
+          "stage": "stage unspecified",
+          "view": "body cross-sections",
+          "shows": "Electron micrographs show the upper and substrate-facing surfaces, and the cells between them, at the edge and farther inward.",
+          "paper": "Novel cell types, neurosecretory cells, and body plan of the early-diverging metazoan Trichoplax adhaerens",
+          "doi": "10.1016/j.cub.2014.05.046",
+          "url": "https://doi.org/10.1016/j.cub.2014.05.046",
+          "evidence_quote": "Ventral side faces the substrate (bottom).",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlas2f4e8c17"
+          ]
+        },
+        {
+          "figure": "Figure 3A–B",
+          "species": "Trichoplax adhaerens",
+          "stage": "stage unspecified",
+          "view": "ventral cell map",
+          "shows": "Stained optical sections show the distribution of gland cells near the rim and farther inward.",
+          "paper": "Novel cell types, neurosecretory cells, and body plan of the early-diverging metazoan Trichoplax adhaerens",
+          "doi": "10.1016/j.cub.2014.05.046",
+          "url": "https://doi.org/10.1016/j.cub.2014.05.046",
+          "evidence_quote": "strongly labels cells deployed near the edge",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlas2f4e8c17"
+          ]
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Ephydatia muelleri",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "discrete brain absent",
+          "source_ids": []
+        },
+        {
+          "species": "Trichoplax adhaerens",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "discrete brain absent",
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "nerve-nets",
@@ -269,15 +350,28 @@
       "exemplars": [
         {
           "common": "Caribbean box jellyfish",
-          "scientific": "Tripedalia cystophora"
+          "scientific": "Tripedalia cystophora",
+          "illustration": {
+            "path": "illustrations/tripedalia-cystophora.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Freshwater hydra",
-          "scientific": "Hydra vulgaris"
+          "scientific": "Hydra vulgaris",
+          "illustration": {
+            "path": "illustrations/hydra-vulgaris.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Polyp with tentacles extended"
+          }
         },
         {
           "common": "Comb jelly",
-          "scientific": "Mnemiopsis leidyi"
+          "scientific": "Mnemiopsis leidyi",
+          "illustration": {
+            "path": "illustrations/mnemiopsis-leidyi.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -538,7 +632,89 @@
             "evidence_quote": "a continuous plasma membrane"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "figure": "Figure 1A–B",
+          "species": "Hydra vulgaris",
+          "stage": "polyp",
+          "view": "nerve cells in body",
+          "shows": "Stained nerve cells from the mouth and tentacles through the body column to the basal disk. The panels show the outer tissue layer.",
+          "paper": "A new look at the architecture and dynamics of the Hydra nerve net",
+          "doi": "10.7554/elife.87330",
+          "url": "https://doi.org/10.7554/elife.87330",
+          "evidence_quote": "Distribution of pan-neuronal antibody (PNab)-stained nerve cells along the Hydra body axis.",
+          "confidence": "well supported",
+          "source_ids": [
+            "hydraO"
+          ]
+        },
+        {
+          "figure": "Figure 1a–d",
+          "species": "Tripedalia cystophora",
+          "stage": "adult medusa",
+          "view": "external, in-body and midline section",
+          "shows": "A whole medusa locates the sensory organ. Horizontal and side views show it in the bell cavity, and a midline section shows internal anatomy.",
+          "paper": "Bilaterally symmetrical rhopalial nervous system of the box jellyfish Tripedalia cystophora",
+          "doi": "10.1002/jmor.10472",
+          "url": "https://doi.org/10.1002/jmor.10472",
+          "evidence_quote": "In situ, horizontal view of a rhopalium from inside the bell cavity.",
+          "confidence": "well supported",
+          "source_ids": [
+            "jellyN2"
+          ]
+        },
+        {
+          "figure": "Figure 1B–C",
+          "species": "Mnemiopsis leidyi",
+          "stage": "one-day-old cydippid",
+          "view": "body position and regional 3D reconstruction",
+          "shows": "A boxed region in the whole animal locates the reconstruction of nerve cells relative to comb rows and a tentacle.",
+          "paper": "Syncytial nerve net in a ctenophore adds insights on the evolution of nervous systems",
+          "doi": "10.1126/science.ade5645",
+          "url": "https://doi.org/10.1126/science.ade5645",
+          "evidence_quote": "White box: area reconstructed in C.",
+          "confidence": "well supported",
+          "source_ids": [
+            "comb3"
+          ]
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Hydra vulgaris",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "no single discrete brain measured",
+          "source_ids": []
+        },
+        {
+          "species": "Tripedalia cystophora",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "no single discrete brain measured",
+          "source_ids": []
+        },
+        {
+          "species": "Mnemiopsis leidyi",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "no single discrete brain measured",
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "heads",
@@ -550,11 +726,19 @@
       "exemplars": [
         {
           "common": "Planarian",
-          "scientific": "Dugesia japonica"
+          "scientific": "Dugesia japonica",
+          "illustration": {
+            "path": "illustrations/dugesia-japonica.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Roundworm",
-          "scientific": "Caenorhabditis elegans"
+          "scientific": "Caenorhabditis elegans",
+          "illustration": {
+            "path": "illustrations/caenorhabditis-elegans.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -801,7 +985,78 @@
             "evidence_quote": "omega turns are suppressed"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "figure": "Figure 3",
+          "species": "Dugesia japonica",
+          "stage": "intact animal",
+          "view": "ventral whole mount",
+          "shows": "A neural marker outlines the paired head structures and the long nerve cords in their original body position.",
+          "paper": "Structure of the planarian central nervous system (CNS) revealed by neuronal cell markers",
+          "doi": "10.2108/zsj.15.433",
+          "url": "https://doi.org/10.2108/zsj.15.433",
+          "evidence_quote": "Ventral view of the whole mount in situ hybridization",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlasa36b7386"
+          ]
+        },
+        {
+          "figure": "Figure 4A–K",
+          "species": "Dugesia japonica",
+          "stage": "intact animal",
+          "view": "horizontal and transverse sections",
+          "shows": "Sections show where the paired head structures meet the ventral nerve cords and where nerve fibres cross the midline.",
+          "paper": "Structure of the planarian central nervous system (CNS) revealed by neuronal cell markers",
+          "doi": "10.2108/zsj.15.433",
+          "url": "https://doi.org/10.2108/zsj.15.433",
+          "evidence_quote": "Structural relationship between the brain and VNC.",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlasa36b7386"
+          ]
+        },
+        {
+          "figure": "Figure 1a–c",
+          "species": "Caenorhabditis elegans",
+          "stage": "adult hermaphrodite and male",
+          "view": "whole-body labelled diagram",
+          "shows": "Illustrates the tracts, nerve ring and cell clusters in both sexes. The network graph beside each animal uses a separate layout.",
+          "paper": "Whole-animal connectomes of both Caenorhabditis elegans sexes",
+          "doi": "10.1038/s41586-019-1352-7",
+          "url": "https://doi.org/10.1038/s41586-019-1352-7",
+          "evidence_quote": "The major nerve tracts and ganglia (anterior to left) of adult hermaphrodite and adult male.",
+          "confidence": "well supported",
+          "source_ids": [
+            "worm2"
+          ]
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Dugesia japonica",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "paired head ganglia",
+          "source_ids": []
+        },
+        {
+          "species": "Caenorhabditis elegans",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "nerve ring and associated head ganglia",
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "arthropod-brains",
@@ -813,11 +1068,21 @@
       "exemplars": [
         {
           "common": "Fruit fly",
-          "scientific": "Drosophila melanogaster"
+          "scientific": "Drosophila melanogaster",
+          "illustration": {
+            "path": "illustrations/drosophila-melanogaster.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Adult female"
+          }
         },
         {
           "common": "Western honeybee",
-          "scientific": "Apis mellifera"
+          "scientific": "Apis mellifera",
+          "illustration": {
+            "path": "illustrations/apis-mellifera.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Adult worker"
+          }
         }
       ],
       "diverged_mya": {
@@ -1043,7 +1308,96 @@
             "evidence_quote_ref": "/stops/3/structures/1/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "figure": "Figure 1a, d",
+          "species": "Drosophila melanogaster",
+          "stage": "adult female",
+          "view": "whole brain and labelled regions",
+          "shows": "The neuronal reconstruction includes both optic lobes. The regional panel shows spatial boundaries. Panel a reverses the native left and right sides.",
+          "paper": "Neuronal wiring diagram of an adult brain",
+          "doi": "10.1038/s41586-024-07558-y",
+          "url": "https://doi.org/10.1038/s41586-024-07558-y",
+          "evidence_quote": "image and dataset are mirror inverted relative to the native fly brain.",
+          "confidence": "well supported",
+          "source_ids": [
+            "fly"
+          ]
+        },
+        {
+          "figure": "Figure 2",
+          "species": "Apis mellifera",
+          "stage": "live worker",
+          "view": "in-body 3D view",
+          "shows": "The head capsule and paired eyes locate the optic lobes. The labels also identify the antennal lobes and the cup-shaped portions of the mushroom bodies.",
+          "paper": "Imaging live bee brains using minimally-invasive diagnostic radioentomology",
+          "doi": "10.1673/031.012.8901",
+          "url": "https://doi.org/10.1673/031.012.8901",
+          "evidence_quote": "A 3D volume rendered image of a live honey bee's head capsule",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlasb85d7be8"
+          ]
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Drosophila melanogaster",
+          "stage": "adult",
+          "length_mm": 0.16,
+          "width_mm": 0.6,
+          "height_mm": 0.3,
+          "mass_g": null,
+          "method": "Approximate anatomical extents reported in the microscopy methods. Length denotes front-to-back thickness.",
+          "paper": "Image processing for precise three-dimensional registration and stitching of thick high-resolution laser-scanning microscopy image stacks",
+          "doi": "10.1016/j.compbiomed.2017.10.027",
+          "url": "https://doi.org/10.1016/j.compbiomed.2017.10.027",
+          "evidence_quote": "approximately 600-μm wide, 300-μm tall, and 160-μm thick",
+          "confidence": "single study",
+          "source_ids": [
+            "atlasf271f4ae"
+          ],
+          "region": "whole brain"
+        },
+        {
+          "species": "Apis mellifera",
+          "stage": "adult worker",
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": 0.001,
+          "method": "Approximation cited in the anatomical imaging paper. The imaging experiment did not weigh individual brains.",
+          "paper": "Imaging live bee brains using minimally-invasive diagnostic radioentomology",
+          "doi": "10.1673/031.012.8901",
+          "url": "https://doi.org/10.1673/031.012.8901",
+          "evidence_quote": "Their brain weighs approximately 0.001 g",
+          "confidence": "single study",
+          "source_ids": [
+            "atlasb85d7be8"
+          ],
+          "region": "whole brain"
+        },
+        {
+          "species": "Apis mellifera",
+          "stage": "adult worker",
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": 0.002174,
+          "method": "Table S1 reports a mean of 2.174 mg in 37 honeybee workers. Fixed and blotted brains were weighed on an analytical balance.",
+          "paper": "Allometric analysis of brain cell number in Hymenoptera suggests ant brains diverge from general trends",
+          "doi": "10.1098/rspb.2021.0199",
+          "url": "https://doi.org/10.1098/rspb.2021.0199",
+          "evidence_quote": "fixed, wet brain mass including optic lobes and suboesophageal ganglion",
+          "confidence": "single study",
+          "supplement_url": "https://doi.org/10.6084/m9.figshare.c.5335259",
+          "source_ids": [
+            "atlas425ed00d"
+          ],
+          "region": "fixed wet brain including optic lobes and the nerve centre below the food tube"
+        }
+      ]
     },
     {
       "id": "cephalopods",
@@ -1055,11 +1409,27 @@
       "exemplars": [
         {
           "common": "Common octopus",
-          "scientific": "Octopus vulgaris"
+          "scientific": "Octopus vulgaris",
+          "illustration": {
+            "path": "illustrations/octopus-vulgaris.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "California two-spot octopus",
-          "scientific": "Octopus bimaculoides"
+          "scientific": "Octopus bimaculoides",
+          "illustration": {
+            "path": "illustrations/octopus-bimaculoides.webp",
+            "medium": "AI-generated natural history illustration"
+          }
+        },
+        {
+          "common": "Common cuttlefish",
+          "scientific": "Sepia officinalis",
+          "illustration": {
+            "path": "illustrations/sepia-officinalis.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -1106,6 +1476,14 @@
           "method": null,
           "source_ids": [],
           "unit": "neurons"
+        },
+        {
+          "species": "Sepia officinalis",
+          "value": null,
+          "region": "whole nervous system",
+          "method": null,
+          "unit": "neurons",
+          "source_ids": []
         }
       ],
       "summary": "A common octopus carries most of its neurons in its arms. An arm can produce part of a reach locally, while a learning center in the head helps the animal remember which objects to avoid.",
@@ -1154,6 +1532,29 @@
               "evidence_quote": "sharing morphological and wiring features with circuits supporting associative learning in other animals"
             }
           ]
+        },
+        {
+          "name": "Skin pigment organs",
+          "region": "cellular",
+          "origin": null,
+          "description": "Small muscles expand pigment sacs in the common cuttlefish’s skin. Motor neurons control the muscles.",
+          "confidence": "well supported",
+          "evidence_quote": "radial muscles controlled by motor neurons",
+          "source_ids": [
+            "cutColor"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        },
+        {
+          "name": "Skin bump muscles and nerves",
+          "region": "cellular",
+          "origin": "elaborated",
+          "description": "Motor neurons raise and flatten bumps in the skin. The authors traced a control circuit related to one that changes skin iridescence in squid.",
+          "confidence": "single study",
+          "evidence_quote": "homology to the iridescence circuits in squids",
+          "source_ids": [
+            "cutPap"
+          ]
         }
       ],
       "abilities": [
@@ -1191,6 +1592,30 @@
           "evidence_quote": "both treatments impaired long-term recall the next day",
           "source_ids": [
             "octA"
+          ]
+        },
+        {
+          "name": "Change the skin pattern",
+          "description": "Researchers filmed individual pigment organs during camouflage and tracked them as they expanded in coordinated groups.",
+          "linked_structures": [
+            "Skin pigment organs"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "quantifying the states of tens of thousands of chromatophores",
+          "source_ids": [
+            "cutColor"
+          ]
+        },
+        {
+          "name": "Hold a bumpy texture",
+          "description": "Nerve stimulation raised bumps on the mantle. Experiments showed that bumps can stay raised after incoming nerve signals stop.",
+          "linked_structures": [
+            "Skin bump muscles and nerves"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "in the absence of neural input",
+          "source_ids": [
+            "cutPap"
           ]
         }
       ],
@@ -1279,7 +1704,171 @@
             "evidence_quote_ref": "/stops/4/abilities/2/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "figure": "Figure 1",
+          "species": "Octopus vulgaris",
+          "stage": "hatchling and three body-size groups",
+          "view": "midline sections and hatchling body position",
+          "shows": "Midline sections show brain growth around the food tube. The hatchling outline locates its brain. The sections omit the optic lobes.",
+          "paper": "Relative growth, nucleic acid content and cell numbers of the brain in Octopus vulgaris (Lamarck)",
+          "doi": "10.1242/jeb.52.3.539",
+          "url": "https://doi.org/10.1242/jeb.52.3.539",
+          "evidence_quote": "The optic lobes do not appear in these sections.",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlas19faffaa"
+          ]
+        },
+        {
+          "figure": "Figure 1a",
+          "species": "Octopus bimaculoides",
+          "stage": "general anatomical schematic",
+          "view": "labelled whole body",
+          "shows": "The body schematic locates the optic lobes, brain above and below the food tube, and an arm nerve cord.",
+          "paper": "The octopus genome and the evolution of cephalopod neural and morphological novelties",
+          "doi": "10.1038/nature14668",
+          "url": "https://doi.org/10.1038/nature14668",
+          "evidence_quote": "Schematic of Octopus bimaculoides anatomy",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlased5a9487"
+          ]
+        },
+        {
+          "figure": "Figure 1",
+          "species": "Sepia officinalis",
+          "stage": "general anatomical schematic",
+          "view": "labelled dorsal head and side view",
+          "shows": "The dorsal cutaway and side view show the main brain masses and optic lobes relative to the head. The grey interior is schematic.",
+          "paper": "Characterization of homeobox genes reveals sophisticated regionalization of the central nervous system in the European cuttlefish Sepia officinalis",
+          "doi": "10.1371/journal.pone.0109627",
+          "url": "https://doi.org/10.1371/journal.pone.0109627",
+          "evidence_quote": "The CNS is represented in lateral view on the right.",
+          "confidence": "well supported",
+          "source_ids": [
+            "atlasa39e8ef7"
+          ]
+        },
+        {
+          "paper": "Comparative 3D microanatomy and histology of the eyes and central nervous systems in coleoid cephalopod hatchlings",
+          "doi": "10.1007/s13127-014-0184-4",
+          "url": "https://doi.org/10.1007/s13127-014-0184-4",
+          "species": "Sepia officinalis",
+          "stage": "Hatchling",
+          "confidence": "single study",
+          "figure": "Figure 11A–H",
+          "view": "brain within the head and labelled transverse sections",
+          "shows": "A side view locates the section planes. Matching tissue sections show the optic lobes behind the eyes and the nerve bridge between the lobes.",
+          "evidence_quote": "histology of the head region",
+          "source_ids": [
+            "atlas28dad717"
+          ]
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Octopus vulgaris",
+          "stage": "group V, estimated ages one to two years",
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": 1.15,
+          "method": "Table I. Mean fresh brain mass in 20 common octopuses with body masses of 1.05–8.5 kg. Group range was 0.602–1.950 g of brain.",
+          "paper": "Relative growth, nucleic acid content and cell numbers of the brain in Octopus vulgaris (Lamarck)",
+          "doi": "10.1242/jeb.52.3.539",
+          "url": "https://doi.org/10.1242/jeb.52.3.539",
+          "evidence_quote": "The parts (Fig. 2) were weighed fresh on a high-sensitivity Mettler balance.",
+          "confidence": "single study",
+          "source_ids": [
+            "atlas19faffaa"
+          ],
+          "region": "central brain, including both optic lobes"
+        },
+        {
+          "species": "Sepia officinalis",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "whole central brain",
+          "source_ids": []
+        },
+        {
+          "species": "Octopus bimaculoides",
+          "stage": null,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": null,
+          "region": "whole central brain",
+          "source_ids": []
+        },
+        {
+          "paper": "Comparative 3D microanatomy and histology of the eyes and central nervous systems in coleoid cephalopod hatchlings",
+          "doi": "10.1007/s13127-014-0184-4",
+          "url": "https://doi.org/10.1007/s13127-014-0184-4",
+          "species": "Sepia officinalis",
+          "stage": "Hatchling",
+          "confidence": "single study",
+          "volume_mm3": 0.489,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": "Electronic supplement 1, Table 1. One fixed hatchling. Researchers reconstructed serial head sections, counted labelled volume elements and multiplied by their calibrated volume. Table values are thousandths of a cubic millimetre.",
+          "measurement_url": "https://static-content.springer.com/esm/art%3A10.1007%2Fs13127-014-0184-4/MediaObjects/13127_2014_184_MOESM1_ESM.pdf",
+          "evidence_quote": "supraesophageal lobes (incl. pericarya)",
+          "source_ids": [
+            "atlas28dad717"
+          ],
+          "region": "Central brain lobes above the esophagus, including cell bodies"
+        },
+        {
+          "paper": "Comparative 3D microanatomy and histology of the eyes and central nervous systems in coleoid cephalopod hatchlings",
+          "doi": "10.1007/s13127-014-0184-4",
+          "url": "https://doi.org/10.1007/s13127-014-0184-4",
+          "species": "Sepia officinalis",
+          "stage": "Hatchling",
+          "confidence": "single study",
+          "volume_mm3": 0.4853,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": "Electronic supplement 1, Table 1. One fixed hatchling. Researchers reconstructed serial head sections, counted labelled volume elements and multiplied by their calibrated volume. Table values are thousandths of a cubic millimetre.",
+          "measurement_url": "https://static-content.springer.com/esm/art%3A10.1007%2Fs13127-014-0184-4/MediaObjects/13127_2014_184_MOESM1_ESM.pdf",
+          "evidence_quote": "subesophageal lobes (incl. pericarya)",
+          "source_ids": [
+            "atlas28dad717"
+          ],
+          "region": "Central brain lobes below the esophagus, including cell bodies"
+        },
+        {
+          "paper": "Comparative 3D microanatomy and histology of the eyes and central nervous systems in coleoid cephalopod hatchlings",
+          "doi": "10.1007/s13127-014-0184-4",
+          "url": "https://doi.org/10.1007/s13127-014-0184-4",
+          "species": "Sepia officinalis",
+          "stage": "Hatchling",
+          "confidence": "single study",
+          "volume_mm3": 0.9693,
+          "length_mm": null,
+          "width_mm": null,
+          "height_mm": null,
+          "mass_g": null,
+          "method": "Electronic supplement 1, Table 1. One fixed hatchling. Researchers reconstructed serial head sections, counted labelled volume elements and multiplied by their calibrated volume. Table values are thousandths of a cubic millimetre.",
+          "measurement_url": "https://static-content.springer.com/esm/art%3A10.1007%2Fs13127-014-0184-4/MediaObjects/13127_2014_184_MOESM1_ESM.pdf",
+          "evidence_quote": "optic lobe (unilateral; incl. pericarya)",
+          "source_ids": [
+            "atlas28dad717"
+          ],
+          "region": "One optic lobe, including cell bodies"
+        }
+      ]
     },
     {
       "id": "chordate-origins",
@@ -1291,15 +1880,29 @@
       "exemplars": [
         {
           "common": "European lancelet",
-          "scientific": "Branchiostoma lanceolatum"
+          "scientific": "Branchiostoma lanceolatum",
+          "illustration": {
+            "path": "illustrations/branchiostoma-lanceolatum.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Sea squirt",
-          "scientific": "Ciona intestinalis"
+          "scientific": "Ciona intestinalis",
+          "illustration": {
+            "path": "illustrations/ciona-intestinalis.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Swimming tadpole larva"
+          }
         },
         {
           "common": "Pacific sea squirt",
-          "scientific": "Ciona robusta"
+          "scientific": "Ciona robusta",
+          "illustration": {
+            "path": "illustrations/ciona-robusta.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Sessile adult, siphons at right"
+          }
         }
       ],
       "diverged_mya": {
@@ -1524,7 +2127,103 @@
             "evidence_quote_ref": "/stops/5/structures/2/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Branchiostoma lanceolatum",
+          "figure": "Figure 1B–E′",
+          "shows": "Whole larva with the brain vesicle boxed, followed by enlarged side and top views showing the cells of its frontal eye.",
+          "evidence_quote": "Dashed rectangle marks area of cerebral vesicle",
+          "confidence": "well supported",
+          "paper": "Molecular Fingerprint of Amphioxus Frontal Eye Illuminates the Evolution of Homologous Cell Types in the Chordate Retina",
+          "doi": "10.3389/fcell.2020.00705",
+          "url": "https://doi.org/10.3389/fcell.2020.00705",
+          "source_ids": [
+            "lance"
+          ],
+          "stage": "Larva, four days after fertilization"
+        },
+        {
+          "species": "Ciona intestinalis (name used by authors)",
+          "figure": "Figure 1B",
+          "shows": "Whole larva with its brain vesicle labelled in the trunk and its supporting rod labelled in the tail.",
+          "evidence_quote": "a dorsal neural tube with a brain vesicle",
+          "confidence": "well supported",
+          "paper": "Ciona intestinalis and Oxycomanthus japonicus, representatives of marine invertebrates",
+          "doi": "10.1538/expanim.58.459",
+          "url": "https://doi.org/10.1538/expanim.58.459",
+          "source_ids": [
+            "atlas78f6eca7"
+          ],
+          "stage": "Swimming larva"
+        },
+        {
+          "species": "Ciona intestinalis (name used by authors)",
+          "figure": "Figure 1a,b",
+          "shows": "Two sections show the nerve centre beside its gland, and the arrangement of nerve cells across the nerve centre.",
+          "evidence_quote": "Longitudinal section through the neural complex",
+          "confidence": "well supported",
+          "paper": "Gastro-intestinal and neurohormonal peptides in the alimentary tract and cerebral complex of Ciona intestinalis (Ascidiaceae). Their relevance to the evolution of the diffuse neuroendocrine system",
+          "doi": "10.1007/BF01258496",
+          "url": "https://doi.org/10.1007/BF01258496",
+          "source_ids": [
+            "atlasb8b98972"
+          ],
+          "stage": "Post-metamorphic"
+        },
+        {
+          "species": "Ciona robusta",
+          "figure": "Figure 1A–C",
+          "shows": "Whole animal, nerves traced by fluorescence, and body diagram positioning the nerve centre beside the two water openings.",
+          "evidence_quote": "Schematic of an adult Ciona.",
+          "confidence": "well supported",
+          "paper": "The nervous system of the adult ascidian Ciona intestinalis Type A (Ciona robusta): Insights from transgenic animal models",
+          "doi": "10.1371/journal.pone.0180227",
+          "url": "https://doi.org/10.1371/journal.pone.0180227",
+          "source_ids": [
+            "atlasfd9d7eae"
+          ],
+          "stage": "Adult"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Ciona intestinalis (name used by authors)",
+          "region": "Cerebral ganglion",
+          "method": "Anatomical description with tissue sections. Diameter is the transverse measure reported. No single length is given.",
+          "evidence_quote": "about 1–2 mm long and with a diameter of 1 mm",
+          "confidence": "single study",
+          "length_mm": {
+            "min": 1,
+            "max": 2
+          },
+          "width_mm": 1,
+          "paper": "Gastro-intestinal and neurohormonal peptides in the alimentary tract and cerebral complex of Ciona intestinalis (Ascidiaceae). Their relevance to the evolution of the diffuse neuroendocrine system",
+          "doi": "10.1007/BF01258496",
+          "url": "https://doi.org/10.1007/BF01258496",
+          "source_ids": [
+            "atlasb8b98972"
+          ],
+          "stage": "Post-metamorphic",
+          "mass_g": null
+        },
+        {
+          "species": "Branchiostoma lanceolatum",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "source_ids": []
+        },
+        {
+          "species": "Ciona robusta",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "first-vertebrates",
@@ -1536,11 +2235,19 @@
       "exemplars": [
         {
           "common": "Sea lamprey",
-          "scientific": "Petromyzon marinus"
+          "scientific": "Petromyzon marinus",
+          "illustration": {
+            "path": "illustrations/petromyzon-marinus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "River lamprey",
-          "scientific": "Lampetra fluviatilis"
+          "scientific": "Lampetra fluviatilis",
+          "illustration": {
+            "path": "illustrations/lampetra-fluviatilis.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -1754,7 +2461,94 @@
             "evidence_quote_ref": "/stops/6/abilities/0/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Petromyzon marinus",
+          "figure": "Figure 1a, bottom",
+          "shows": "Side view labels the front, middle and rear brain, including the olfactory bulb, visual midbrain and pineal complex.",
+          "evidence_quote": "schematic of the adult sea lamprey brain",
+          "confidence": "well supported",
+          "paper": "A lamprey neural cell type atlas illuminates the origins of the vertebrate brain",
+          "doi": "10.1038/s41559-023-02170-1",
+          "url": "https://doi.org/10.1038/s41559-023-02170-1",
+          "source_ids": [
+            "cer3"
+          ],
+          "stage": "Adult"
+        },
+        {
+          "species": "Petromyzon marinus",
+          "figure": "Extended Data Figure 2a",
+          "shows": "Labelled larval brain and body outline provide a stage-matched comparison with the adult.",
+          "evidence_quote": "Schematic of the sea lamprey larval brain",
+          "confidence": "well supported",
+          "paper": "A lamprey neural cell type atlas illuminates the origins of the vertebrate brain",
+          "doi": "10.1038/s41559-023-02170-1",
+          "url": "https://doi.org/10.1038/s41559-023-02170-1",
+          "source_ids": [
+            "cer3"
+          ],
+          "stage": "Larva before metamorphosis"
+        },
+        {
+          "species": "Lampetra fluviatilis",
+          "figure": "Figure 1A",
+          "shows": "Top view outlines the brain. A marked cutting plane matches a cross-section showing a group of dopamine-producing cells.",
+          "evidence_quote": "Schematic dorsal view of the lamprey brain",
+          "confidence": "well supported",
+          "paper": "Individual Dopaminergic Neurons of Lamprey SNc/VTA Project to Both the Striatum and Optic Tectum but Restrict Co-release of Glutamate to Striatum Only",
+          "doi": "10.1016/j.cub.2019.01.004",
+          "url": "https://doi.org/10.1016/j.cub.2019.01.004",
+          "source_ids": [
+            "lampN"
+          ],
+          "stage": "Adult"
+        },
+        {
+          "species": "Petromyzon marinus",
+          "figure": "Plate II, longitudinal section",
+          "shows": "Brain inside the head, behind the olfactory sac and above the mouth, with the spinal cord continuing into the trunk.",
+          "evidence_quote": "Anatomy of a marsipobranch, the sea lamprey",
+          "confidence": "well supported",
+          "paper": "Atlas of Fish Anatomy",
+          "doi": null,
+          "url": "https://arc.lib.montana.edu/robert-behnke/objects/2491-32-11.pdf",
+          "source_ids": [
+            "atlas2384683b"
+          ],
+          "stage": "Stage unspecified on plate"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Lampetra fluviatilis",
+          "region": "Whole brain",
+          "method": "Authors report brain mass for the four individuals used for cell counts.",
+          "evidence_quote": "4 brains used for cell counting",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "reported_plus_minus_mg": 2,
+          "sample_size": 4,
+          "paper": "Individual Dopaminergic Neurons of Lamprey SNc/VTA Project to Both the Striatum and Optic Tectum but Restrict Co-release of Glutamate to Striatum Only",
+          "doi": "10.1016/j.cub.2019.01.004",
+          "url": "https://doi.org/10.1016/j.cub.2019.01.004",
+          "source_ids": [
+            "lampN"
+          ],
+          "stage": "Adult",
+          "mass_g": 0.021
+        },
+        {
+          "species": "Petromyzon marinus",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "jawed-fish",
@@ -1766,19 +2560,35 @@
       "exemplars": [
         {
           "common": "Zebrafish",
-          "scientific": "Danio rerio"
+          "scientific": "Danio rerio",
+          "illustration": {
+            "path": "illustrations/danio-rerio.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Smooth dogfish",
-          "scientific": "Mustelus canis"
+          "scientific": "Mustelus canis",
+          "illustration": {
+            "path": "illustrations/mustelus-canis.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Elephantnose fish",
-          "scientific": "Gnathonemus petersii"
+          "scientific": "Gnathonemus petersii",
+          "illustration": {
+            "path": "illustrations/gnathonemus-petersii.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Goldfish",
-          "scientific": "Carassius auratus"
+          "scientific": "Carassius auratus",
+          "illustration": {
+            "path": "illustrations/carassius-auratus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -2074,7 +2884,162 @@
             "evidence_quote": "reconcile learning and signaling functions"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Danio rerio",
+          "figure": "Figure 1a,d",
+          "shows": "Three-dimensional reconstruction of the front quarter of the animal, showing the brain in the head and a cross-section through nearby tissues.",
+          "evidence_quote": "The anterior quarter of a 5.5 dpf larval zebrafish",
+          "confidence": "well supported",
+          "paper": "Whole-brain serial-section electron microscopy in larval zebrafish",
+          "doi": "10.1038/nature22356",
+          "url": "https://doi.org/10.1038/nature22356",
+          "source_ids": [
+            "zebra"
+          ],
+          "stage": "Larva, 5.5 days after fertilization"
+        },
+        {
+          "species": "Danio rerio",
+          "figure": "Figure 1d,e",
+          "shows": "Views of the brain atlas from two directions. Colours distinguish the forebrain, midbrain, hindbrain and spinal cord.",
+          "evidence_quote": "outlines of the segmented Z-Brain regions",
+          "confidence": "well supported",
+          "paper": "Whole-brain activity mapping onto a zebrafish brain atlas",
+          "doi": "10.1038/nmeth.3581",
+          "url": "https://doi.org/10.1038/nmeth.3581",
+          "source_ids": [
+            "atlas991de5b7"
+          ],
+          "stage": "Larva, six days after fertilization"
+        },
+        {
+          "species": "Mustelus canis; Carassius auratus; Gnathonemus petersii",
+          "figure": "Figure 2C,I,J",
+          "shows": "Labelled external profiles compare smooth dogfish, goldfish and elephantnose fish brains with scale bars.",
+          "evidence_quote": "Mustelus canis",
+          "confidence": "well supported",
+          "paper": "The central nervous system",
+          "doi": null,
+          "url": "https://epub.ub.uni-muenchen.de/18438/1/18438.pdf",
+          "source_ids": [
+            "atlasbf23726b"
+          ],
+          "stage": "Stage unspecified in caption"
+        },
+        {
+          "species": "Gnathonemus petersii",
+          "figure": "Figure 1A–C",
+          "shows": "Side view of the whole brain and top view with an overlying part of the cerebellum removed to expose deeper structures.",
+          "evidence_quote": "Dorsal view of the brain of G. petersii with valvula cerebelli removed",
+          "confidence": "well supported",
+          "paper": "The Mormyrid Optic Tectum Is a Topographic Interface for Active Electrolocation and Visual Sensing",
+          "doi": "10.3389/fnana.2018.00079",
+          "url": "https://doi.org/10.3389/fnana.2018.00079",
+          "source_ids": [
+            "atlas1de4ed69"
+          ],
+          "stage": "Stage unspecified in caption"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Carassius auratus",
+          "region": "Whole brain",
+          "method": "Surgical collection and weighing, three animals. The goldfish is the smallest bar in Figure 1A and matches the minimum in Results.",
+          "evidence_quote": "brain weights varied from 0.070 to 3.1 g",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "sample_size": 3,
+          "paper": "Comparative Studies of Polysialic Acids Derived from Five Different Vertebrate Brains",
+          "doi": "10.3390/ijms21228593",
+          "url": "https://doi.org/10.3390/ijms21228593",
+          "source_ids": [
+            "atlas986c0d98"
+          ],
+          "stage": "Adult",
+          "mass_g": 0.07
+        },
+        {
+          "species": "Danio rerio",
+          "region": "Brain cross-section at eye level",
+          "method": "Table 1 measurements from section images for five controls. The paper calls its vertical measurement “length”. It measures depth here; whole-brain front-to-back length is unknown.",
+          "evidence_quote": "dorso-ventral length",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": 0.303,
+          "depth_mm": 0.3565,
+          "width_sd_mm": 0.0061,
+          "depth_sd_mm": 0.0027,
+          "sample_size": 5,
+          "paper": "The Effects of Rearing Light Level and Duration Differences on the Optic Nerve, Brain, and Associated Structures in Developing Zebrafish Larvae: A Light and Transmission Electron Microscope Study",
+          "doi": "10.1002/ar.22403",
+          "url": "https://doi.org/10.1002/ar.22403",
+          "source_ids": [
+            "atlas07cb5035"
+          ],
+          "stage": "Control larvae, four days after fertilization",
+          "mass_g": null
+        },
+        {
+          "species": "Gnathonemus petersii",
+          "region": "Whole brain",
+          "method": "Table 1 reports the mean and standard deviation for 12 fish. Values converted from grams.",
+          "evidence_quote": "0.177±0.050",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_sd_mg": 50,
+          "sample_size": 12,
+          "paper": "Brain and body oxygen requirements of Gnathonemus petersii, a fish with an exceptionally large brain",
+          "doi": "10.1242/jeb.199.3.603",
+          "url": "https://doi.org/10.1242/jeb.199.3.603",
+          "source_ids": [
+            "atlase5331f1d"
+          ],
+          "stage": "Age unspecified; mean body mass 5.85 g",
+          "mass_g": 0.177
+        },
+        {
+          "species": "Mustelus canis",
+          "region": "Whole brain",
+          "method": "Published comparative review, text accompanying Figure 24. The given value is approximate and specific to this body size.",
+          "evidence_quote": "the smooth-hound a brain mass of 9 g",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "approximate": true,
+          "paper": "A review of the behaviours of the Chondrichthyes: a multi-species ethogram for the chimaeras, sharks, and rays",
+          "doi": "10.1163/1568539X-bja10214",
+          "url": "https://doi.org/10.1163/1568539X-bja10214",
+          "source_ids": [
+            "atlas10f46bc5"
+          ],
+          "stage": "Age unspecified; body mass about 9 kg",
+          "mass_g": 9.0
+        },
+        {
+          "species": "Danio rerio",
+          "region": "Whole brain",
+          "method": "Mean read from Figure 4b for 14 fish from the AB line. Other lines studied at the same age had different means.",
+          "evidence_quote": "Absolute brain weight (mg)",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "sample_size": 14,
+          "approximate": true,
+          "paper": "Comparative study of the growth, stress status and reproductive capabilities of four wild-type zebrafish (Danio rerio) lines",
+          "doi": "10.1186/s40659-024-00549-3",
+          "url": "https://doi.org/10.1186/s40659-024-00549-3",
+          "source_ids": [
+            "atlas049f158a"
+          ],
+          "stage": "AB laboratory line, 100 days after fertilization",
+          "mass_g": 0.002
+        }
+      ]
     },
     {
       "id": "onto-land",
@@ -2086,11 +3051,19 @@
       "exemplars": [
         {
           "common": "African clawed frog",
-          "scientific": "Xenopus laevis"
+          "scientific": "Xenopus laevis",
+          "illustration": {
+            "path": "illustrations/xenopus-laevis.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Italian cave salamander",
-          "scientific": "Hydromantes italicus"
+          "scientific": "Hydromantes italicus",
+          "illustration": {
+            "path": "illustrations/hydromantes-italicus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -2302,7 +3275,91 @@
             "evidence_quote_ref": "/stops/8/nuances/0/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Xenopus laevis",
+          "figure": "Figure 1A,B",
+          "shows": "Top-view drawing locates the major brain divisions between the eyes and inner ears. A microscope photograph shows the exposed brain.",
+          "evidence_quote": "Diagram of the tadpole’s anatomical features and key CNS regions.",
+          "confidence": "well supported",
+          "paper": "An early midbrain sensorimotor pathway is involved in the timely initiation and direction of swimming in the hatchling Xenopus laevis tadpole",
+          "doi": "10.3389/fncir.2022.1027831",
+          "url": "https://doi.org/10.3389/fncir.2022.1027831",
+          "source_ids": [
+            "frogCount"
+          ],
+          "stage": "Hatchling, stage 37/38"
+        },
+        {
+          "species": "Xenopus laevis",
+          "figure": "Figure 1G",
+          "shows": "Side view places the forebrain, midbrain, hindbrain and spinal cord relative to the eyes, ears and muscles.",
+          "evidence_quote": "Side view of the head end to show the main CNS regions.",
+          "confidence": "well supported",
+          "paper": "How neurons generate behavior in a hatchling amphibian tadpole: an outline",
+          "doi": "10.3389/fnbeh.2010.00016",
+          "url": "https://doi.org/10.3389/fnbeh.2010.00016",
+          "source_ids": [
+            "frogReview"
+          ],
+          "stage": "Hatchling, stage 37/38"
+        },
+        {
+          "species": "Hydromantes italicus",
+          "figure": "Figure 1a",
+          "shows": "Section across the Italian cave salamander’s visual midbrain shows the distribution of cell bodies and nerve fibres.",
+          "evidence_quote": "Cross sections through the brain at the level of the optic tectum",
+          "confidence": "well supported",
+          "paper": "Genome size, secondary simplification, and the evolution of the brain in salamanders",
+          "doi": "10.1159/000113321",
+          "url": "https://doi.org/10.1159/000113321",
+          "source_ids": [
+            "sala"
+          ],
+          "stage": "Stage unspecified in caption"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Xenopus laevis",
+          "region": "Whole brain",
+          "method": "Approximate mean read from the frog bar in Figure 1A; the adult study reports three animals. Rounded to avoid implying precision from a graph.",
+          "evidence_quote": "Comparison of the brain weights of the five vertebrate brains.",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "sample_size": 3,
+          "approximate": true,
+          "paper": "Comparative Studies of Polysialic Acids Derived from Five Different Vertebrate Brains",
+          "doi": "10.3390/ijms21228593",
+          "url": "https://doi.org/10.3390/ijms21228593",
+          "source_ids": [
+            "atlas986c0d98"
+          ],
+          "stage": "Adult",
+          "mass_g": 0.1
+        },
+        {
+          "species": "Hydromantes italicus",
+          "region": "Whole brain",
+          "method": "Table 1 reports estimated brain volume for two salamanders.",
+          "evidence_quote": "Brain size (mm³)",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "volume_mm3": 12.5,
+          "sample_size": 2,
+          "paper": "The Influence of Genome and Cell Size on Brain Morphology in Amphibians",
+          "doi": "10.1101/cshperspect.a019075",
+          "url": "https://doi.org/10.1101/cshperspect.a019075",
+          "source_ids": [
+            "atlas7824e764"
+          ],
+          "stage": "Age unspecified in Table 1",
+          "mass_g": null
+        }
+      ]
     },
     {
       "id": "reptiles",
@@ -2314,11 +3371,19 @@
       "exemplars": [
         {
           "common": "Central bearded dragon",
-          "scientific": "Pogona vitticeps"
+          "scientific": "Pogona vitticeps",
+          "illustration": {
+            "path": "illustrations/pogona-vitticeps.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Red-eared slider",
-          "scientific": "Trachemys scripta elegans"
+          "scientific": "Trachemys scripta elegans",
+          "illustration": {
+            "path": "illustrations/trachemys-scripta-elegans.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -2518,7 +3583,93 @@
             "evidence_quote_ref": "/stops/9/structures/1/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Trachemys scripta; Pogona vitticeps",
+          "figure": "Figure 2A–F",
+          "shows": "Photographs from above and below plus reconstructed surfaces for the slider turtle and the bearded dragon. The photographs include the hindbrain.",
+          "evidence_quote": "in dorsal (A, D, G) and ventral (B, E, H) views",
+          "confidence": "well supported",
+          "paper": "Comparative MRI analysis of the forebrain of three sauropsida models",
+          "doi": "10.1007/s00429-024-02788-2",
+          "url": "https://doi.org/10.1007/s00429-024-02788-2",
+          "source_ids": [
+            "atlas8950d789"
+          ],
+          "stage": "Adult"
+        },
+        {
+          "species": "Trachemys scripta",
+          "figure": "Figure 3",
+          "shows": "Matched brain scans, stained sections and labelled diagrams cut across the turtle forebrain from front to back.",
+          "evidence_quote": "main regions of the forebrain",
+          "confidence": "well supported",
+          "paper": "Comparative MRI analysis of the forebrain of three sauropsida models",
+          "doi": "10.1007/s00429-024-02788-2",
+          "url": "https://doi.org/10.1007/s00429-024-02788-2",
+          "source_ids": [
+            "atlas8950d789"
+          ],
+          "stage": "Adult"
+        },
+        {
+          "species": "Pogona vitticeps",
+          "figure": "Figure 10",
+          "shows": "Side-on three-dimensional reconstruction marks the brain regions in colour. An inset photograph of the dissected brain gives its external shape.",
+          "evidence_quote": "Three-dimensional reconstruction of specific brain regions",
+          "confidence": "well supported",
+          "paper": "Comparative MRI analysis of the forebrain of three sauropsida models",
+          "doi": "10.1007/s00429-024-02788-2",
+          "url": "https://doi.org/10.1007/s00429-024-02788-2",
+          "source_ids": [
+            "atlas8950d789"
+          ],
+          "stage": "Adult"
+        },
+        {
+          "species": "Pogona vitticeps",
+          "figure": "Figure 3A–C",
+          "shows": "A scan in the living head is paired with an isolated brain image and its colour-labelled atlas.",
+          "evidence_quote": "Parasagittal view of the Bearded Dragon brain in vivo",
+          "confidence": "well supported",
+          "paper": "Establishing an MRI-Based Protocol and Atlas of the Bearded Dragon (Pogona vitticeps) Brain",
+          "doi": "10.3389/fvets.2022.886333",
+          "url": "https://doi.org/10.3389/fvets.2022.886333",
+          "source_ids": [
+            "atlasd26b2515"
+          ],
+          "stage": "Adult"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Trachemys scripta elegans",
+          "region": "Whole brain",
+          "method": "Supplementary Dataset S1, species-level brain mass in grams; Dataset S2 identifies the individual/subspecies. Converted from grams to milligrams.",
+          "evidence_quote": "0.5916",
+          "confidence": "single study",
+          "length_mm": null,
+          "width_mm": null,
+          "sample_size": 1,
+          "paper": "The evolution of brain neuron numbers in amniotes",
+          "doi": "10.1073/pnas.2121624119",
+          "url": "https://doi.org/10.1073/pnas.2121624119",
+          "source_ids": [
+            "amnioteN"
+          ],
+          "stage": "One female",
+          "mass_g": 0.5916
+        },
+        {
+          "species": "Pogona vitticeps",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "birds",
@@ -2530,19 +3681,35 @@
       "exemplars": [
         {
           "common": "Carrion crow",
-          "scientific": "Corvus corone"
+          "scientific": "Corvus corone",
+          "illustration": {
+            "path": "illustrations/corvus-corone.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "American crow",
-          "scientific": "Corvus brachyrhynchos"
+          "scientific": "Corvus brachyrhynchos",
+          "illustration": {
+            "path": "illustrations/corvus-brachyrhynchos.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Blue-and-yellow macaw",
-          "scientific": "Ara ararauna"
+          "scientific": "Ara ararauna",
+          "illustration": {
+            "path": "illustrations/ara-ararauna.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Budgerigar",
-          "scientific": "Melopsittacus undulatus"
+          "scientific": "Melopsittacus undulatus",
+          "illustration": {
+            "path": "illustrations/melopsittacus-undulatus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -2771,7 +3938,151 @@
             "evidence_quote_ref": "/stops/10/abilities/0/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Corvus brachyrhynchos",
+          "figure": "Figure 1, left and middle/right images",
+          "shows": "Structural MRI on the left and aligned activity scans from two American crows mark the hippocampus, striatum, septum and other forebrain regions. The circles mark target locations.",
+          "evidence_quote": "Red circles indicate a priori regions of interest",
+          "confidence": "single study",
+          "paper": "Brain activity underlying American crow processing of encounters with dead conspecifics",
+          "doi": "10.1016/j.bbr.2020.112546",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9384862/",
+          "source_ids": [
+            "atlasf2e20aa0"
+          ],
+          "view": "labelled regions, section"
+        },
+        {
+          "species": "Corvus corone",
+          "figure": "Figure 2",
+          "shows": "The side-view head drawing places the brain relative to ear and beak landmarks. The angle belongs to the experimental head holder.",
+          "evidence_quote": "Schematic drawing of the stereotactic position used in this study.",
+          "confidence": "single study",
+          "paper": "A brain atlas of the carrion crow (Corvus corone)",
+          "doi": "10.1002/cne.25392",
+          "url": "https://homepages.uni-tuebingen.de/andreas.nieder/Kersten%2C%20M%C3%BCller-Friedrich%2C%20Nieder%20%282022%29%20JCN.pdf",
+          "source_ids": [
+            "atlas84ddfa0e"
+          ],
+          "view": "position in head"
+        },
+        {
+          "species": "Ara ararauna",
+          "figure": "Figure 3B, D, F, H",
+          "shows": "Photographs show the macaw brain from above, below, the front and the left. Labels include the cerebellum, optic lobe and optic nerves.",
+          "evidence_quote": "Macaw (Ara ararauna) and their attachments in the different anatomical planes",
+          "confidence": "single study",
+          "paper": "Comparative topographical description of the central nervous system of the macaw (Ara ararauna) and the owl (Tyto furcata)",
+          "doi": "10.4067/S0717-95022022000300860",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v40n3/0717-9502-ijmorphol-40-03-860.pdf",
+          "source_ids": [
+            "atlas6d7a5c05"
+          ],
+          "view": "external, labelled regions"
+        },
+        {
+          "species": "Melopsittacus undulatus",
+          "figure": "Figure 1B",
+          "shows": "A side-view schematic places the forebrain regions used in learned calls. It omits the surrounding shell tissue.",
+          "evidence_quote": "The shell structures that surround the vocal nuclei are not depicted.",
+          "confidence": "single study",
+          "paper": "Anterior forebrain pathway in parrots is necessary for producing learned vocalizations with individual signatures",
+          "doi": "10.1016/j.cub.2023.11.014",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10799565/",
+          "source_ids": [
+            "atlas3071a15a"
+          ],
+          "view": "labelled regions"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Corvus corone",
+          "method": "Atlas measurements in seven adult carrion crows, ages 2.5–7 years. Ranges are observed extrema.",
+          "source_location": "Methods, Animals",
+          "evidence_quote": "ranged between 27.1 and 28.1 mm",
+          "confidence": "single study",
+          "paper": "A brain atlas of the carrion crow (Corvus corone)",
+          "doi": "10.1002/cne.25392",
+          "url": "https://homepages.uni-tuebingen.de/andreas.nieder/Kersten%2C%20M%C3%BCller-Friedrich%2C%20Nieder%20%282022%29%20JCN.pdf",
+          "length_mm": {
+            "min": 27.1,
+            "max": 28.1
+          },
+          "mass_g": {
+            "min": 7.1,
+            "max": 7.9
+          },
+          "source_ids": [
+            "atlas84ddfa0e"
+          ],
+          "region": "brain",
+          "width_mm": null
+        },
+        {
+          "species": "Ara ararauna",
+          "method": "Gross measurements of museum specimens. The paper does not specify whether the species value is an individual or group mean.",
+          "source_location": "Table II, Brain column",
+          "evidence_quote": "Comparative morphometric analysis of the Tyto furcata and Ara ararauna.",
+          "confidence": "single study",
+          "paper": "Comparative topographical description of the central nervous system of the macaw (Ara ararauna) and the owl (Tyto furcata)",
+          "doi": "10.4067/S0717-95022022000300860",
+          "url": "https://www.scielo.cl/pdf/ijmorphol/v40n3/0717-9502-ijmorphol-40-03-860.pdf",
+          "length_mm": 52,
+          "width_mm": 35,
+          "height_mm": 24,
+          "mass_g": 26.6,
+          "source_ids": [
+            "atlas6d7a5c05"
+          ],
+          "region": "brain as tabulated"
+        },
+        {
+          "species": "Ara ararauna",
+          "method": "One dissected blue-and-yellow macaw in the neuron-count study.",
+          "source_location": "Table S1",
+          "evidence_quote": "Blue and yellow macaw",
+          "confidence": "single study",
+          "paper": "Birds have primate-like numbers of neurons in the forebrain",
+          "doi": "10.1073/pnas.1517131113",
+          "url": "https://kognitywistyka.kul.pl/wp-content/uploads/2016/06/PNAS-2016-Olkowicz-1517131113.pdf",
+          "mass_g": 20.731,
+          "source_ids": [
+            "bird"
+          ],
+          "region": "brain",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Melopsittacus undulatus",
+          "method": "Mean and standard deviation for three dissected budgerigars.",
+          "source_location": "Table S1",
+          "evidence_quote": "Budgerigar",
+          "confidence": "single study",
+          "paper": "Birds have primate-like numbers of neurons in the forebrain",
+          "doi": "10.1073/pnas.1517131113",
+          "url": "https://kognitywistyka.kul.pl/wp-content/uploads/2016/06/PNAS-2016-Olkowicz-1517131113.pdf",
+          "mass_g": 1.317,
+          "mass_sd_g": 0.041,
+          "source_ids": [
+            "bird"
+          ],
+          "region": "brain",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Corvus brachyrhynchos",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "source_ids": []
+        }
+      ]
     },
     {
       "id": "early-mammals",
@@ -2783,11 +4094,28 @@
       "exemplars": [
         {
           "common": "Gray short-tailed opossum",
-          "scientific": "Monodelphis domestica"
+          "scientific": "Monodelphis domestica",
+          "illustration": {
+            "path": "illustrations/monodelphis-domestica.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "House mouse",
-          "scientific": "Mus musculus"
+          "scientific": "Mus musculus",
+          "illustration": {
+            "path": "illustrations/mus-musculus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
+        },
+        {
+          "common": "Platypus",
+          "scientific": "Ornithorhynchus anatinus",
+          "illustration": {
+            "path": "illustrations/ornithorhynchus-anatinus.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Adult female in swimming posture"
+          }
         }
       ],
       "diverged_mya": {
@@ -2826,6 +4154,14 @@
             "oposN"
           ],
           "unit": "neurons"
+        },
+        {
+          "species": "Ornithorhynchus anatinus",
+          "value": null,
+          "region": "whole brain",
+          "method": null,
+          "unit": "neurons",
+          "source_ids": []
         }
       ],
       "summary": "A mouse and an opossum both feel through their whiskers. Their touch maps differ, and their brain halves use different bridges to communicate. The six-layer cortical plan is older than the placental mammal’s corpus callosum.",
@@ -2888,6 +4224,17 @@
               "evidence_quote": "present in most mammals"
             }
           ]
+        },
+        {
+          "name": "Electric-field receptors in the bill",
+          "region": "cellular",
+          "origin": "convergent",
+          "description": "Platypus bill receptors detect weak electric fields. Electrosensing appears to have evolved independently in this mammal and in fish.",
+          "confidence": "well supported",
+          "evidence_quote": "evolved independently in this monotreme",
+          "source_ids": [
+            "platBeh"
+          ]
         }
       ],
       "abilities": [
@@ -2926,6 +4273,18 @@
           "source_ids": [
             "mouse"
           ]
+        },
+        {
+          "name": "Locate a source of electricity",
+          "description": "A platypus located or avoided objects using direct-current fields. Recordings confirmed that electrical stimulation of its bill evokes a response in the brain.",
+          "linked_structures": [
+            "Electric-field receptors in the bill"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "locate and avoid objects",
+          "source_ids": [
+            "platBeh"
+          ]
         }
       ],
       "inherited": [
@@ -2958,6 +4317,16 @@
           "evidence_quote": "lack barrels and septa",
           "source_ids": [
             "oposA"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "The bill represents touch alone in the brain.",
+          "reality": "Weak electrical stimuli applied to the bill evoked activity in a mapped area of the cerebral cortex. Touch and electric signals interacted in the experiment.",
+          "confidence": "single study",
+          "evidence_quote": "interactions at the level of the cerebral cortex",
+          "source_ids": [
+            "platBill"
           ]
         }
       ],
@@ -3001,7 +4370,138 @@
             "evidence_quote_ref": "/stops/11/structures/2/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Monodelphis domestica",
+          "figure": "Figure 10A–C",
+          "shows": "A 27-day-old opossum brain photographed from the left, above and below. Model the adult from a separate plate.",
+          "evidence_quote": "Photographs of the brain of 27-day-old Monodelphis domestica",
+          "confidence": "single study",
+          "paper": "Cranial endocasts from a growth series of Monodelphis domestica (Didelphidae, Marsupialia): a study of individual and ontogenetic variation",
+          "doi": "10.1002/jmor.10556",
+          "url": "https://www.jsg.utexas.edu/rowe/files/061-Macrini-et-al-2007b.pdf",
+          "source_ids": [
+            "atlas6aed4201"
+          ],
+          "view": "external, labelled regions"
+        },
+        {
+          "species": "Monodelphis domestica",
+          "figure": "Figure 7",
+          "shows": "Scale-matched brain photographs from 18 days after birth to over one year show how forebrain proportions change.",
+          "evidence_quote": "Relative size of Monodelphis domestica brains at P18, P35, P56, P180, P270–365, and >P365.",
+          "confidence": "single study",
+          "paper": "Differential changes in the cellular composition of the developing marsupial brain",
+          "doi": "10.1002/cne.23301",
+          "url": "https://enpubs.faculty.ucdavis.edu/wp-content/uploads/sites/209/2015/03/Seelke-et-al_2013-Differential-changes-in-the-cellular-composition.pdf",
+          "source_ids": [
+            "atlas6e4c1c74"
+          ],
+          "view": "external, growth series"
+        },
+        {
+          "species": "Mus musculus",
+          "figure": "Figure 1A–C",
+          "shows": "The skull scan is aligned to the brain images from male C57BL/6J mice. Landmarks align the head and the brain in the same coordinates.",
+          "evidence_quote": "brains in the skull minimizing distortion",
+          "confidence": "single study",
+          "paper": "The Duke Mouse Brain Atlas: MRI and light sheet microscopy stereotaxic atlas of the mouse brain",
+          "doi": "10.1126/sciadv.adq8089",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12042906/",
+          "source_ids": [
+            "atlas6932b885"
+          ],
+          "view": "position in head, labelled landmarks"
+        },
+        {
+          "species": "Ornithorhynchus anatinus",
+          "figure": "Figure 1A",
+          "shows": "View from above and one side with the recorded sensory areas marked. Panel B shows an echidna.",
+          "evidence_quote": "Dorsolateral views of a platypus (A) and an echidna (B) brain",
+          "confidence": "single study",
+          "paper": "Organization of somatosensory cortex in monotremes: in search of the prototypical plan",
+          "doi": "10.1002/cne.903510206",
+          "url": "https://krubitzer.faculty.ucdavis.edu/wp-content/uploads/sites/208/2017/07/1995-Neocortex-organization-in-Monotremes.pdf",
+          "source_ids": [
+            "atlasa30c3ace"
+          ],
+          "view": "external, labelled regions"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Monodelphis domestica",
+          "method": "Mean dissected brain weight in opossums older than one year. The methods list the included brain parts.",
+          "source_location": "Table 3, >P365",
+          "evidence_quote": "Weights of Brain Regions",
+          "confidence": "single study",
+          "paper": "Differential changes in the cellular composition of the developing marsupial brain",
+          "doi": "10.1002/cne.23301",
+          "url": "https://enpubs.faculty.ucdavis.edu/wp-content/uploads/sites/209/2015/03/Seelke-et-al_2013-Differential-changes-in-the-cellular-composition.pdf",
+          "mass_g": 0.9833,
+          "source_ids": [
+            "atlas6e4c1c74"
+          ],
+          "region": "brain as dissected",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Mus musculus",
+          "method": "MRI of 12 male C57BL/6 mice aged 10–11 weeks. Means and standard deviations.",
+          "source_location": "Table 2",
+          "evidence_quote": "Brain measurements were acquired from the MRI.",
+          "confidence": "single study",
+          "paper": "A three-dimensional, population-based average of the C57BL/6 mouse brain from DAPI-stained coronal slices",
+          "doi": "10.1038/s41597-020-0570-z",
+          "url": "https://www.nature.com/articles/s41597-020-0570-z.pdf",
+          "length_mm": 14.32,
+          "length_sd_mm": 0.53,
+          "width_mm": 9.41,
+          "width_sd_mm": 0.13,
+          "source_ids": [
+            "atlas3b786657"
+          ],
+          "region": "intact brain after removal",
+          "mass_g": null
+        },
+        {
+          "species": "Mus musculus",
+          "method": "Perfused brains from four adult male Swiss mice, weighed after removing the outer covering and surface vessels. Mean and standard deviation.",
+          "source_location": "Table 1",
+          "evidence_quote": "0.416 ± 0.028",
+          "confidence": "single study",
+          "paper": "Cellular scaling rules for rodent brains",
+          "doi": "10.1073/pnas.0604911103",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1567708/",
+          "mass_g": 0.416,
+          "mass_sd_g": 0.028,
+          "source_ids": [
+            "mouseN"
+          ],
+          "region": "brain after removal",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Ornithorhynchus anatinus",
+          "method": "Previous specimen data attributed to Pirlot and Nelson (1978) by this primary study; preparation and sample size were not verified in the original report.",
+          "source_location": "Discussion (brain and body weights)",
+          "evidence_quote": "platypus = 9.2 g, 1,040 g",
+          "confidence": "single study",
+          "paper": "The distribution and morphological characteristics of cholinergic cells in the brain of monotremes as revealed by ChAT immunohistochemistry",
+          "doi": "10.1159/000067195",
+          "url": "https://www.semel.ucla.edu/wp-content/uploads/2026/01/02-chat-monotremes-Siegel-Manger.pdf",
+          "mass_g": 9.2,
+          "source_ids": [
+            "atlasff517458"
+          ],
+          "region": "brain",
+          "length_mm": null,
+          "width_mm": null
+        }
+      ]
     },
     {
       "id": "mammal-radiations",
@@ -3013,15 +4513,27 @@
       "exemplars": [
         {
           "common": "Egyptian fruit bat",
-          "scientific": "Rousettus aegyptiacus"
+          "scientific": "Rousettus aegyptiacus",
+          "illustration": {
+            "path": "illustrations/rousettus-aegyptiacus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Common bottlenose dolphin",
-          "scientific": "Tursiops truncatus"
+          "scientific": "Tursiops truncatus",
+          "illustration": {
+            "path": "illustrations/tursiops-truncatus.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "African savanna elephant",
-          "scientific": "Loxodonta africana"
+          "scientific": "Loxodonta africana",
+          "illustration": {
+            "path": "illustrations/loxodonta-africana.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -3253,7 +4765,122 @@
             "evidence_quote_ref": "/stops/12/structures/2/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Rousettus aegyptiacus",
+          "figure": "Figure 1A–D",
+          "shows": "Side views of the left brain halves in two Egyptian fruit bats are paired with flattened maps of areas where electrical stimulation caused movement.",
+          "evidence_quote": "Lateral and flattened views of the left hemisphere",
+          "confidence": "single study",
+          "paper": "Coevolution of motor cortex and behavioral specializations associated with flight and echolocation in bats",
+          "doi": "10.1016/j.cub.2022.04.094",
+          "url": "https://krubitzer.faculty.ucdavis.edu/wp-content/uploads/sites/208/2022/06/Halley-2022-Coevolution-of-motor-cortex-and-behavioral-specializations-associated-with-flight-and-echolocation-in-bats.pdf",
+          "source_ids": [
+            "atlas24bba6dd"
+          ],
+          "view": "external, labelled regions"
+        },
+        {
+          "species": "Tursiops truncatus",
+          "figure": "Figure 1a–b",
+          "shows": "MRI reconstruction of an adult female dolphin brain seen from above and at an angle that exposes the front, both sides and part of the underside.",
+          "evidence_quote": "Figure 1a shows a dorsal view of the brain.",
+          "confidence": "single study",
+          "paper": "Anatomy and three-dimensional reconstructions of the brain of a bottlenose dolphin (Tursiops truncatus) from magnetic resonance images",
+          "doi": "10.1002/ar.10018",
+          "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.10018",
+          "source_ids": [
+            "atlasfd96c31b"
+          ],
+          "view": "external"
+        },
+        {
+          "species": "Loxodonta africana",
+          "figure": "Figure 2A–B",
+          "shows": "Top and right-side MRI reconstructions of an adult elephant brain. Transparent surfaces reveal underlying cerebral and cerebellar tissue.",
+          "evidence_quote": "neocortical and cerebellar gray matter are rendered translucent",
+          "confidence": "single study",
+          "paper": "Brain of the African elephant (Loxodonta africana): neuroanatomy from magnetic resonance images",
+          "doi": "10.1002/ar.a.20255",
+          "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ar.a.20255",
+          "source_ids": [
+            "atlas2affe1fd"
+          ],
+          "view": "external, labelled regions"
+        },
+        {
+          "species": "Loxodonta africana",
+          "figure": "Figure 19A",
+          "shows": "The shaded brain stays visible inside side-view skull outlines from fetal life to adulthood. The drawings show placement, and sizes across drawings are not to scale.",
+          "evidence_quote": "Ontogenetic development of crania and brains (not to scale)",
+          "confidence": "single study",
+          "paper": "Elephant brain. Part I: Gross morphology, functions, comparative anatomy, and evolution",
+          "doi": "10.1016/j.brainresbull.2006.03.016",
+          "url": "https://drnissani.net/mnissani/ElephantCorner/ElephantBrain_shoshani.pdf",
+          "source_ids": [
+            "atlas26e601a4"
+          ],
+          "view": "position in head"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Rousettus aegyptiacus",
+          "method": "Group means in adult Egyptian fruit bats, ordered by the environment they came from.",
+          "source_location": "Results 3.2; Table 2",
+          "evidence_quote": "The average brain mass of the fifth generation captive bred animals was 1.84 g",
+          "confidence": "single study",
+          "paper": "Adult hippocampal neurogenesis in Egyptian fruit bats from three different environments: Are interpretational variations due to the environment or methodology?",
+          "doi": "10.1002/cne.24895",
+          "url": "https://www.academia.edu/86682570/Adult_hippocampal_neurogenesis_in_Egyptian_fruit_bats_from_three_different_environments_Are_interpretational_variations_due_to_the_environment_or_methodology",
+          "mass_g": {
+            "captive_bred": 1.84,
+            "central_african_rainforest": 2.04,
+            "south_african_subtropical_woodland": 2.42
+          },
+          "source_ids": [
+            "atlas738cb5d9"
+          ],
+          "region": "brain",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Tursiops truncatus",
+          "method": "One adult female bottlenose dolphin. Brain weighed after removal and before fixation.",
+          "source_location": "Specimen; Volumetric Estimate of Whole Brain Weight",
+          "evidence_quote": "Fresh brain weight was 1,378 g.",
+          "confidence": "single study",
+          "paper": "Anatomy and three-dimensional reconstructions of the brain of a bottlenose dolphin (Tursiops truncatus) from magnetic resonance images",
+          "doi": "10.1002/ar.10018",
+          "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.10018",
+          "mass_g": 1378,
+          "source_ids": [
+            "atlasfd96c31b"
+          ],
+          "region": "fresh brain",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Loxodonta africana",
+          "method": "One adult male African elephant. Study reports both sides together.",
+          "source_location": "Table 1; Results",
+          "evidence_quote": "weighing 4618.6 g (without the olfactory bulb)",
+          "confidence": "single study",
+          "paper": "The elephant brain in numbers",
+          "doi": "10.3389/fnana.2014.00046",
+          "url": "https://www.frontiersin.org/journals/neuroanatomy/articles/10.3389/fnana.2014.00046/full",
+          "mass_g": 4618.6,
+          "source_ids": [
+            "ele"
+          ],
+          "region": "brain excluding the olfactory bulbs",
+          "length_mm": null,
+          "width_mm": null
+        }
+      ]
     },
     {
       "id": "primates-and-humans",
@@ -3265,11 +4892,19 @@
       "exemplars": [
         {
           "common": "Rhesus macaque",
-          "scientific": "Macaca mulatta"
+          "scientific": "Macaca mulatta",
+          "illustration": {
+            "path": "illustrations/macaca-mulatta.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         },
         {
           "common": "Human",
-          "scientific": "Homo sapiens"
+          "scientific": "Homo sapiens",
+          "illustration": {
+            "path": "illustrations/homo-sapiens.webp",
+            "medium": "AI-generated natural history illustration"
+          }
         }
       ],
       "diverged_mya": {
@@ -3511,7 +5146,844 @@
             "evidence_quote_ref": "/stops/13/structures/1/evidence_quote"
           }
         ]
-      }
+      },
+      "references": [
+        {
+          "species": "Macaca mulatta",
+          "figure": "Figure 3A–D",
+          "shows": "Horizontal sections locate the brain in a head template averaged from 31 rhesus macaques, aged 3.2–13.2 years. Tissue and atlas overlays follow.",
+          "evidence_quote": "Whole head template with brain mask (red).",
+          "confidence": "single study",
+          "paper": "A population MRI brain template and analysis tools for the macaque",
+          "doi": "10.1016/j.neuroimage.2017.04.063",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5660669/",
+          "source_ids": [
+            "atlas1c1a4beb"
+          ],
+          "view": "position in head, labelled regions"
+        },
+        {
+          "species": "Macaca mulatta",
+          "figure": "Figure 4A–B",
+          "shows": "Deep structures labelled in a front-facing section, with its cutting plane marked on the brain surface.",
+          "evidence_quote": "Anatomical labeling of subcortical structures in an example coronal slice",
+          "confidence": "single study",
+          "paper": "A population MRI brain template and analysis tools for the macaque",
+          "doi": "10.1016/j.neuroimage.2017.04.063",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5660669/",
+          "source_ids": [
+            "atlas1c1a4beb"
+          ],
+          "view": "external, labelled regions"
+        },
+        {
+          "species": "Homo sapiens",
+          "figure": "Figure 5",
+          "shows": "Three perpendicular planes place brain tissue inside the head and neck of one 29-year-old adult woman. Tissue labels are color coded.",
+          "evidence_quote": "outlines of the segmented head and neck structures",
+          "confidence": "single study",
+          "paper": "MIDA: A multimodal imaging-based detailed anatomical model of the human head and neck",
+          "doi": "10.1371/journal.pone.0124126",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124126",
+          "source_ids": [
+            "atlasd50537b5"
+          ],
+          "view": "position in head, labelled regions"
+        },
+        {
+          "species": "Homo sapiens",
+          "figure": "Figure 6",
+          "shows": "Layered three-dimensional reconstructions of the same volunteer show the brain surface, vessels, outer brain covering and skull structures.",
+          "evidence_quote": "The dura mater is shown on top of the brain and vessels.",
+          "confidence": "single study",
+          "paper": "MIDA: A multimodal imaging-based detailed anatomical model of the human head and neck",
+          "doi": "10.1371/journal.pone.0124126",
+          "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124126",
+          "source_ids": [
+            "atlasd50537b5"
+          ],
+          "view": "external"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Homo sapiens",
+          "method": "MRI-derived cerebral surface in 91 adults, mean age 33.5 years. Mean and standard deviation. This excludes the cerebellum and brainstem.",
+          "source_location": "Table 1, Humans, All, Whole cerebral surface",
+          "evidence_quote": "Whole cerebral surface",
+          "confidence": "single study",
+          "paper": "Cerebral torque is human specific and unrelated to brain size",
+          "doi": "10.1007/s00429-018-01818-0",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499874/",
+          "length_mm": 174.9,
+          "length_sd_mm": 7.6,
+          "width_mm": 134.0,
+          "width_sd_mm": 5.6,
+          "height_mm": 117.7,
+          "height_sd_mm": 5,
+          "source_ids": [
+            "atlas41e229c9"
+          ],
+          "region": "both cerebral hemispheres only",
+          "mass_g": null
+        },
+        {
+          "species": "Homo sapiens",
+          "method": "Four adult male donors, three around age 50 and one around age 70. Brain mass reported for this sample; mean and standard deviation.",
+          "source_location": "Results",
+          "evidence_quote": "weighing 1,508.91 ± 299.14 g",
+          "confidence": "single study",
+          "paper": "Equal numbers of neuronal and nonneuronal cells make the human brain an isometrically scaled-up primate brain",
+          "doi": "10.1002/cne.21974",
+          "url": "https://gwern.net/doc/psychology/neuroscience/2009-azevedo.pdf",
+          "mass_g": 1508.91,
+          "mass_sd_g": 299.14,
+          "source_ids": [
+            "human"
+          ],
+          "region": "brain, study sample",
+          "length_mm": null,
+          "width_mm": null
+        },
+        {
+          "species": "Macaca mulatta",
+          "method": "Perfusion-fixed brain tissue from two young adult rhesus macaques as identified in Methods. Study reports numbers for both sides.",
+          "source_location": "Table 1 and Methods, Animals and Dissection",
+          "evidence_quote": "Macaque monkey",
+          "confidence": "single study",
+          "paper": "Cellular scaling rules for primate brains",
+          "doi": "10.1073/pnas.0611396104",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1805542/",
+          "mass_g": 87.346,
+          "source_ids": [
+            "macaque"
+          ],
+          "region": "brain excluding the olfactory bulbs",
+          "length_mm": null,
+          "width_mm": null
+        }
+      ]
+    },
+    {
+      "id": "annelid-ragworm",
+      "order": 14,
+      "branch": "side",
+      "parent": "heads",
+      "title": "Annelids: a marine ragworm",
+      "clade": "Annelida",
+      "exemplars": [
+        {
+          "common": "Marine ragworm",
+          "scientific": "Platynereis dumerilii",
+          "illustration": {
+            "path": "illustrations/platynereis-dumerilii.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Three-day-old swimming larva"
+          }
+        }
+      ],
+      "diverged_mya": {
+        "value": 573.65,
+        "min": 552.2,
+        "max": 595.1,
+        "node": "Annelid and mollusc lineages",
+        "value_basis": "Midpoint of the published composite interval in Table 1. This is a branch split, not the age of the living species.",
+        "confidence": "well supported",
+        "evidence_quote": "Annelids-Molluscs",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Platynereis dumerilii",
+          "value": 966,
+          "region": "classified neurons across the entire body of one three-day-old larva; excludes developing, unclassified cells",
+          "method": "Researchers traced cells in serial electron micrographs and classified them by shape, location and connections.",
+          "unit": "neurons",
+          "confidence": "single study",
+          "evidence_quote": "classified 966 neurons",
+          "source_ids": [
+            "ragmap"
+          ]
+        },
+        {
+          "species": "Platynereis dumerilii",
+          "value": null,
+          "region": "adult whole nervous system",
+          "method": null,
+          "unit": "neurons",
+          "source_ids": []
+        }
+      ],
+      "summary": "A swimming ragworm larva has head circuits that steer it toward light, and others that send it down in ultraviolet light. Researchers have traced the connections throughout the body of a three-day-old larva.",
+      "summary_evidence": {
+        "confidence": "well supported",
+        "evidence_quote": "whole-body synaptic connectome",
+        "source_ids": [
+          "ragmap",
+          "ragUV"
+        ],
+        "additional_evidence": [
+          {
+            "source_id": "ragUV",
+            "evidence_quote": "UV avoidance overrides positive phototaxis"
+          }
+        ]
+      },
+      "structures": [
+        {
+          "name": "Larval eyespots",
+          "region": "cellular",
+          "origin": null,
+          "description": "Each early eyespot has a light-sensitive cell and a pigment cell that shades it from one side.",
+          "confidence": "well supported",
+          "evidence_quote": "a photoreceptor and a shading pigment cell",
+          "source_ids": [
+            "ragphoto"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        },
+        {
+          "name": "Ultraviolet-sensitive cells",
+          "region": "cellular",
+          "origin": "elaborated",
+          "description": "Light-sensitive cells of an ancient type sit inside the larval brain. They respond to ultraviolet light and feed into the circuit for swimming toward visible light.",
+          "confidence": "well supported",
+          "evidence_quote": "two main lines of photoreceptor-cell evolution",
+          "source_ids": [
+            "ragUV"
+          ]
+        },
+        {
+          "name": "Water-motion receptors",
+          "region": "cellular",
+          "origin": null,
+          "description": "Sensory neurons trigger a startle when water moves nearby. Their connections reach the muscles and the beating hairs that propel the larva.",
+          "confidence": "well supported",
+          "evidence_quote": "collar receptor neurons",
+          "source_ids": [
+            "ragstart"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Steer toward a light",
+          "description": "Illuminating one eyespot changed the beating of nearby swimming hairs. A simulation showed how that change steers the rotating larva toward light.",
+          "linked_structures": [
+            "Larval eyespots"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "selective illumination of one eyespot",
+          "source_ids": [
+            "ragphoto"
+          ]
+        },
+        {
+          "name": "Dive under ultraviolet light",
+          "description": "Larvae swam down when ultraviolet light came from all directions. Removing a light-sensitive protein abolished the response.",
+          "linked_structures": [
+            "Ultraviolet-sensitive cells"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "absent in ciliary-opsin knockout larvae",
+          "source_ids": [
+            "ragUV"
+          ]
+        },
+        {
+          "name": "Startle when water vibrates",
+          "description": "Vibration made larvae stop beating their swimming hairs and lift their paired side appendages. Mutants missing either of two sensory proteins failed to startle.",
+          "linked_structures": [
+            "Water-motion receptors"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "mutant larvae do not startle",
+          "source_ids": [
+            "ragstart"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Nervous tissue inherited from an ancestor shared by bilaterians and cnidarians",
+          "from_stop": "nerve-nets",
+          "confidence": "well supported",
+          "evidence_quote": "well-established nervous system",
+          "source_ids": [
+            "cnidinherit"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "Every cell in the wiring dataset is a neuron.",
+          "reality": "The volume contains muscles, glands and other cells alongside neurons. Many developing nerve cells had too few connections to classify.",
+          "confidence": "well supported",
+          "evidence_quote": "neuronal and non-neuronal cells",
+          "source_ids": [
+            "ragmap"
+          ]
+        },
+        {
+          "type": "exception",
+          "claim": "A depth gauge has been demonstrated in the ocean.",
+          "reality": "Experiments showed that the balance of blue and ultraviolet light controls swimming direction. The authors proposed that larvae could use this relationship to sense depth in the sea.",
+          "confidence": "single study",
+          "evidence_quote": "may use it as a depth gauge",
+          "source_ids": [
+            "ragUV"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": "complete",
+        "description": "Serial electron microscopy reconstructed the whole-body network of a three-day-old larva. This describes the connected larval cells at that age.",
+        "projects": [
+          {
+            "name": "Platynereis whole-body connectome",
+            "year": 2025,
+            "url": "https://doi.org/10.7554/elife.97964"
+          }
+        ],
+        "confidence": "single study",
+        "evidence_quote": "complete synaptic connectome",
+        "source_ids": [
+          "ragmap"
+        ]
+      },
+      "open_question": {
+        "text": "Do other annelids share the same arrangement of sensory cells around the head and trunk?",
+        "confidence": "single study",
+        "evidence_quote": "other annelid species",
+        "source_ids": [
+          "ragmap"
+        ]
+      },
+      "references": [
+        {
+          "figure": "Figure 1A–C, F–K",
+          "paper": "Verasztó C, Jasek S, Gühmann M, Bezares-Calderón LA, Williams EA, Shahidi R, Jékely G. (2025). Whole-body connectome of a segmented annelid larva. eLife.",
+          "doi": "10.7554/elife.97964",
+          "species": "Platynereis dumerilii",
+          "stage": "Three-day-old larva",
+          "view": "external and in situ",
+          "confidence": "well supported",
+          "evidence_quote": "ventral view",
+          "source_ids": [
+            "ragmap"
+          ],
+          "shows": "Whole body, positions of nerve fibers and synapses, and three cross-sections of the belly-side nerve cord.",
+          "url": "https://doi.org/10.7554/elife.97964"
+        },
+        {
+          "figure": "Figure 1A–F",
+          "paper": "Verasztó C, Gühmann M, Jia H, Rajan VBV, Bezares-Calderón LA, Piñeiro-Lopez C, Randel N, Shahidi R, Michiels NK, Yokoyama S, Tessmar-Raible K, Jékely G. (2018). Ciliary and rhabdomeric photoreceptor-cell circuits form a spectral depth gauge in marine zooplankton. eLife.",
+          "doi": "10.7554/elife.36440",
+          "species": "Platynereis dumerilii",
+          "stage": "Larva",
+          "view": "in situ and circuit",
+          "confidence": "well supported",
+          "evidence_quote": "body outline",
+          "source_ids": [
+            "ragUV"
+          ],
+          "shows": "Reconstructed light-sensitive cells and the two head circuits in relation to the body outline.",
+          "url": "https://doi.org/10.7554/elife.36440"
+        },
+        {
+          "figure": "Figure 2A–B",
+          "paper": "Bezares-Calderón LA, Berger J, Jasek S, Verasztó C, Mendes S, Gühmann M, Almeda R, Shahidi R, Jékely G. (2018). Neural circuitry of a polycystin-mediated hydrodynamic startle response for predator avoidance. eLife.",
+          "doi": "10.7554/elife.36262",
+          "species": "Platynereis dumerilii",
+          "stage": "Larva",
+          "view": "external and cell detail",
+          "confidence": "well supported",
+          "evidence_quote": "Head CR neurons",
+          "source_ids": [
+            "ragstart"
+          ],
+          "shows": "Close-up of the head surface and reconstruction of the sensory cell projections used to detect water movement.",
+          "url": "https://doi.org/10.7554/elife.36262"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Platynereis dumerilii",
+          "stage": "Three-day-old larva",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "measurement_note": "A direct length, width and mass for the whole brain could not be verified. Body length and figure scale bars measure different things.",
+          "source_ids": []
+        }
+      ],
+      "optional": true
+    },
+    {
+      "id": "echinoderm-sea-urchin",
+      "order": 15,
+      "branch": "side",
+      "parent": "heads",
+      "title": "Echinoderms: seeing with a sea urchin",
+      "clade": "Echinodermata",
+      "exemplars": [
+        {
+          "common": "Long-spined sea urchin",
+          "scientific": "Diadema africanum",
+          "illustration": {
+            "path": "illustrations/diadema-africanum.webp",
+            "medium": "AI-generated natural history illustration",
+            "view_note": "Oblique view from above"
+          }
+        }
+      ],
+      "diverged_mya": {
+        "value": 568.6,
+        "min": 534.1,
+        "max": 603.1,
+        "node": "Echinoderm and hemichordate lineages (Ambulacraria)",
+        "value_basis": "Midpoint of the published composite interval in Table 1. This is a branch split, not the age of the living species.",
+        "confidence": "well supported",
+        "evidence_quote": "Ambulacraria",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Diadema africanum",
+          "value": null,
+          "region": "whole nervous system",
+          "method": null,
+          "unit": "neurons",
+          "source_ids": []
+        }
+      ],
+      "summary": "A long-spined sea urchin can move toward a broad dark shape and aim defensive spines toward an approaching shape. Experiments measured both responses. How the animal combines light signals across its body remains an open question.",
+      "summary_evidence": {
+        "confidence": "well supported",
+        "evidence_quote": "spine-pointing towards looming stimuli",
+        "source_ids": [
+          "urchExp",
+          "urchModel"
+        ]
+      },
+      "structures": [
+        {
+          "name": "Radial nerves",
+          "region": "nerve_cord",
+          "origin": null,
+          "description": "Five nerves follow the five sectors of the sea urchin body. Their role in guiding visually directed movement is a model prediction.",
+          "confidence": "well supported",
+          "evidence_quote": "five radial nerves",
+          "source_ids": [
+            "urchModel"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        },
+        {
+          "name": "Mouth nerve ring",
+          "region": "nerve_net",
+          "origin": null,
+          "description": "A ring around the mouth joins the radial nerves. A model proposes that activity from different directions meets here.",
+          "confidence": "well supported",
+          "evidence_quote": "interconnecting the RNs",
+          "source_ids": [
+            "urchModel"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        },
+        {
+          "name": "Body-surface light sensors",
+          "region": "cellular",
+          "origin": null,
+          "description": "Tube feet are candidate sites for the light sensors. Much of the direct anatomical evidence comes from a different species, the purple sea urchin.",
+          "confidence": "well supported",
+          "evidence_quote": "studies in the species Strongylocentrotus purpuratus",
+          "source_ids": [
+            "urchModel"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Approach a broad target",
+          "description": "Urchins moved toward wide dark patterns even when the pattern and background had the same average brightness. The cells that direct the turn remain to be identified.",
+          "linked_structures": [
+            "Body-surface light sensors"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "isoluminant to the background",
+          "source_ids": [
+            "urchExp"
+          ]
+        },
+        {
+          "name": "Aim defensive spines",
+          "description": "A growing dark target on a screen caused urchins to aim spines toward it. Researchers measured the size needed to elicit a response. The responsible light sensors remain candidates.",
+          "linked_structures": [
+            "Body-surface light sensors"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "spine-pointing towards looming stimuli",
+          "source_ids": [
+            "urchExp"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Nervous tissue inherited from an ancestor shared by bilaterians and cnidarians",
+          "from_stop": "nerve-nets",
+          "confidence": "well supported",
+          "evidence_quote": "well-established nervous system",
+          "source_ids": [
+            "cnidinherit"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "exception",
+          "claim": "A discrete eye is necessary to see a shape.",
+          "reality": "These urchins distinguished broad patterns from a uniform background despite lacking eyes.",
+          "confidence": "well supported",
+          "evidence_quote": "discriminate spatial vision from phototaxis",
+          "source_ids": [
+            "urchExp"
+          ]
+        },
+        {
+          "type": "myth",
+          "claim": "The published circuit diagram traces actual synapses.",
+          "reality": "Li and colleagues built a model that reproduces orientation experiments. Its proposed connections still need anatomical tests.",
+          "confidence": "single study",
+          "evidence_quote": "testable predictions",
+          "source_ids": [
+            "urchModel"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": null,
+        "description": null,
+        "projects": [],
+        "source_ids": []
+      },
+      "open_question": {
+        "text": "Which connections between the radial nerves and the nerve ring actually guide the animal toward a visual target?",
+        "confidence": "well supported",
+        "evidence_quote": "nature of neural connectivity",
+        "source_ids": [
+          "urchModel"
+        ]
+      },
+      "references": [
+        {
+          "figure": "Figure 1A",
+          "paper": "Kirwan JD, Bok MJ, Smolka J, Foster JJ, Hernández JC, Nilsson DE. (2018). The sea urchin Diadema africanum uses low resolution vision to find shelter and deter enemies. The Journal of experimental biology.",
+          "doi": "10.1242/jeb.176271",
+          "species": "Diadema africanum",
+          "stage": "Experimental animals",
+          "view": "external sensory landmarks",
+          "confidence": "well supported",
+          "evidence_quote": "Superficial anatomy",
+          "source_ids": [
+            "urchExp"
+          ],
+          "shows": "External landmarks for the tube feet and primary and secondary spines. Neural tissue is not visible.",
+          "url": "https://doi.org/10.1242/jeb.176271"
+        },
+        {
+          "figure": "Figure 1A–B",
+          "paper": "Li T, Kirwan J, Arnone MI, Nilsson DE, La Camera G. (2023). A model of decentralized vision in the sea urchin Diadema africanum. iScience.",
+          "doi": "10.1016/j.isci.2023.106295",
+          "species": "Diadema africanum",
+          "stage": "Adult body plan; model",
+          "view": "labelled schematic and position",
+          "confidence": "well supported",
+          "evidence_quote": "model nervous system",
+          "source_ids": [
+            "urchModel"
+          ],
+          "shows": "Cross-section and schematic locate proposed light sensors, five radial pathways and the mouth ring. Panel B draws hypothetical connections.",
+          "url": "https://doi.org/10.1016/j.isci.2023.106295"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Diadema africanum",
+          "stage": "Adult",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "measurement_note": "A discrete central brain is absent. No measurements of the separate nerve ring or radial nerves were verified for this species.",
+          "confidence": "well supported",
+          "evidence_quote": "no centralized brain",
+          "source_ids": [
+            "urchModel"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hemichordate-acorn-worm",
+      "order": 16,
+      "branch": "side",
+      "parent": "heads",
+      "title": "Hemichordates: an acorn worm",
+      "clade": "Hemichordata",
+      "exemplars": [
+        {
+          "common": "Atlantic acorn worm",
+          "scientific": "Saccoglossus kowalevskii",
+          "illustration": {
+            "path": "illustrations/saccoglossus-kowalevskii.webp",
+            "medium": "original 3D reconstruction",
+            "view_note": "Adult female, snout at right"
+          }
+        }
+      ],
+      "diverged_mya": {
+        "value": 568.6,
+        "min": 534.1,
+        "max": 603.1,
+        "node": "Echinoderm and hemichordate lineages (Ambulacraria)",
+        "value_basis": "Midpoint of the published composite interval in Table 1. This is a branch split, not the age of the living species.",
+        "confidence": "well supported",
+        "evidence_quote": "Ambulacraria",
+        "source_ids": [
+          "earlydate"
+        ]
+      },
+      "neuron_counts": [
+        {
+          "species": "Saccoglossus kowalevskii",
+          "value": null,
+          "region": "whole nervous system",
+          "method": null,
+          "unit": "neurons",
+          "source_ids": []
+        }
+      ],
+      "summary": "An acorn worm has nerves spread under its skin, with a particularly dense network at the base of its snout. Two nerve cords run along its trunk. Different regions house different kinds of nerve cells.",
+      "summary_evidence": {
+        "confidence": "well supported",
+        "evidence_quote": "concentrated in the anterior",
+        "source_ids": [
+          "acorn"
+        ]
+      },
+      "structures": [
+        {
+          "name": "Snout nerve network",
+          "region": "nerve_net",
+          "origin": null,
+          "description": "The network is denser around the base of the snout. Its organization suggests a place where sensory information could come together.",
+          "confidence": "well supported",
+          "evidence_quote": "information processing",
+          "source_ids": [
+            "acorn"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        },
+        {
+          "name": "Back and belly nerve cords",
+          "region": "nerve_cord",
+          "origin": null,
+          "description": "Gene markers reveal distinct sets of nerve cells in the two cords. Their different roles are still being worked out.",
+          "confidence": "well supported",
+          "evidence_quote": "division of cell types",
+          "source_ids": [
+            "acorn"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        },
+        {
+          "name": "Hatchling swimming band",
+          "region": "cellular",
+          "origin": null,
+          "description": "A ring of beating hairs near the rear of the hatchling drives it through the water.",
+          "confidence": "well supported",
+          "evidence_quote": "propels the living hatchlings",
+          "source_ids": [
+            "acornDev"
+          ],
+          "origin_scope": "The source documents the anatomy. Its place of origin on the tree remains unresolved here."
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Swim after hatching",
+          "description": "Microscopy shows the band of beating hairs that propels hatchlings. The study did not identify a neural circuit that starts or stops swimming.",
+          "linked_structures": [
+            "Hatchling swimming band"
+          ],
+          "confidence": "single study",
+          "evidence_quote": "propels the living hatchlings",
+          "source_ids": [
+            "acornDev"
+          ]
+        },
+        {
+          "name": "Adjust feeding to currents",
+          "description": "In a flow tank, worms passed more sediment under moderate currents and less under strong currents. The experiment measured feeding through waste output. The responsible neurons are unknown.",
+          "linked_structures": [],
+          "confidence": "single study",
+          "evidence_quote": "available food resources and flow regime",
+          "source_ids": [
+            "acornFeed"
+          ]
+        }
+      ],
+      "inherited": [
+        {
+          "name": "Nervous tissue inherited from an ancestor shared by bilaterians and cnidarians",
+          "from_stop": "nerve-nets",
+          "confidence": "well supported",
+          "evidence_quote": "well-established nervous system",
+          "source_ids": [
+            "cnidinherit"
+          ]
+        },
+        {
+          "name": "Front-to-back arrangement of genes involved in nervous-system development, also found in chordates",
+          "from_stop": "heads",
+          "confidence": "well supported",
+          "evidence_quote": "anteroposterior arrangement nearly identical to that found in chordates",
+          "source_ids": [
+            "acornAxis"
+          ]
+        }
+      ],
+      "nuances": [
+        {
+          "type": "debate",
+          "claim": "Does the collar cord share an origin with the chordate neural tube?",
+          "reality": "Knight-Jones proposed a shared origin. Lowe and colleagues proposed that the common ancestor had a diffuse system and that centralization occurred later in chordates. Matching gene patterns alone leave the question open.",
+          "confidence": "disputed",
+          "evidence_quote": "may have had a diffuse nervous system",
+          "source_ids": [
+            "acornAxis",
+            "acorn"
+          ],
+          "additional_evidence": [
+            {
+              "source_id": "acorn",
+              "evidence_quote": "Knight-Jones alternatively proposed"
+            }
+          ]
+        },
+        {
+          "type": "myth",
+          "claim": "A nerve net is uniform wherever you look.",
+          "reality": "Microscopy found different cell types in different parts of the acorn worm. The network thickens around the snout base.",
+          "confidence": "well supported",
+          "evidence_quote": "regionalized structure",
+          "source_ids": [
+            "acorn"
+          ]
+        }
+      ],
+      "connectome": {
+        "status": null,
+        "description": null,
+        "projects": [],
+        "source_ids": []
+      },
+      "open_question": {
+        "text": "How do neurons activate muscles when microscopy shows little sign of direct contacts?",
+        "confidence": "well supported",
+        "evidence_quote": "volume EM",
+        "source_ids": [
+          "acorn"
+        ]
+      },
+      "references": [
+        {
+          "figure": "Figure 1A–M",
+          "paper": "Andrade López JM, Pani AM, Wu M, Gerhart J, Lowe CJ. (2023). Molecular characterization of nervous system organization in the hemichordate acorn worm Saccoglossus kowalevskii. PLoS biology.",
+          "doi": "10.1371/journal.pbio.3002242",
+          "species": "Saccoglossus kowalevskii",
+          "stage": "Adult",
+          "view": "labelled regions and in situ",
+          "confidence": "well supported",
+          "evidence_quote": "transverse and sagittal sections",
+          "source_ids": [
+            "acorn"
+          ],
+          "shows": "Section planes along the body and labelled cross-sections locate the snout network, collar cord and both trunk cords.",
+          "url": "https://doi.org/10.1371/journal.pbio.3002242"
+        },
+        {
+          "figure": "Figure 4A–N",
+          "paper": "Andrade López JM, Pani AM, Wu M, Gerhart J, Lowe CJ. (2023). Molecular characterization of nervous system organization in the hemichordate acorn worm Saccoglossus kowalevskii. PLoS biology.",
+          "doi": "10.1371/journal.pbio.3002242",
+          "species": "Saccoglossus kowalevskii",
+          "stage": "Juveniles and adults",
+          "view": "external network",
+          "confidence": "well supported",
+          "evidence_quote": "Neural plexus organization",
+          "source_ids": [
+            "acorn"
+          ],
+          "shows": "Whole juveniles and opened adult skin reveal fibers in the surface nerve network.",
+          "url": "https://doi.org/10.1371/journal.pbio.3002242"
+        },
+        {
+          "figure": "Figure 7A–F",
+          "paper": "Kaul-Strehlow S, Urata M, Minokawa T, Stach T, Wanninger A. (2015). Neurogenesis in directly and indirectly developing enteropneusts: of nets and cords. Organisms Diversity & Evolution.",
+          "doi": "10.1007/s13127-015-0201-2",
+          "species": "Saccoglossus kowalevskii",
+          "stage": "One-gill-slit hatchling and two-gill-slit juvenile",
+          "view": "in situ and cellular detail",
+          "confidence": "well supported",
+          "evidence_quote": "Ultrastructural details",
+          "source_ids": [
+            "acornDev"
+          ],
+          "shows": "Body sections locate electron micrographs that distinguish nerve fibers from surrounding tissues and show the developing layer under the skin.",
+          "url": "https://doi.org/10.1007/s13127-015-0201-2"
+        }
+      ],
+      "brain_dimensions": [
+        {
+          "species": "Saccoglossus kowalevskii",
+          "stage": "Juvenile and adult",
+          "region": "whole brain",
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null,
+          "measurement_note": "The snout-base network has no verified discrete whole-brain boundaries or gross dimensions.",
+          "source_ids": []
+        },
+        {
+          "species": "Saccoglossus kowalevskii",
+          "stage": "One-gill-slit hatchling",
+          "region": "layer of nerve fibers under the skin",
+          "measurement": "Thickness in a transmission electron micrograph, Figure 7B–C",
+          "thickness_mm": {
+            "min": 0.002,
+            "max": 0.004
+          },
+          "confidence": "single study",
+          "evidence_quote": "layer of neurites of 2–4-μm thickness",
+          "source_ids": [
+            "acornDev"
+          ],
+          "length_mm": null,
+          "width_mm": null,
+          "mass_g": null
+        }
+      ],
+      "optional": true
     }
   ],
   "sources": [
@@ -4385,6 +6857,462 @@
       "doi": "10.1093/toxsci/kfg241",
       "url": "https://pubmed.ncbi.nlm.nih.gov/14600291/",
       "year": 2003,
+      "type": "primary"
+    },
+    {
+      "id": "ragmap",
+      "citation": "Verasztó C, Jasek S, Gühmann M, Bezares-Calderón LA, Williams EA, Shahidi R, Jékely G. (2025). Whole-body connectome of a segmented annelid larva. eLife.",
+      "doi": "10.7554/elife.97964",
+      "url": "https://doi.org/10.7554/elife.97964",
+      "year": 2025,
+      "type": "primary"
+    },
+    {
+      "id": "ragphoto",
+      "citation": "Jékely G, Colombelli J, Hausen H, Guy K, Stelzer E, Nédélec F, Arendt D. (2008). Mechanism of phototaxis in marine zooplankton. Nature.",
+      "doi": "10.1038/nature07590",
+      "url": "https://doi.org/10.1038/nature07590",
+      "year": 2008,
+      "type": "primary"
+    },
+    {
+      "id": "ragUV",
+      "citation": "Verasztó C, Gühmann M, Jia H, Rajan VBV, Bezares-Calderón LA, Piñeiro-Lopez C, Randel N, Shahidi R, Michiels NK, Yokoyama S, Tessmar-Raible K, Jékely G. (2018). Ciliary and rhabdomeric photoreceptor-cell circuits form a spectral depth gauge in marine zooplankton. eLife.",
+      "doi": "10.7554/elife.36440",
+      "url": "https://doi.org/10.7554/elife.36440",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "ragstart",
+      "citation": "Bezares-Calderón LA, Berger J, Jasek S, Verasztó C, Mendes S, Gühmann M, Almeda R, Shahidi R, Jékely G. (2018). Neural circuitry of a polycystin-mediated hydrodynamic startle response for predator avoidance. eLife.",
+      "doi": "10.7554/elife.36262",
+      "url": "https://doi.org/10.7554/elife.36262",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "urchExp",
+      "citation": "Kirwan JD, Bok MJ, Smolka J, Foster JJ, Hernández JC, Nilsson DE. (2018). The sea urchin Diadema africanum uses low resolution vision to find shelter and deter enemies. The Journal of experimental biology.",
+      "doi": "10.1242/jeb.176271",
+      "url": "https://doi.org/10.1242/jeb.176271",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "urchModel",
+      "citation": "Li T, Kirwan J, Arnone MI, Nilsson DE, La Camera G. (2023). A model of decentralized vision in the sea urchin Diadema africanum. iScience.",
+      "doi": "10.1016/j.isci.2023.106295",
+      "url": "https://doi.org/10.1016/j.isci.2023.106295",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "acorn",
+      "citation": "Andrade López JM, Pani AM, Wu M, Gerhart J, Lowe CJ. (2023). Molecular characterization of nervous system organization in the hemichordate acorn worm Saccoglossus kowalevskii. PLoS biology.",
+      "doi": "10.1371/journal.pbio.3002242",
+      "url": "https://doi.org/10.1371/journal.pbio.3002242",
+      "year": 2023,
+      "type": "primary"
+    },
+    {
+      "id": "acornAxis",
+      "citation": "Lowe CJ, Wu M, Salic A, Evans L, Lander E, Stange-Thomann N, Gruber CE, Gerhart J, Kirschner M. (2003). Anteroposterior patterning in hemichordates and the origins of the chordate nervous system. Cell.",
+      "doi": "10.1016/s0092-8674(03)00469-0",
+      "url": "https://doi.org/10.1016/s0092-8674(03)00469-0",
+      "year": 2003,
+      "type": "primary"
+    },
+    {
+      "id": "platBeh",
+      "citation": "Scheich H, Langner G, Tidemann C, Coles RB, Guppy A. (1986). Electroreception and electrolocation in platypus. Nature.",
+      "doi": "10.1038/319401a0",
+      "url": "https://doi.org/10.1038/319401a0",
+      "year": 1986,
+      "type": "primary"
+    },
+    {
+      "id": "platBill",
+      "citation": "Iggo A, Gregory JE, Proske U. (1992). The central projection of electrosensory information in the platypus. The Journal of physiology.",
+      "doi": "10.1113/jphysiol.1992.sp019011",
+      "url": "https://doi.org/10.1113/jphysiol.1992.sp019011",
+      "year": 1992,
+      "type": "primary"
+    },
+    {
+      "id": "cutColor",
+      "citation": "Reiter S, Hülsdunk P, Woo T, Lauterbach MA, Eberle JS, Akay LA, Longo A, Meier-Credo J, Kretschmer F, Langer JD, Kaschube M, Laurent G. (2018). Elucidating the control and development of skin patterning in cuttlefish. Nature.",
+      "doi": "10.1038/s41586-018-0591-3",
+      "url": "https://doi.org/10.1038/s41586-018-0591-3",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "id": "acornDev",
+      "citation": "Kaul-Strehlow S, Urata M, Minokawa T, Stach T, Wanninger A. (2015). Neurogenesis in directly and indirectly developing enteropneusts: of nets and cords. Organisms Diversity & Evolution.",
+      "doi": "10.1007/s13127-015-0201-2",
+      "url": "https://doi.org/10.1007/s13127-015-0201-2",
+      "year": 2015,
+      "type": "primary"
+    },
+    {
+      "id": "acornFeed",
+      "citation": "Karrh RR, Miller DC (1996). Effect of flow and sediment transport on feeding rate of the surface-deposit feeder Saccoglossus kowalevskii. Marine Ecology Progress Series.",
+      "doi": "10.3354/meps130125",
+      "url": "https://doi.org/10.3354/meps130125",
+      "year": 1996,
+      "type": "primary"
+    },
+    {
+      "id": "cutPap",
+      "citation": "Gonzalez-Bellido PT, Scaros AT, Hanlon RT, Wardill TJ. (2018). Neural Control of Dynamic 3-Dimensional Skin Papillae for Cuttlefish Camouflage. iScience.",
+      "doi": "10.1016/j.isci.2018.01.001",
+      "url": "https://doi.org/10.1016/j.isci.2018.01.001",
+      "year": 2018,
+      "type": "primary"
+    },
+    {
+      "citation": "Leys SP et al. (2025). A morphological cell atlas of the freshwater sponge Ephydatia muelleri with key insights from targeted single-cell transcriptomes. EvoDevo.",
+      "doi": "10.1186/s13227-025-00237-7",
+      "year": 2025,
+      "url": "https://doi.org/10.1186/s13227-025-00237-7",
+      "id": "atlas07382acc",
+      "type": "primary"
+    },
+    {
+      "citation": "Smith CL et al. (2014). Novel cell types, neurosecretory cells, and body plan of the early-diverging metazoan Trichoplax adhaerens. Current biology : CB.",
+      "doi": "10.1016/j.cub.2014.05.046",
+      "year": 2014,
+      "url": "https://doi.org/10.1016/j.cub.2014.05.046",
+      "id": "atlas2f4e8c17",
+      "type": "primary"
+    },
+    {
+      "citation": "Agata K et al. (1998). Structure of the planarian central nervous system (CNS) revealed by neuronal cell markers. Zoological science.",
+      "doi": "10.2108/zsj.15.433",
+      "year": 1998,
+      "url": "https://doi.org/10.2108/zsj.15.433",
+      "id": "atlasa36b7386",
+      "type": "primary"
+    },
+    {
+      "citation": "Greco MK et al. (2012). Imaging live bee brains using minimally-invasive diagnostic radioentomology. Journal of insect science (Online).",
+      "doi": "10.1673/031.012.8901",
+      "year": 2012,
+      "url": "https://doi.org/10.1673/031.012.8901",
+      "id": "atlasb85d7be8",
+      "type": "primary"
+    },
+    {
+      "citation": "Murtin C et al. (2018). Image processing for precise three-dimensional registration and stitching of thick high-resolution laser-scanning microscopy image stacks. Computers in biology and medicine.",
+      "doi": "10.1016/j.compbiomed.2017.10.027",
+      "year": 2018,
+      "url": "https://doi.org/10.1016/j.compbiomed.2017.10.027",
+      "id": "atlasf271f4ae",
+      "type": "primary"
+    },
+    {
+      "citation": "Godfrey RK, Swartzlander M, Gronenberg W (2021). Allometric analysis of brain cell number in Hymenoptera suggests ant brains diverge from general trends. Proceedings of the Royal Society B 288, 20210199.",
+      "doi": "10.1098/rspb.2021.0199",
+      "year": 2021,
+      "url": "https://doi.org/10.1098/rspb.2021.0199",
+      "id": "atlas425ed00d",
+      "type": "primary"
+    },
+    {
+      "citation": "Packard A & Albergoni V (1970). Relative growth, nucleic acid content and cell numbers of the brain in Octopus vulgaris (Lamarck). The Journal of experimental biology.",
+      "doi": "10.1242/jeb.52.3.539",
+      "year": 1970,
+      "url": "https://doi.org/10.1242/jeb.52.3.539",
+      "id": "atlas19faffaa",
+      "type": "primary"
+    },
+    {
+      "citation": "Albertin CB et al. (2015). The octopus genome and the evolution of cephalopod neural and morphological novelties. Nature.",
+      "doi": "10.1038/nature14668",
+      "year": 2015,
+      "url": "https://doi.org/10.1038/nature14668",
+      "id": "atlased5a9487",
+      "type": "primary"
+    },
+    {
+      "citation": "Focareta L et al. (2014). Characterization of homeobox genes reveals sophisticated regionalization of the central nervous system in the European cuttlefish Sepia officinalis. PloS one.",
+      "doi": "10.1371/journal.pone.0109627",
+      "year": 2014,
+      "url": "https://doi.org/10.1371/journal.pone.0109627",
+      "id": "atlasa39e8ef7",
+      "type": "primary"
+    },
+    {
+      "citation": "Wild E, Wollesen T, Haszprunar G, Heß M (2015). Comparative 3D microanatomy and histology of the eyes and central nervous systems in coleoid cephalopod hatchlings. Organisms Diversity & Evolution 15, 37–64.",
+      "doi": "10.1007/s13127-014-0184-4",
+      "year": 2015,
+      "url": "https://doi.org/10.1007/s13127-014-0184-4",
+      "id": "atlas28dad717",
+      "type": "primary"
+    },
+    {
+      "citation": "Sasakura Y et al. (2009). Ciona intestinalis and Oxycomanthus japonicus, representatives of marine invertebrates. Experimental Animals.",
+      "doi": "10.1538/expanim.58.459",
+      "year": 2009,
+      "url": "https://doi.org/10.1538/expanim.58.459",
+      "id": "atlas78f6eca7",
+      "type": "review"
+    },
+    {
+      "citation": "Fritsch HAR, Van Noorden S, Pearse AGE (1982). Gastro-intestinal and neurohormonal peptides in the alimentary tract and cerebral complex of Ciona intestinalis (Ascidiaceae). Their relevance to the evolution of the diffuse neuroendocrine system. Cell and Tissue Research.",
+      "doi": "10.1007/BF01258496",
+      "year": 1982,
+      "url": "https://doi.org/10.1007/BF01258496",
+      "id": "atlasb8b98972",
+      "type": "primary"
+    },
+    {
+      "citation": "Osugi T, Sasakura Y, Satake H (2017). The nervous system of the adult ascidian Ciona intestinalis Type A (Ciona robusta): Insights from transgenic animal models. PLOS ONE.",
+      "doi": "10.1371/journal.pone.0180227",
+      "year": 2017,
+      "url": "https://doi.org/10.1371/journal.pone.0180227",
+      "id": "atlasfd9d7eae",
+      "type": "primary"
+    },
+    {
+      "citation": "Lagler KF; plate drawn by Byers GW (1962). Atlas of Fish Anatomy. Atlas of Fish Anatomy.",
+      "doi": null,
+      "year": 1962,
+      "url": "https://arc.lib.montana.edu/robert-behnke/objects/2491-32-11.pdf",
+      "id": "atlas2384683b",
+      "type": "textbook"
+    },
+    {
+      "citation": "Randlett O et al. (2015). Whole-brain activity mapping onto a zebrafish brain atlas. Nature Methods.",
+      "doi": "10.1038/nmeth.3581",
+      "year": 2015,
+      "url": "https://doi.org/10.1038/nmeth.3581",
+      "id": "atlas991de5b7",
+      "type": "primary"
+    },
+    {
+      "citation": "Wullimann MF (1998). The central nervous system. The Physiology of Fishes, second edition, ed. DH Evans, CRC Press.",
+      "doi": null,
+      "year": 1998,
+      "url": "https://epub.ub.uni-muenchen.de/18438/1/18438.pdf",
+      "id": "atlasbf23726b",
+      "type": "textbook"
+    },
+    {
+      "citation": "Zeymer M, von der Emde G, Wullimann MF (2018). The Mormyrid Optic Tectum Is a Topographic Interface for Active Electrolocation and Visual Sensing. Frontiers in Neuroanatomy.",
+      "doi": "10.3389/fnana.2018.00079",
+      "year": 2018,
+      "url": "https://doi.org/10.3389/fnana.2018.00079",
+      "id": "atlas1de4ed69",
+      "type": "primary"
+    },
+    {
+      "citation": "Yang Y et al. (2020). Comparative Studies of Polysialic Acids Derived from Five Different Vertebrate Brains. International Journal of Molecular Sciences.",
+      "doi": "10.3390/ijms21228593",
+      "year": 2020,
+      "url": "https://doi.org/10.3390/ijms21228593",
+      "id": "atlas986c0d98",
+      "type": "primary"
+    },
+    {
+      "citation": "Chapman GB, Tarboush R, Connaughton VP (2012). The Effects of Rearing Light Level and Duration Differences on the Optic Nerve, Brain, and Associated Structures in Developing Zebrafish Larvae: A Light and Transmission Electron Microscope Study. The Anatomical Record.",
+      "doi": "10.1002/ar.22403",
+      "year": 2012,
+      "url": "https://doi.org/10.1002/ar.22403",
+      "id": "atlas07cb5035",
+      "type": "primary"
+    },
+    {
+      "citation": "Nilsson GE (1996). Brain and body oxygen requirements of Gnathonemus petersii, a fish with an exceptionally large brain. Journal of Experimental Biology.",
+      "doi": "10.1242/jeb.199.3.603",
+      "year": 1996,
+      "url": "https://doi.org/10.1242/jeb.199.3.603",
+      "id": "atlase5331f1d",
+      "type": "primary"
+    },
+    {
+      "citation": "Klimley AP et al. (2023). A review of the behaviours of the Chondrichthyes: a multi-species ethogram for the chimaeras, sharks, and rays. Behaviour.",
+      "doi": "10.1163/1568539X-bja10214",
+      "year": 2023,
+      "url": "https://doi.org/10.1163/1568539X-bja10214",
+      "id": "atlas10f46bc5",
+      "type": "review"
+    },
+    {
+      "citation": "Chevalier C et al. (2024). Comparative study of the growth, stress status and reproductive capabilities of four wild-type zebrafish (Danio rerio) lines. Biological Research.",
+      "doi": "10.1186/s40659-024-00549-3",
+      "year": 2024,
+      "url": "https://doi.org/10.1186/s40659-024-00549-3",
+      "id": "atlas049f158a",
+      "type": "primary"
+    },
+    {
+      "citation": "Roth G, Walkowiak W (2015). The Influence of Genome and Cell Size on Brain Morphology in Amphibians. Cold Spring Harbor Perspectives in Biology.",
+      "doi": "10.1101/cshperspect.a019075",
+      "year": 2015,
+      "url": "https://doi.org/10.1101/cshperspect.a019075",
+      "id": "atlas7824e764",
+      "type": "review"
+    },
+    {
+      "citation": "Jiménez S et al. (2024). Comparative MRI analysis of the forebrain of three sauropsida models. Brain Structure and Function.",
+      "doi": "10.1007/s00429-024-02788-2",
+      "year": 2024,
+      "url": "https://doi.org/10.1007/s00429-024-02788-2",
+      "id": "atlas8950d789",
+      "type": "primary"
+    },
+    {
+      "citation": "Foss KD et al. (2022). Establishing an MRI-Based Protocol and Atlas of the Bearded Dragon (Pogona vitticeps) Brain. Frontiers in Veterinary Science.",
+      "doi": "10.3389/fvets.2022.886333",
+      "year": 2022,
+      "url": "https://doi.org/10.3389/fvets.2022.886333",
+      "id": "atlasd26b2515",
+      "type": "primary"
+    },
+    {
+      "citation": "Swift KN et al. (2020). Brain activity underlying American crow processing of encounters with dead conspecifics. Behavioural Brain Research.",
+      "doi": "10.1016/j.bbr.2020.112546",
+      "year": 2020,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9384862/",
+      "id": "atlasf2e20aa0",
+      "type": "primary"
+    },
+    {
+      "citation": "Kersten Y et al. (2022). A brain atlas of the carrion crow (Corvus corone). Journal of Comparative Neurology.",
+      "doi": "10.1002/cne.25392",
+      "year": 2022,
+      "url": "https://homepages.uni-tuebingen.de/andreas.nieder/Kersten%2C%20M%C3%BCller-Friedrich%2C%20Nieder%20%282022%29%20JCN.pdf",
+      "id": "atlas84ddfa0e",
+      "type": "primary"
+    },
+    {
+      "citation": "Melo LF et al. (2022). Comparative topographical description of the central nervous system of the macaw (Ara ararauna) and the owl (Tyto furcata). International Journal of Morphology.",
+      "doi": "10.4067/S0717-95022022000300860",
+      "year": 2022,
+      "url": "https://www.scielo.cl/pdf/ijmorphol/v40n3/0717-9502-ijmorphol-40-03-860.pdf",
+      "id": "atlas6d7a5c05",
+      "type": "primary"
+    },
+    {
+      "citation": "Zhao Z et al. (2023). Anterior forebrain pathway in parrots is necessary for producing learned vocalizations with individual signatures. Current Biology.",
+      "doi": "10.1016/j.cub.2023.11.014",
+      "year": 2023,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10799565/",
+      "id": "atlas3071a15a",
+      "type": "primary"
+    },
+    {
+      "citation": "Macrini TE, Rowe T, VandeBerg JL (2007). Cranial endocasts from a growth series of Monodelphis domestica (Didelphidae, Marsupialia): a study of individual and ontogenetic variation. Journal of Morphology.",
+      "doi": "10.1002/jmor.10556",
+      "year": 2007,
+      "url": "https://www.jsg.utexas.edu/rowe/files/061-Macrini-et-al-2007b.pdf",
+      "id": "atlas6aed4201",
+      "type": "primary"
+    },
+    {
+      "citation": "Seelke AMH, Dooley JC, Krubitzer LA (2013). Differential changes in the cellular composition of the developing marsupial brain. Journal of Comparative Neurology.",
+      "doi": "10.1002/cne.23301",
+      "year": 2013,
+      "url": "https://enpubs.faculty.ucdavis.edu/wp-content/uploads/sites/209/2015/03/Seelke-et-al_2013-Differential-changes-in-the-cellular-composition.pdf",
+      "id": "atlas6e4c1c74",
+      "type": "primary"
+    },
+    {
+      "citation": "Mansour H et al. (2025). The Duke Mouse Brain Atlas: MRI and light sheet microscopy stereotaxic atlas of the mouse brain. Science Advances.",
+      "doi": "10.1126/sciadv.adq8089",
+      "year": 2025,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12042906/",
+      "id": "atlas6932b885",
+      "type": "primary"
+    },
+    {
+      "citation": "Krubitzer L et al. (1995). Organization of somatosensory cortex in monotremes: in search of the prototypical plan. Journal of Comparative Neurology.",
+      "doi": "10.1002/cne.903510206",
+      "year": 1995,
+      "url": "https://krubitzer.faculty.ucdavis.edu/wp-content/uploads/sites/208/2017/07/1995-Neocortex-organization-in-Monotremes.pdf",
+      "id": "atlasa30c3ace",
+      "type": "primary"
+    },
+    {
+      "citation": "Stæger FF et al. (2020). A three-dimensional, population-based average of the C57BL/6 mouse brain from DAPI-stained coronal slices. Scientific Data.",
+      "doi": "10.1038/s41597-020-0570-z",
+      "year": 2020,
+      "url": "https://www.nature.com/articles/s41597-020-0570-z.pdf",
+      "id": "atlas3b786657",
+      "type": "primary"
+    },
+    {
+      "citation": "Manger PR et al. (2002). The distribution and morphological characteristics of cholinergic cells in the brain of monotremes as revealed by ChAT immunohistochemistry. Brain, Behavior and Evolution.",
+      "doi": "10.1159/000067195",
+      "year": 2002,
+      "url": "https://www.semel.ucla.edu/wp-content/uploads/2026/01/02-chat-monotremes-Siegel-Manger.pdf",
+      "id": "atlasff517458",
+      "type": "primary"
+    },
+    {
+      "citation": "Halley AC et al. (2022). Coevolution of motor cortex and behavioral specializations associated with flight and echolocation in bats. Current Biology.",
+      "doi": "10.1016/j.cub.2022.04.094",
+      "year": 2022,
+      "url": "https://krubitzer.faculty.ucdavis.edu/wp-content/uploads/sites/208/2022/06/Halley-2022-Coevolution-of-motor-cortex-and-behavioral-specializations-associated-with-flight-and-echolocation-in-bats.pdf",
+      "id": "atlas24bba6dd",
+      "type": "primary"
+    },
+    {
+      "citation": "Marino L et al. (2001). Anatomy and three-dimensional reconstructions of the brain of a bottlenose dolphin (Tursiops truncatus) from magnetic resonance images. The Anatomical Record.",
+      "doi": "10.1002/ar.10018",
+      "year": 2001,
+      "url": "https://anatomypubs.onlinelibrary.wiley.com/doi/full/10.1002/ar.10018",
+      "id": "atlasfd96c31b",
+      "type": "primary"
+    },
+    {
+      "citation": "Hakeem AY et al. (2005). Brain of the African elephant (Loxodonta africana): neuroanatomy from magnetic resonance images. The Anatomical Record Part A.",
+      "doi": "10.1002/ar.a.20255",
+      "year": 2005,
+      "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ar.a.20255",
+      "id": "atlas2affe1fd",
+      "type": "primary"
+    },
+    {
+      "citation": "Shoshani J et al. (2006). Elephant brain. Part I: Gross morphology, functions, comparative anatomy, and evolution. Brain Research Bulletin.",
+      "doi": "10.1016/j.brainresbull.2006.03.016",
+      "year": 2006,
+      "url": "https://drnissani.net/mnissani/ElephantCorner/ElephantBrain_shoshani.pdf",
+      "id": "atlas26e601a4",
+      "type": "primary"
+    },
+    {
+      "citation": "Chawana R et al. (2020). Adult hippocampal neurogenesis in Egyptian fruit bats from three different environments: Are interpretational variations due to the environment or methodology?. Journal of Comparative Neurology.",
+      "doi": "10.1002/cne.24895",
+      "year": 2020,
+      "url": "https://www.academia.edu/86682570/Adult_hippocampal_neurogenesis_in_Egyptian_fruit_bats_from_three_different_environments_Are_interpretational_variations_due_to_the_environment_or_methodology",
+      "id": "atlas738cb5d9",
+      "type": "primary"
+    },
+    {
+      "citation": "Seidlitz J et al. (2018). A population MRI brain template and analysis tools for the macaque. NeuroImage.",
+      "doi": "10.1016/j.neuroimage.2017.04.063",
+      "year": 2018,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5660669/",
+      "id": "atlas1c1a4beb",
+      "type": "primary"
+    },
+    {
+      "citation": "Iacono MI et al. (2015). MIDA: A multimodal imaging-based detailed anatomical model of the human head and neck. PLOS ONE.",
+      "doi": "10.1371/journal.pone.0124126",
+      "year": 2015,
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0124126",
+      "id": "atlasd50537b5",
+      "type": "primary"
+    },
+    {
+      "citation": "Xiang L et al. (2019). Cerebral torque is human specific and unrelated to brain size. Brain Structure and Function.",
+      "doi": "10.1007/s00429-018-01818-0",
+      "year": 2019,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6499874/",
+      "id": "atlas41e229c9",
       "type": "primary"
     }
   ]
