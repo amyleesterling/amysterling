@@ -1,0 +1,342 @@
+/* Brain Tree. Built on scifi-ui: the step rail (.holobar), the panel surface
+   (.holopanel), the tap layer and the confetti burst are that library's own
+   files, loaded from ../assets/scifi-ui. This sheet retunes the library's
+   colour tokens to an earth palette and lays the page out for a phone first. */
+
+@property --bt-turn { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+
+:root {
+  /* the palette: water, leaf, sun, and pink and lilac for fun */
+  --bt-deep: #041a24;
+  --bt-sea: #0b3b4a;
+  --bt-aqua: #5fe6d2;
+  --bt-sky: #58a6ff;
+  --bt-leaf: #8fe38a;
+  --bt-sun: #ffd166;
+  --bt-pink: #ff8fbf;
+  --bt-lilac: #c9a2ff;
+  --bt-ink: #f3fbf6;
+  --bt-rainbow: #ff8fbf, #ffd166, #8fe38a, #5fe6d2, #58a6ff, #c9a2ff, #ff8fbf;
+  --bt-progress: 0;
+
+  /* scifi-ui reads these; the field stays cool with one warm accent */
+  --holo-line: 214 246 236;
+  --holo-beam: 150 236 216;
+  --holo-glow: 70 180 196;
+  --holo-warm: 255 209 102;
+  --holo-cyan: 95 230 210;
+  --holo-viol: 201 162 255;
+  --holo-ink: 243 251 246;
+  --holo-dim: 160 190 190;
+  --holo-panel: 9 36 46;
+
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bt-deep);
+  color: var(--bt-ink);
+  font: 400 15px/1.45 "Outfit", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior: none;
+}
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--bt-sun); outline-offset: 2px; }
+
+/* ---- the sky: deep water, then land, then dawn, as you move up the trail */
+.bt-sky { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
+.bt-sky i { position: absolute; inset: 0; display: block; transition: opacity 1.4s ease; }
+.bt-sky-sea {
+  background:
+    radial-gradient(90% 55% at 50% 38%, rgb(22 110 128 / .55), transparent 70%),
+    radial-gradient(120% 80% at 50% 0%, #0f4a5c 0%, #072a38 46%, #041a24 100%);
+}
+.bt-sky-land {
+  opacity: clamp(0, calc((var(--bt-progress) - .38) * 3), 1);
+  background:
+    radial-gradient(80% 50% at 12% 100%, rgb(120 210 120 / .32), transparent 70%),
+    radial-gradient(90% 55% at 50% 38%, rgb(40 150 120 / .45), transparent 70%),
+    linear-gradient(180deg, #0d4a4c 0%, #093a36 50%, #06262a 100%);
+}
+.bt-sky-dawn {
+  opacity: clamp(0, calc((var(--bt-progress) - .7) * 3.4), 1);
+  background:
+    radial-gradient(70% 45% at 78% 0%, rgb(255 200 130 / .42), transparent 70%),
+    radial-gradient(80% 50% at 10% 20%, rgb(255 143 191 / .2), transparent 70%),
+    radial-gradient(90% 55% at 50% 38%, rgb(120 120 220 / .3), transparent 70%),
+    linear-gradient(180deg, #2c2a5c 0%, #17344e 52%, #0a2a34 100%);
+}
+/* the sun: a warm core inside a slow rainbow ring */
+.bt-sky .bt-sun {
+  inset: auto; top: -110px; right: -90px; width: 320px; height: 320px; border-radius: 50%;
+  opacity: calc(.34 + var(--bt-progress) * .4);
+  background:
+    radial-gradient(circle, rgb(255 226 150 / .95) 0 18%, rgb(255 209 102 / .35) 34%, transparent 56%),
+    conic-gradient(from var(--bt-turn), var(--bt-rainbow));
+  -webkit-mask: radial-gradient(circle, #000 0 30%, rgb(0 0 0 / .55) 46%, transparent 68%);
+          mask: radial-gradient(circle, #000 0 30%, rgb(0 0 0 / .55) 46%, transparent 68%);
+  filter: blur(22px) saturate(1.2);
+  animation: bt-turn 40s linear infinite;
+}
+.bt-sky .bt-haze {
+  background:
+    radial-gradient(60% 40% at 0% 78%, rgb(201 162 255 / .16), transparent 70%),
+    radial-gradient(50% 34% at 100% 92%, rgb(255 143 191 / .14), transparent 70%);
+}
+@keyframes bt-turn { to { --bt-turn: 360deg; } }
+
+#stage {
+  position: fixed; inset: 0; z-index: 1; width: 100%; height: 100%;
+  touch-action: none; cursor: grab; opacity: 0; transition: opacity .9s ease;
+}
+#stage:active { cursor: grabbing; }
+.is-ready #stage { opacity: 1; }
+
+/* ---- top bar ---- */
+.bt-top {
+  position: fixed; z-index: 4; top: 0; left: 0; right: 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: calc(env(safe-area-inset-top) + 10px) 14px 6px;
+  pointer-events: none;
+}
+.bt-top > * { pointer-events: auto; }
+.bt-home {
+  display: inline-flex; align-items: center; gap: 8px;
+  color: var(--bt-ink); text-decoration: none; font-weight: 500; font-size: 15px; letter-spacing: .01em;
+}
+.bt-home span {
+  width: 12px; height: 12px; border-radius: 50%;
+  background: conic-gradient(from var(--bt-turn), var(--bt-rainbow));
+  box-shadow: 0 0 12px rgb(255 143 191 / .6);
+  animation: bt-turn 12s linear infinite;
+}
+.bt-top-actions { display: flex; gap: 8px; }
+.bt-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 36px; padding: 0 14px; border-radius: 999px; cursor: pointer;
+  border: 1px solid rgb(var(--holo-line) / .2);
+  background: rgb(var(--holo-line) / .07);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  font-size: 13px; font-weight: 500;
+  transition: background .25s ease, border-color .25s ease, transform .25s cubic-bezier(.16, 1, .3, 1);
+}
+.bt-pill svg { width: 16px; height: 16px; color: var(--bt-leaf); }
+.bt-pill:hover, .bt-pill.holo-on { background: rgb(var(--holo-line) / .14); border-color: rgb(var(--holo-line) / .4); }
+.bt-pill:active { transform: scale(.95); }
+
+/* ---- layout: stage on top, story below, rail at the foot ---- */
+.bt-main {
+  position: fixed; z-index: 3; inset: 0;
+  display: grid; grid-template-rows: minmax(150px, 1fr) auto auto;
+  padding-top: calc(env(safe-area-inset-top) + 52px);
+  pointer-events: none;
+}
+.bt-info > *, .bt-foot, .bt-arrow { pointer-events: auto; }
+
+.bt-stage { position: relative; min-height: 0; }
+.bt-arrow {
+  position: absolute; bottom: 4px; width: 44px; height: 44px; border-radius: 50%;
+  display: grid; place-items: center; cursor: pointer;
+  border: 1px solid rgb(var(--holo-line) / .22);
+  background: rgb(var(--holo-panel) / .5);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  transition: transform .3s cubic-bezier(.16, 1, .3, 1), opacity .3s ease, border-color .3s ease;
+}
+.bt-arrow svg { width: 18px; height: 18px; }
+.bt-prev { left: 14px; }
+.bt-next { right: 14px; border-color: rgb(255 143 191 / .55); box-shadow: 0 0 18px rgb(255 143 191 / .25); }
+.bt-arrow:active { transform: scale(.88); }
+.bt-arrow:disabled { opacity: .25; box-shadow: none; cursor: default; }
+.bt-schematic {
+  position: absolute; left: 50%; bottom: 20px; transform: translateX(-50%);
+  font: 500 9px/1 "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .2em; text-transform: uppercase;
+  color: rgb(var(--holo-ink) / .5); white-space: nowrap;
+}
+.bt-hint {
+  position: absolute; left: 50%; bottom: 2px; transform: translateX(-50%); margin: 0;
+  font-size: 11px; color: rgb(var(--holo-ink) / .45); white-space: nowrap; transition: opacity .6s ease;
+}
+.bt-hint.is-gone { opacity: 0; }
+
+.bt-info { min-width: 0; padding-top: 6px; }
+.bt-head { padding: 0 18px; touch-action: pan-y; }
+.bt-head.is-in { animation: bt-rise .7s cubic-bezier(.16, 1, .3, 1) both; }
+@keyframes bt-rise {
+  0% { opacity: 0; transform: translateY(10px); filter: blur(8px) brightness(1.8); }
+  60% { opacity: 1; filter: blur(0) brightness(1.1); }
+  100% { opacity: 1; transform: none; filter: none; }
+}
+.bt-era {
+  margin: 0 0 2px;
+  font: 500 10px/1.2 "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--bt-aqua);
+}
+.bt-title { margin: 0; font-size: clamp(28px, 8.4vw, 40px); line-height: 1.05; font-weight: 500; letter-spacing: -.015em; }
+.bt-who { margin: 4px 0 0; font-size: 13.5px; font-weight: 300; color: rgb(var(--holo-ink) / .72); }
+
+.bt-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 10px 18px 0; }
+.bt-count-n {
+  font-size: 22px; font-weight: 600; line-height: 1.1; font-variant-numeric: tabular-nums;
+  background: linear-gradient(100deg, var(--bt-sun), var(--bt-pink) 70%, var(--bt-lilac));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.bt-count-l {
+  flex: 1 1 140px; min-width: 0;
+  font: 400 10px/1.35 "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .04em;
+  color: rgb(var(--holo-ink) / .6);
+}
+.bt-mag { flex: 1 1 100%; display: flex; gap: 5px; padding-top: 6px; }
+.bt-mag i {
+  width: 100%; max-width: 22px; height: 5px; border-radius: 3px;
+  background: rgb(var(--holo-ink) / .12);
+  transition: background .5s ease calc(var(--i) * 45ms), box-shadow .5s ease calc(var(--i) * 45ms);
+}
+.bt-mag i.on {
+  background: color-mix(in oklab, var(--bt-sun), var(--bt-pink) calc(var(--i) * 9%));
+  box-shadow: 0 0 8px rgb(255 190 150 / .55);
+}
+
+.bt-tabs {
+  display: flex; gap: 8px; overflow-x: auto; padding: 12px 18px 10px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.bt-tabs::-webkit-scrollbar { display: none; }
+.bt-tab {
+  flex: 0 0 auto; min-height: 36px; padding: 0 15px; border-radius: 999px; cursor: pointer;
+  border: 1px solid rgb(var(--holo-line) / .18);
+  background: rgb(var(--holo-line) / .05);
+  font-size: 13.5px; font-weight: 500; color: rgb(var(--holo-ink) / .8);
+  transition: transform .3s cubic-bezier(.16, 1, .3, 1), background .3s ease, color .3s ease;
+}
+.bt-tab:active { transform: scale(.94); }
+.bt-tab[aria-selected="true"] {
+  border-color: transparent; color: #2b1238;
+  background: linear-gradient(120deg, var(--bt-pink), var(--bt-lilac));
+  box-shadow: 0 6px 20px rgb(255 143 191 / .28);
+}
+
+/* the cards: a snap carousel. The middle card lights its part on the model. */
+.bt-cards {
+  display: flex; gap: 12px; overflow-x: auto; padding: 4px 18px 12px;
+  scroll-snap-type: x mandatory; scroll-padding-inline: 18px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch; outline-offset: -4px;
+}
+.bt-cards::-webkit-scrollbar { display: none; }
+.bt-cards[data-count="1"] .bt-card { flex-basis: 100%; }
+.bt-card.holopanel {
+  position: relative; flex: 0 0 min(82vw, 330px); scroll-snap-align: center;
+  max-height: 30dvh; overflow-y: auto; padding: 14px 16px 14px;
+  border-radius: 20px; border-color: rgb(var(--holo-line) / .16);
+  background: linear-gradient(158deg, rgb(var(--holo-panel) / .82), rgb(5 26 34 / .9));
+  box-shadow: 0 12px 30px rgb(0 0 0 / .3), inset 0 1px 0 rgb(var(--holo-line) / .1);
+  transition: border-color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.16, 1, .3, 1);
+  animation: bt-rise .6s cubic-bezier(.16, 1, .3, 1) both; animation-delay: calc(var(--i, 0) * 70ms);
+}
+.bt-card.is-on[data-struct] {
+  border-color: rgb(255 143 191 / .6);
+  box-shadow: 0 14px 34px rgb(0 0 0 / .32), 0 0 26px rgb(255 143 191 / .2), inset 0 1px 0 rgb(var(--holo-line) / .14);
+}
+.bt-card h3 { margin: 0 0 6px; font-size: 16.5px; line-height: 1.25; font-weight: 500; }
+.bt-card p { margin: 0; font-size: 14px; font-weight: 300; color: rgb(var(--holo-ink) / .86); }
+.bt-card .bt-lede { font-size: 15.5px; font-weight: 400; line-height: 1.42; color: var(--bt-ink); }
+.bt-card .bt-fine { margin-top: 8px; font-size: 11.5px; color: rgb(var(--holo-ink) / .5); }
+.bt-kicker {
+  margin: 0 0 5px !important;
+  font: 500 9.5px/1 "IBM Plex Mono", ui-monospace, monospace !important; letter-spacing: .18em; text-transform: uppercase;
+  color: var(--bt-sun) !important;
+}
+.bt-card-twist .bt-kicker { color: var(--bt-pink) !important; }
+.bt-dot {
+  display: inline-block; width: 10px; height: 10px; margin-right: 8px; border-radius: 50%;
+  background: var(--c); box-shadow: 0 0 10px var(--c); vertical-align: 1px;
+}
+.bt-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px !important; }
+.bt-tags:empty { display: none; }
+.bt-tag, .bt-conf {
+  display: inline-block; padding: 4px 9px; border-radius: 999px;
+  font: 500 10px/1.2 "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .03em;
+  color: rgb(var(--holo-ink) / .78); background: rgb(var(--holo-line) / .09); text-decoration: none;
+}
+.bt-tag-new { color: #24301a; background: var(--bt-leaf); }
+.bt-tag-convergent { color: #2b1238; background: var(--bt-lilac); }
+.bt-conf-s { color: var(--bt-sun); background: rgb(255 209 102 / .12); }
+.bt-conf-d { color: var(--bt-pink); background: rgb(255 143 191 / .14); }
+.bt-link { color: var(--bt-aqua); border: 1px solid rgb(95 230 210 / .3); background: none; }
+
+/* ---- the rail ---- */
+.bt-foot { padding: 6px 18px calc(env(safe-area-inset-bottom) + 14px); }
+.bt-foot .holobar-rail { height: 3px; border-radius: 3px; }
+.bt-foot .holobar-tick { min-height: 28px; }
+
+/* ---- sheets ---- */
+dialog.bt-sheet {
+  width: 100%; max-width: 480px; max-height: 86dvh; margin: auto auto 0; padding: 18px 18px 22px;
+  border-radius: 24px 24px 0 0; overflow-y: auto;
+}
+dialog.bt-sheet[open] { animation: bt-sheet .5s cubic-bezier(.16, 1, .3, 1) both; }
+dialog.bt-sheet::backdrop { background: rgb(3 18 26 / .6); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
+@keyframes bt-sheet { from { transform: translateY(40px); opacity: 0; } }
+.bt-sheet header { display: flex; align-items: center; justify-content: space-between; }
+.bt-sheet h2 { margin: 0; font-size: 22px; font-weight: 500; }
+.bt-x {
+  width: 40px; height: 40px; border-radius: 50%; border: 1px solid rgb(var(--holo-line) / .2);
+  background: rgb(var(--holo-line) / .06); font-size: 22px; line-height: 1; cursor: pointer;
+}
+.bt-note { margin: 10px 0 0; font-size: 13px; font-weight: 300; color: rgb(var(--holo-ink) / .66); }
+.bt-note a, .bt-sources a { color: var(--bt-aqua); }
+.bt-tree svg { display: block; width: 100%; max-width: 360px; height: auto; margin: 6px auto 0; overflow: visible; }
+.bt-tree path { fill: none; stroke-linecap: round; }
+.bt-tree .trunk { stroke: url(#bt-grad); stroke-width: 3.5; }
+.bt-tree .twig { stroke: rgb(var(--holo-line) / .5); stroke-width: 2; stroke-dasharray: 1 6; }
+.bt-node { cursor: pointer; outline: none; }
+.bt-node .hit { fill: transparent; }
+.bt-node .pip { fill: var(--bt-ink); transition: r .3s ease, fill .3s ease; }
+.bt-node text { fill: var(--bt-ink); font: 500 13px "Outfit", sans-serif; }
+.bt-node text.sub { fill: rgb(var(--holo-ink) / .5); font: 400 9.5px "IBM Plex Mono", monospace; }
+.bt-node:hover .pip, .bt-node:focus-visible .pip { fill: var(--bt-sun); }
+.bt-node.is-here .pip { fill: var(--bt-pink); filter: drop-shadow(0 0 8px var(--bt-pink)); }
+.bt-node.is-here text:not(.sub) { fill: var(--bt-pink); }
+.bt-sources { margin: 12px 0 0; padding-left: 20px; font-size: 12.5px; font-weight: 300; color: rgb(var(--holo-ink) / .8); }
+.bt-sources li { margin-bottom: 8px; }
+
+.no-webgl .bt-schematic::after { content: " unavailable on this device"; }
+.no-webgl .bt-hint { display: none; }
+.bt-noscript { position: fixed; inset: auto 0 40%; text-align: center; z-index: 9; }
+
+/* ---- short phones: give the model the room ---- */
+@media (max-height: 700px) {
+  .bt-card .bt-fine { display: none; }
+  .bt-card.holopanel { max-height: 26dvh; }
+  .bt-title { font-size: 26px; }
+}
+
+/* ---- wide screens: model left, story right ---- */
+@media (min-width: 900px) {
+  .bt-main {
+    grid-template-columns: minmax(0, 1fr) 440px; grid-template-rows: minmax(0, 1fr) auto;
+    padding: 64px 28px 0 0;
+  }
+  .bt-stage { grid-row: 1 / 3; }
+  .bt-info { align-self: center; }
+  .bt-foot { grid-column: 2; padding-bottom: 28px; }
+  .bt-title { font-size: 46px; }
+  .bt-count-n { font-size: 28px; }
+  .bt-card.holopanel { flex-basis: 340px; max-height: 38dvh; }
+  .bt-arrow { bottom: 28px; width: 52px; height: 52px; }
+  .bt-prev { left: 28px; }
+  .bt-next { right: 28px; }
+  .bt-schematic { bottom: 46px; }
+  .bt-hint { bottom: 24px; }
+  dialog.bt-sheet { margin: auto; border-radius: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bt-sky .bt-sun, .bt-home span { animation: none; }
+  .bt-head.is-in, .bt-card.holopanel, dialog.bt-sheet[open] { animation: none; }
+  * { transition-duration: .01ms !important; }
+}

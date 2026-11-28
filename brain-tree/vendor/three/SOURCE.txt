@@ -1,0 +1,4 @@
+three.module.min.js and three.core.min.js are the official three.js build,
+copied unmodified from the copy vendored in amyleesterling/human-brain.
+Three.js is MIT, copyright the Three.js authors.
+https://github.com/mrdoob/three.js
