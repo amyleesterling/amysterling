@@ -92,7 +92,7 @@ button { font: inherit; color: inherit; }
 
 #stage {
   position: fixed; inset: 0; z-index: 1; width: 100%; height: 100%;
-  touch-action: none; cursor: grab; opacity: 0; transition: opacity .9s ease;
+  touch-action: none; cursor: grab; opacity: 0; transition: opacity .6s ease;
 }
 #stage:active { cursor: grabbing; }
 .is-ready #stage { opacity: 1; }
@@ -177,7 +177,48 @@ button { font: inherit; color: inherit; }
   color: var(--bt-aqua);
 }
 .bt-title { margin: 0; font-size: clamp(28px, 8.4vw, 40px); line-height: 1.05; font-weight: 500; letter-spacing: -.015em; }
-.bt-who { margin: 4px 0 0; font-size: 13.5px; font-weight: 300; color: rgb(var(--holo-ink) / .72); }
+/* the animals at this stop: tap one and its plate takes the stage */
+.bt-who {
+  display: flex; gap: 8px; overflow-x: auto; padding: 8px 18px 2px;
+  scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.bt-who::-webkit-scrollbar { display: none; }
+.bt-thumb {
+  flex: 0 0 auto; display: inline-flex; align-items: center; gap: 8px;
+  height: 46px; padding: 0 12px 0 6px; border-radius: 999px; cursor: pointer;
+  border: 1px solid rgb(var(--holo-line) / .16);
+  background: rgb(var(--holo-line) / .06);
+  font-size: 12.5px; font-weight: 400; color: rgb(var(--holo-ink) / .85);
+  transition: transform .3s cubic-bezier(.16, 1, .3, 1), border-color .3s ease, background .3s ease;
+}
+.bt-thumb img { width: 54px; height: 36px; object-fit: contain; filter: drop-shadow(0 2px 5px rgb(0 0 0 / .4)); }
+.bt-thumb:active { transform: scale(.95); }
+.bt-thumb:hover, .bt-thumb.holo-on { border-color: rgb(var(--holo-line) / .4); }
+.bt-thumb.is-on { border-color: var(--bt-sun); background: rgb(255 209 102 / .14); }
+.bt-thumb-text { padding: 0 12px; cursor: default; }
+
+.bt-plate {
+  position: absolute; inset: 4px 18px 54px; margin: 0; pointer-events: auto; cursor: pointer;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
+}
+.bt-plate[hidden] { display: none; }
+.bt-plate img {
+  flex: 1 1 0; min-height: 0; max-width: 100%; object-fit: contain;
+  filter: drop-shadow(0 18px 30px rgb(0 0 0 / .45));
+  opacity: 0; transform: scale(.94); transition: opacity .5s ease, transform .7s cubic-bezier(.16, 1, .3, 1);
+}
+.bt-plate img.is-in { opacity: 1; transform: none; }
+.bt-plate figcaption { flex: 0 0 auto; text-align: center; font-size: 14px; }
+.bt-plate figcaption i { font-weight: 300; color: rgb(var(--holo-ink) / .7); }
+.bt-plate figcaption small {
+  display: block; margin-top: 3px;
+  font: 400 9px/1.3 "IBM Plex Mono", ui-monospace, monospace; letter-spacing: .12em; text-transform: uppercase;
+  color: rgb(var(--holo-ink) / .45);
+}
+.plate-open #stage { opacity: .1; }
+.plate-open .bt-schematic, .plate-open .bt-hint { opacity: 0; }
+.bt-sub { margin: 18px 0 0; font-size: 15px; font-weight: 500; }
+.bt-sub[hidden] { display: none; }
 
 .bt-count { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; padding: 10px 18px 0; }
 .bt-count-n {

@@ -46,6 +46,10 @@
     <button class="bt-arrow bt-next" id="next" type="button" aria-label="Next stop">
       <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 4 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
+    <figure class="bt-plate" id="plate" hidden>
+      <img id="plate-img" alt="">
+      <figcaption id="plate-cap"></figcaption>
+    </figure>
     <span class="bt-schematic">schematic model</span>
     <p class="bt-hint" id="hint">drag to turn · tap a part</p>
   </div>
@@ -54,8 +58,8 @@
     <div class="bt-head" id="head" aria-live="polite">
       <p class="bt-era" id="era"></p>
       <h1 class="bt-title" id="title">Brain Tree</h1>
-      <p class="bt-who" id="who"></p>
     </div>
+    <div class="bt-who" id="who" aria-label="Animals at this stop"></div>
 
     <div class="bt-count" id="count">
       <b class="bt-count-n" id="count-n"></b>
@@ -68,7 +72,7 @@
   </section>
 
   <footer class="bt-foot">
-    <div class="holobar" id="rail" data-steps="14" data-step="1" aria-label="Stops along the trail"></div>
+    <div class="holobar" id="rail" data-steps="17" data-step="1" aria-label="Stops along the trail"></div>
   </footer>
 </main>
 
@@ -82,6 +86,8 @@
   <header><h2 id="src-h">Sources</h2><button class="bt-x" type="button" data-close aria-label="Close">×</button></header>
   <p class="bt-note" id="src-note"></p>
   <ol class="bt-sources" id="sources"></ol>
+  <h3 class="bt-sub" id="refs-h">Figures for modelling this stop</h3>
+  <ul class="bt-sources" id="refs"></ul>
   <p class="bt-note">The 3D shapes are schematics drawn from standard comparative anatomy, not measured data. How the research was checked: <a href="RESEARCH_NOTES.md">research notes</a>.</p>
 </dialog>
 

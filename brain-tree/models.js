@@ -232,6 +232,14 @@ const RECIPES = {
         [0.8 + curl, -1.2 + cy * 0.6, cz * 1.5],
       ], 74, 0.036, "nerve_cord", { taper: 0.72, knot: 6, struct: "Arm nerve cords", g: i * 0.11 });
     }
+    // the skin is run straight from the brain: pigment organs and bump muscles
+    const r = rng(41);
+    for (let i = 0; i < 150; i++) {
+      const u = r() * 2 - 1, a = r() * Math.PI * 2, q = Math.sqrt(1 - u * u);
+      b.dot([-0.95 + q * Math.cos(a) * 0.75, 0.42 + u * 0.58, q * Math.sin(a) * 0.55], 0.014 + r() * 0.012,
+        i % 3 ? "cellular" : "other",
+        { w: (u + 1) / 2, g: 0.6, dim: 0.8, struct: i % 3 ? "Skin pigment organs" : "Skin bump muscles and nerves" });
+    }
     return { yaw: 0.35, pitch: 0.18 };
   },
 
@@ -384,6 +392,87 @@ const RECIPES = {
       cord: [[-0.75, -0.72, 0], [-1.1, -0.95, 0], [-1.45, -1.35, 0]], cordN: 24, cordS: 0.045, cordFit: true,
     });
     return { yaw: 0.5, pitch: 0.16 };
+  },
+
+  // A ragworm larva, three days old: a small brain with eyespots, a short
+  // ladder of nerve cords, and bands of beating hairs around the body.
+  "annelid-ragworm"(b) {
+    const r = rng(57);
+    b.part("hull", "body", [0, 0, 0], [1.05, 0.56, 0.56], { ghost: true });
+    b.pair("cg", "cerebral_ganglia", [0.62, 0.12, 0.16], [0.22, 0.17, 0.17]);
+    b.pair("eye", "other", [0.8, 0.2, 0.3], [0.06, 0.06, 0.06], { struct: "Larval eyespots" });
+    b.pair("uv", "cellular", [0.6, 0.16, 0.1], [0.07, 0.06, 0.06], { inner: true, struct: "Ultraviolet-sensitive cells" });
+    for (const s of [1, -1]) {
+      b.strand([[0.45, -0.1, 0.14 * s], [0.1, -0.3, 0.16 * s], [-0.5, -0.32, 0.14 * s], [-0.95, -0.2, 0.05 * s]],
+        46, 0.03, "nerve_cord", { taper: 0.4, g: 0.2 });
+    }
+    for (let i = 0; i < 7; i++) {
+      const x = 0.15 - i * 0.16;
+      b.strand([[x, -0.31, -0.15], [x, -0.33, 0], [x, -0.31, 0.15]], 6, 0.017, "nerve_cord", { dim: 0.7, g: 0.2 + i * 0.03 });
+    }
+    for (const [x, rad] of [[0.38, 0.52], [-0.2, 0.55], [-0.7, 0.4]]) {
+      b.ring([x, 0, 0], rad, 44, 0.02, "body", { axis: "x", dim: 0.7 });
+    }
+    for (let i = 0; i < 46; i++) {
+      const a = r() * Math.PI * 2, x = 0.9 - r() * 1.7, rad = 0.56 * Math.sqrt(Math.max(0.05, 1 - (x / 1.05) ** 2));
+      b.dot([x, Math.cos(a) * rad, Math.sin(a) * rad], 0.022, "cellular",
+        { w: (0.9 - x) / 1.7, g: 0.5, struct: "Water-motion receptors" });
+    }
+    return { yaw: 0.45, pitch: 0.2 };
+  },
+
+  // A sea urchin: no brain at all. A nerve ring around the mouth and five
+  // radial nerves, on a body covered in light-sensitive tube feet.
+  "echinoderm-sea-urchin"(b) {
+    const r = rng(71);
+    b.part("hull", "body", [0, 0, 0], [0.8, 0.66, 0.8], { ghost: true });
+    b.ring([0, -0.6, 0], 0.26, 54, 0.032, "nerve_net", { struct: "Mouth nerve ring" });
+    for (let k = 0; k < 5; k++) {
+      const a = k / 5 * Math.PI * 2, c = Math.cos(a), sn = Math.sin(a);
+      b.strand([[c * 0.26, -0.6, sn * 0.26], [c * 0.62, -0.42, sn * 0.62], [c * 0.8, 0, sn * 0.8],
+        [c * 0.6, 0.44, sn * 0.6], [c * 0.16, 0.65, sn * 0.16]], 58, 0.034, "nerve_cord",
+        { taper: 0.5, struct: "Radial nerves", g: k * 0.2 });
+    }
+    for (let i = 0; i < 170; i++) {
+      const u = r() * 2 - 1, a = r() * Math.PI * 2, q = Math.sqrt(1 - u * u);
+      b.dot([q * Math.cos(a) * 0.82, u * 0.68, q * Math.sin(a) * 0.82], 0.012 + r() * 0.008, "cellular",
+        { w: (u + 1) / 2, g: 0.5, dim: 0.7, struct: "Body-surface light sensors" });
+    }
+    for (let i = 0; i < 70; i++) {
+      const u = r() * 1.7 - 0.7, a = r() * Math.PI * 2, q = Math.sqrt(Math.max(0, 1 - u * u));
+      const d = [q * Math.cos(a), u, q * Math.sin(a)], len = 1.3 + r() * 0.3;
+      b.strand([[d[0] * 0.82, d[1] * 0.68, d[2] * 0.82], [d[0] * 0.82 * len, d[1] * 0.68 * len, d[2] * 0.82 * len]],
+        6, 0.011, "body", { taper: 0.7, dim: 0.3, g: r() });
+    }
+    return { yaw: 0.3, pitch: -0.42 };
+  },
+
+  // An acorn worm: a nerve net under the skin, densest at the base of the
+  // snout, and two cords along the trunk.
+  "hemichordate-acorn-worm"(b) {
+    const r = rng(83);
+    b.part("hull", "body", [1.15, 0.05, 0], [0.5, 0.3, 0.3], { ghost: true });
+    b.part("hull2", "body", [0.55, 0.02, 0], [0.2, 0.32, 0.32], { ghost: true });
+    b.part("hull3", "body", [-0.75, 0, 0], [1.25, 0.24, 0.24], { ghost: true });
+    for (let i = 0; i < 300; i++) {
+      // crowded toward the base of the snout
+      const t = Math.pow(r(), 2.2), x = 0.68 + t * 0.95, a = r() * Math.PI * 2;
+      const rad = 0.3 * Math.sqrt(Math.max(0.02, 1 - ((x - 1.15) / 0.5) ** 2));
+      b.dot([x, 0.05 + Math.cos(a) * rad, Math.sin(a) * rad], 0.014 + r() * 0.012, "nerve_net",
+        { w: t, g: 0, struct: "Snout nerve network" });
+    }
+    b.ring([0.55, 0.02, 0], 0.32, 40, 0.024, "nerve_net", { axis: "x", struct: "Snout nerve network" });
+    for (const y of [0.22, -0.22]) {
+      b.strand([[0.5, y * 1.2, 0], [0, y, 0], [-1.0, y, 0], [-1.95, y * 0.5, 0]], 90, 0.032, "nerve_cord",
+        { taper: 0.45, struct: "Back and belly nerve cords", g: y > 0 ? 0.1 : 0.55 });
+    }
+    for (let i = 0; i < 150; i++) {
+      const x = 0.4 - r() * 2.2, a = r() * Math.PI * 2;
+      const rad = 0.24 * Math.sqrt(Math.max(0.05, 1 - ((x + 0.75) / 1.25) ** 2));
+      b.dot([x, Math.cos(a) * rad, Math.sin(a) * rad], 0.012 + r() * 0.008, "nerve_net", { w: r(), g: 0.3, dim: 0.6 });
+    }
+    b.ring([-1.7, 0, 0], 0.17, 30, 0.02, "cellular", { axis: "x", struct: "Hatchling swimming band" });
+    return { yaw: 0.35, pitch: 0.22 };
   },
 
   // A human: the same parts as the mouse, with cortex over everything.

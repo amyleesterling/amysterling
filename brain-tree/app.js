@@ -43,6 +43,35 @@ function commonName(stop, scientific) {
   const hit = stop.exemplars.find(e => e.scientific === scientific);
   return hit ? hit.common : scientific;
 }
+const shortTitle = stop => stop.title.split(":")[0];
+function mass(g) {
+  if (g >= 1000) return trim(g / 1000) + " kg";
+  if (g >= 1) return trim(g) + " g";
+  return trim(g * 1000) + " mg";
+}
+function brainMass(stop) {
+  const m = (stop.brain_dimensions || []).find(d => d.mass_g != null);
+  return m ? `brain ≈ ${mass(m.mass_g)} · ${commonName(stop, m.species).toLowerCase()}` : "";
+}
+const thumbOf = path => path.replace("illustrations/", "illustrations/thumbs/");
+
+// Stops are walked in tree order. Optional side branches added later carry
+// high order numbers, so they are slotted in beside their sister branches
+// rather than after the last stop on the trail.
+function sequence(all) {
+  const base = all.filter(s => !isExtra(s)).sort((a, b) => a.order - b.order);
+  all.filter(isExtra).sort((a, b) => a.order - b.order).forEach(x => {
+    let i = -1;
+    base.forEach((s, k) => { if (s.parent === x.parent && s.branch === "side") i = k; });
+    if (i < 0) i = base.findIndex(s => s.id === x.parent);
+    base.splice(i + 1, 0, x);
+  });
+  base.forEach((s, k) => { s.seq = k; });
+  return base;
+}
+let trailLength = 0;
+const isExtra = s => s.order >= trailLength;
+
 function headline(stop) {
   const withValue = stop.neuron_counts.find(n => n.value != null);
   if (withValue) return withValue;
@@ -61,8 +90,11 @@ function featuredFor(stop) {
 }
 function focusFor(structure) {
   if (!structure) return null;
-  const tagged = model.parts.some(p => p.struct === structure.name) || model.beads.some(b => b.struct === structure.name);
-  return { struct: structure.name, region: structure.region, byRegion: !tagged };
+  const all = model.parts.concat(model.beads);
+  if (all.some(p => p.struct === structure.name)) return { struct: structure.name, region: structure.region, byRegion: false };
+  // nothing drawn for it: leave the model as it is rather than dim everything
+  if (!all.some(p => p.region === structure.region)) return null;
+  return { struct: structure.name, region: structure.region, byRegion: true };
 }
 
 function go(i, instant) {
@@ -83,8 +115,13 @@ function go(i, instant) {
   void head.offsetWidth;
   head.classList.add("is-in");
   $("era").textContent = era(stop.diverged_mya.value);
-  $("title").textContent = stop.title;
-  $("who").textContent = stop.exemplars.map(e => e.common).join(" · ");
+  $("title").textContent = shortTitle(stop);
+  closePlate();
+  $("who").innerHTML = stop.exemplars.map((e, i) => e.illustration
+    ? `<button type="button" class="bt-thumb" data-plate="${i}" aria-label="Show the ${esc(e.common)}">
+        <img src="${esc(thumbOf(e.illustration.path))}" alt="" loading="lazy" decoding="async"><span>${esc(e.common)}</span></button>`
+    : `<span class="bt-thumb bt-thumb-text"><span>${esc(e.common)}</span></span>`).join("");
+  $("who").scrollLeft = 0;
 
   drawCount(stop, instant || !moved);
   if (moved) tab = "story";
@@ -96,7 +133,7 @@ function go(i, instant) {
   const rail = $("rail");
   if (rail.holobar && rail.holobar.step !== at + 1) rail.holobar.step = at + 1;
   if (location.hash.slice(1) !== stop.id) history.replaceState(null, "", "#" + stop.id);
-  document.title = stop.title + " · Brain Tree";
+  document.title = shortTitle(stop) + " · Brain Tree";
 
   if (at === stops.length - 1 && !finaleDone && moved && !instant && window.holoburst) {
     finaleDone = true;
@@ -156,6 +193,7 @@ function cardsFor(stop) {
     const d = stop.diverged_mya;
     return [`<article class="holopanel bt-card bt-card-story">
       <p class="bt-lede">${esc(stop.summary)}</p>
+      ${brainMass(stop) ? `<p class="bt-tags"><span class="bt-tag">${esc(brainMass(stop))}</span></p>` : ""}
       <p class="bt-fine">The date is for this branch point: ${esc(d.node)}, ${Math.round(d.min)} to ${Math.round(d.max)} million years ago.</p>
     </article>`];
   }
@@ -225,6 +263,31 @@ function syncFocus() {
   scene.setFocus(idx != null && tab !== "story" ? focusFor(stop.structures[+idx]) : null);
 }
 
+// the species plates: tap a thumbnail and the animal takes the stage
+let plateOn = -1;
+function openPlate(i) {
+  const e = stops[at].exemplars[i];
+  if (!e || !e.illustration) return;
+  if (plateOn === i) return closePlate();
+  plateOn = i;
+  const img = $("plate-img");
+  img.classList.remove("is-in");
+  img.onload = () => img.classList.add("is-in");
+  img.src = e.illustration.path;
+  img.alt = e.common + ", " + e.scientific;
+  $("plate-cap").innerHTML = `<b>${esc(e.common)}</b> <i>${esc(e.scientific)}</i><small>${esc(e.illustration.medium || "Illustration")}</small>`;
+  $("plate").hidden = false;
+  document.body.classList.add("plate-open");
+  $("who").querySelectorAll(".bt-thumb").forEach(t => t.classList.toggle("is-on", +t.dataset.plate === i));
+}
+function closePlate() {
+  if (plateOn < 0) return;
+  plateOn = -1;
+  $("plate").hidden = true;
+  document.body.classList.remove("plate-open");
+  $("who").querySelectorAll(".bt-thumb").forEach(t => t.classList.remove("is-on"));
+}
+
 function pickTab(id) {
   tab = id;
   drawTabs();
@@ -234,6 +297,7 @@ function pickTab(id) {
 // tapping a part on the model opens its card
 function onPick(hit) {
   if (!hintGone) { hintGone = true; $("hint").classList.add("is-gone"); }
+  if (plateOn >= 0) return closePlate();
   if (!hit) { if (tab !== "story") pickTab("story"); return; }
   const stop = stops[at];
   let i = hit.struct ? stop.structures.findIndex(s => s.name === hit.struct) : -1;
@@ -249,17 +313,12 @@ function drawTree() {
   const byId = Object.fromEntries(stops.map(s => [s.id, s]));
   const main = new Set();
   for (let s = stops[stops.length - 1]; s; s = byId[s.parent]) main.add(s.id);
-  // the trail runs up the left; side branches step out to the right, and a
-  // second branch off the same stop steps out further so the two do not overlap
-  const col = {}, used = {};
-  stops.forEach(s => {
-    if (main.has(s.id)) col[s.id] = 0;
-    else if (main.has(s.parent)) { used[s.parent] = (used[s.parent] || 0) + 1; col[s.id] = used[s.parent]; }
-    else col[s.id] = col[s.parent];
-  });
-  const W = 340, rowH = 58, H = stops.length * rowH + 24, x0 = 26, dx = 84;
+  // the trail runs up the left and every side branch steps out to the right
+  const col = {};
+  stops.forEach(s => { col[s.id] = main.has(s.id) ? 0 : main.has(s.parent) ? 1 : col[s.parent]; });
+  const W = 340, rowH = 50, H = stops.length * rowH + 24, x0 = 26, dx = 96;
   const X = s => x0 + col[s.id] * dx;
-  const Y = s => H - 30 - s.order * rowH;
+  const Y = s => H - 30 - s.seq * rowH;
   let paths = "", nodes = "";
   stops.forEach(s => {
     const p = byId[s.parent];
@@ -270,9 +329,9 @@ function drawTree() {
   });
   stops.forEach(s => {
     const x = X(s), y = Y(s), anchor = "start", tx = x + 16;
-    nodes += `<g class="bt-node${s.order === at ? " is-here" : ""}" data-go="${s.order}" tabindex="0" role="button" aria-label="${esc(s.title)}">
-      <circle cx="${x}" cy="${y}" r="20" class="hit"/><circle cx="${x}" cy="${y}" r="${s.order === at ? 9 : 6.5}" class="pip"/>
-      <text x="${tx}" y="${y - 2}" text-anchor="${anchor}">${esc(s.title)}</text>
+    nodes += `<g class="bt-node${s.seq === at ? " is-here" : ""}" data-go="${s.seq}" tabindex="0" role="button" aria-label="${esc(s.title)}">
+      <circle cx="${x}" cy="${y}" r="20" class="hit"/><circle cx="${x}" cy="${y}" r="${s.seq === at ? 9 : 6.5}" class="pip"/>
+      <text x="${tx}" y="${y - 2}" text-anchor="${anchor}">${esc(shortTitle(s))}</text>
       <text x="${tx}" y="${y + 12}" text-anchor="${anchor}" class="sub">${esc(s.exemplars[0].common.toLowerCase())}</text></g>`;
   });
   $("tree").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Branching tree of the stops">
@@ -292,7 +351,10 @@ function drawSources() {
   })(stop);
   const byId = Object.fromEntries(sources.map(s => [s.id, s]));
   const list = [...ids].map(i => byId[i]).filter(Boolean).sort((a, b) => a.citation.localeCompare(b.citation));
-  $("src-note").textContent = `${list.length} papers behind “${stop.title}”.`;
+  $("src-note").textContent = `${list.length} papers behind “${shortTitle(stop)}”.`;
+  const refs = stop.references || [];
+  $("refs-h").hidden = !refs.length;
+  $("refs").innerHTML = refs.map(r => `<li><b>${esc(r.figure)}</b>, ${esc(r.species)}: ${esc(r.shows)} ${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">paper</a>` : ""}</li>`).join("");
   $("sources").innerHTML = list.map(s => {
     const href = s.doi ? "https://doi.org/" + s.doi : s.url;
     return `<li>${esc(s.citation)} ${href ? `<a href="${esc(href)}" target="_blank" rel="noopener">${s.doi ? "doi" : "link"}</a>` : ""}</li>`;
@@ -310,7 +372,8 @@ function measure() {
 async function start() {
   const res = await fetch("data.json");
   data = await res.json();
-  stops = data.stops.slice().sort((a, b) => a.order - b.order);
+  trailLength = Math.max(...data.stops.filter(s => s.branch === "trunk").map(s => s.order)) + 1;
+  stops = sequence(data.stops.slice());
   sources = data.sources;
 
   scene = createScene($("stage"), { reduced, onPick });
@@ -340,6 +403,12 @@ async function start() {
     c.scrollIntoView({ behavior: reduced ? "auto" : "smooth", inline: "center", block: "nearest" });
     if (c.dataset.struct != null && scene) scene.kick(stops[at].structures[+c.dataset.struct].name);
   });
+
+  $("who").addEventListener("click", e => {
+    const t = e.target.closest("[data-plate]");
+    if (t) openPlate(+t.dataset.plate);
+  });
+  $("plate").addEventListener("click", closePlate);
 
   // swipe the title block sideways to change stop
   let sx = null;
